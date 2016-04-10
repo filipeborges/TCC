@@ -2,7 +2,7 @@
 
 \chapter[Referencial Teórico]{Referencial Teórico}
 
-Esta seção apresenta o referencial que embasa este trabalho, de forma a demonstrar o resultado da revisão de literatura feita. O referencial teórico é o meio em que o autor do trabalho demonstra o seu conhecimento sobre uma determinada área de estudo (teorias, vocabulários, variáveis chave, fenômenos, métodos e história) \cite{randolph2009guide}.
+Esta seção apresenta o referencial que embasa este trabalho, de forma a demonstrar o resultado da revisão de literatura feita. O referencial teórico é o meio em que o autor do trabalho demonstra o seu conhecimento sobre uma determinada área de estudo (teorias, vocabulários, variáveis chave, fenômenos, métodos e história) \cite{randolph2009}.
 
 O referencial teórico é composto dos seguintes assuntos: \textit{End User Development}.
 
@@ -11,10 +11,22 @@ O referencial teórico é composto dos seguintes assuntos: \textit{End User Deve
 
 \textit{End User Development} (Desenvolvimento por usuário final) é um modelo de desenvolvimento de software onde o usuário final é o principal responsável pela construção do software.
 
-Para que o desenvolvimento seguindo este modelo possa ocorrer, é necessário que a tecnologia envolvida diminua o esforço cognitivo necessário para a construção do software, através da aproximação conceitual entre as ações do mundo real e as do mundo da programação (Artigo Meta-Design - FISCHER). Os usuários finais geralmente não possuem habilidades de um profissional da área de software, e também não estão interessados em construir sistemas no mesmo nível que esses profissionais, por isso é necessário que a tecnologia usada no desenvolvimento alinhe a complexidade relacionada a esta atividade com as habilidades do usuário final (Artigo End User Development Paradigm - LIEBERMAN).
+Para que o desenvolvimento seguindo este modelo possa ocorrer, é necessário que a tecnologia envolvida diminua o esforço cognitivo necessário para a construção do software, através da aproximação conceitual entre as ações do mundo real e as do mundo da programação \cite{fischer2004}. Os usuários finais geralmente não possuem habilidades de um profissional da área de software, e também não estão interessados em construir sistemas no mesmo nível que esses profissionais, por isso é necessário que a tecnologia usada no desenvolvimento alinhe a complexidade relacionada a esta atividade com as habilidades do usuário final. Este é o principal objetivo do EUD: empoderar os usuários finais de forma que eles mesmos desenvolvam e adaptem os sistemas de software \cite{lieberman2006}.
 
-Além disso, uma das preocupações principais com a tecnologia usada neste modelo de desenvolvimento, mais especificamente na parte das linguagens de programação, é a relação escopo de aplicação versus esforço de aprendizagem. A figura FBKC 1 ilustra uma relação do escopo de aplicação e do custo de aprendizagem, para diferentes linguagens de programação (INSERIR FIGURA TRADUZIDA DO Artigo Meta-Design - FISCHER). Linguagens de programação mais tradicionais como C++ e JAVA oferecem a possibilidade de construção de softwares de grandes variedades de domínios, porém a um alto custo associado ao esforço de aprendizagem. Já as linguagens que se aproximam mais de um domínio específico de aplicação, acabam tendo um menor esforço de aprendizagem, ao custo da restrição no seu escopo de aplicação. A linguagem ideal para o EUD é a que possui um alto escopo de aplicação e um baixo custo de aprendizagem, e atualmente existem ambientes que permitem a criação de agentes programáveis de forma mais visual (Citar algum desses ambientes como exemplo) (Artigo Meta-Design - FISCHER). 
+Uma das principais preocupações com a tecnologia usada neste modelo de desenvolvimento, mais especificamente na parte das linguagens de programação e aplicações de desenvolvimento, é a relação escopo de aplicação versus esforço de aprendizagem. A figura FBKC 1 ilustra uma relação do escopo de aplicação e do custo de aprendizagem, para diferentes linguagens de programação e aplicações. Linguagens de programação mais tradicionais como C++ e JAVA oferecem a possibilidade de construção de softwares de grandes variedades de domínios, porém a um alto custo associado ao esforço de aprendizagem. Outras linguagens possuem um menor esforço de aprendizagem, ao custo de uma limitação no escopo de aplicação. As linguagens ou aplicações de desenvolvimento ideais para o EUD são as que possuem um alto escopo de aplicação e um baixo custo de aprendizagem, e as que existem atualmente só utilizam uma pequena parte do potencial do EUD, com algumas falhas \cite{fischer2004} \cite{paterno2013}.
+\pagebreak
 
+\begin{figure}[h]
+	\centering
+	\label{fig01}
+		\includegraphics[keepaspectratio=true]{figuras/trade_off_eud_editado}
+	\caption{Relação escopo de aplicação e esforço de aprendizagem}
+\end{figure}
+
+Características importantes que motivam os usuários finais em um desenvolvimento de software são o empoderamento, a velocidade de desenvolvimento, a flexibilidade e o controle local \cite{fischer2004}. Um dos benefícios obtidos com o EUD é que as potenciais falhas de precisão geradas pela comunicação de informações são eliminadas, já que o usuário final, que possui conhecimento do domínio, é quem irá desenvolver o software \cite{fischer2004}.
+
+
+%\centerline{\includegraphics{figuras/trade_off_eud_editado}}\includegraphics{figuras/trade_off_eud_editado}
  
 
 \begin{comment}
