@@ -193,6 +193,52 @@ Os códigos elaborados foram derivados dos objetivos de cada categoria de pergun
 
 \chapter[Resultados]{Resultados}
 
+Nesta seção são apresentados a proposta do trabalho, o diagnóstico obtido como resultado da análise das entrevistas, o fluxograma da solução de apoio com base no diagnóstico obtido e o planejamento inicial da construção dessa solução.
+
+\section{Proposta do Trabalho}
+
+O presente trabalho está inserido no contexto do Órgão X, onde o Órgão X possui duas formas distintas de desenvolvimento de software: uma forma corporativa, que é uma forma tradicional de desenvolvimento de software (desenvolvimento realizado na área da TI e por profissionais de TI), e uma forma departamental, que é uma forma menos tradicional de desenvolvimento (desenvolvimento realizado nas áreas de negócio e por pessoas com menos qualificação técnica e experiência, geralmente estagiários).
+O desenvolvimento departamental apresenta um bom relato de satisfação no Órgão X, porém alguns problemas de qualidade e manutenibilidade das aplicações tem sido recorrentes, devido a falta de um processo ou guia que possa apoiar a condução do desenvolvimento.
+
+Tendo em vista este contexto, este trabalho se propõe a elaborar uma solução informatizada que possa guiar o desenvolvimento descentralizado no Órgão X, de forma a estabelecer as atividades e os padrões de desenvolvimento que possam contribuir para a melhora na qualidade das aplicações.
+
+Para se atingir este objetivo, realizou-se uma entrevista de forma a obter um diagnóstico da situação do desenvolvimento descentralizado no Órgão X, de forma a coletar os problemas relatados pelos próprios desenvolvedores. A partir do diagnóstico foi elaborado o fluxograma da solução de apoio. Por fim, um planejamento inicial de implementação da solução foi elaborado.
+
+\section{Entrevista}
+
+A entrevista elaborada foi aplicada com 8 desenvolvedores diferentes que participam do desenvolvimento descentralizado no Órgão X. Dentre os desenvolvedores selecionados, 7 eram estagiários e 1 era servidor. A tabela FBKC1 mostra um resumo dos desenvolvedores entrevistados. Observa-se que alguns desses dados não se aplicam ao desenvolvedor 6, por este ser um servidor.
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|m{2.88cm} | m{2.8cm} | m{2.2cm}| m{2.8cm} | m{2.2cm}|}
+		\hline
+		\textbf{Desenvolvedor} & \textbf{Unidade} & \textbf{Tempo de estágio} & 
+		\textbf{Curso} & \textbf{Tempo de Curso} \\ \hline
+		Desenvolvedor 1 & SECOM & 1 ano & Análise e Desenvolvimento de Sistemas & 2 semestres \\
+		\hline
+		Desenvolvedor 2 & Colocar sigla & 1 ano & Sistemas de Informação & 8 semestres \\
+		\hline
+		Desenvolvedor 3 & Museu & 7 meses & Sistemas de informação & 6 semestres \\
+		\hline
+		Desenvolvedor 4 & SEADE & 7 meses & Análise e Desenvolvimento de Sistemas & 4 semestres \\
+		\hline
+		Desenvolvedor 5 & SECOF & 1 ano & Sistemas de Informação & 5 semestres \\
+		\hline
+		Desenvolvedor 6 & SEPROD & Não se aplica & Não se aplica & Não se aplica \\
+		\hline
+		Desenvolvedor 7 & Verificar & 1 mês & Engenharia de Software & 6 semestres \\
+		\hline
+		Desenvolvedor 8 & SEPROD & 6 meses & Engenharia de Redes de Comunicação & 9 semestres \\
+		\hline
+	\end{tabular}
+
+	\caption{Perfil dos desenvolvedores entrevistados}
+	\label{tab01}
+\end{table}
+
+
+\section{Diagnóstico obtido}
+
 \begin{itemize}
 \item C1 - Papel claro dentro da instituição
 \item C2 - Papel que exige grande responsabilidade dentro da instituição
@@ -203,7 +249,7 @@ Os códigos elaborados foram derivados dos objetivos de cada categoria de pergun
 \item C7 - Algumas aplicações com baixa qualidade
 \item C8 - Construção de um catálogo de informações APEX
 \item C9 - Treinamento em boas práticas APEX
-\item C10 - Esclarecer como funcionada o sistema de desenvolvimento descentralizado
+\item C10 - Esclarecer como funciona o sistema de desenvolvimento descentralizado
 \item C11 - Os requisitos são levantados através de reuniões
 \item C12 - Requisitos óbvios não anotados durante as reuniões são esquecidos
 \item C13 - Uso de prototipagem para levantar/validar requisitos
