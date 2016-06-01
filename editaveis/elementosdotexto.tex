@@ -6,7 +6,11 @@
 
 \section{\textit{Contexto}}
 
---registrar contexto--
+É inconcebível imaginar o mundo moderno sem software. Ele está tão acoplado nas mais diversas áreas que seria difícil prever como o mundo seria sem o suporte e as facilidades que ele traz ao nosso dia a dia. Diante deste acoplamento tão grande e do seu enorme crescimento nos últimos anos, consequência do avanço tecnológico, se torna cada vez mais importante desenvolver software. O desenvolvimento de software pode possuir diferentes contextos de negócio, e com isso diferentes habilidades são exigidas dos desenvolvedores, já que cada contexto possui suas particularidades. Além disso, o ritmo acelerado do mundo moderno faz com que os contextos evoluam, e com isso as suas atividades e necessidades (requisitos) também evoluem. A mudança nos requisitos, a sua diversidade, e em algumas vezes a dificuldade em defini-los, leva o desenvolvimento tradicional de software a ser lento e caro em contextos que estão sempre evoluindo \cite{lieberman2006}. Além disso, a limitação na capacidade de produção de software de uma organização pode levar à priorização das demandas, e como consequência algumas áreas de negócio podem ficar sem atendimento. Neste contexto, se torna cada vez mais comum aplicações de software serem desenvolvidas por desenvolvedores não profissionais, pessoas que possuem conhecimento básico em programação mas que possuem expertise no domínio em que estão inseridas. O desejo de suportar seus objetivos neste domínio através de uma solução computacional os leva a serem tanto desenvolvedores quanto usuários finais do software \cite{lieberman2006}. 
+
+O Escritório do Trabalho e Estatística dos Estados Unidos fez uma previsão de que por volta de 2012, nos Estados Unidos, haveriam pouco mais de 3 milhões de programadores profissionais e mais de 55 milhões de pessoas escrevendo fórmulas e \textit{queries} em planilhas e banco de dados, para suportar seus objetivos de trabalho \cite{scaffidi2005}. Um relatório divulgado pelo \textit{Gartner} em Julho de 2011, indicou que desenvolvedores não profissionais iriam construir ao menos 25 \% das novas aplicações de negócio em 2014 \cite{paterno2013}. Diante deste cenário, um modelo de desenvolvimento de software centrado nesses usuários finais, que desenvolvem cada vez mais, vem ganhando força. O \textit{End User Development} - EUD tem como objetivo oferecer meios para que os usuários finais, que não são especialistas em programação, possam desenvolver aplicações de software. O EUD pode ajudar a aumentar a capacidade produtiva do departamento de TI de uma organização, bem como reduzir custos com o desenvolvimento de aplicações de negócio.
+
+O serviço público brasileiro, por ter natureza administrativa, apresenta grande demanda por desenvolvimento de software. Porém, a limitada capacidade produtiva da área de TI e o excesso de burocracia para o aumento da mesma, que é feita através de concursos ou de contratos terceirizados, acaba contribuindo para que as demandas das áreas de negócio consideradas menos prioritárias sejam deixadas de lado \cite{artigoTcuGovTI}. O uso de planilhas e o desenvolvimento de aplicações clandestinas sem nenhuma documentação e padrão, por essas unidades de negócio, promove o desconhecimento de soluções informatizadas por parte da alta cúpula, bem como a duplicidade de esforços pelas unidades \cite{slideTCU}. Nesse sentido, alguns órgãos da administração pública federal vêm reconhecendo esses esforços feitos informalmente pelas áreas de negócio, e começaram a adotar o modelo EUD, com algumas adaptações, para tentar contornar os problemas relatados. Os órgãos vem chamando esse modelo de modelo de desenvolvimento descentralizado, uma espécie de EUD onde o usuário final não é necessariamente quem desenvolve as aplicações. Geralmente estagiários da área de TI são contratados, para que eles possam ser alocados nas unidades de negócio do órgão, de forma que eles desenvolvam as aplicações junto à área de negócio, com a consultoria técnica da área de TI \cite{slideTCU}. Uma iniciativa bem sucedida de desenvolvimento descentralizado já foi implantada em um órgão da administração pública federal, com um relato de alta satisfação dos usuários. Apesar disso, ainda existem algumas dificuldades no desenvolvimento por parte dos estagiários, que não possuem um guia/processo que os oriente durante todo o ciclo de desenvolvimento. Por serem estagiários, muitos acabam seguindo a forma de desenvolvimento e os padrões que acreditam serem os melhores, o que acaba colocando em dúvida a qualidade das aplicações desenvolvidas. 
 
 \section{\textit{Problema}}
 
@@ -14,7 +18,27 @@
 
 \section{\textit{Objetivos}}
 
---registrar Objetivos--
+Dentro deste contexto, o objetivo geral deste trabalho é desenvolver uma solução de apoio ao desenvolvimento EUD (descentralizado) para um orgão público federal, agregando recursos que promovam a qualidade dos sistemas desenvolvidos, a partir de princípios e conceitos de engenharia de software.
+
+Considerando o objetivo geral, foram definidos os seguintes objetivos específicos:
+
+\begin{enumerate}
+	\item Entender o contexto do EUD no orgão público alvo.
+	\item Diagnosticar os problemas no desenvolvimento de aplicações baseado em EUD.
+	\item Selecionar as práticas da engenharia de software que sejam adequadas à solução dos problemas encontrados e ao contexto.
+	\item Elaborar o modelo conceitual da solução de apoio.
+	\item Construir a solução de apoio.
+	\item Selecionar um projeto para a aplicação da solução.
+	\item Aplicar a solução de apoio no projeto selecionado.
+	\item Relatar os resultados obtidos.
+\end{enumerate}
+
+
+\begin{comment}
+Apesar disso, existem ainda algumas dificuldades no desenvolvimento por parte dos estagiários desenvolvedores, como a falta de padronização e o que demonstra a necessidade de a elaboração de um processo embasado por princípios em conceitos da engenharia de software, ao mesmo tempo que não seja custoso aos desenvolvedores, já que iria contra a flexibilidade que preconiza o modelo EUD. 
+
+\citeonline{lieberman2006} relatou que um dos objetivos da interação humano-computador, além de desenvolver sistemas que são fáceis de usar, seria desenvolver sistemas que são fáceis de desenvolver.
+\end{comment}
 
 \section{\textit{Justificativa}}
 
@@ -63,9 +87,9 @@ A metodologia adotada para este trabalho foi o estudo de caso, devido a necessid
 
 A entrevista elaborada pode ser classificada como semiestruturada. No planejamento da entrevista, algumas categorias de perguntas relacionadas ao ciclo de vida do software e ao contexto do desenvolvedor foram elaboradas, de forma a auxiliar na formulação das perguntas.
 
-\subsection{Pesquisa-Ação ou Pesquisa Participante}
+\subsection{Pesquisa Participante}
 
---Pesquisa ação--
+--Pesquisa participante--
 
 \subsection{Fases da Pesquisa}
 
@@ -74,42 +98,16 @@ A entrevista elaborada pode ser classificada como semiestruturada. No planejamen
 \section{\textit{Organização do Trabalho}}
 
 --registrar como está organizado--
---Falar que a partir do capítulo 2 ao n trata-se do referencial teórico--
+--Falar que a partir do capítulo 2 ao 3 (vai entrar mais) trata-se do referencial teórico--
 
-É inconcebível imaginar o mundo moderno sem software. Ele está tão acoplado nas mais diversas áreas que seria difícil prever como o mundo seria sem o suporte e as facilidades que ele traz ao nosso dia a dia. Diante deste acoplamento tão grande e do seu enorme crescimento nos últimos anos, consequência do avanço tecnológico, se torna cada vez mais importante desenvolver software. O desenvolvimento de software pode possuir diferentes contextos de negócio, e com isso diferentes habilidades são exigidas dos desenvolvedores, já que cada contexto possui suas particularidades. Além disso, o ritmo acelerado do mundo moderno faz com que os contextos evoluam, e com isso as suas atividades e necessidades (requisitos) também evoluem. A mudança nos requisitos, a sua diversidade, e em algumas vezes a dificuldade em defini-los, leva o desenvolvimento tradicional de software a ser lento e caro em contextos que estão sempre evoluindo \cite{lieberman2006}. Além disso, a limitação na capacidade de produção de software de uma organização pode levar à priorização das demandas, e como consequência algumas áreas de negócio podem ficar sem atendimento. Neste contexto, se torna cada vez mais comum aplicações de software serem desenvolvidas por desenvolvedores não profissionais, pessoas que possuem conhecimento básico em programação mas que possuem expertise no domínio em que estão inseridas. O desejo de suportar seus objetivos neste domínio através de uma solução computacional os leva a serem tanto desenvolvedores quanto usuários finais do software \cite{lieberman2006}. 
+Nos capítulos 2,3 e ... apresenta o referencial que embasa este trabalho. O referencial teórico é o meio em que o autor do trabalho demonstra o seu conhecimento sobre uma determinada área de estudo (teorias, vocabulários, variáveis chave, fenômenos, métodos e história) \cite{randolph2009}.
 
-O Escritório do Trabalho e Estatística dos Estados Unidos fez uma previsão de que por volta de 2012, nos Estados Unidos, haveriam pouco mais de 3 milhões de programadores profissionais e mais de 55 milhões de pessoas escrevendo fórmulas e \textit{queries} em planilhas e banco de dados, para suportar seus objetivos de trabalho \cite{scaffidi2005}. Um relatório divulgado pelo \textit{Gartner} em Julho de 2011, indicou que desenvolvedores não profissionais iriam construir ao menos 25 \% das novas aplicações de negócio em 2014 \cite{paterno2013}. Diante deste cenário, um modelo de desenvolvimento de software centrado nesses usuários finais, que desenvolvem cada vez mais, vem ganhando força. O \textit{End User Development} - EUD tem como objetivo oferecer meios para que os usuários finais, que não são especialistas em programação, possam desenvolver aplicações de software. O EUD pode ajudar a aumentar a capacidade produtiva do departamento de TI de uma organização, bem como reduzir custos com o desenvolvimento de aplicações de negócio.
-
-O serviço público brasileiro, por ter natureza administrativa, apresenta grande demanda por desenvolvimento de software. Porém, a limitada capacidade produtiva da área de TI e o excesso de burocracia para o aumento da mesma, que é feita através de concursos ou de contratos terceirizados, acaba contribuindo para que as demandas das áreas de negócio consideradas menos prioritárias sejam deixadas de lado \cite{artigoTcuGovTI}. O uso de planilhas e o desenvolvimento de aplicações clandestinas sem nenhuma documentação e padrão, por essas unidades de negócio, promove o desconhecimento de soluções informatizadas por parte da alta cúpula, bem como a duplicidade de esforços pelas unidades \cite{slideTCU}. Nesse sentido, alguns órgãos da administração pública federal vêm reconhecendo esses esforços feitos informalmente pelas áreas de negócio, e começaram a adotar o modelo EUD, com algumas adaptações, para tentar contornar os problemas relatados. Os órgãos vem chamando esse modelo de modelo de desenvolvimento descentralizado, uma espécie de EUD onde o usuário final não é necessariamente quem desenvolve as aplicações. Geralmente estagiários da área de TI são contratados, para que eles possam ser alocados nas unidades de negócio do órgão, de forma que eles desenvolvam as aplicações junto à área de negócio, com a consultoria técnica da área de TI \cite{slideTCU}. Uma iniciativa bem sucedida de desenvolvimento descentralizado já foi implantada em um órgão da administração pública federal, com um relato de alta satisfação dos usuários. Apesar disso, ainda existem algumas dificuldades no desenvolvimento por parte dos estagiários, que não possuem um guia/processo que os oriente durante todo o ciclo de desenvolvimento. Por serem estagiários, muitos acabam seguindo a forma de desenvolvimento e os padrões que acreditam serem os melhores, o que acaba colocando em dúvida a qualidade das aplicações desenvolvidas. 
-
-Dentro deste contexto, o objetivo geral deste trabalho é desenvolver uma solução de apoio ao desenvolvimento EUD (descentralizado) para um orgão público federal, agregando recursos que promovam a qualidade dos sistemas desenvolvidos, a partir de princípios e conceitos de engenharia de software.
-
-Considerando o objetivo geral, foram definidos os seguintes objetivos específicos:
-
-\begin{enumerate}
-\item Entender o contexto do EUD no orgão público alvo.
-\item Diagnosticar os problemas no desenvolvimento de aplicações baseado em EUD.
-\item Selecionar as práticas da engenharia de software que sejam adequadas à solução dos problemas encontrados e ao contexto.
-\item Elaborar o modelo conceitual da solução de apoio.
-\item Construir a solução de apoio.
-\item Selecionar um projeto para a aplicação da solução.
-\item Aplicar a solução de apoio no projeto selecionado.
-\item Relatar os resultados obtidos.
-\end{enumerate}
-
-
-\begin{comment}
-Apesar disso, existem ainda algumas dificuldades no desenvolvimento por parte dos estagiários desenvolvedores, como a falta de padronização e o que demonstra a necessidade de a elaboração de um processo embasado por princípios em conceitos da engenharia de software, ao mesmo tempo que não seja custoso aos desenvolvedores, já que iria contra a flexibilidade que preconiza o modelo EUD. 
-
-\citeonline{lieberman2006} relatou que um dos objetivos da interação humano-computador, além de desenvolver sistemas que são fáceis de usar, seria desenvolver sistemas que são fáceis de desenvolver.
-\end{comment}
 
 \chapter[Capítulo 2]{Capítulo 2}
 
 \section{\textit{Considerações Iniciais do Capítulo}}
 
-Esta seção apresenta o referencial que embasa este trabalho. O referencial teórico é o meio em que o autor do trabalho demonstra o seu conhecimento sobre uma determinada área de estudo (teorias, vocabulários, variáveis chave, fenômenos, métodos e história) \cite{randolph2009}.
-
+--Considerações sobre o capítulo--
 
 \section{\textit{End User Development}}
 
