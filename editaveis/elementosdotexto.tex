@@ -263,9 +263,9 @@ Os códigos elaborados foram derivados dos objetivos de cada categoria de pergun
 
 \section{\textit{Considerações Iniciais do Capítulo}}
 
-Nesta seção são apresentados a proposta do trabalho, o diagnóstico obtido como resultado da análise das entrevistas, o fluxograma da solução de apoio com base no diagnóstico obtido e o planejamento inicial da construção dessa solução.
+Nesta seção são apresentados o diagnóstico obtido com o resultado da análise das entrevistas e o fluxograma da solução de apoio, desenvolvido com base no diagnóstico obtido.
 
-\section{\textit{Diagnóstico}}
+\section{\textit{Resultados}}
 
 --colocar todos os resultados desenvolvidos--
 
@@ -273,11 +273,12 @@ Nesta seção são apresentados a proposta do trabalho, o diagnóstico obtido co
 
 O objetivo da entrevista consistiu em obter um diagnóstico da situação atual do desenvolvimento descentralizado no Órgão X, para que servisse de insumo para a elaboração da solução de apoio. Como diagnóstico entendeu-se as boas práticas realizadas, as sugestões de melhoria e os problemas. Portanto, a entrevista elaborada tentou abordar esses pontos, consistindo de 34 perguntas divididas em 9 categorias. A entrevista pode ser visualizada no "Anexo A".
 
-A entrevista foi aplicada com 8 desenvolvedores diferentes, 7 estagiários e 1 servidor, que participam do desenvolvimento descentralizado no Órgão X. A escolha dos participantes foi feita de forma aleatória. A tabela \ref{tab02} mostra um resumo do perfil dos desenvolvedores entrevistados. Observa-se que alguns desses dados não se aplicam ao desenvolvedor 6, por este ser um servidor.\newline
+A entrevista foi aplicada com 8 desenvolvedores diferentes, 7 estagiários e 1 servidor, que participam do desenvolvimento descentralizado no Órgão X. A escolha dos participantes foi feita de forma aleatória. A categoria "Descrição do Desenvolvedor" serviu exclusivamente para contextualizar os entrevistados, portanto as respostas desta categoria foram desconsideradas na análise das entrevistas. A tabela 2 contextualiza o perfil dos desenvolvedores entrevistados. Observa-se que alguns desses dados não se aplicam ao desenvolvedor 6, por este ser um servidor.\clearpage
 
-\begin{table}[h]
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\begin{table}[!htb]
 	\centering
-	\begin{tabular}{|m{2.88cm} | m{2.8cm} | m{2.2cm}| m{2.8cm} | m{2.2cm}|}
+	\begin{tabular}{|M{2.88cm} | M{2.8cm} | M{2.2cm}| M{2.8cm} | M{2.2cm}|}
 		\hline
 		\textbf{Desenvolvedor} & \textbf{Unidade} & \textbf{Tempo de estágio} & 
 		\textbf{Curso} & \textbf{Tempo de Curso} \\ \hline
@@ -305,24 +306,170 @@ A entrevista foi aplicada com 8 desenvolvedores diferentes, 7 estagiários e 1 s
 
 As respostas obtidas com a aplicação da entrevista aos desenvolvedores citados podem ser visualizados no "Anexo B".
 
+\subsection{Diagnóstico obtido}
+Uma vez que a entrevista foi aplicada com os desenvolvedores selecionados, o diagnóstico relacionado aos problemas, as boas práticas e as sugestões de melhoria foi obtido com base na análise das respostas. A análise consistiu das seguintes etapas:
 
-\subsection{Resultado Obtido das Entrevistas}
---Aqui era antes a seção diagnóstico obtido--
+\begin{enumerate}
+\item Classificou-se as respostas de acordo com os códigos previamente definidos e realizou-se um agrupamento de respostas com códigos semelhantes.
+\item As respostas dentro dos agrupamentos foram rotuladas com uma ou mais chaves, que é uma frase que representa o sentido de uma resposta. Dessa forma, um conjunto de chaves únicas foi obtido, onde todas as chaves deste conjunto representam todas as diferentes respostas obtidas na entrevista.
+\end{enumerate}
+\clearpage
 
-Uma vez que a entrevista foi aplicada com os desenvolvedores selecionados, o diagnóstico relacionado aos problemas, as boas práticas e as sugestões de melhoria foi obtido com base na análise das respostas obtidas nas entrevistas. A análise consistiu em primeiro realizar um agrupamento das respostas das entrevistas, de forma que as respostas com sentidos semelhantes foram agrupadas em um determinado código, que representa uma descrição de um conjunto de sentidos semelhantes. A tabela X mostra a associação dos códigos previamente definidos com as resposta de cada entrevistado.\pagebreak
-
-\begin{comment}
-\begin{table}[h]
+\begin{figure}[h]
 	\centering
-	\begin{tabular}{|m{2.88cm} | m{2.8cm} | m{2.2cm}| m{2.8cm} | m{2.2cm}|}
-		\hline
-		\textbf{Desenvolvedor} & \textbf{Unidade} & \textbf{Tempo de estágio} & 
-		\textbf{Curso} & \textbf{Tempo de Curso} \\ \hline
-	\end{tabular}
+	\label{fig02}
+		\includegraphics[scale=0.7]{figuras/Esquematico_Analise_2}
+	\caption{Etapas realizadas na análise das respostas.}
+\end{figure}
+
+Uma matriz de rastreabilidade dos códigos e uma de rastreabilidade das chaves foram elaboradas, de forma a garantir a associação entre códigos e respostas, e entre chaves e respostas, ambos relacionados a cada desenvolvedor entrevistado. O conjunto de respostas das perguntas de 1 a 5, por se tratar meramente de uma contextualização do perfil dos entrevistados, não fez parte do escopo da análise, portanto foram ignorados. Observa-se que em ambas as matrizes foram utilizados símbolos para representar os códigos ("Co") e as chaves ("C"). Ao final de cada matriz é descrito o significado de cada símbolo. \clearpage
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\begin{table}[!htb]
+\centering
+\begin{tabular}{|M{1.0cm}|M{1.6cm}|M{1.6cm}|M{1.6cm}|M{1.6cm}|M{1.6cm}|M{1.6cm}|M{1.6cm}|M{1.6cm}|}
+
+\hline
+
+ & \textbf{Des.1} & \textbf{Des.2} & \textbf{Des.3} & \textbf{Des.4} & \textbf{Des.5} & \textbf{Des.6} & \textbf{Des.7} & \textbf{Des.8} \\ \hline
+
+\textbf{P6}                    & Co1            & Co1            & Co1            & Co1            & Co1            & Co1            & Co1            & Co1            \\ \hline
+
+\textbf{P7}                    & Co1            & Co1            & Co1            & Co1            & Co1            & Co1            & Co1            & Co1            \\ \hline
+
+\textbf{P8}                    & Co2            & Co2            & Co2            & Co2            & Co2            & Co2            & Co2            & Co2            \\ \hline
+
+\textbf{P9}                    & Co2            & Co2            & Co2            & Co2            & Co2            & Co2            & Co2            & Co2            \\ \hline
+
+\textbf{P10}                   & Co2, Co7       & Co2, Co7       & Co7            & Co2, Co7       & Co2, Co7       & Co7            & Co2, Co7       & Co7            \\ \hline
+
+\textbf{P11}                   & Co7,Co8        & Co7            & Co7            & Co7            & Co7            & Co7            & Co7            & Co7            \\ \hline
+
+\textbf{P12}                   & Co7            & Co2            & Co7            &                & Co2,Co7        & Co7            & Co7            & Co7            \\ \hline
+
+\textbf{P13}                   & Co3            & Co3            & Co3            & Co3            & Co3            & Co3            & Co3            & Co3            \\ \hline
+
+\textbf{P14}                   & Co3            & Co3            & Co3            & Co3            & Co3            & Co3            & Co3,Co4        & Co3,Co4        \\ \hline
+
+\textbf{P15}                   & Co4            & Co4            & Co4            & Co4            & Co4            & Co4            & Co4            & Co4            \\ \hline
+
+\textbf{P16}                   & Co4            & Co4            & Co4            & Co4            & Co3            & Co3,Co4        & Co4            &    -            \\ \hline
+
+\textbf{P17}                   & Co5            & Co5            & Co5            & Co5            & Co5            & Co5            & Co5            & Co5            \\ \hline
+
+\textbf{P18}                   & Co5            & Co5            & Co5            & Co5            & Co5            & Co5            & Co5            & Co5            \\ \hline
+
+\textbf{P19}                   & Co7            & Co7            & Co7            & Co7            & Co7            & Co7            & Co7            & Co7            \\ \hline
+
+\textbf{P20}                   & Co7            & Co7            & Co7            & Co7            & Co7            & Co7            & Co7            & Co7            \\ \hline
+
+\textbf{P21}                   & Co7            & Co7            & Co7            & Co7            & Co7            & Co7            & Co7            & Co7            \\ \hline
+
+\textbf{P22}                   & Co8            & Co8            & Co8            & Co8            & Co8            & Co8            & Co8            & Co8            \\ \hline
+
+\textbf{P23}                   & Co6            & Co6            & Co6            & Co6            & Co6            & Co6            & Co6            & Co6            \\ \hline
+
+\textbf{P24}                   & Co6            & Co6            & Co6            & Co6            & Co6            & Co6            & Co6            & Co6            \\ \hline
+
+\textbf{P25}                   & Co7            & Co7            & Co7            & Co7            & Co7            & Co7            & Co7            & Co7            \\ \hline
+
+\textbf{P26}                   & Co9            & Co9,Co10       & Co9            & Co9            & Co9            & Co9            & Co9            & Co9            \\ \hline
+
+\textbf{P27}                   & Co9            & Co9            & Co9            & Co9            & Co9            & Co9            & Co9            & Co9            \\ \hline
+
+\textbf{P28}                   & Co9            & Co9            & Co9            & Co9            & Co9            & Co9            & Co9            & Co9            \\ \hline
+
+\textbf{P29}                   & Co9            & Co9            & Co9            & Co9            & Co9            & Co9            & Co9            & Co9            \\ \hline
+
+\textbf{P30}                   & Co9            & Co9            & Co9            & Co9            & Co9            & Co9            & Co9            & Co9            \\ \hline
+
+\textbf{P31}                   & Co10           & Co10           & Co10           & Co9,Co10       & Co10           & Co10           & Co10           & Co10           \\ \hline
+
+\textbf{P32}                   & Co10           & Co10           & Co10           & Co10           & Co10           & Co10           & Co10           & Co10           \\ \hline
+
+\textbf{P33}                   & Co9,Co10       & Co9,Co10       & Co9,Co10       & Co9,Co10       & Co10           & Co10           & Co9            & Co9            \\ \hline
+
+\textbf{P34}                   & Co10           & Co10           & Co10           & Co10           & Co10           & Co10           & Co10           & Co10           \\ \hline
+
+\textbf{OBS}                   & Co3,Co5        & Co9,Co10       & Co9            & Co4,Co9        &   -             &        -        &      -          &      -          \\ \hline
+
+\end{tabular}
+\caption{Matriz de rastreabilidade dos códigos}
 \end{table}
-\end{comment}
+
+Significado dos símbolos (Códigos):
 
 \begin{itemize}
+\item Co1 - Papel do Desenvolvedor;
+\item Co2 - Preparação;
+\item Co3 - Elicitação de Requisitos;
+\item Co4 - Gerenciamento de Requisitos;
+\item Co5 - Modelagem do sistema;
+\item Co6 - Depuração;
+\item Co7 - Estilo e \textit{Design} de Codificação;
+\item Co8 - Ambiente de Codificação;
+\item Co9 - Teste;
+\item Co10 - Implantação;
+\end{itemize}
+
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\begin{table}[!htb]
+\centering
+\begin{tabular}{|M{1.0cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|}
+\hline
+             & \textbf{Des.1} & \textbf{Des.2} & \textbf{Des.3} & \textbf{Des.4}  & \textbf{Des.5} & \textbf{Des.6} & \textbf{Des.7} & \textbf{Des.8} \\ \hline
+\textbf{P6}  & C1             & C3             & C1             & C1              & C2             & C2             & C1             & C2             \\ \hline
+\textbf{P7}  & C4             & C4             & C4             & C4              & C4             & C4             & C4             & C4             \\ \hline
+\textbf{P8}  & C5             & C5             & C5             & C5              & C5             & -              & -              & C6             \\ \hline
+\textbf{P9}  & C6             & C6             & C6             & C6              & C6             & -              & -              & C6             \\ \hline
+\textbf{P10} & C7,C28         & C7,C32         & C28            & C7,C28          & C9,C32         & C32            & C9,C29, C32     & C32            \\ \hline
+\textbf{P11} & C33,C35        & C33            & C33            & C33             & C31            & C34            & C34            & C34            \\ \hline
+\textbf{P12} & C33            & C8             & C33            & -               & C9,C10, C33     & C33            & C29            & C31            \\ \hline
+\textbf{P13} & C11            & C11            & C11            & C11             & C11            & C11,C13        & C11            & C11            \\ \hline
+\textbf{P14} & C11            & C11            & C11            & C11             & C11            & C11            & C11            & C13            \\ \hline
+\textbf{P15} & C14,C15        & C14            & C15            & C14,C15         & C15            & C15            & C15            & C15            \\ \hline
+\textbf{P16} & C17            & C17            & C17            & C17             & C11,C17        & C11,C17        & C17            & C17            \\ \hline
+\textbf{P17} & C18            & C18            & C21            & C21             & C23            & C23            & C23            & C23            \\ \hline
+\textbf{P18} & C19            & C19            & C22            & C22             & C19            & C19            & C22            & C22            \\ \hline
+\textbf{P19} & C32            & C30            & C30            & C30             & C30            & C30,C31        & C30            & C30            \\ \hline
+\textbf{P20} & C29            & C29            & C33            & C33             & C29            & C29            & C28            & C29            \\ \hline
+\textbf{P21} & C33            & C33            & C33            & C33             & C34            & C33            & C28            & C33            \\ \hline
+\textbf{P22} & C36            & C36            & C36,C37        & C36             & C36            & C36            & C37            & C37            \\ \hline
+\textbf{P23} & C24            & C24            & C26            & C25             & C26            & C24            & C26            & C26            \\ \hline
+\textbf{P24} & C27            & -              & C27            & C27             & C27            & C27            & C27            & C27            \\ \hline
+\textbf{P25} & C33            & C33            & C33            & C33             & C33            & C34            & C29            & C29            \\ \hline
+\textbf{P26} & C38            & C38,C50        & C40            & C38,C39         & C38            & C38            & C42            & C38            \\ \hline
+\textbf{P27} & C40            & C27,C40        & C40            & C40             & C40            & C40            & C42            & C40            \\ \hline
+\textbf{P28} & C41            & C41            & C41            & C41             & C41            & C41            & C42            & C41            \\ \hline
+\textbf{P29} & C42            & C42            & C42            & C42             & C42            & C42            & C42            & C42            \\ \hline
+\textbf{P30} & C43            & C43            & C43            & C43             & C43            & -              & C43            & C43            \\ \hline
+\textbf{P31} & C45            & -              & C49            & C49             & C49            & C49            & -              & C49            \\ \hline
+\textbf{P32} & C44            & C44            & C44            & C44             & C44            & C44            & -              & C44            \\ \hline
+\textbf{P33} & C40,C46        & C40,C46        & C40,C47        & C40,C47         & C47            & C47            & C40            & C40            \\ \hline
+\textbf{P34} & C48            & C48            & C48            & C48             & C48            & C48            & C48            & C48            \\ \hline
+\textbf{OBS} & C12,C20, C51    & C40,C50        & C40            & C16,C38, C39,C40 & -              & -              & -              & -              \\ \hline
+\end{tabular}
+\caption{Matriz de rastreabilidade das chaves}
+\end{table}\clearpage
+
+
+\begin{comment}
+A análise consistiu inicialmente de uma classificação das respostas, de acordo com os códigos previamente definidos (VERIFICAR SE FAZ UMA NOVA MENÇÃO AOS CÓDIGOS), de forma que respostas com um mesmo código fossem agrupadas juntas.
+
+A análise consistiu inicialmente em realizar um agrupamento das respostas, de forma que as respostas com sentidos semelhantes foram agrupadas em um determinado código, que representa estes sentidos. A tabela X mostra a associação dos códigos previamente definidos com as resposta de cada entrevistado.
+
+\begin{longtable}{|p{140pt}|p{140pt}|p{120pt}|}
+\hline
+\raggedright{hahaha uahahaihai auhaiuhaiuhauia haiuhaihaihaiua hiahiahiahuai} & hahaha & hahaha \\
+\hline
+\end{longtable}
+\end{comment}
+
+Significado dos símbolos (Chaves):
+
+\begin{itemize}
+%\setlength\itemsep{-4pt}
 \item C1 - Papel claro dentro da instituição
 \item C2 - Papel que exige grande responsabilidade dentro da instituição
 \item C3 - Papel definido com falta de metas
@@ -373,297 +520,9 @@ Uma vez que a entrevista foi aplicada com os desenvolvedores selecionados, o dia
 \item C48 - Verifica a criação das tabelas no espaço de produção
 \item C49 - Faz a migração da definição dos objetos de dados
 \item C50 - Faz a homologação das aplicações antes de disponibilizar definitivamente na produção
-\item C51 - Seria interessante o uso de uma ferramenta que mostrasse as diferenças dos objetos no desenvolvimento a na produção\newline\newline
-\end{itemize} Respostas que geraram as chaves acima:\newline
+\item C51 - Seria interessante o uso de uma ferramenta que mostrasse as diferenças dos objetos no desenvolvimento a na produção
+\end{itemize}
 
-\begin{table}[h]
-	\centering
-	\begin{tabular}{|m{4.8cm} | m{4.8cm} |}
-		\hline
-		\textbf{Etapa} & \textbf{Pergunta - Chave Associada} \\ \hline
-		Papel do desenvolvedor & Pergunta 1 - C1 \\ \cline{2-2}
-		& Pergunta 2 - C4 \\ \cline{2-2}
-		\hline
-		Efetividade do curso & Pergunta 1 - C5 \\ \cline{2-2}
-		& Pergunta 2 - C6 \\ \cline{2-2}
-		& Pergunta 3 - C7 e C28 \\ \cline{2-2}
-		\hline
-		Requisitos & Pergunta 1 - C11 \\ \cline{2-2}
-		 & Pergunta 2 - C11 \\ \cline{2-2}
-		& Pergunta 3 - C14 e C15 \\ \cline{2-2}
-		& Pergunta 4 - C17 \\ \cline{2-2}
-		 \hline
-		\textit{Design} & Pergunta 1 - C18 \\ \cline{2-2}
-		& Pergunta 2 - C19 \\ \cline{2-2}
-		 \hline
-		Codificação & Pergunta 1 - C32 \\ \cline{2-2}
-		& Pergunta 2 - C29 \\ \cline{2-2}
-		& Pergunta 3 - C33 \\ \cline{2-2}
-		& Pergunta 4 - C36 \\ \cline{2-2}
-		& Pergunta 5 - C24 \\ \cline{2-2}
-		& Pergunta 6 - C27 \\ \cline{2-2}
-		& Pergunta 7 - C33 \\ \cline{2-2} \hline
-		Boas práticas e padrões & Pergunta 1 - C33 e C35 \\ \cline{2-2}
-		& Pergunta 2 - C33 \\ \cline{2-2}
-		\hline
-		Teste & Pergunta 1 - C38 \\ \cline{2-2}
-		& Pergunta 2 - C40 \\ \cline{2-2}
-		& Pergunta 3 - C40 e C41 \\ \cline{2-2}
-		& Pergunta 4 - C42 \\ \cline{2-2}
-		& Pergunta 5 - C43 \\ \cline{2-2}
-		\hline
-		Implantação & Pergunta 1 - C45 \\ \cline{2-2}
-		& Pergunta 2 - C44 \\ \cline{2-2}
-		& Pergunta 3 - C46 \\ \cline{2-2}
-		& Pergunta 4 - C48 \\ \cline{2-2}
-		\hline
-		Observações & Observação 1 - C51 \\ \cline{2-2} 
-		& Observação 2 - C12 \\ \cline{2-2} 
-		& Observação 3 - C20 \\
-		\hline
-	\end{tabular}
-
-	\caption{Chaves geradas pelas repostas do Desenvolvedor 1}
-	\label{tab03}
-\end{table}
-
-\begin{table}[h]
-	\centering
-	\begin{tabular}{|m{4.8cm} | m{4.8cm} |}
-		\hline
-		\textbf{Etapa} & \textbf{Pergunta - Chave Associada} \\ \hline
-		Papel do desenvolvedor & Pergunta 1 - C3 \\ \cline{2-2}
-		& Pergunta 2 - C4 \\ \cline{2-2}
-		\hline
-		Efetividade do curso & Pergunta 1 - C5 \\ \cline{2-2}
-		& Pergunta 2 - C6 \\ \cline{2-2}
-		& Pergunta 3 - C7 e C32 \\ \cline{2-2}
-		\hline
-		Requisitos & Pergunta 1 - C11 \\ \cline{2-2}
-		 & Pergunta 2 - C11 \\ \cline{2-2}
-		& Pergunta 3 - C14 \\ \cline{2-2}
-		& Pergunta 4 - C17 \\ \cline{2-2}
-		\hline
-		\textit{Design} & Pergunta 1 - C18 \\ \cline{2-2}
-		& Pergunta 2 - C19 \\ \cline{2-2}
-		\hline
-		Codificação & Pergunta 1 - C30 \\ \cline{2-2}
-		& Pergunta 2 - C29 \\ \cline{2-2}
-		& Pergunta 3 - C33 \\ \cline{2-2}
-		& Pergunta 4 - C36 \\ \cline{2-2}
-		& Pergunta 5 - C24 \\ \cline{2-2}
-		& Pergunta 6 - C27 \\ \cline{2-2}
-		& Pergunta 7 - C33 \\ \cline{2-2} \hline
-		Boas práticas e padrões & Pergunta 1 - C33 \\ \cline{2-2}
-		& Pergunta 2 - C8\\ \cline{2-2}
-		\hline
-		Teste & Pergunta 1 - C38 e C50 \\ \cline{2-2}
-		& Pergunta 2 - C40 \\ \cline{2-2}
-		& Pergunta 3 - C41 \\ \cline{2-2}
-		& Pergunta 4 - C42 \\ \cline{2-2}
-		& Pergunta 5 - C43 \\ \cline{2-2}
-		\hline
-		Implantação & Pergunta 2 - C44 \\ \cline{2-2}
-		& Pergunta 3 - C40 e C46 \\ \cline{2-2}
-		& Pergunta 4 - C48 \\ \cline{2-2}
-		\hline
-		Observações & Observação 1 - C40 \\ \cline{2-2}  
-		& Observação 2 - C50 \\
-		\hline
-	\end{tabular}
-
-	\caption{Chaves geradas pelas repostas do Desenvolvedor 2}
-	\label{tab04}
-\end{table}
-
-\begin{table}[h]
-	\centering
-	\begin{tabular}{|m{4.8cm} | m{4.8cm} |}
-		\hline
-		\textbf{Etapa} & \textbf{Pergunta - Chave Associada} \\ \hline
-		Papel do desenvolvedor & Pergunta 1 - C1 \\ \cline{2-2}
-		& Pergunta 2 - C4 \\ \cline{2-2}
-		\hline
-		Efetividade do curso & Pergunta 1 - C5 \\ \cline{2-2}
-		& Pergunta 2 - C6 \\ \cline{2-2}
-		& Pergunta 3 - C28 \\ \cline{2-2}
-		\hline
-		Requisitos & Pergunta 1 - C11 \\ \cline{2-2}
-		 & Pergunta 2 - C11 \\ \cline{2-2}
-		& Pergunta 3 - C15 \\ \cline{2-2}
-		& Pergunta 4 - C17 \\ \cline{2-2}
-		\hline
-		\textit{Design} & Pergunta 1 - C21 \\ \cline{2-2}
-		& Pergunta 2 - C22 \\ \cline{2-2}
-		\hline
-		Codificação & Pergunta 1 - C30 \\ \cline{2-2}
-		& Pergunta 2 - C33 \\ \cline{2-2}
-		& Pergunta 3 - C33 \\ \cline{2-2}
-		& Pergunta 4 - C36 e C37 \\ \cline{2-2}
-		& Pergunta 5 - C26 \\ \cline{2-2}
-		& Pergunta 6 - C27 \\ \cline{2-2}
-		& Pergunta 7 - C33 \\ \cline{2-2} \hline
-		Boas práticas e padrões & Pergunta 1 - C33 \\ \cline{2-2}
-		& Pergunta 2 - C31 e C33 \\ \cline{2-2}
-		\hline
-		Teste & Pergunta 1 - C40 \\ \cline{2-2}
-		& Pergunta 2 - C40 \\ \cline{2-2}
-		& Pergunta 3 - C41 \\ \cline{2-2}
-		& Pergunta 4 - C42 \\ \cline{2-2}
-		& Pergunta 5 - C43 \\ \cline{2-2}
-		\hline
-		Implantação & Pergunta 1 - C49 \\ \cline{2-2}
-		& Pergunta 2 - C44 \\ \cline{2-2}
-		& Pergunta 3 - C40 e C47 \\ \cline{2-2}
-		& Pergunta 4 - C48 \\ \cline{2-2}
-		\hline
-		Observações & Observação 1 - C40 \\ \hline
-	\end{tabular}
-
-	\caption{Chaves geradas pelas repostas do Desenvolvedor 3}
-	\label{tab05}
-\end{table}
-
-\begin{table}[h]
-	\centering
-	\begin{tabular}{|m{4.8cm} | m{4.8cm} |}
-		\hline
-		\textbf{Etapa} & \textbf{Pergunta - Chave Associada} \\ \hline
-		Papel do desenvolvedor & Pergunta 1 - C1 \\ \cline{2-2}
-		& Pergunta 2 - C4 \\ \cline{2-2}
-		\hline
-		Efetividade do curso & Pergunta 1 - C5 \\ \cline{2-2}
-		& Pergunta 2 - C6 \\ \cline{2-2}
-		& Pergunta 3 - C7 e C28 \\ \cline{2-2}
-		\hline
-		Requisitos & Pergunta 1 - C11 \\ \cline{2-2}
-		 & Pergunta 2 - C11 \\ \cline{2-2}
-		& Pergunta 3 - C14 e C15 \\ \cline{2-2}
-		& Pergunta 4 - C17 \\ \cline{2-2}
-		\hline
-		\textit{Design} & Pergunta 1 - C21 \\ \cline{2-2}
-		& Pergunta 2 - C22 \\ \cline{2-2}
-		\hline
-		Codificação & Pergunta 1 - C30 \\ \cline{2-2}
-		& Pergunta 2 - C33 \\ \cline{2-2}
-		& Pergunta 3 - C33 \\ \cline{2-2}
-		& Pergunta 4 - C36 \\ \cline{2-2}
-		& Pergunta 5 - C25 \\ \cline{2-2}
-		& Pergunta 6 - C27 \\ \cline{2-2}
-		& Pergunta 7 - C33 \\ \cline{2-2} \hline
-		Boas práticas e padrões & Pergunta 1 - C33 \\
-		\hline
-		Teste & Pergunta 1 - C38 e C39 \\ \cline{2-2}
-		& Pergunta 2 - C40 \\ \cline{2-2}
-		& Pergunta 3 - C41 \\ \cline{2-2}
-		& Pergunta 4 - C42 \\ \cline{2-2}
-		& Pergunta 5 - C43 \\ \cline{2-2}
-		\hline
-		Implantação & Pergunta 1 - C49 \\ \cline{2-2}
-		& Pergunta 2 - C44  \\ \cline{2-2}
-		& Pergunta 3 - C40 e C47 \\ \cline{2-2}
-		& Pergunta 4 - C48 \\ \cline{2-2}
-		\hline
-		Observações & Observação 1 - C38 e C39 \\ \cline{2-2}
-		& Observação 2 - C39 \\ \cline{2-2}
-		& Observação 3 - C40 \\ \cline{2-2}
-		& Observação 4 - C16 \\
-		\hline
-	\end{tabular}
-
-	\caption{Chaves geradas pelas repostas do Desenvolvedor 4}
-	\label{tab06}
-\end{table}
-
-\begin{table}[h]
-	\centering
-	\begin{tabular}{|m{4.8cm} | m{4.8cm} |}
-		\hline
-		\textbf{Etapa} & \textbf{Pergunta - Chave Associada} \\ \hline
-		Papel do desenvolvedor & Pergunta 1 - C2 \\ \cline{2-2}
-		& Pergunta 2 - C4 \\ \cline{2-2}
-		\hline
-		Efetividade do curso & Pergunta 1 - C5 \\ \cline{2-2}
-		& Pergunta 2 - C6 \\ \cline{2-2}
-		& Pergunta 3 - C9 e C32 \\ \cline{2-2}
-		\hline
-		Requisitos & Pergunta 1 - C11 \\ \cline{2-2}
-		 & Pergunta 2 - C11 \\ \cline{2-2}
-		& Pergunta 3 - C15 \\ \cline{2-2}
-		& Pergunta 4 - C11 e C17 \\ \cline{2-2}
-		\hline
-		\textit{Design} & Pergunta 1 - C23 \\ \cline{2-2}
-		& Pergunta 2 - C19 \\ \cline{2-2}
-		\hline
-		Codificação & Pergunta 1 - C30 \\ \cline{2-2}
-		& Pergunta 2 - C29 \\ \cline{2-2}
-		& Pergunta 3 - C34 \\ \cline{2-2}
-		& Pergunta 4 - C36 \\ \cline{2-2}
-		& Pergunta 5 - C26 \\ \cline{2-2}
-		& Pergunta 6 - C27 \\ \cline{2-2}
-		& Pergunta 7 - C33 \\ \cline{2-2} \hline
-		Boas práticas e padrões & Pergunta 1 - C31 \\ \cline{2-2}
-		& Pergunta 2 - C9, C10 e C33 \\ \cline{2-2}
-		\hline
-		Teste & Pergunta 1 - C38 e C43 \\ \cline{2-2}
-		& Pergunta 2 - C40 \\ \cline{2-2}
-		& Pergunta 3 - C41 \\ \cline{2-2}
-		& Pergunta 4 - C42 \\ \cline{2-2}
-		\hline
-		Implantação & Pergunta 1 - C49 \\ \cline{2-2}
-		& Pergunta 2 - C44 \\ \cline{2-2}
-		& Pergunta 3 - C47 \\ \cline{2-2}
-		& Pergunta 4 - C48 \\ \cline{2-2}
-		\hline
-	\end{tabular}
-
-	\caption{Chaves geradas pelas repostas do Desenvolvedor 5}
-	\label{tab07}
-\end{table}
-
-\begin{table}[h]
-	\centering
-	\begin{tabular}{|m{4.8cm} | m{4.8cm} |}
-		\hline
-		\textbf{Etapa} & \textbf{Pergunta - Chave Associada} \\ \hline
-		Papel do desenvolvedor & Pergunta 1 - C2 \\ \cline{2-2}
-		& Pergunta 2 - C4 \\ \cline{2-2}
-		\hline
-		Efetividade do curso & Pergunta 3 - C32  \\ \cline{2-2}
-		\hline
-		Requisitos & Pergunta 1 - C11 e C13 \\ \cline{2-2}
-		 & Pergunta 2 - C11 \\ \cline{2-2}
-		& Pergunta 3 - C15 \\ \cline{2-2}
-		& Pergunta 4 - C11 e C17 \\ \cline{2-2}
-		\hline
-		\textit{Design} & Pergunta 1 - C23 \\ \cline{2-2}
-		& Pergunta 2 - C19 \\ \cline{2-2}
-		\hline
-		Codificação & Pergunta 1 - C30 e C31 \\ \cline{2-2}
-		& Pergunta 2 - C29 \\ \cline{2-2}
-		& Pergunta 3 - C33 \\ \cline{2-2}
-		& Pergunta 4 - C36 \\ \cline{2-2}
-		& Pergunta 5 - C24 \\ \cline{2-2}
-		& Pergunta 6 - C27 \\ \cline{2-2}
-		& Pergunta 7 - C34 \\ \cline{2-2} \hline
-		Boas práticas e padrões & Pergunta 1 - C34 \\ \cline{2-2}
-		& Pergunta 2 - C33 \\ \cline{2-2}
-		\hline
-		Teste & Pergunta 1 - C38 \\ \cline{2-2}
-		& Pergunta 2 - C40 \\ \cline{2-2}
-		& Pergunta 3 - C41 \\ \cline{2-2}
-		& Pergunta 4 - C42 \\ \cline{2-2}
-		\hline
-		Implantação & Pergunta 1 - C49 \\ \cline{2-2}
-		& Pergunta 2 - C44 \\ \cline{2-2}
-		& Pergunta 3 - C47 \\ \cline{2-2}
-		& Pergunta 4 - C48 \\ \cline{2-2}
-		\hline
-	\end{tabular}
-
-	\caption{Chaves geradas pelas repostas do Desenvolvedor 6}
-	\label{tab08}
-\end{table}
 
 \begin{comment}
 O conjunto de etapas que podem ser seguidos na maioria das pesquisas classificadas como estudo de caso, bem como uma breve descrição destas etapas são apresentados a seguir \cite{gil2002}.
