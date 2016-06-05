@@ -162,72 +162,107 @@ Dentre as possíveis motivações que tem levado a adoção deste modelo em algu
 
 \section{\textit{Definição da Proposta}}
 
---isso estava no antigo tópico proposta do trabalho--
 O presente trabalho está inserido no contexto do Órgão X, onde o Órgão X possui duas formas distintas de desenvolvimento de software: uma forma corporativa, que é uma forma tradicional de desenvolvimento de software (desenvolvimento realizado na área da TI e por profissionais de TI), e uma forma descentralizada, que é uma forma menos tradicional de desenvolvimento (desenvolvimento realizado nas áreas de negócio e por pessoas com menos qualificação técnica e experiência, geralmente estagiários).
 O desenvolvimento descentralizado apresenta um bom relato de satisfação no Órgão X, porém alguns problemas de qualidade e manutenibilidade das aplicações tem sido recorrentes, devido a falta de um processo ou guia que possa apoiar a condução do desenvolvimento.
 
-Tendo em vista este contexto, este trabalho se propõe a elaborar uma solução informatizada que possa guiar o desenvolvimento descentralizado no Órgão X, de forma a estabelecer as atividades e os padrões de desenvolvimento que possam contribuir para a melhora na qualidade das aplicações.
+Tendo em vista esse contexto, este trabalho se propõe a elaborar uma solução informatizada que possa guiar o desenvolvimento descentralizado no Órgão X, onde esta solução irá conter um conjunto de atividades, de boas práticas e de funcionalidades, que possam contribuir para uma melhoria na qualidade e manutenibilidade das aplicações desenvolvidas. O escopo deste trabalho se limita a desenvolver o conjunto de atividades e boas práticas da solução, de forma que estas atividades estejam relacionadas entre si através de um fluxograma, e que as boas práticas estejam contidas dentro das atividades, auxiliando a execução das mesmas. Na próxima etapa do trabalho espera-se detalhar as boas práticas definidas, informatizar o fluxo de atividades, e implementar as funcionalidades que possam auxiliar na execução de algumas das atividades da solução.
 
-Para se atingir este objetivo, realizou-se uma entrevista com o propósito de se obter um diagnóstico da situação do desenvolvimento descentralizado no Órgão X, de forma a coletar os problemas relatados pelos próprios desenvolvedores. A partir do diagnóstico foi elaborado o fluxograma da solução de apoio. Por fim, um planejamento inicial de implementação da solução foi elaborado.
+Para se atingir o objetivo deste trabalho, realizou-se, inicialmente, uma entrevista com o propósito de diagnosticar a situação do desenvolvimento descentralizado no Órgão X, através da coleta dos problemas, das boas práticas e das sugestões de melhoria, relatados pelos próprios desenvolvedores. A partir do diagnóstico, foram definidas as atividades e as boas práticas da solução de apoio, e em seguida um relacionamento destas atividades foi feito, através da elaboração de um fluxograma.
 
 %TODO: Explicar aqui a elaboração da entrevista, já que a entrevista é um "método" da pesquisa participante.
 \section{\textit{Pesquisa Participante}}
 
 --Falar como a gente abordou a pesquisa participante--
 
-As categorias elaboradas foram:
-\begin{itemize}
-	\item \textbf{Descrição do desenvolvedor} 
-	
-	- Objetivo: Obter informações sobre o perfil dos desenvolvedores.
-	\item \textbf{Papel do desenvolvedor}
-	
-	- Objetivo: Obter informações sobre o papel do desenvolvedor no órgão.
-	\item \textbf{Efetividade do curso}
-	
-	- Objetivo: Obter informações sobre a preparação dos novos desenvolvedores.
-	\item \textbf{Requisitos}
-	
-	- Objetivo 1: Obter informações sobre como se dá o levantamento de requisitos nos departamentos da instituição.
-	
-	- Objetivo 2: Obter informações de como é armazenado e gerenciado os requisitos do sistema a ser desenvolvido.
-	
-	- Objetivo 3: Obter informações de como é englobado as mudanças de requisitos ao sistema.
-	\item \textbf{\textit{Design}}
-	
-	- Objetivo: Obter informações sobre como é realizado a modelagem (arquitetura) do sistema.
-	\item \textbf{Codificação}
-	
-	- Objetivo 1: Obter informações sobre a depuração de erros do sistema.
-	
-	- Objetivo 2: Obter informações sobre estilos de codificação.
-	
-	- Objetivo 3: Obter informações sobre o ambiente de codificação.
-	
-	\item \textbf{Teste}
-	
-	- Objetivo: Obter informações sobre a realização dos testes, bem como a forma de realizá-los.
-	\item \textbf{Implantação}
-	
-	- Objetivo: Obter informações sobre a migração, para a produção, do sistema.
-\end{itemize}
+A entrevista teve como objetivo realizar um diagnóstico da situação do desenvolvimento descentralizado no Órgão X, do ponto de vista do desenvolvedor, que esta inserido neste contexto. Esse diagnóstico procurou abordar os aspectos de problemas, de boas práticas realizadas e de sugestões de melhorias. Para que esses aspectos pudessem ser abordados na entrevista, dividiu-se a mesma em categorias, onde estas categorias estão, em sua maioria, relacionadas as fases de um ciclo de desenvolvimento de software. Cada categoria possui um objetivo, que representa qual o tipo de informação que se pretende obter.
 
-A partir das categorias definidas, foram derivadas as perguntas relacionadas a cada categoria, de forma que estivessem alinhadas ao contexto do desenvolvimento descentralizado. A entrevista elaborada pode ser vista no Anexo A.
+\begin{comment}
+O objetivo da entrevista consistiu em obter um diagnóstico da situação atual do desenvolvimento descentralizado no Órgão X, para que servisse de insumo para a elaboração da solução de apoio. Como diagnóstico entendeu-se as boas práticas realizadas, as sugestões de melhoria e os problemas. Portanto, a entrevista elaborada tentou abordar esses pontos, consistindo de 34 perguntas divididas em 9 categorias. A entrevista pode ser visualizada no "Anexo A".
+\end{comment}
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Categoria}                                                   & \textbf{Objetivo}                                                                                                                                                                                                                                                                                                                            \\ \hline
+\begin{tabular}[c]{@{}l@{}}Descrição do\\ Desenvolvedor\end{tabular} & 1- Obter informações sobre o perfil dos desenvolvedores.                                                                                                                                                                                                                                                                                     \\ \hline
+\begin{tabular}[c]{@{}l@{}}Papel do\\ Desenvolvedor\end{tabular}     & 1- Obter informações sobre o papel do desenvolvedor no órgão.                                                                                                                                                                                                                                                                                \\ \hline
+\begin{tabular}[c]{@{}l@{}}Efetividade do\\ Curso\end{tabular}       & 1- Obter informações sobre a preparação dos novos desenvolvedores.                                                                                                                                                                                                                                                                           \\ \hline
+Requisitos                                                           & \begin{tabular}[c]{@{}l@{}}1- Obter informações sobre como se dá o levantamento de requisitos \\ nos departamentos da instituição.\\ 2- Obter informações de como é armazenado e gerenciado os requisitos \\ do sistema a ser desenvolvido.\\ 3- Obter informações de como é englobado as mudanças de requisitos \\ ao sistema.\end{tabular} \\ \hline
+\textit{Design}                                                      & \begin{tabular}[c]{@{}l@{}}1- Obter informações sobre como é realizado a modelagem (arquitetura) \\ do sistema.\end{tabular}                                                                                                                                                                                                                 \\ \hline
+Codificação                                                          & \begin{tabular}[c]{@{}l@{}}1- Obter informações sobre a depuração de erros do sistema.\\ 2- Obter informações sobre estilos de codificação.\\ 3- Obter informações sobre o ambiente de codificação.\end{tabular}                                                                                                                             \\ \hline
+Teste                                                                & \begin{tabular}[c]{@{}l@{}}1- Obter informações sobre a realização dos testes, bem como a forma \\ de realizá-los.\end{tabular}                                                                                                                                                                                                              \\ \hline
+Implantação                                                          & 1- Obter informações sobre a migração, para a produção, do sistema.                                                                                                                                                                                                                                                                          \\ \hline
+\end{tabular}
+\caption{Categorias da entrevista e seus objetivos.}
+\end{table}
+
+A categoria "Descrição do Desenvolvedor" serviu unicamente para descrever o perfil dos desenvolvedores entrevistados, portanto ela não foi considerada na análise dos resultados obtidos. A partir dessas categorias, foram elaboradas as perguntas, de forma que elas atendessem os objetivos definidos. A entrevista pode ser visualiza no "Anexo A".
+
+Uma vez que a entrevista foi elaborada, o próximo passo consistiu em aplica-la com os desenvolvedores. A escolha dos desenvolvedores participantes foi feita de forma aleatória, escolhendo-se 8 desenvolvedores diferentes que estão inseridos no contexto do desenvolvimento descentralizado do Órgão X. Os 8 desenvolvedores escolhidos estão divididos entre 7 estagiários e 1 servidor. A tabela 2 contextualiza o perfil dos desenvolvedores entrevistados. Observa-se que alguns desses dados não se aplicam ao desenvolvedor 6, por este ser um servidor.\clearpage
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\begin{table}[!htb]
+	\centering
+	\begin{tabular}{|M{2.88cm} | M{2.8cm} | M{2.2cm}| M{2.8cm} | M{2.2cm}|}
+		\hline
+		\textbf{Desenvolvedor} & \textbf{Unidade} & \textbf{Tempo de estágio} & 
+		\textbf{Curso} & \textbf{Tempo de Curso} \\ \hline
+		Desenvolvedor 1 & SECOM & 1 ano & Análise e Desenvolvimento de Sistemas & 2 semestres \\
+		\hline
+		Desenvolvedor 2 & SCV & 1 ano & Sistemas de Informação & 8 semestres \\
+		\hline
+		Desenvolvedor 3 & MTCU & 7 meses & Sistemas de informação & 6 semestres \\
+		\hline
+		Desenvolvedor 4 & SEADE & 7 meses & Análise e Desenvolvimento de Sistemas & 4 semestres \\
+		\hline
+		Desenvolvedor 5 & SECOF & 1 ano & Sistemas de Informação & 5 semestres \\
+		\hline
+		Desenvolvedor 6 & SEPROD & Não se aplica & Não se aplica & Não se aplica \\
+		\hline
+		Desenvolvedor 7 & Verificar & 1 mês & Engenharia de Software & 6 semestres \\
+		\hline
+		Desenvolvedor 8 & SEPROD & 6 meses & Engenharia de Redes de Comunicação & 9 semestres \\
+		\hline
+	\end{tabular}
+
+	\caption{Perfil dos desenvolvedores entrevistados}
+	\label{tab02}
+\end{table}
 
 Uma vez que a entrevista foi elaborada, o foco voltou-se ao planejamento da análise dos dados da mesma. Para isso, a análise planejada consistiu dos seguintes passos:
 
+\begin{comment}
 \begin{enumerate}
 	\item Atribuir um código, previamente estabelecido, a uma unidade de resposta, que pode ser uma frase ou um conjunto de frases que tratem de um mesmo assunto.
 	\item Agrupar as unidades de resposta de acordo com as categorias de código que receberam.
 	\item Dentro de uma categoria de código, agrupar as unidades de respostas semelhantes.
 	\item Elaborar ações para as unidades de respostas agrupadas dentro das categorias de códigos.
 \end{enumerate}
+\end{comment}
 
-Os códigos elaborados foram derivados dos objetivos de cada categoria de perguntas do ciclo de vida relacionado ao contexto do desenvolvedor. A Tabela \ref{tab01} ilustra os códigos derivados de cada objetivo definido.
+\begin{enumerate}
+	\item Atribuir um código, previamente estabelecido, a uma unidade de resposta, que pode ser uma frase ou um conjunto de frases que tratem de um mesmo assunto.
+	\item Agrupar as unidades de resposta de acordo com as categorias de código que receberam.
+	\item Dentro de uma categoria de código, rotular as respostas com chaves, que representam o sentido específico de uma resposta.
+	\item Elaborar um conjunto único de chaves, com base nas chaves obtidas em cada resposta.
+	\item Elaborar ações para as chaves dentro do conjunto.
+\end{enumerate}
+\clearpage
+%TODO: Inserir a figura aqui talvez.
+\begin{figure}[h]
+	\centering
+	\label{fig02}
+		\includegraphics[scale=0.7]{figuras/Esquematico_Analise_2}
+	\caption{Etapas realizadas na análise das respostas.}
+\end{figure}
 
+A atribuição de um código e de uma chave foi necessário, pois dentro de um determinado assunto, representado pelo código, ainda poderiam haver respostas semelhantes. Desta forma, atribuindo-se as chaves garante-se que o conjunto final de chaves, conterá somente chaves únicas, ou seja, eliminando a redundância no diagnóstico. Os códigos elaborados foram derivados dos objetivos de cada categoria de perguntas do ciclo de vida. A Tabela \ref{tab01} ilustra os códigos derivados de cada objetivo definido.\clearpage
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{table}[!htb]
 	\centering
-	\begin{tabular}{|m{4.8cm} | m{4.8cm} | m{4.8cm}|}
+	\begin{tabular}{|M{4.8cm} | M{4.8cm} | M{4.8cm}|}
 		\hline
 		\textbf{Categoria} & \textbf{Objetivo} & 
 		\textbf{Código Derivado} \\ \hline
@@ -274,40 +309,9 @@ Nesta seção são apresentados o diagnóstico obtido com o resultado da anális
 
 \subsection{Entrevista}
 
+\begin{comment}
 O objetivo da entrevista consistiu em obter um diagnóstico da situação atual do desenvolvimento descentralizado no Órgão X, para que servisse de insumo para a elaboração da solução de apoio. Como diagnóstico entendeu-se as boas práticas realizadas, as sugestões de melhoria e os problemas. Portanto, a entrevista elaborada tentou abordar esses pontos, consistindo de 34 perguntas divididas em 9 categorias. A entrevista pode ser visualizada no "Anexo A".
-
-A entrevista foi aplicada com 8 desenvolvedores diferentes, 7 estagiários e 1 servidor, que participam do desenvolvimento descentralizado no Órgão X. A escolha dos participantes foi feita de forma aleatória. A categoria "Descrição do Desenvolvedor" serviu exclusivamente para contextualizar os entrevistados, portanto as respostas desta categoria foram desconsideradas na análise das entrevistas. A tabela 2 contextualiza o perfil dos desenvolvedores entrevistados. Observa-se que alguns desses dados não se aplicam ao desenvolvedor 6, por este ser um servidor.\clearpage
-
-\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
-\begin{table}[!htb]
-	\centering
-	\begin{tabular}{|M{2.88cm} | M{2.8cm} | M{2.2cm}| M{2.8cm} | M{2.2cm}|}
-		\hline
-		\textbf{Desenvolvedor} & \textbf{Unidade} & \textbf{Tempo de estágio} & 
-		\textbf{Curso} & \textbf{Tempo de Curso} \\ \hline
-		Desenvolvedor 1 & SECOM & 1 ano & Análise e Desenvolvimento de Sistemas & 2 semestres \\
-		\hline
-		Desenvolvedor 2 & SCV & 1 ano & Sistemas de Informação & 8 semestres \\
-		\hline
-		Desenvolvedor 3 & MTCU & 7 meses & Sistemas de informação & 6 semestres \\
-		\hline
-		Desenvolvedor 4 & SEADE & 7 meses & Análise e Desenvolvimento de Sistemas & 4 semestres \\
-		\hline
-		Desenvolvedor 5 & SECOF & 1 ano & Sistemas de Informação & 5 semestres \\
-		\hline
-		Desenvolvedor 6 & SEPROD & Não se aplica & Não se aplica & Não se aplica \\
-		\hline
-		Desenvolvedor 7 & Verificar & 1 mês & Engenharia de Software & 6 semestres \\
-		\hline
-		Desenvolvedor 8 & SEPROD & 6 meses & Engenharia de Redes de Comunicação & 9 semestres \\
-		\hline
-	\end{tabular}
-
-	\caption{Perfil dos desenvolvedores entrevistados}
-	\label{tab02}
-\end{table}
-
-As respostas obtidas com a aplicação da entrevista aos desenvolvedores citados podem ser visualizados no "Anexo B".
+\end{comment}
 
 \subsection{Diagnóstico obtido}
 Uma vez que a entrevista foi aplicada com os desenvolvedores selecionados, o diagnóstico relacionado aos problemas, as boas práticas e as sugestões de melhoria foi obtido com base na análise das respostas. A análise consistiu das seguintes etapas:
