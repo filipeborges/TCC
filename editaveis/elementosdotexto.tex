@@ -163,17 +163,17 @@ Dentre as possíveis motivações que tem levado a adoção deste modelo em algu
 \section{\textit{Definição da Proposta}}
 
 O presente trabalho está inserido no contexto do Órgão X, onde o Órgão X possui duas formas distintas de desenvolvimento de software: uma forma corporativa, que é uma forma tradicional de desenvolvimento de software (desenvolvimento realizado na área da TI e por profissionais de TI), e uma forma descentralizada, que é uma forma menos tradicional de desenvolvimento (desenvolvimento realizado nas áreas de negócio e por pessoas com menos qualificação técnica e experiência, geralmente estagiários).
-O desenvolvimento descentralizado apresenta um bom relato de satisfação no Órgão X, porém alguns problemas de qualidade e manutenibilidade das aplicações tem sido recorrentes, devido a falta de um processo ou guia que possa apoiar a condução do desenvolvimento.
+O desenvolvimento descentralizado apresenta um bom relato de satisfação no Órgão X, porém alguns problemas de qualidade e manutenibilidade das aplicações tem sido recorrentes.
 
-Tendo em vista esse contexto, este trabalho se propõe a elaborar uma solução informatizada que possa guiar o desenvolvimento descentralizado no Órgão X, onde esta solução irá conter um conjunto de atividades, de boas práticas e de funcionalidades, que possam contribuir para uma melhoria na qualidade e manutenibilidade das aplicações desenvolvidas. O escopo deste trabalho se limita a desenvolver o conjunto de atividades e boas práticas da solução, de forma que estas atividades estejam relacionadas entre si através de um fluxograma, e que as boas práticas estejam contidas dentro das atividades, auxiliando a execução das mesmas. Na próxima etapa do trabalho espera-se detalhar as boas práticas definidas, informatizar o fluxo de atividades, e implementar as funcionalidades que possam auxiliar na execução de algumas das atividades da solução.
+Tendo em vista esse contexto, este trabalho se propõe a elaborar uma solução informatizada que possa apoiar o desenvolvimento descentralizado no Órgão X, onde esta solução irá conter um conjunto de atividades, de boas práticas e de funcionalidades, que possam contribuir para uma melhoria na qualidade e manutenibilidade das aplicações desenvolvidas. O escopo deste trabalho se limita a desenvolver o conjunto de atividades e boas práticas da solução, de forma que estas atividades estejam relacionadas entre si através de um fluxograma, e que as boas práticas estejam contidas dentro das atividades, auxiliando a execução das mesmas. Na próxima etapa do trabalho espera-se detalhar as boas práticas definidas, informatizar o fluxo de atividades, e implementar as funcionalidades que possam auxiliar na execução de algumas das atividades da solução.
 
-Para se atingir o objetivo deste trabalho, realizou-se, inicialmente, um estudo sobre os tópicos relacionados ao trabalho: \textit{End User Development}, Desenvolvimento descentralizado, \textit{SCRUM}, e \textit{Kanban}. Em seguida foi elaborado uma entrevista com o propósito de diagnosticar a situação do desenvolvimento descentralizado no Órgão X, para coletar os problemas, as boas práticas e as sugestões de melhorias, relatados pelos próprios desenvolvedores. Foi feito um estudo de um processo de desenvolvimento descentralizado definido no Órgão X, mas que nunca chegou a ser implantado, de forma a aproveitar as atividades que julgou-se interessantes a proposta do trabalho. Um estudo sobre os conteúdos da \textit{Wiki} da unidade coordenadora do desenvolvimento descentralizado também foi feito, para a agregação de algumas boas práticas, definidas pela unidade, à solução. A partir do diagnóstico, do estudo do processo em desuso e do estudo da \textit{Wiki}, foram definidas as atividades e as boas práticas da solução de apoio, e em seguida um relacionamento destas atividades foi feito, através da elaboração de um fluxograma.
+Para se atingir o objetivo deste trabalho, realizou-se, inicialmente, um estudo sobre os tópicos relacionados ao trabalho: \textit{End User Development}, desenvolvimento descentralizado, \textit{SCRUM} e \textit{Kanban}. Em seguida foi elaborado uma entrevista com o propósito de diagnosticar a situação do desenvolvimento descentralizado no Órgão X, para coletar os problemas, as boas práticas e as sugestões de melhorias, relatados pelos próprios desenvolvedores. Foi feito um estudo de um processo de desenvolvimento descentralizado definido no Órgão X, que nunca chegou a ser implantado, de forma a aproveitar algumas atividades e guias existentes nele, para a elaboração das soluções relacionadas ao diagnóstico obtido. Um estudo sobre os conteúdos da \textit{Wiki} da unidade coordenadora do desenvolvimento descentralizado também foi feito, para a agregação de algumas boas práticas, definidas pela unidade, à solução. A partir do diagnóstico, do estudo do processo e do estudo da \textit{Wiki}, foram definidas as atividades e as boas práticas da solução de apoio, e em seguida um relacionamento destas atividades foi feito, através da elaboração de um fluxograma.
 
 %TODO: Explicar aqui a elaboração da entrevista, já que a entrevista é um "método" da pesquisa participante.
 \section{\textit{Pesquisa Participante}}
-
 --Falar como a gente abordou a pesquisa participante--
 
+\section{Entrevista Realizada}
 A entrevista teve como objetivo realizar um diagnóstico da situação do desenvolvimento descentralizado no Órgão X, do ponto de vista do desenvolvedor, que esta inserido neste contexto. Esse diagnóstico procurou abordar os aspectos de problemas, de boas práticas realizadas e de sugestões de melhorias. Para que esses aspectos pudessem ser abordados na entrevista, dividiu-se a mesma em categorias, onde estas categorias estão, em sua maioria, relacionadas as fases de um ciclo de desenvolvimento de software. Cada categoria possui um objetivo, que representa qual o tipo de informação que se pretende obter.
 
 \begin{comment}
@@ -199,7 +199,7 @@ Implantação                                                          & 1- Obte
 
 A categoria "Descrição do Desenvolvedor" serviu unicamente para descrever o perfil dos desenvolvedores entrevistados, portanto ela não foi considerada na análise dos resultados obtidos. A partir dessas categorias, foram elaboradas as perguntas, de forma que elas atendessem os objetivos definidos. A entrevista pode ser visualiza no "Anexo A".
 
-Uma vez que a entrevista foi elaborada, o próximo passo consistiu em aplica-la com os desenvolvedores. A escolha dos desenvolvedores participantes foi feita de forma aleatória, escolhendo-se 8 desenvolvedores diferentes que estão inseridos no contexto do desenvolvimento descentralizado do Órgão X. Os 8 desenvolvedores escolhidos estão divididos entre 7 estagiários e 1 servidor. A tabela 2 contextualiza o perfil dos desenvolvedores entrevistados. Observa-se que alguns desses dados não se aplicam ao desenvolvedor 6, por este ser um servidor.\clearpage
+Uma vez que a entrevista foi elaborada, o próximo passo consistiu em aplica-la com os desenvolvedores. A escolha dos desenvolvedores foi feita de forma aleatória, escolhendo-se 8 desenvolvedores diferentes que estão inseridos no contexto do desenvolvimento descentralizado do Órgão X. Os 8 desenvolvedores escolhidos estão divididos entre 7 estagiários e 1 servidor. A tabela 2 contextualiza o perfil dos desenvolvedores entrevistados. Observa-se que alguns desses dados não se aplicam ao desenvolvedor 6, por este ser um servidor.
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{table}[!htb]
@@ -218,9 +218,9 @@ Uma vez que a entrevista foi elaborada, o próximo passo consistiu em aplica-la 
 		\hline
 		Desenvolvedor 5 & SECOF & 1 ano & Sistemas de Informação & 5 semestres \\
 		\hline
-		Desenvolvedor 6 & SEPROD & Não se aplica & Não se aplica & Não se aplica \\
+		Desenvolvedor 6 & SEPROD & - & - & - \\
 		\hline
-		Desenvolvedor 7 & Verificar & 1 mês & Engenharia de Software & 6 semestres \\
+		Desenvolvedor 7 & DISIC & 1 mês & Engenharia de Software & 6 semestres \\
 		\hline
 		Desenvolvedor 8 & SEPROD & 6 meses & Engenharia de Redes de Comunicação & 9 semestres \\
 		\hline
@@ -230,7 +230,7 @@ Uma vez que a entrevista foi elaborada, o próximo passo consistiu em aplica-la 
 	\label{tab02}
 \end{table}
 
-Uma vez que a entrevista foi elaborada, o foco voltou-se ao planejamento da análise dos dados da mesma. Para isso, a análise planejada consistiu dos seguintes passos:
+Uma vez que a entrevista foi elaborada, o foco voltou-se a análise dos dados da mesma. A análise feita consistiu dos seguintes passos:
 
 \begin{comment}
 \begin{enumerate}
@@ -242,13 +242,13 @@ Uma vez que a entrevista foi elaborada, o foco voltou-se ao planejamento da aná
 \end{comment}
 
 \begin{enumerate}
-	\item Atribuir um código, previamente estabelecido, a uma unidade de resposta, que pode ser uma frase ou um conjunto de frases que tratem de um mesmo assunto.
-	\item Agrupar as unidades de resposta de acordo com as categorias de código que receberam.
-	\item Dentro de uma categoria de código, rotular as respostas com chaves, que representam o sentido específico de uma resposta.
-	\item Elaborar um conjunto único de chaves, com base nas chaves obtidas em cada resposta.
-	\item Elaborar ações para as chaves dentro do conjunto.
+	\item Atribui-se um código, previamente estabelecido, a uma unidade de resposta, que pode ser uma frase ou um conjunto de frases que tratem de um mesmo assunto.
+	\item Agrupou-se as unidades de resposta de acordo com as categorias de código que receberam.
+	\item Dentro de uma categoria de código, rotulou-se as respostas com o uso de chaves, que representam o sentido específico de uma resposta.
+	\item Agrupou-se todas as chaves únicas obtidas, de forma a construir um conjunto de chaves únicas.
+	\item Elaborou-se ações para as chaves dentro do conjunto.
 \end{enumerate}
-\clearpage
+
 %TODO: Inserir a figura aqui talvez.
 \begin{figure}[h]
 	\centering
@@ -257,7 +257,7 @@ Uma vez que a entrevista foi elaborada, o foco voltou-se ao planejamento da aná
 	\caption{Etapas realizadas na análise das respostas.}
 \end{figure}
 
-A atribuição de um código e de uma chave foi necessário, pois dentro de um determinado assunto, representado pelo código, ainda poderiam haver respostas semelhantes. Desta forma, atribuindo-se as chaves garante-se que o conjunto final de chaves, conterá somente chaves únicas, ou seja, eliminando a redundância no diagnóstico. Os códigos elaborados foram derivados dos objetivos de cada categoria de perguntas do ciclo de vida. A Tabela \ref{tab01} ilustra os códigos derivados de cada objetivo definido.\clearpage
+A atribuição de um código e de uma chave foram necessários, pois dentro de um determinado assunto, representado pelo código, ainda poderiam haver respostas semelhantes. Desta forma, garante-se que o conjunto final de chaves conterá somente chaves únicas, ou seja, respostas únicas, eliminando a redundância no diagnóstico. Os códigos elaborados foram derivados dos objetivos de cada categoria de perguntas do ciclo de vida. A Tabela \ref{tab01} ilustra os códigos derivados de cada objetivo definido.\clearpage
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{table}[!htb]
@@ -290,7 +290,31 @@ A atribuição de um código e de uma chave foi necessário, pois dentro de um d
 	\caption{Códigos elaborados para a análise dos resultados}
 	\label{tab01}
 \end{table}
+\clearpage
 
+\section{Processo de Desenvolvimento Descentralizado}
+
+A necessidade de um processo ou guia para o desenvolvimento descentralizado é algo já foi percebido pelo Órgão X, pois uma tentativa de implantação de um processo já havia sido realizada. O processo, chamado de Processo de Desenvolvimento Descentralizado do Órgão X, teve a sua finalização concluída no ano de 2012, e foi elaborado pela Secretaria de Tecnologia da Informação do órgão. Apesar de o processo ter sido desenvolvido, segundo o chefe da unidade coordenadora do desenvolvimento descentralizado, ele nunca chegou ao conhecimento dos desenvolvedores devido a questões normativas do próprio órgão, que inviabilizaram a sua implantação (CITAR O DEPOIMENTO???).
+
+O processo, elaborado na ferramenta \textit{Eclipse Process Framework}, que é voltada à construção de processos, consiste de 6 fases bem definidas: Estudo Preliminar de Projeto, Elicitação de Requisitos, Projeto de Banco de Dados, Construção, Homologação e Implantação. Cada uma dessas fases são divididas em atividades e tarefas, que por sua vez são apoiadas por um conjunto de guias e modelos.
+
+\begin{figure}[h]
+	\centering
+		\includegraphics[scale=0.8]{figuras/PDESC}
+	\caption{Ciclo de vida do processo de desenvolvimento descentralizado.}
+\end{figure}
+
+\begin{enumerate}
+	\item \textbf{Estudo Preliminar de Projeto:} Fase destinada à análise da proposta de solução e, caso a proposta seja aprovada, à preparação de recursos.
+	\item \textbf{Elicitação de Requisitos:} Fase destinada à elicitação de requisitos e à definição da arquitetura da solução.
+	\item \textbf{Projeto de Banco de Dados:} Fase destinada à construção do Modelo de Dados Lógico e do Modelo de Dados Físico da solução.
+	\item \textbf{Construção:} Fase destinada á construção da solução.
+	\item \textbf{Homologação:} Fase destinada à realização dos testes da solução, à capacitação dos usuários e à divulgação da solução.
+	\item \textbf{Implantação:} Fase destinada à implantação da solução.
+\end{enumerate}
+\clearpage
+
+As atividades, as tarefas, os guias e os modelos, definidos no processo, que se encaixam em uma possível solução aos problemas, sugestões e boas práticas relatados no diagnóstico, foram utilizados na construção da solução de apoio.
 
 %TODO: Explicar os insumos que servirão para a elaboração da solução: WIKI, Entrevistas, experiência, PDESC e etc.
 \subsection{\textit{Planejamento da Ação}}
