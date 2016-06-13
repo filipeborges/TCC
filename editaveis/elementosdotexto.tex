@@ -165,9 +165,9 @@ Dentre as possíveis motivações que tem levado a adoção deste modelo em algu
 O presente trabalho está inserido no contexto do Órgão X, onde o Órgão X possui duas formas distintas de desenvolvimento de software: uma forma corporativa, que é uma forma tradicional de desenvolvimento de software (desenvolvimento realizado na área da TI e por profissionais de TI), e uma forma descentralizada, que é uma forma menos tradicional de desenvolvimento (desenvolvimento realizado nas áreas de negócio e por pessoas com menos qualificação técnica e experiência, geralmente estagiários).
 O desenvolvimento descentralizado apresenta um bom relato de satisfação no Órgão X, porém alguns problemas de qualidade e manutenibilidade das aplicações tem sido recorrentes.
 
-Tendo em vista esse contexto, este trabalho se propõe a elaborar uma solução informatizada que possa apoiar o desenvolvimento descentralizado no Órgão X, onde esta solução irá conter um conjunto de atividades, de boas práticas e de funcionalidades, que possam contribuir para uma melhoria na qualidade e manutenibilidade das aplicações desenvolvidas. O escopo deste trabalho se limita a desenvolver o conjunto de atividades e boas práticas da solução, de forma que estas atividades estejam relacionadas entre si através de um fluxograma, e que as boas práticas estejam contidas dentro das atividades, auxiliando a execução das mesmas. Na próxima etapa do trabalho espera-se detalhar as boas práticas definidas, informatizar o fluxo de atividades, e implementar as funcionalidades que possam auxiliar na execução de algumas das atividades da solução.
+Tendo em vista esse contexto, este trabalho se propõe a elaborar uma solução informatizada que possa apoiar o desenvolvimento descentralizado no Órgão X, onde esta solução irá conter um conjunto de atividades, de boas práticas e de funcionalidades, que possam contribuir para uma melhoria na qualidade e manutenibilidade das aplicações desenvolvidas. O escopo deste trabalho se limita a desenvolver o conjunto de atividades e boas práticas da solução, de forma que estas atividades estejam relacionadas entre si através de um fluxograma, e que as boas práticas estejam contidas dentro das atividades, auxiliando a execução das mesmas. No próximo trabalho, espera-se detalhar as boas práticas definidas, informatizar o fluxo de atividades, e implementar as funcionalidades que possam auxiliar na execução de algumas das atividades da solução.
 
-Para se atingir o objetivo deste trabalho, realizou-se, inicialmente, um estudo sobre os tópicos relacionados ao trabalho: \textit{End User Development}, desenvolvimento descentralizado, \textit{SCRUM} e \textit{Kanban}. Em seguida foi elaborado uma entrevista com o propósito de diagnosticar a situação do desenvolvimento descentralizado no Órgão X, para coletar os problemas, as boas práticas e as sugestões de melhorias, relatados pelos próprios desenvolvedores. Foi feito um estudo de um processo de desenvolvimento descentralizado definido no Órgão X, que nunca chegou a ser implantado, de forma a aproveitar algumas atividades e guias existentes nele, para a elaboração das soluções relacionadas ao diagnóstico obtido. Um estudo sobre os conteúdos da \textit{Wiki} da unidade coordenadora do desenvolvimento descentralizado também foi feito, para a agregação de algumas boas práticas, definidas pela unidade, à solução. A partir do diagnóstico, do estudo do processo e do estudo da \textit{Wiki}, foram definidas as atividades e as boas práticas da solução de apoio, e em seguida um relacionamento destas atividades foi feito, através da elaboração de um fluxograma.
+Para se atingir o objetivo deste trabalho, realizou-se, inicialmente, um levantamento bibliográfico sobre os tópicos relacionados ao trabalho: \textit{End User Development}, desenvolvimento descentralizado, \textit{SCRUM} e \textit{Kanban}. Em seguida foram realizadas entrevistas com o propósito de diagnosticar a situação do desenvolvimento descentralizado no Órgão X, coletando os problemas, as boas práticas e as sugestões de melhorias, relatados pelos próprios desenvolvedores. Foi realizada uma análise em um processo de desenvolvimento descentralizado não implementado, existente no Órgão X, com o intuito de verificar quais atividades e guias existentes, que poderiam dar um suporte à elaboração das soluções relacionadas ao diagnóstico obtido. Uma análise sobre os conteúdos da \textit{Wiki} da unidade coordenadora do desenvolvimento descentralizado também foi feita, de forma a agregar algumas boas práticas, definidas pela unidade, à solução. A partir do diagnóstico, da análise do processo e da análise da \textit{Wiki} foram definidas as atividades e os guias da solução de apoio. Estas atividades foram então relacionadas através de um fluxograma, representando o sequenciamento das mesmas.
 
 %TODO: Explicar aqui a elaboração da entrevista, já que a entrevista é um "método" da pesquisa participante.
 \begin{comment}
@@ -176,7 +176,7 @@ Para se atingir o objetivo deste trabalho, realizou-se, inicialmente, um estudo 
 \end{comment}
 
 \section{Entrevista Realizada}
-A entrevista teve como objetivo realizar um diagnóstico da situação do desenvolvimento descentralizado no Órgão X, do ponto de vista do desenvolvedor, que esta inserido neste contexto. Esse diagnóstico procurou abordar os aspectos de problemas, de boas práticas realizadas e de sugestões de melhorias. Para que esses aspectos pudessem ser abordados na entrevista, dividiu-se a mesma em categorias, onde estas categorias estão, em sua maioria, relacionadas as fases de um ciclo de desenvolvimento de software. Cada categoria possui um objetivo, que representa qual o tipo de informação que se pretende obter.
+A entrevista teve como objetivo realizar um diagnóstico da situação do desenvolvimento descentralizado no Órgão X, sob o ponto de vista do desenvolvedor que esta inserido neste contexto. Esse diagnóstico procurou abordar os aspectos de problemas, de boas práticas realizadas e de sugestões de melhorias. Para que esses aspectos pudessem ser abordados na entrevista, dividiu-se a mesma em categorias, onde estas categorias estão, em sua maioria, relacionadas as fases de um ciclo de desenvolvimento de software. Cada categoria possui um objetivo, que representa qual o tipo de informação que se pretende obter. Na tabela 1 estão expostas as informações desejadas, através dos objetivos, e suas respectivas categorias.
 
 \begin{comment}
 O objetivo da entrevista consistiu em obter um diagnóstico da situação atual do desenvolvimento descentralizado no Órgão X, para que servisse de insumo para a elaboração da solução de apoio. Como diagnóstico entendeu-se as boas práticas realizadas, as sugestões de melhoria e os problemas. Portanto, a entrevista elaborada tentou abordar esses pontos, consistindo de 34 perguntas divididas em 9 categorias. A entrevista pode ser visualizada no "Anexo A".
@@ -184,6 +184,7 @@ O objetivo da entrevista consistiu em obter um diagnóstico da situação atual 
 
 \begin{table}[!htb]
 \centering
+\caption{Categorias da entrevista e seus objetivos.}
 \begin{tabular}{|l|l|}
 \hline
 \textbf{Categoria}                                                   & \textbf{Objetivo}                                                                                                                                                                                                                                                                                                                            \\ \hline
@@ -196,16 +197,16 @@ Codificação                                                          & \begin{
 Teste                                                                & \begin{tabular}[c]{@{}l@{}}1- Obter informações sobre a realização dos testes, bem como a forma \\ de realizá-los.\end{tabular}                                                                                                                                                                                                              \\ \hline
 Implantação                                                          & 1- Obter informações sobre a migração, para a produção, do sistema.                                                                                                                                                                                                                                                                          \\ \hline
 \end{tabular}
-\caption{Categorias da entrevista e seus objetivos.}
 \end{table}
 
-A categoria "Descrição do Desenvolvedor" serviu unicamente para descrever o perfil dos desenvolvedores entrevistados, portanto ela não foi considerada na análise dos resultados obtidos. A partir dessas categorias, foram elaboradas as perguntas, de forma que elas atendessem os objetivos definidos. A entrevista pode ser visualiza no "Anexo A".
+A categoria "Descrição do Desenvolvedor" serviu unicamente para descrever o perfil dos desenvolvedores entrevistados, portanto ela não foi considerada na análise dos resultados obtidos. A partir dessas categorias, foram elaboradas as perguntas, de forma que elas atendessem os objetivos definidos. O \textit{template} da entrevista pode ser visualizo no "Anexo A".
 
-Uma vez que a entrevista foi elaborada, o próximo passo consistiu em aplica-la com os desenvolvedores. A escolha dos desenvolvedores foi feita de forma aleatória, escolhendo-se 8 desenvolvedores diferentes que estão inseridos no contexto do desenvolvimento descentralizado do Órgão X. Os 8 desenvolvedores escolhidos estão divididos entre 7 estagiários e 1 servidor. A tabela 2 contextualiza o perfil dos desenvolvedores entrevistados. Observa-se que alguns desses dados não se aplicam ao desenvolvedor 6, por este ser um servidor.
+Uma vez que a entrevista foi elaborada, o próximo passo consistiu em aplicá-la. A escolha dos desenvolvedores foi feita de forma aleatória, escolhendo-se 8 desenvolvedores diferentes que estão inseridos no contexto do desenvolvimento descentralizado do Órgão X. Os 8 desenvolvedores escolhidos estão divididos entre 7 estagiários e 1 servidor. A tabela 2 contextualiza o perfil dos desenvolvedores entrevistados. Observa-se que alguns desses dados não se aplicam ao desenvolvedor 6, por este ser um servidor.
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{table}[!htb]
 	\centering
+	\caption{Perfil dos desenvolvedores entrevistados}
 	\begin{tabular}{|M{2.88cm} | M{2.8cm} | M{2.2cm}| M{2.8cm} | M{2.2cm}|}
 		\hline
 		\textbf{Desenvolvedor} & \textbf{Unidade} & \textbf{Tempo de estágio} & 
@@ -227,12 +228,10 @@ Uma vez que a entrevista foi elaborada, o próximo passo consistiu em aplica-la 
 		Desenvolvedor 8 & SEPROD & 6 meses & Engenharia de Redes de Comunicação & 9 semestres \\
 		\hline
 	\end{tabular}
-
-	\caption{Perfil dos desenvolvedores entrevistados}
 	\label{tab02}
 \end{table}
 
-Uma vez que a entrevista foi elaborada, o foco voltou-se a análise dos dados da mesma. A análise feita consistiu dos seguintes passos:
+Após a aplicação da entrevista, o foco voltou-se a análise dos dados da mesma. A análise feita consistiu dos seguintes passos:
 
 \begin{comment}
 \begin{enumerate}
@@ -251,19 +250,12 @@ Uma vez que a entrevista foi elaborada, o foco voltou-se a análise dos dados da
 	\item Elaborou-se ações para as chaves dentro do conjunto.
 \end{enumerate}
 
-%TODO: Inserir a figura aqui talvez.
-\begin{figure}[h]
-	\centering
-	\label{fig02}
-		\includegraphics[scale=0.7]{figuras/Esquematico_Analise_2}
-	\caption{Etapas realizadas na análise das respostas.}
-\end{figure}
-
-A atribuição de um código e de uma chave foram necessários, pois dentro de um determinado assunto, representado pelo código, ainda poderiam haver respostas semelhantes. Desta forma, garante-se que o conjunto final de chaves conterá somente chaves únicas, ou seja, respostas únicas, eliminando a redundância no diagnóstico. Os códigos elaborados foram derivados dos objetivos de cada categoria de perguntas do ciclo de vida. A Tabela \ref{tab01} ilustra os códigos derivados de cada objetivo definido.\clearpage
+Os códigos foram derivados dos objetivos de cada categoria de perguntas do ciclo de vida. A Tabela \ref{tab01} ilustra os códigos derivados de cada objetivo definido.
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{table}[!htb]
 	\centering
+	\caption{Códigos elaborados para a análise dos resultados}
 	\begin{tabular}{|M{4.8cm} | M{4.8cm} | M{4.8cm}|}
 		\hline
 		\textbf{Categoria} & \textbf{Objetivo} & 
@@ -288,10 +280,20 @@ A atribuição de um código e de uma chave foram necessários, pois dentro de u
 		Implantação & Obter informações sobre a migração, para a produção, do sistema & Implantação \\
 		\hline
 	\end{tabular}
-	
-	\caption{Códigos elaborados para a análise dos resultados}
 	\label{tab01}
 \end{table}
+
+As chaves foram derivadas dos significados das respostas das entrevistas, de forma que se duas ou mais respostas geraram uma mesma chave, devido aos seus significados semelhantes, somente uma única chave foi considerada. A figura 2 mostra um esquemático que exemplifica a execução dos passos definidos para a análise.
+
+%TODO: Inserir a figura aqui talvez.
+\begin{figure}[h]
+	\centering
+	\label{fig02}
+		\includegraphics[scale=0.7]{figuras/Esquematico_Analise_2}
+	\caption{Etapas realizadas na análise das respostas.}
+\end{figure}
+
+A atribuição de um código e de uma chave foram necessários, pois dentro de um determinado assunto, representado pelo código, ainda poderiam haver respostas semelhantes. Desta forma, garante-se que o conjunto final de chaves conterá somente chaves únicas, ou seja, respostas únicas, eliminando a redundância no diagnóstico.
 \clearpage
 
 \section{Processo de Desenvolvimento Descentralizado}
@@ -335,35 +337,26 @@ Procurou-se selecionar algumas boas práticas e padrões que não inserissem uma
 
 \section{\textit{Considerações Iniciais do Capítulo}}
 
-Nesta seção são apresentados o diagnóstico obtido com o resultado da análise das entrevistas e o fluxograma da solução de apoio, desenvolvido com base no diagnóstico obtido.
+Neste capítulo são apresentados as atividades e os guias, resultantes do diagnóstico obtido com a aplicação da entrevista, e as atividades e guias, tanto do processo de desenvolvimento descentralizado quanto
+da \textit{Wiki}, que julgaram-se interessantes para serem selecionadas e complementarem a solução. Ao final, a solução gerada é apresentada.
 
-\section{\textit{Resultados}}
+\section{Atividades e guias resultantes do diagnóstico obtido}
 
---colocar todos os resultados desenvolvidos--
+O diagnóstico obtido, conforme a entrevista aplicada aos desenvolvedores que participam do desenvolvimento descentralizado e, conforme a análise descrita na seção 4.3, consiste de um conjunto de problemas, sugestões e boas práticas, relatados pelos desenvolvedores. A primeira parte da análise, que consistiu em aplicar os códigos às respostas obtidas, pode ser visualizada na tabela 4. Esta é uma tabela de rastreabilidade dos códigos em relação as respostas das perguntas, informadas por cada desenvolvedor. Algumas respostas das perguntas ficaram sem códigos, pois foram respostas que não se associaram a nenhum dos códigos e portanto foram descartadas. Os códigos nesta matriz são representados pelos símbolos a seguir:
 
-\subsection{Entrevista}
-
-\begin{comment}
-O objetivo da entrevista consistiu em obter um diagnóstico da situação atual do desenvolvimento descentralizado no Órgão X, para que servisse de insumo para a elaboração da solução de apoio. Como diagnóstico entendeu-se as boas práticas realizadas, as sugestões de melhoria e os problemas. Portanto, a entrevista elaborada tentou abordar esses pontos, consistindo de 34 perguntas divididas em 9 categorias. A entrevista pode ser visualizada no "Anexo A".
-\end{comment}
-
-\subsection{Diagnóstico obtido}
-Uma vez que a entrevista foi aplicada com os desenvolvedores selecionados, o diagnóstico relacionado aos problemas, as boas práticas e as sugestões de melhoria foi obtido com base na análise das respostas. A análise consistiu das seguintes etapas:
-
-\begin{enumerate}
-\item Classificou-se as respostas de acordo com os códigos previamente definidos e realizou-se um agrupamento de respostas com códigos semelhantes.
-\item As respostas dentro dos agrupamentos foram rotuladas com uma ou mais chaves, que é uma frase que representa o sentido de uma resposta. Dessa forma, um conjunto de chaves únicas foi obtido, onde todas as chaves deste conjunto representam todas as diferentes respostas obtidas na entrevista.
-\end{enumerate}
+\begin{itemize}
+\item Co1 - Papel do Desenvolvedor;
+\item Co2 - Preparação;
+\item Co3 - Elicitação de Requisitos;
+\item Co4 - Gerenciamento de Requisitos;
+\item Co5 - Modelagem do sistema;
+\item Co6 - Depuração;
+\item Co7 - Estilo e \textit{Design} de Codificação;
+\item Co8 - Ambiente de Codificação;
+\item Co9 - Teste;
+\item Co10 - Implantação;
+\end{itemize}
 \clearpage
-
-\begin{figure}[h]
-	\centering
-	\label{fig02}
-		\includegraphics[scale=0.7]{figuras/Esquematico_Analise_2}
-	\caption{Etapas realizadas na análise das respostas.}
-\end{figure}
-
-Uma matriz de rastreabilidade dos códigos e uma de rastreabilidade das chaves foram elaboradas, de forma a garantir a associação entre códigos e respostas, e entre chaves e respostas, ambos relacionados a cada desenvolvedor entrevistado. O conjunto de respostas das perguntas de 1 a 5, por se tratar meramente de uma contextualização do perfil dos entrevistados, não fez parte do escopo da análise, portanto foram ignorados. Observa-se que em ambas as matrizes foram utilizados símbolos para representar os códigos ("Co") e as chaves ("C"). Ao final de cada matriz é descrito o significado de cada símbolo. \clearpage
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{table}[!htb]
@@ -386,7 +379,7 @@ Uma matriz de rastreabilidade dos códigos e uma de rastreabilidade das chaves f
 
 \textbf{P11}                   & Co7,Co8        & Co7            & Co7            & Co7            & Co7            & Co7            & Co7            & Co7            \\ \hline
 
-\textbf{P12}                   & Co7            & Co2            & Co7            &                & Co2,Co7        & Co7            & Co7            & Co7            \\ \hline
+\textbf{P12}                   & Co7            & Co2            & Co7            & -               & Co2,Co7        & Co7            & Co7            & Co7            \\ \hline
 
 \textbf{P13}                   & Co3            & Co3            & Co3            & Co3            & Co3            & Co3            & Co3            & Co3            \\ \hline
 
@@ -438,26 +431,101 @@ Uma matriz de rastreabilidade dos códigos e uma de rastreabilidade das chaves f
 \caption{Matriz de rastreabilidade dos códigos}
 \end{table}
 
-Significado dos símbolos (Códigos):
+Uma vez que a primeira parte da análise foi aplicada, deu-se prosseguimento a análise iniciando-se a segunda parte da mesma. A segunda parte consistiu em rotular as respostas, que foram agrupadas pelos códigos, com as chaves. A tabela 4 ilustra as chaves atribuídas às repostas das entrevistas e os seus significados. Estas chaves representam todos os diferentes significados de todas as respostas.\newline
 
-\begin{itemize}
-\item Co1 - Papel do Desenvolvedor;
-\item Co2 - Preparação;
-\item Co3 - Elicitação de Requisitos;
-\item Co4 - Gerenciamento de Requisitos;
-\item Co5 - Modelagem do sistema;
-\item Co6 - Depuração;
-\item Co7 - Estilo e \textit{Design} de Codificação;
-\item Co8 - Ambiente de Codificação;
-\item Co9 - Teste;
-\item Co10 - Implantação;
-\end{itemize}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\begin{longtable}{|M{1.3cm} | m{14.0cm}|} %[!htb]
+%\centering
+%\begin{tabular}{|M{1.0cm}|M{1.0cm}|}
+\hline
+\textbf{Chave} & \textbf{Descrição}                                                                                                                                                                                                                                                \\ \hline
+C1             & Papel claro dentro da instituição                                                                                                                                                                                                                                 \\ \hline
+C2             & Papel que exige grande responsabilidade dentro da instituição                                                                                                                                                                                                     \\ \hline
+C3             & Papel definido com falta de metas                                                                                                                                                                                                                                 \\ \hline
+C4             & Contribuição relevante para a instituição                                                                                                                                                                                                                         \\ \hline
+C5             & Curso da somente uma introdução                                                                                                                                                                                                                                   \\ \hline
+C6             & O curso poderia ser melhorado                                                                                                                                                                                                                                     \\ \hline
+C7             & Algumas aplicações com baixa qualidade                                                                                                                                                                                                                            \\ \hline
+C8             & Construção de um catálogo de informações APEX                                                                                                                                                                                                                     \\ \hline
+C9             & Treinamento em boas práticas APEX                                                                                                                                                                                                                                 \\ \hline
+C10            & Esclarecer como funciona o sistema de desenvolvimento descentralizado                                                                                                                                                                                             \\ \hline
+C11            & Os requisitos são levantados através de reuniões                                                                                                                                                                                                                  \\ \hline
+C12            & Requisitos óbvios não anotados durante as reuniões são esquecidos                                                                                                                                                                                                 \\ \hline
+C13            & Uso de prototipagem para levantar/validar requisitos                                                                                                                                                                                                              \\ \hline
+C14            & Registro de requisitos em papel                                                                                                                                                                                                                                   \\ \hline
+C15            & Registro de requisitos em sistemas distintos em rede                                                                                                                                                                                                              \\ \hline
+C16            & Registro de requisitos inexistente                                                                                                                                                                                                                                \\ \hline
+C17            & Reuniões constantes                                                                                                                                                                                                                                               \\ \hline
+C18            & Não atualiza o modelo de dados                                                                                                                                                                                                                                    \\ \hline
+C19            & Não valida o modelo de dados com área técnica                                                                                                                                                                                                                     \\ \hline
+C20            & Possibilidade de gerar o modelo de dados a partir das tabelas                                                                                                                                                                                                     \\ \hline
+C21            & Negligência ao modelo de dados                                                                                                                                                                                                                                    \\ \hline
+C22            & Valida o modelo de dados com área técnica.                                                                                                                                                                                                                        \\ \hline
+C23            & Elabora o modelo de dados utilizando ferramentas CASE                                                                                                                                                                                                             \\ \hline
+C24            & Realiza depurações no sistema com o APEX                                                                                                                                                                                                                          \\ \hline
+C25            & Realiza depurações no console de comandos SQL                                                                                                                                                                                                                     \\ \hline
+C26            & Não realiza depurações                                                                                                                                                                                                                                            \\ \hline
+C27            & Não há classificação de erros                                                                                                                                                                                                                                     \\ \hline
+C28            & Falta do uso de um padrão de boas práticas comprometeu a qualidade da aplicação                                                                                                                                                                                   \\ \hline
+C29            & Escrita legível de código                                                                                                                                                                                                                                         \\ \hline
+C30            & Mais da metade da aplicação é composta de algum código                                                                                                                                                                                                            \\ \hline
+C31            & Preferência pelo uso de componentes padrões do APEX                                                                                                                                                                                                               \\ \hline
+C32            & Aplicação bem desenvolvida                                                                                                                                                                                                                                        \\ \hline
+C33            & Boas práticas: Nomes significativos, uso de comentários, identação, padrão de nomenclatura, desenvolver pensando nas manutenções futuras, sempre usar filtros nas consultas SQL, legibilidade do código e uso de componentes padrões do APEX sempre que possível. \\ \hline
+C34            & Falta de um padrão de boas práticas                                                                                                                                                                                                                               \\ \hline
+C35            & Reutilização de código                                                                                                                                                                                                                                            \\ \hline
+C36            & Uso de editores externos                                                                                                                                                                                                                                          \\ \hline
+C37            & Uso do editor do APEX                                                                                                                                                                                                                                             \\ \hline
+C38            & Uso de testes funcionais                                                                                                                                                                                                                                          \\ \hline
+C39            & Uso de teste de comandos SQL                                                                                                                                                                                                                                      \\ \hline
+C40            & Teste de execução de páginas                                                                                                                                                                                                                                      \\ \hline
+C41            & Sem armazenamento dos resultados de teste                                                                                                                                                                                                                         \\ \hline
+C42            & Não há elaboração de casos de teste                                                                                                                                                                                                                               \\ \hline
+C43            & Favorável à proposta de automação de testes funcionais                                                                                                                                                                                                            \\ \hline
+C44            & Costuma verificar se os apelidos não estão duplicados                                                                                                                                                                                                             \\ \hline
+C45            & Não migra as definições de objetos                                                                                                                                                                                                                                \\ \hline
+C46            & Navegação feita, antes de migrar, somente nas páginas que alterou                                                                                                                                                                                                 \\ \hline
+C47            & Navegação feita, antes de migrar, em todas as páginas da aplicação                                                                                                                                                                                                \\ \hline
+C48            & Verifica a criação das tabelas no espaço de produção                                                                                                                                                                                                              \\ \hline
+C49            & Faz a migração da definição dos objetos de dados                                                                                                                                                                                                                  \\ \hline
+C50            & Faz a homologação das aplicações antes de disponibilizar definitivamente na produção                                                                                                                                                                              \\ \hline
+C51            & Seria interessante o uso de uma ferramenta que mostrasse as diferenças dos objetos no desenvolvimento a na produção                                                                                                                                            \\ \hline
+%\end{tabular}
+\caption{Chaves representando os diferentes significados das respostas das entrevistas}
+\end{longtable}
+
+Ao total foram obtidos um conjunto com 51 chaves diferentes, e elas representam o diagnóstico do desenvolvimento descentralizado do Órgão X. Com esse diagnóstico, procurou-se propor as soluções que atendessem ao mesmo. Para facilitar este procedimento, agrupou-se as chaves que tinham alguma relação direta entre si, e então as soluções foram sendo proposta em cima de cada grupo obtido. A tabela 6 ilustra as soluções propostas para cada grupo de chaves. Observa-se que algumas chaves não obtiveram uma solução relacionada, ou porque eram meramente uma descrição ou porque uma solução era inviável de ser proposta.\newline
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\begin{longtable}{|M{2.0cm}|m{13.0cm}|}
+\hline
+\textbf{Chave}                                                          & \textbf{Solução}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \\ \hline
+C1                                                & Não se aplica, pois é uma descrição.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+C2                                                & Não se aplica, pois é uma descrição.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+C3                                                & Inviável, pois não há permissão de atuação na política interna do órgão.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       \\ \hline
+C4                                               & Não se aplica, pois é uma descrição.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+C5, C6 e C9                                      & 1- Montar uma espécie de \textit{Wiki} complementar, dentro da aplicação, de forma que as informações da solução possam ser consultadas de forma mais conveniente.                                                                                                                                                                                                                                                                                                                                                                                                         \\ \hline
+C7                                                & 1- Definir ou usar padrões e boas práticas existentes em APEX.\newline 2- Definir procedimentos de teste.\newline 3- Definir procedimentos de implantação.                                                                                                                                                                                                                                                                                                                                                                        \\ \hline
+C8                                                & 1- Mesma solução das chaves C5, C6 e C9.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \\ \hline
+C10                                               & 1- Elaborar um guia de como funciona desenvolvimento descentralizado no órgão.                                                                                                                                                                                                                                                                                                                                                                                                                                                                          \\ \hline
+C11, C12, C13, C14, C15, C16, C17                 & 1- Adaptar a atividade de priorização do escopo da \textit{release} no processo de desenvolvimento descentralizado já existente. \newline 2- Adaptar a atividade de levantamento de requisitos no processo de desenvolvimento descentralizado já existente.\newline 3- Usar o guia de entrevistas definidos no processo de desenvolvimento descentralizado já existente.\newline  4- Usar a tarefa de estruturar as informações obtidas do processo de desenvolvimento descentralizado.\newline  5- Propor um tutorial sobre prototipagem rápida.\newline  6- Desenvolver uma funcionalidade que sugira ao usuário uma técnica de elicitação de requisitos com base no seu perfil.    \\ \hline
+C18, C19, C20, C21, C22 e C23                  & 1- Definir uma atividade para atualizar o modelo de dados existente.\newline 2- Adaptar a tarefa de construir o modelo lógico de dados do processo de desenvolvimento descentralizado.\newline  3- Definir uma atividade para a validação do modelo de dados.\newline 4- Elaborar guia de geração de scripts SQL a partir de modelo lógico implementado na ferramenta Oracle SQL Data Modeler.\newline  5- Elaborar um tutorial de criação do banco de dados usando a ferramenta Oracle SQL Data Modeler e padrões de nomenclatura do órgão. \\ \hline
+C24, C25, C26 e C27                              & 1- Tutorial de uso da funcionalidade de depuração do APEX.\newline  2- Dicas de como depurar scripts PL/SQL.\newline  3- Formulário para cadastro de erros.                                                                                                                                                                                                                                                                                                                                                                      \\ \hline
+C28, C29, C30, C31, C32, C33, C34, C35, C36 e C37 & 1- Desenvolver um guia de boas práticas de desenvolvimento APEX.\newline  2- Desenvolver um guia de boas práticas sobre PL/SQL.\newline  3- Disponibilizar o padrão de nomenclaturas de objetos de banco definidos pelo Órgão X.\newline 4- Formulário para desenvolvedor poder salvar código que ele ache que pode ser reutilizável.\newline  5- Guia sobre o uso de editores de código SQL e PL/SQL.                                                                                                                                       \\ \hline
+C38, C39, C40, C41, C42 e C43                   & 1- Criar uma funcionalidade de geração de casos de teste simples.\newline  2- Guia de como testar o comportamento dos códigos PL/SQL.\newline  3- Guia de como testar uma página APEX.\newline  4- Guia de utilização de ferramenta de automação de teste.                                                                                                                                                                                                                                                                               \\ \hline
+C44, C45, C46, C47, C48, C49 e C50                & 1- Guia de migração de aplicações.\newline  2- Guia de homologação de aplicações.\newline  3- Propor uma atividade de homologação da aplicação.                                                                                                                                                                                                                                                                                                                                                                                   \\ \hline
+C51                                              & Inviável.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      \\ \hline
+\caption{Soluções associadas as chaves}
+\end{longtable}
+
+Uma matriz de rastreabilidade das chaves foi elaborada, de forma a garantir a associação entre as chaves e as respostas das perguntas, relacionadas a cada desenvolvedor entrevistado. O conjunto de respostas das perguntas de 1 a 5, por se tratar meramente de uma contextualização do perfil dos entrevistados, não fez parte do escopo da análise e portanto foi ignorado. A tabela 7 ilustra a rastreabilidade de chaves com as respostas das perguntas.\newline
 
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
-\begin{table}[!htb]
-\centering
-\begin{tabular}{|M{1.0cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|}
+\begin{longtable}{|M{1.0cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|}
+%\begin{table}[!htb]
+%\centering
+%\begin{tabular}{|M{1.0cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|}
 \hline
              & \textbf{Des.1} & \textbf{Des.2} & \textbf{Des.3} & \textbf{Des.4}  & \textbf{Des.5} & \textbf{Des.6} & \textbf{Des.7} & \textbf{Des.8} \\ \hline
 \textbf{P6}  & C1             & C3             & C1             & C1              & C2             & C2             & C1             & C2             \\ \hline
@@ -490,9 +558,48 @@ Significado dos símbolos (Códigos):
 \textbf{P33} & C40,C46        & C40,C46        & C40,C47        & C40,C47         & C47            & C47            & C40            & C40            \\ \hline
 \textbf{P34} & C48            & C48            & C48            & C48             & C48            & C48            & C48            & C48            \\ \hline
 \textbf{OBS} & C12,C20, C51    & C40,C50        & C40            & C16,C38, C39,C40 & -              & -              & -              & -              \\ \hline
-\end{tabular}
+%\end{tabular}
 \caption{Matriz de rastreabilidade das chaves}
-\end{table}\clearpage
+\end{longtable}
+
+Uma vez que as soluções para o diagnóstico foram propostas, elas foram convertidas em atividades e em guias que irão compor a solução de apoio. Estas atividades e guias são divididas em três tipos, conforme a sua origem: atividades e guias que foram propostas, que foram retiradas do processo de desenvolvimento descentralizado, e que foram retiradas da \textit{Wiki}.  A tabela 8 representa as atividades e os guias gerados por todas as soluções propostas e a fonte de origem das mesmas, divididos pelas fases do ciclo de vida da solução.\clearpage
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\begin{longtable}{|m{6.0cm}|M{3.0cm}|M{2.0cm}|M{3.0cm}|}
+\hline
+\textbf{Solução}                                                                                                                                    & \textbf{Atividade, Guia, Funcionalidade}       & \textbf{Fonte}   & \textbf{Fase do ciclo de vida da solução} \\ \hline
+Adaptar a atividade de priorização do escopo da \textit{release} no processo de desenvolvimento descentralizado já existente. & Priorizar funcionalidades a serem desenvolvidas & Solução Proposta & \\ \cline{1-3}
+Adaptar a atividade de levantamento de requisitos no processo de desenvolvimento descentralizado já existente.                                      & Elicitar requisitos junto ao cliente             & PDESC            & \multirow{5}{*}{Requisitos}                                    \\ \cline{1-3}
+Usar o guia de entrevistas definidos no processo de desenvolvimento descentralizado já existente.                                                   & Guia de entrevistas                              & PDESC            &                                                                \\ \cline{1-3}
+Usar a tarefa de estruturar as informações obtidas do processo de desenvolvimento descentralizado.                                                  & Estruturar informações obtidas                   & PDESC            &                                                                \\ \cline{1-3}
+Propor um tutorial sobre prototipagem rápida.                                                                                                       & Guia de prototipagem rápido                      & Solução Proposta   &                                                                \\ \cline{1-3}
+Desenvolver uma funcionalidade que sugira ao usuário uma técnica de elicitação de requisitos com base no seu perfil.                                & Funcionalidade: Escolher técnica de elicitação   & Solução Proposta &                                                                \\ \hline
+Definir uma atividade para atualizar o modelo de dados existente.                                                                                   & Atualizar modelo de dados                        & Solução Proposta & \multirow{6}{*}{Banco de dados}                                \\ \cline{1-3}
+Adaptar a tarefa de construir o modelo lógico de dados do processo de desenvolvimento descentralizado.                                              & Construir modelo de dados                 & PDESC            &                                                                \\ \cline{1-3}
+Definir uma atividade para a validação do modelo de dados.                                                                                          & Validar modelo de dados                          & Solução Proposta &                                                                \\ \cline{1-3}
+Disponibilizar padrão de nomenclaturas de objetos de banco definidos pelo Órgão X.                                                                  & Guia de padrão de nomenclatura de objetos de dados       & \textit{Wiki}    &                                                                \\ \cline{1-3}
+Elaborar guia de geração de scripts SQL a partir de modelo lógico implementado na ferramenta Oracle SQL Data Modeler.                               & Guia de geração de scripts sql                   & Solução Proposta &                                                                \\ \cline{1-3}
+Elaborar um tutorial de criação do banco de dados usando a ferramenta Oracle SQL Data Modeler e padrões de nomenclatura do órgão.                   & Guia de criação e padrões de BD                  & Solução Proposta &                                                                \\ \hline
+Montar uma espécie WIKI complementar, dentro da aplicação, de forma que as informações da solução possam ser consultadas de forma mais conveniente. & Funcionalidade: Consulta de informações da solução, semelhante a uma \textit{Wiki} & Solução Proposta &   \multirow{6}{*}{Implementação}                                                               \\ \cline{1-3}
+Desenvolver um guia de boas práticas de desenvolvimento APEX.                                                                                       & Guias de padrões e boas práticas APEX               & Solução Proposta &                                                                \\ \cline{1-1}
+Definir ou usar padrões e boas práticas existentes em APEX. & & & \\ \cline{1-3}
+Desenvolver um guia de boas práticas sobre PL/SQL.                                                                                                  & Guia de boas práticas plsql                      & Solução Proposta &                                                                \\ \cline{1-3}
+Formulário para desenvolvedor poder salvar código que ele ache que pode ser reutilizável.                                                           & Funcionalidade: Cadastro de código reutilizável. & Solução Proposta &                                                                \\ \cline{1-3}
+Guia sobre o uso de editores de código SQL e PL/SQL.                                                                                                & Guia sobre editor de código sql e plsql                  & Solução Proposta &                                                                \\ \hline
+Definir procedimentos de teste.                                                                                                                     & Definir procedimentos de teste                   & Solução Proposta & \multirow{8}{*}{Teste}                                         \\ \cline{1-3}
+Tutorial de uso da funcionalidade de depuração do APEX.                                                                                             & Guia de uso de depuração de páginas APEX         & Solução Proposta &                                                                \\ \cline{1-3}
+Dicas de como depurar scripts PL/SQL.                                                                                                               & Guia de teste de comportamento de código         & Solução Proposta &                                                                \\ \cline{1-3}
+Formulário para cadastro de erros.                                                                                                                  & Funcionalidade: Cadastro de erros conhecidos     & Solução Proposta &                                                                \\ \cline{1-3}
+Criar uma funcionalidade de geração de casos de teste simples.                                                                                      & Funcionalidade: Geração de casos de teste         & Solução Proposta &                                                                \\ \cline{1-3}
+Guia de como testar o comportamento dos códigos PL/SQL.                                                                                             & Guia de teste de comportamento de código         & Solução Proposta &                                                                \\ \cline{1-3}
+Guia de como testar uma página APEX.                                                                                                                & Guia de teste de página APEX                     & Solução Proposta &                                                                \\ \cline{1-3}
+Guia de utilização de ferramenta de automação de teste.                                                                                             & Guia de ferramenta de automação de teste         & Solução Proposta &                                                                \\ \hline
+Guia de homologação de aplicações.                                                                                                                  & Guia de homologação de aplicações             & Solução Proposta & \multirow{2}{*}{Homologação}                                   \\ \cline{1-3}
+Propor uma atividade de homologação da aplicação.                                                                                                   & Homologar aplicação                              & Solução Proposta &                                                                \\ \hline
+Guia de migração de aplicações.                                                                                                                     & Guia de migração de aplicações                   & Solução Proposta & \multirow{2}{*}{Implantação}                                   \\ \cline{1-3}
+Definir procedimentos de implantação.                                                                                                               & Definir procedimentos de implantação             & Solução Proposta &                                                                \\ \hline
+\caption{Atividades e guias resultantes de cada solução}
+\end{longtable}
 
 
 \begin{comment}
@@ -506,64 +613,6 @@ A análise consistiu inicialmente em realizar um agrupamento das respostas, de f
 \hline
 \end{longtable}
 \end{comment}
-
-Significado dos símbolos (Chaves):
-
-\begin{itemize}
-%\setlength\itemsep{-4pt}
-\item C1 - Papel claro dentro da instituição
-\item C2 - Papel que exige grande responsabilidade dentro da instituição
-\item C3 - Papel definido com falta de metas
-\item C4 - Contribuição relevante para a instituição
-\item C5 - Curso da somente uma introdução
-\item C6 - O curso poderia ser melhorado
-\item C7 - Algumas aplicações com baixa qualidade
-\item C8 - Construção de um catálogo de informações APEX
-\item C9 - Treinamento em boas práticas APEX
-\item C10 - Esclarecer como funciona o sistema de desenvolvimento descentralizado
-\item C11 - Os requisitos são levantados através de reuniões
-\item C12 - Requisitos óbvios não anotados durante as reuniões são esquecidos
-\item C13 - Uso de prototipagem para levantar/validar requisitos
-\item C14 - Registro de requisitos em papel
-\item C15 - Registro de requisitos em sistemas distintos em rede
-\item C16 - Registro de requisitos inexistente
-\item C17 - Reuniões constantes
-\item C18 - Não atualiza o modelo de dados
-\item C19 - Não valida o modelo de dados com área técnica
-\item C20 - Possibilidade de gerar o modelo de dados a partir das tabelas
-\item C21 - Negligência ao modelo de dados
-\item C22 - Valida o modelo de dados com área técnica.
-\item C23 - Elabora o modelo de dados utilizando ferramentas CASE
-\item C24 - Realiza depurações no sistema com o APEX
-\item C25 - Realiza depurações no console de comandos SQL
-\item C26 - Não realiza depurações
-\item C27 - Não há classificação de erros
-\item C28 - Falta do uso de um padrão de boas práticas comprometeu a qualidade da aplicação
-\item C29 - Escrita legível de código
-\item C30 - Mais da metade da aplicação é composta de algum código
-\item C31 - Preferência pelo uso de componentes padrões do APEX
-\item C32 - Aplicação bem desenvolvida
-\item C33 - Boas práticas: Nomes significativos, uso de comentários, identação, padrão de nomenclatura, desenvolver pensando nas manutenções futuras, sempre usar filtros nas consultas SQL, legibilidade do código e uso de componentes padrões do APEX sempre que possível.
-\item C34 - Falta de um padrão de boas práticas
-\item C35 - Reutilização de código
-\item C36 - Uso de editores externos
-\item C37 - Uso do editor do APEX
-\item C38 - Uso de testes funcionais
-\item C39 - Uso de teste de comandos SQL
-\item C40 - Teste de execução de páginas
-\item C41 - Sem armazenamento dos resultados de teste
-\item C42 - Não há elaboração de casos de teste
-\item C43 - Favorável à proposta de automação de testes funcionais
-\item C44 - Costuma verificar se os apelidos não estão duplicados
-\item C45 - Não migra as definições de objetos
-\item C46 - Navegação feita, antes de migrar, somente nas páginas que alterou
-\item C47 - Navegação feita, antes de migrar, em todas as páginas da aplicação
-\item C48 - Verifica a criação das tabelas no espaço de produção
-\item C49 - Faz a migração da definição dos objetos de dados
-\item C50 - Faz a homologação das aplicações antes de disponibilizar definitivamente na produção
-\item C51 - Seria interessante o uso de uma ferramenta que mostrasse as diferenças dos objetos no desenvolvimento a na produção
-\end{itemize}
-
 
 \begin{comment}
 O conjunto de etapas que podem ser seguidos na maioria das pesquisas classificadas como estudo de caso, bem como uma breve descrição destas etapas são apresentados a seguir \cite{gil2002}.
@@ -586,11 +635,59 @@ A unidade-caso refere-se a um indivíduo num contexto definido. Possui três
 \end{comment}
 
 
-\section{\textit{Solução Desenvolvida}}
---Nossa solução gerada--
+\section{Atividades e guias complementares}
 
-%TODO: Inserir as entrevistas respondidas, sem estar associadas com códigos e chaves, no Anexo B.
+Apesar de algumas as atividades e guias, tanto do processo de desenvolvimento descentralizado quanto da \textit{Wiki} terem sido selecionadas para comporem as soluções propostas do diagnóstico, houve a necessidade de se selecionar outras atividades e guias que não foram previstas nas soluções elaboradas. As justificativas para esse complemento foram duas:\clearpage
 
+\begin{enumerate}
+\item Alguns guias ficaram sem atividades para serem associados.
+\item Algumas atividades que julgaram-se importantes não foram previstas nas soluções do diagnóstico.
+\end{enumerate}
+
+Em relação ao processo de desenvolvimento descentralizado, foram selecionados ao todo 10 atividades e nenhum guia, de forma a complementar a solução. Já em relação a \textit{Wiki}, nenhuma atividade e guia foram selecionados para o complemento. A tabela 9 ilustra a relação de atividades selecionadas do processo de desenvolvimento descentralizado, e a sua associação com as fases do ciclo de vida da solução proposta.
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\begin{table}[!htb]
+\centering
+\begin{tabular}{|M{8.0cm}|M{2.0cm}|M{3.0cm}|}
+\hline
+\textbf{Atividade}          & \textbf{Fonte} & \textbf{Fase do ciclo de vida da solução} \\ \hline
+Construir modelo físico de dados -> Construir modelo de dados   & PDESC          & Banco de dados                            \\ \hline
+Gerar esqueleto da aplicação       & PDESC          & \multirow{3}{*}{Implementação}            \\ \cline{1-2}
+Ajustar interface do sistema       & PDESC          &                                           \\ \cline{1-2}
+Aplicar regras de negócio          & PDESC          &                                           \\ \hline
+Executar testes de desenvolvedor   & PDESC          & \multirow{4}{*}{Teste}                    \\ \cline{1-2}
+Executar testes exploratórios      & PDESC          &                                           \\ \cline{1-2}
+Realizar correções no sistema      & PDESC          &                                           \\ \cline{1-2}
+Preparar ambiente de teste         & PDESC          &                                           \\ \hline
+Criar material de apoio ao usuário & PDESC          & Homologação                               \\ \hline
+Migrar aplicação                   & PDESC          & Implantação                               \\ \hline
+\end{tabular}
+\caption{Atividades complementares selecionadas}
+\end{table}
+
+\section{Solução gerada}
+
+A solução gerada consiste da junção de todas as atividades, guias e funcionalidades, que foram originados tanto do diagnóstico quanto do complemento. Essas atividades, guias e funcionalidades, estão organizadas em 5 fases diferentes do ciclo de vida. Estas fases são: Requisitos, Desenvolvimento, Teste, Homologação e Implantação. A fase de Desenvolvimento, é dividida em duas sub-fases: Banco de dados e Implementação. A organização do ciclo de vida da solução é representada pela figura 4. \clearpage
+
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[scale=0.8]{figuras/ciclo_vida_solucao}
+	\caption{Ciclo de vida da solução.}
+\end{figure}
+
+A organização do ciclo de vida foi baseada na metodologia ágil \textit{Scrum}. A idéia básica desta organização é: definir o \textit{backlog} de um ciclo (\textit{backlog} da iteração) junto com o cliente, e então executar o ciclo sequencialmente de forma a completar o \textit{backlog} definido para o ciclo (iteração). Ao completar uma iteração, um novo \textit{backlog} é definido com o cliente, e então um novo ciclo se inicia. Esse fluxo se repete até que o sistema chegue ao nível desejado pelo o cliente. As fases do ciclo de vida são descritas da seguinte forma:
+
+\begin{itemize}
+\item \textbf{Requisitos}: Priorizar as funcionalidades a serem desenvolvidas em um ciclo (\textit{backlog} da iteração), de acordo com os requisitos levantados junto com o cliente.
+\item \textbf{Desenvolvimento}: Dividida pelas sub-fases de Banco de dados e de Implementação, esta fase tem o objetivo de realizar a construção do sistema. A sub-fase de Banco de dados tem o objetivo de construir o modelo de dados, tanto lógico quanto físico. Já a sub-fase de Implementação objetiva implementar de fato o sistema, baseado no modelo de dados construído.
+\item \textbf{Teste}: Realizar os testes, tanto a nível de páginas da aplicação, quanto a nível de código, objetivando corrigir erros encontrados.
+\item \textbf{Homologação}: Homologar a aplicação junto ao cliente, e realizar a construção de materiais de apoio ao usuário, como guias, manuais e etc. Caso não seja homologada pelo cliente, volta-se a fase do ciclo de vida necessária para realizar as correções, e a partir dali continua seguindo o ciclo sequencialmente, passando por todas as etapas sub-sequentes novamente.
+\item \textbf{Implantação}: Planejar e realizar a migração do sistema para a produção.
+\end{itemize}
+
+
+Ao todo, 16 atividades e X guias compõem a solução.
 
 \chapter[Capítulo 6]{Capítulo 6 – Cronograma de Execução}
 
