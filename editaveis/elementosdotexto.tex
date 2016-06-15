@@ -105,7 +105,7 @@ A entrevista elaborada pode ser classificada como semiestruturada. No planejamen
 Nos capítulos 2,3 e ... apresenta o referencial que embasa este trabalho. O referencial teórico é o meio em que o autor do trabalho demonstra o seu conhecimento sobre uma determinada área de estudo (teorias, vocabulários, variáveis chave, fenômenos, métodos e história) \cite{randolph2009}.
 
 
-\chapter[Capítulo 2]{Capítulo 2}
+\chapter[Capítulo 2 - Desenvolvimento descentralizado]{Capítulo 2 - Desenvolvimento descentralizado}
 
 \section{\textit{Considerações Iniciais do Capítulo}}
 
@@ -135,11 +135,6 @@ O principal objetivo do EUD é oferecer meios para que os usuários finais consi
 \item \textbf{Criação e modificação de programas:} São atividades que implicam na criação ou modificação de artefatos de software. Macros e linguagens de \textit{script} são exemplos deste tipo de atividade.
 \end{enumerate}
 
-\chapter[Capítulo 3]{Capítulo 3}
-
-\section{\textit{Considerações Iniciais do Capítulo}}
---considerações iniciais--
-
 \section{Desenvolvimento descentralizado}
 
 O desenvolvimento descentralizado é uma adaptação do modelo EUD ao serviço público federal brasileiro. A diferença entre o EUD e o desenvolvimento descentralizado é que no desenvolvimento descentralizado não é necessariamente o usuário final do software quem irá desenvolve-lo \cite{artigoTcuGovTI}. No Órgão X, que foi um dos pioneiros na implantação deste modelo, os projetos que seguem o desenvolvimento descentralizado tem sido desenvolvidos, na maioria das vezes, por estagiários de TI, que possuem diferentes níveis de conhecimento sobre desenvolvimento de software, e que também não são os usuários finais do software \cite{artigoTcuGovTI}. O desenvolvedor, se for um estagiário, é alocado na área de negócio e um analista de TI é designado para dar suporte técnico a área de negócio, de forma a garantir que o software sendo desenvolvido siga os padrões estabelecidos e garantidos pela TI corporativa \cite{artigoTcuGovTI}.
@@ -153,8 +148,43 @@ Dentre as possíveis motivações que tem levado a adoção deste modelo em algu
 \item Elevado risco de descontinuidade;
 \item Comprometimento da segurança da informação;
 \end{itemize}
+\clearpage
 
-\chapter[Capítulo 4]{Capítulo 4 – Proposta do Trabalho}
+\section{Oracle Application Express - APEX}
+
+O Oracle Application Express (APEX) é uma ferramenta que permite criar, personalizar e implementar aplicações em cima do banco de dados Oracle, usando apenas um navegador de internet. O APEX é um ambiente de desenvolvimento gratuito para construir aplicações usando SQL e PL/SQL e que apresenta uma plataforma extensível, executada dentro do banco de dados Oracle \cite{oracleApex}. O APEX tem como objetivo diminuir a complexidade de desenvolvimento das aplicações, ao fornecer um ambiente interativo e de fácil manuseio para construir e executar as aplicações, garantindo que tanto desenvolvedores não profissionais quanto desenvolvedores experientes desenvolvam com agilidade. As funcionalidades da aplicação são criadas de forma fácil e rápida. As vantagens do APEX incluem \cite{oracleApex}:
+\begin{itemize}
+\item Velocidade de entrega;
+\item Maior controle e precisão no desenvolvimento;
+\item Facilidade para a criação de protótipos;
+\item Facilidade de implantação;
+\item Aplicação acessada via navegador (URL);
+\item Grande quantidade de usuários (desenvolvedores) ativos;
+\end{itemize}
+
+Além disso, o ambiente de desenvolvimento integrado é muito intuitivo, o que torna a introdução e a adoção do APEX uma transição fácil para desenvolvedores experientes ou usuários finais.
+
+O APEX usa uma arquitetura simples, onde as páginas são geradas dinamicamente usando metadados armazenados no banco de dados Oracle. Não há geração de código ou compilação de arquivos. Uma vez que ele foi instalado e configurado, a URL será a via de acesso ao ambiente de desenvolvimento e às aplicações, tanto para os desenvolvedores quanto para os usuários finais. As alterações feitas durante o desenvolvimento são salvas diretamente nas tabelas de metadados, que contém as definições das aplicações. Após isso o desenvolvedor pode executar a aplicação e revisar as melhorias imediatamente.
+Para a implantação e execução do APEX é necessário um servidor web, um servidor de aplicação, um servidor APEX \textit{listener} e um servidor de banco de dados Oracle, conforme a figura 2.
+\clearpage
+
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[scale=0.6]{figuras/arquitetura_apex}
+	\caption{Arquitetura do APEX \cite{ferreira2015}.}
+\end{figure}
+
+O fluxo de dados na arquitetura do APEX, é composto dos seguintes passos \cite{ferreira2015}:
+\begin{enumerate}
+\item Uma requisição HTTP é enviada, pelo navegador, quando o usuário acessa uma página da aplicação;
+\item O servidor web recebe a requisição e identifica que é uma requisição do APEX, redirecionando a requisição ao servidor de aplicação correto;
+\item O servidor de aplicação organiza os pedidos (filtros, \textit{cache}, \textit{timeouts}, filas, etc) e transfere para o APEX \textit{listener}.
+\item O APEX \textit{listener} recebe o pedido e executa os comandos Java que irão ler os dados do banco e/ou executar códigos PL/SQL. O APEX \textit{listener} interage com sessões de banco, onde os dados são buscados.
+\item Faz-se o caminho inverso com os dados coletados, os PL/SQLs executados e os códigos HTML, \textit{Javascript}, CSS, \textit{Ajax} e \textit{jQuery} gerados, que são devolvidos ao navegador que então mostra a tela da aplicação ao usuário.
+\end{enumerate} 
+
+
+\chapter[Capítulo 3 – Proposta do Trabalho]{Capítulo 3 – Proposta do Trabalho}
 
 \section{\textit{Considerações Iniciais do Capítulo}}
 
@@ -333,7 +363,7 @@ Procurou-se selecionar algumas boas práticas e padrões que não inserissem uma
 
 --Nosso planejamento, desde as entrevistas ao modelo de processo e AI-IS--
 \end{comment}
-\chapter[Capítulo 5]{Capítulo 5 – Resultados}
+\chapter[Capítulo 4 – Resultados]{Capítulo 4 – Resultados}
 
 \section{\textit{Considerações Iniciais do Capítulo}}
 
@@ -796,7 +826,7 @@ De forma a auxiliar o desenvolvedor na gerência do desenvolvimento, uma adapta�
 
 Este \textit{Kanban} foi dividido pelas fases do ciclo de vida da solução, de forma que o desenvolvedor vai posicionando os itens do \textit{backlog} definido, de acordo com a etapa em que se encontram dentro do ciclo de vida. A ideia é que o \textit{backlog} da iteração gerado seja em pequenas unidades de funcionalidades, de forma a facilitar o gerenciamento e acompanhamento pelo desenvolvedor. Ao terminar um conjunto destas unidades de funcionalidade, o desenvolvedor consegue gerar um entregável ao cliente. Observa-se que a divisão \textit{Backlog} Produto é opcional, já que pode ser da preferência do cliente e do desenvolvedor levantar o \textit{backlog} do produto. Porém, neste caso, o fluxo de execução do \textit{Kanban} obriga a seleção e priorização de um \textit{backlog} da iteração, conforme a divisão de Requisitos.
 
-\chapter[Capítulo 6]{Capítulo 6 – Cronograma de Execução}
+\chapter[Capítulo 5 – Cronograma de Execução]{Capítulo 5 – Cronograma de Execução}
 
 \section{\textit{Considerações Iniciais do Capítulo}}
 
