@@ -4,23 +4,24 @@
 
 Neste Capítulo inicial apresenta-se o contexto no qual se insere este trabalho, as
 justificativas que motivaram o desenvolvimento, o problema, o objetivo, a
-metodologia de pesquisa a ser adotada e a organização do trabalho nos capítulos seguintes.
+metodologia de pesquisa adotada e a organização do trabalho nos capítulos seguintes.
 
 \section{\textit{Contexto}}
 
-É inconcebível imaginar o mundo moderno sem software. Ele está tão acoplado nas mais diversas áreas que seria difícil prever como o mundo seria sem o suporte e as facilidades que ele traz ao nosso dia a dia. Diante deste acoplamento tão grande e do seu enorme crescimento nos últimos anos, consequência do avanço tecnológico, se torna cada vez mais importante desenvolver software. O desenvolvimento de software pode possuir diferentes contextos de negócio, e com isso diferentes habilidades são exigidas dos desenvolvedores, já que cada contexto possui suas particularidades. Além disso, o ritmo acelerado do mundo moderno faz com que os contextos evoluam, e com isso as suas atividades e necessidades (requisitos) também evoluam. A mudança nos requisitos, a sua diversidade, e em alguns casos a dificuldade em definí-los, leva o desenvolvimento tradicional de software a ser lento e caro em contextos que estão sempre evoluindo \cite{lieberman2006}. Além disso, a limitação na capacidade de produção de software de uma organização pode levar à priorização das demandas, e como consequência algumas áreas de negócio podem ficar sem atendimento. Neste contexto, se torna cada vez mais comum, aplicações de software serem desenvolvidas por desenvolvedores não profissionais, pessoas que possuem conhecimento básico em programação, mas que possuem expertise no domínio de negócio em que estão inseridas. O desejo de suportar seus objetivos neste domínio através de uma solução computacional, os leva a serem tanto desenvolvedores quanto usuários finais do software \cite{lieberman2006}. 
+É inconcebível imaginar o mundo moderno sem software. Ele está tão acoplado nas mais diversas áreas que seria difícil prever como o mundo seria sem o suporte e as facilidades que ele traz ao nosso dia a dia. Diante deste acoplamento tão grande e do seu enorme crescimento nos últimos anos, consequência do avanço tecnológico, se torna cada vez mais importante desenvolver software. O desenvolvimento de software pode possuir diferentes contextos de negócio, e com isso diferentes habilidades são exigidas dos desenvolvedores, já que cada contexto possui suas particularidades. Além disso, o ritmo acelerado do mundo moderno faz com que os contextos evoluam, e com isso as suas atividades e necessidades (requisitos) também evoluem. A mudança nos requisitos, a sua diversidade, e em alguns casos a dificuldade em definí-los, leva o desenvolvimento tradicional de software a ser lento e caro em contextos que estão sempre evoluindo \cite{lieberman2006}. Além disso, a limitação na capacidade de produção de software de uma organização pode levar à priorização das demandas, e como consequência algumas áreas de negócio podem ficar sem atendimento. Neste contexto, se torna cada vez mais comum, aplicações de software serem desenvolvidas por desenvolvedores não profissionais, pessoas que possuem conhecimento básico em programação, mas que possuem expertise no domínio de negócio em que estão inseridas. O desejo de suportar seus objetivos neste domínio através de uma solução computacional, os leva a serem tanto desenvolvedores quanto usuários finais do software \cite{lieberman2006}. 
 
 O Escritório do Trabalho e Estatística dos Estados Unidos fez uma previsão de que por volta de 2012, nos Estados Unidos, haveriam pouco mais de 3 milhões de programadores profissionais e mais de 55 milhões de pessoas escrevendo fórmulas e \textit{queries} em planilhas e banco de dados, para suportar seus objetivos de trabalho \cite{scaffidi2005}. Um relatório divulgado pelo \textit{Gartner} em Julho de 2011, indicou que desenvolvedores não profissionais iriam construir ao menos 25 \% das novas aplicações de negócio em 2014 \cite{paterno2013}. Diante deste cenário, um modelo de desenvolvimento de software centrado nesses usuários finais, que desenvolvem cada vez mais sistemas e aplicações, vem ganhando força. O \textit{End User Development} - EUD tem como objetivo oferecer meios para que os usuários finais, que não são especialistas em programação, possam desenvolver aplicações de software. O EUD pode ajudar a aumentar a capacidade produtiva do departamento de TI de uma organização, bem como reduzir custos com o desenvolvimento de aplicações de negócio.
 
-O serviço público brasileiro, por ter natureza administrativa, apresenta grande demanda por desenvolvimento de software. Porém, a limitada capacidade produtiva da área de TI e o excesso de burocracia para o aumento da mesma, que é feita através de concursos ou de contratos terceirizados, acaba contribuindo para que as demandas das áreas de negócio consideradas menos prioritárias sejam deixadas de lado \cite{artigoTcuGovTI}. O uso de planilhas e o desenvolvimento de aplicações clandestinas sem nenhuma documentação e padrão, por essas unidades de negócio, promove o desconhecimento de soluções informatizadas por parte da alta cúpula, bem como a duplicidade de esforços pelas unidades \cite{slideTCU}. Nesse sentido, alguns órgãos da administração pública federal vêm reconhecendo esses esforços feitos informalmente pelas áreas de negócio, e começaram a adotar o modelo EUD, com algumas adaptações, para tentar contornar os problemas relatados. Os órgãos adotaram chamar esse modelo de modelo de desenvolvimento descentralizado, uma espécie de EUD onde o usuário final não é necessariamente quem desenvolve as aplicações. Geralmente estagiários da área de TI são contratados, para que eles possam ser alocados nas unidades de negócio do órgão, de forma que eles desenvolvam as aplicações junto à área de negócio, com a consultoria técnica da área de TI \cite{slideTCU}. Uma iniciativa bem sucedida de desenvolvimento descentralizado já foi implantada em um órgão da administração pública federal (chamado neste trabalho de Órgão X), com um relato de alta satisfação dos usuários. Apesar disso, ainda existem algumas dificuldades no desenvolvimento por parte dos estagiários e servidores, que apesar de possuirem um guia/processo que os oriente durante o ciclo de desenvolvimento, muitos acabam seguindo a forma de desenvolvimento e os padrões que acreditam serem os melhores para o seu ambiente de trabalho, ficando o guia/processo esquecido por não envolver os desenvolvedores como um apoio ao desenvolvimento de sistema, o que acaba colocando em dúvida a qualidade das aplicações desenvolvidas. 
+O serviço público brasileiro, por ter natureza administrativa, apresenta grande demanda por desenvolvimento de software. Porém, a limitada capacidade produtiva da área de TI e o excesso de burocracia para o aumento da mesma, que é feita através de concursos ou de contratos terceirizados, acaba contribuindo para que as demandas das áreas de negócio consideradas menos prioritárias sejam deixadas de lado \cite{artigoTcuGovTI}. O uso de planilhas e o desenvolvimento de aplicações clandestinas sem nenhuma documentação e padrão, por essas unidades de negócio, promove o desconhecimento de soluções informatizadas por parte da alta cúpula, bem como a duplicidade de esforços pelas unidades \cite{slideTCU}. Nesse sentido, alguns órgãos da administração pública federal vêm reconhecendo esses esforços feitos informalmente pelas áreas de negócio, e começaram a adotar o modelo EUD, com algumas adaptações, para tentar contornar os problemas relatados. Um dos órgãos pioneiros nessa adaptação, denominado de Órgão X para fins de privacidade, passou a chama-la de modelo de desenvolvimento descentralizado, uma espécie de EUD onde o usuário final não é necessariamente quem desenvolve as aplicações. No Órgão X geralmente estagiários da área de TI são contratados, para que eles possam ser alocados nas unidades de negócio do órgão, de forma que eles desenvolvam as aplicações junto à área de negócio, com a consultoria técnica da área de TI \cite{slideTCU}. Essa iniciativa foi bem sucedida dentro do órgão, com um relato de alta satisfação dos usuários. Apesar disso, ainda existem algumas dificuldades no desenvolvimento por parte dos estagiários e servidores, que não possuem acesso a um guia/processo que os orientem durante o ciclo de desenvolvimento, e por isso muitos acabam seguindo a forma de desenvolvimento e os padrões que acreditam serem os melhores para o seu ambiente de trabalho, o que acaba colocando em dúvida a qualidade das aplicações desenvolvidas. 
 
 \section{\textit{Problema}}
 
-O problema identificado para este trabalho se refere a maneira de como é executado o processo de desenvolvimento de sistemas internos do órgão x. Uma vez que os sistemas que são desenvolvidos de forma descentralizada, ou seja, alguns departamentos realizam o desenvolvimento de seus sitemas conforme sua necessidade ou solicitam a algum departamento especializado em desenvolvimento de sistemas e que presta susporte ao desenvolvimento de sistemas para os departamentos que fazem o desenvolvimento, não adotam um padrão comum de desenvolvimento, bem como boas práticas em comum, carecendo de um suporte nesse aspécto ao desenvolvimento de sistemas. --Verificar aqui problema que algum autor retrata que ocorre no órgão--
+O problema identificado para este trabalho se refere a maneira de como é executado o desenvolvimento de sistemas descentralizados no Órgão X. Uma vez que os sistemas são desenvolvidos de forma descentralizada, ou seja, alguns departamentos realizam o desenvolvimento de seus sistemas conforme suas necessidades ou solicitam o desenvolvimento a algum departamento especializado em desenvolvimento e suporte de sistemas, eles geralmente acabam ficando sem um padrão comum de desenvolvimento e sem o uso de boas práticas. \textbf{\textit{-- TODO: Verificar aqui problema que algum autor retrata que ocorre no órgão--}}
 
-Assim a questão de pesquisa abordada nesse trabalho é: --verificar qual será a questão--
-
-Como apoiar o desenvolvedor na construção de sistemas descentralizados para garantir a qualidade e manutenibilidade destes sistemas?
+Assim a questão de pesquisa abordada nesse trabalho é: 
+\begin{itemize}
+\item Como apoiar o desenvolvedor na construção de sistemas descentralizados para garantir a qualidade e manutenibilidade destes sistemas?
+\end{itemize}
 
 \section{\textit{Objetivos}}
 
@@ -49,16 +50,13 @@ Apesar disso, existem ainda algumas dificuldades no desenvolvimento por parte do
 
 \section{\textit{Justificativa}}
 
-É importante que o órgão se esforce para melhorar a maneira de como são desenvolvidos seus sistemas, uma vez que os mesmos são desenvolvidos por alguns departamentos sem experiência no desenvolvimento, ao que podemos adequar para o desenvolvimento EUD, pois segundo Blackwell, no caso de uso de ferramentas de programação, é muito fácil para os desenvolvedores de software profissionais assumir que todas as outras pessoas devem se aproximar de seu trabalho na programação da mesma maneira como um profissional faz. É necessário atenção e investigação especializada para os usuários finais, para evitar essa armadilha quando os profissionais de software criarem novas tecnologias EUD. Ou seja, baseado nesse argumento, é necessário que os desenvolvedores EUD tenham uma atenção especial para o desenvolvimento de seus sistemas, com um modelo que lhes dê suporte.
+É importante que o órgão se esforce para melhorar a maneira de como são desenvolvidos seus sistemas descentralizados, uma vez que isso pode acarretar em problemas relacionados a qualidade e a manutenibilidade desses sistemas. Segundo \textit{Blackwell}, no caso do uso de ferramentas de programação é muito fácil para os desenvolvedores de software profissionais assumir que todas as pessoas irão se aproximar ao seu nível profissional de programação. É necessário atenção e investigação especializada para os usuários finais, para evitar essa armadilha quando os profissionais de software criarem novas tecnologias voltadas ao EUD. Baseado nesses argumentos, é necessário que os desenvolvedores EUD tenham uma atenção especial para o desenvolvimento de seus sistemas, com um modelo que lhes dê suporte.
 
 \section{\textit{Metodologia}}
 
---registrar Metodologia--
-\textit{\{Acrescentar aqui uma breve descrição da metodologia escolhida.\}}
+Para a escolha da estratégia de pesquisa, basicamente depende-se do atendimento de três condições: o tipo de questão de pesquisa, o controle que o pesquisador possui sobre os eventos comportamentais efetivos, e o foco em fenômenos históricos, em oposição a fenômenos contemporâneos \cite{yin2001estudo}. 
 
-Para a escolha da estratégia de pesquisa, basicamente se depende do atendimento de três condições: O tipo de questão da pesquisa, o controle que o pesquisador possui sobre os eventos comportamentais efetivos, e o foco em fenômenos históricos, em oposição a fenômenos contemporâneos \cite{yin2001estudo}. 
-
-Levando em consideração essas condições, a metodologia de pesquisa deste trabalho tem sua classificação quanto à abordagem, natureza, objetivos ou tipologia, procedimentos técnicos e as técnicas de coleta de dados.
+Levando em consideração essas condições, a metodologia de pesquisa deste trabalho foi classificada quanto à abordagem, natureza, objetivos ou tipologia, procedimentos técnicos e as técnicas de coleta de dados.
 
 Quanto à abordagem, é classificada como qualitativa, uma vez, que as pesquisas
 classificadas como qualitativas não requerem o uso de métodos e técnicas estatísticas --citar gunter e citar moresi--, está mais relacionada no levantamento de dados sobre as motivações de um grupo, em compreender e interpretar determinados comportamentos, a opinião e as expectativas dos indivíduos de uma população, portanto sem o intuito de obter dados estatísticos como resultado. Os resultados neste trabalho serão analisados individualmente.
@@ -125,6 +123,7 @@ Baseado nessas informações sobre o processo de pesquisa-ação, além das quat
 
 \subsection{Entrevista Semi-Estruturada}
 
+\begin{comment}
 ------------
 --Esse cai fora!!!--
 O estudo de caso consiste no estudo profundo e exaustivo de um ou mais objetos, de forma a obter conhecimento amplo e detalhado sobre o mesmo. Segundo \citeonline{yin2001estudo} o estudo de caso é a abordagem mais adequada para a investigação de um fenômeno em seu contexto real, onde os limites entre este fenômeno e o seu contexto não são claramente percebidos. Os propósitos do estudo de caso são \cite{gil2002}:
@@ -138,6 +137,7 @@ O estudo de caso consiste no estudo profundo e exaustivo de um ou mais objetos, 
 \end{itemize}
 --Esse cai fora!!!--
 --------------
+\end{comment}
 
 Existem diversos métodos de coleta de dados para suportar os propósitos de um procedimento técnico, e um dos métodos comumente usados na engenharia de software é a entrevista \cite{caseStudySE}. Quase todos os estudos de caso envolvem algum tipo de entrevista, seja para a finalidade primária de coleta dados, seja para uma validação de outros tipos de dados \cite{caseStudySE}. A entrevista é caracterizada como um método de coleta de dados onde o pesquisador está em contato direto com os entrevistados e como um método de coleta de dados em tempo real \cite{caseStudySE}. O diálogo entre o entrevistador e o entrevistado é guiado por um conjunto de perguntas, que podem ser classificadas como abertas ou fechadas \cite{caseStudySE}. As perguntas abertas permitem uma maior gama de respostas e relatos de problemas, por parte do entrevistado. Já as perguntas fechadas oferecem alternativas mais limitadas, se comparadas as perguntas abertas. Ambos os tipos de perguntas são baseadas nos tópicos de interesse relacionados ao estudo de caso. 
 
@@ -157,14 +157,16 @@ Uma vez que os dados são coletados, o foco se volta para a análise e interpret
 	\item Relatar os resultados.
 \end{enumerate}
 
-
+\begin{comment}
 \subsection{Metodologia Adotada}
 --essa subseção irá sumir, pois não tem mais sentido falar da metodologia adotada, sendo que na parte da metodologia já está se explicando e informando a metodologia que se irá adotar no trabalho--
 
 A metodologia adotada para este trabalho foi o estudo de caso, devido a necessidade de realizar um diagnóstico da situação atual para a construção da solução de apoio, e o método utilizado no estudo de caso foi a entrevista, por ser um método bastante comum neste tipo de metodologia e permitir um contato direto com os entrevistados. 
 
 A entrevista elaborada pode ser classificada como semiestruturada. No planejamento da entrevista, algumas categorias de perguntas relacionadas ao ciclo de vida do software e ao contexto do desenvolvedor foram elaboradas, de forma a auxiliar na formulação das perguntas.
+\end{comment}
 
+\begin{comment}
 %TODO: Unificar pesquisa participante junto com a descrição na parte teórica da metodologia, onde é descrito o estudo de caso.
 \subsection{Pesquisa Participante}
 
@@ -172,6 +174,7 @@ A entrevista elaborada pode ser classificada como semiestruturada. No planejamen
 %TODO: Unificar dentro da metodologia também, ou mover esta sub-seção para antes da sub-seção "Metodologia Adotada".
 
 --Essa parte irá sumir, pois ela virou uma técnica adotada chamada observação participante e já foi abordada na metodologia--
+\end{comment}
 \subsection{Fases da Pesquisa}
 
 A partir da metodologia, foram definidas as fases e etapas do trabalho, sendo que as fases forram:
@@ -193,7 +196,7 @@ uma descrição de cada uma das fases.
 	\caption{Plano metodológico adotado. Fonte: autores}
 \end{figure}
 
-\textit{Derfinição do Trabalho}
+\textit{Definição do Trabalho}
 
 Esta etapa compreende o estabelecimento, com base no problema
 organizacional levantado em alto nível: sendo o objetivo a ser atingido, a pergunta de pesquisa, a seleção metodológica e as fases da pesquisa.
@@ -216,8 +219,8 @@ Nesta fase os resultados observados nas fases anteriores serão analisados e ver
 
 \section{\textit{Organização do Trabalho}}
 
---registrar como está organizado--
---Falar que a partir do capítulo 2 ao 3 (vai entrar mais) trata-se do referencial teórico--
+\textbf{-- TODO: registrar como está organizado--
+--Falar que a partir do capítulo 2 ao 3 (vai entrar mais) trata-se do referencial teórico--}
 
 Nos capítulos 2,3 e ... apresenta o referencial que embasa este trabalho. O referencial teórico é o meio em que o autor do trabalho demonstra o seu conhecimento sobre uma determinada área de estudo (teorias, vocabulários, variáveis chave, fenômenos, métodos e história) \cite{randolph2009}.
 
@@ -635,7 +638,7 @@ O diagnóstico obtido, conforme a entrevista aplicada aos desenvolvedores que pa
 
 \textbf{P34}                   & Co10           & Co10           & Co10           & Co10           & Co10           & Co10           & Co10           & Co10           \\ \hline
 
-\textbf{OBS}                   & Co3,Co5        & Co9,Co10       & Co9            & Co4,Co9        &   -             &        -        &      -          &      -          \\ \hline
+\textbf{OBS}                   & Co3,Co5,\newline Co10        & Co9,Co10       & Co9            & Co4,Co9        &   -             &        -        &      -          &      -          \\ \hline
 
 \end{tabular}
 \caption{Matriz de rastreabilidade dos códigos}
