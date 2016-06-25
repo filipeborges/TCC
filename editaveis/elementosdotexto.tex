@@ -305,16 +305,16 @@ O fluxo de dados na arquitetura do APEX, é composto dos seguintes passos \cite{
 
 \chapter[Capítulo 3 - Metodologia ágil]{Metodologia ágil}
 
-A metodologia ágil é uma abordagem de desenvolvimento de software que tem ganhado visibilidade ao longo dos últimos anos, e surgiu através do estabelecimento, entre vários desenvolvedores experientes, de um senso comum de valores no desenvolvimento de software. Um grupo de 17 desenvolvedores, com grande experiência nos mais variados ramos da indústria de software, se reuniu em \textit{Utah} nos Estados Unidos por volta de 2001 para racionalizar uma filosofia comum sobre o que consideravam que tinha valor no desenvolvimento de software. A essa filosofia comum entre os participantes deram o nome de \textit{agile} (ágil) \cite{metodoAgil}. Com base nas experiências de sucesso e fracasso em projetos de software por parte desse grupo, entrando em um acordo comum sobre o que funcionou e o que não funcionou, foi elaborado o Manifesto Ágil para o Desenvolvimento de Software, que norteia os valores e princípios da metodologia ágil \cite{metodoAgil}. O Manifesto Ágil tem como valores \cite{metodoAgil}:
+A metodologia ágil é uma abordagem de desenvolvimento de software que tem ganhado visibilidade ao longo dos últimos anos, e que surgiu através do estabelecimento, entre vários desenvolvedores experientes, de um senso comum de valores no desenvolvimento de software. Um grupo de 17 desenvolvedores, com grande experiência nos mais variados ramos da indústria de software, se reuniu em \textit{Utah} nos Estados Unidos por volta de 2001 para racionalizar uma filosofia comum sobre o que consideravam que tinha valor no desenvolvimento de software. A essa filosofia comum, entre os participantes, deram o nome de \textit{agile} (ágil) \cite{metodoAgil}. Com base nas experiências de sucesso e fracasso em projetos de software por parte desse grupo, foi elaborado o Manifesto Ágil para o Desenvolvimento de Software, que norteia os valores e princípios da metodologia ágil \cite{metodoAgil}. O Manifesto Ágil tem como valores \cite{metodoAgil}:
 
 \begin{itemize}
-\item Indivíduos e interações ao invés de processos e ferramentas;
+\item Indivíduos e interações, ao invés de processos e ferramentas;
 \item Software funcionando ao invés de documentação extensiva;
 \item Colaboração do cliente ao invés de negociação de contratos;
 \item Responder às mudanças ao invés de seguir um plano;
 \end{itemize}
 
-Existem vários métodos dentro da metodologia ágil, entre eles: \textit{Extreme Programming} (XP), \textit{Scrum}, \textit{Feature Driven Development} (FDD), \textit{Crystal}, \textit{Lean Development} e etc \cite{agileMethods}.
+Existem vários métodos dentro da metodologia ágil, entre eles: \textit{Extreme Programming} (XP), \textit{Scrum}, \textit{Feature Driven Development} (FDD), \textit{Crystal}, \textit{Lean Development} e etc \cite{agileMethods}. O método escolhido neste trabalho foi o \textit{Scrum}, que é detalhado a seguir.
 
 \section{\textit{Scrum}}
 
@@ -325,33 +325,33 @@ Existem 3 papéis envolvidos no \textit{Scrum}, o \textit{Product Owner}, o Time
 \begin{itemize}
 \item \textbf{\textit{Product Owner}}: Responsável por representar os interesses dos \textit{stakeholders} no projeto, através do suporte de negócio ao time de desenvolvimento. O \textit{Product Owner} também é responsável por manter o \textit{Product Backlog} (\textit{Backlog} do Produto), que é uma lista priorizada de requisitos que irão se tornar uma funcionalidade no software.
 
-\item \textbf{Time}: Responsável por desenvolver a funcionalidade, o time é quem de fato irá transformar uma parte do \textit{Backlog} do Produto em um incremento de funcionalidade ao final de uma iteração. O time deve ser auto-gerenciável, auto-organizável e multi-funcional.
+\item \textbf{Time}: Responsável por desenvolver a funcionalidade, o time é quem de fato irá transformar uma parte do \textit{Backlog} do Produto em um incremento de funcionalidade ao final de uma iteração. O time deve ser autogerenciável, auto-organizável e multifuncional.
 
-\item \textbf{\textit{Scrum Master}}: Responsável por gerenciar o processo \textit{Scrum}, garantindo que a implementação do \textit{Scrum} se adeque a cultura da organização e que ao mesmo tempo traga os benefícios esperados. Além disso, o \textit{Scrum Master} também deve garantir o esclarecimento do \textit{Scrum} a todos do time e que todos sigam as regras e práticas do \textit{Scrum}.
+\item \textbf{\textit{Scrum Master}}: Responsável por gerenciar o processo \textit{Scrum}, garantindo que a implementação do \textit{Scrum} se adeque à cultura da organização e que, ao mesmo tempo, traga os benefícios esperados. Além disso, o \textit{Scrum Master} também deve garantir o esclarecimento e a aplicabilidade das regras e práticas do \textit{Scrum} à todos do time.
 \end{itemize}
 
-As figuras 3 e 4 mostram, respectivamente, uma visão geral e detalhada do \textit{Scrum}.
+As figuras 3 e 4 mostram, respectivamente, uma visão geral e detalhada do \textit{Scrum} que serão explicadas posteriormente.
 
 \begin{figure}[!htb]
 	\centering
 		\includegraphics[scale=0.7]{figuras/scrum}
-	\caption{Visão geral do \textit{Scrum} \cite{scrum2005}.}
+	\caption{Visão geral do \textit{Scrum}. Adaptado de \cite{scrum2005}.}
 \end{figure}
 
 \begin{figure}[!htb]
 	\centering
 		\includegraphics[scale=0.8]{figuras/scrum_detalhado}
-	\caption{Visão detalhada do \textit{Scrum} \cite{scrum2005}.}
+	\caption{Visão detalhada do \textit{Scrum}. Adaptado de \cite{scrum2005}.}
 \end{figure}
 \clearpage
 
-Um projeto seguindo o \textit{Scrum} começa com uma visão do sistema a ser desenvolvido, e a partir desta visão o \textit{Backlog} do Produto é definido e priorizado, de acordo com os requisitos conhecidos até então. Uma iteração é chamada de \textit{Sprint}, que geralmente possui a duração de no máximo 1 mês. O trabalho a ser realizado em uma \textit{Sprint} é definido na reunião de planejamento da \textit{Sprint}, onde o \textit{Product Owner} e o time colaboram para estabelecer o que deve ser feito: o \textit{Product Owner} diz ao time o que do \textit{Backlog} do Produto é desejado para a \textit{Sprint}, e o time diz ao mesmo o que acredita que deva ser cumprido ao final da \textit{Sprint}. Ao fim da reunião o \textit{Backlog} da \textit{Sprint} é definido, que é uma lista de tarefas a serem feitas na \textit{Sprint}, onde cada uma deve levar entre 4 a 16 horas para ser finalizada. Ao serem finalizadas, essas tarefas irão entregar um incremento de funcionalidade ao produto. Durante a execução da \textit{Sprint}, reuniões diárias de 15 minutos chamadas de \textit{Daily Scrum Meeting} acontecem. Nestas reuniões, cada membro do time deve responder três questões, objetivando o alinhamento de todos os membros: o que você fez no projeto desde de a última reunião? O que você irá fazer até a próxima reunião? Você tem algum obstáculo em relação aos seus objetivos? Ao final de cada \textit{Sprint}, uma revisão de \textit{Sprint} é realizada, onde o time apresenta ao \textit{Product Owner} e a outros interessados que participam da reunião, o que foi desenvolvido. Ao final da revisão de \textit{Sprint} e antes da próxima reunião de planejamento da \textit{Sprint}, é feita uma retrospectiva, listando os pontos fortes e fracos da \textit{Sprint}, objetivando a melhoria constante. O planejamento da \textit{Sprint}, o \textit{Daily Scrum Meeting}, a revisão de \textit{Sprint} e a retrospectiva são os métodos usados pelo \textit{Scrum} para constituir o controle empírico do desenvolvimento de software \cite{scrum2005}.
+Um projeto seguindo o \textit{Scrum} começa com uma visão do sistema a ser desenvolvido, e a partir desta visão o \textit{Backlog} do Produto é definido e priorizado, de acordo com os requisitos conhecidos até então. Uma iteração é chamada de \textit{Sprint}, que geralmente possui a duração de no máximo 1 mês. O trabalho a ser realizado em uma \textit{Sprint} é definido na reunião de planejamento da \textit{Sprint}, onde o \textit{Product Owner} e o time colaboram para estabelecer o que deve ser feito: o \textit{Product Owner} diz ao time o que do \textit{Backlog} do Produto é desejado para a \textit{Sprint}, e o time diz ao mesmo o que acredita que deva ser cumprido ao final da \textit{Sprint}. Ao fim da reunião o \textit{Backlog} da \textit{Sprint} é definido, que é uma lista de tarefas a serem feitas na \textit{Sprint}, onde cada uma deve levar entre 4 a 16 horas para ser finalizada. Ao serem finalizadas, essas tarefas irão entregar um incremento de funcionalidade ao produto. Durante a execução da \textit{Sprint}, reuniões diárias de 15 minutos, chamadas de \textit{Daily Scrum Meeting}, acontecem. Nestas reuniões, cada membro do time deve responder três questões, objetivando o alinhamento de todos os membros: "O que você fez no projeto desde de a última reunião?", "O que você irá fazer até a próxima reunião?", "Você tem algum obstáculo em relação aos seus objetivos?". Ao final de cada \textit{Sprint}, uma revisão de \textit{Sprint} é realizada, onde o time apresenta ao \textit{Product Owner} e a outros interessados que participam da reunião, o que foi desenvolvido. Ao final da revisão de \textit{Sprint} e antes da próxima reunião de planejamento da \textit{Sprint}, é feita uma retrospectiva, listando os pontos fortes e fracos da \textit{Sprint}, objetivando a melhoria constante. O planejamento da \textit{Sprint}, o \textit{Daily Scrum Meeting}, a revisão de \textit{Sprint} e a retrospectiva são os métodos usados pelo \textit{Scrum} para constituir o controle empírico do desenvolvimento de software \cite{scrum2005}. Para ajudar neste controle empírico, uma ferramenta comumente usada no \textit{Scrum} é o quadro \textit{kanban}, que será detalhado a seguir.
 
 \section{Quadro \textit{kanban}}
 
 O método \textit{Kanban} é um termo que surgiu no Japão com o sistema de produção da Toyota para o controle da fabricação de automóveis, onde a demanda é quem dita o ritmo de produção, sinalizando quando é necessário aumentar o mesmo. Desta forma, a indústria adapta a sua velocidade de produção de acordo com o nível de consumo dos clientes. O \textit{Kanban} é um termo japonês que significa sinal visual, portanto uma de suas grandes características é evidênciar os problemas existentes no processo \cite{silva2010kanban}.
 
-Na indústria de software, o uso do método \textit{Kanban} tem ganhado significativo aumento desde de 2007, quando ele foi publicado nas conferências "Lean New Product Development" e "Agile 2007", por Rick Garber e David J. Anderson. Ele é um método pouco prescritivo e bastante adaptativo, por conta disso ele acaba se tornando um método quase que exclusivamente empírico, seguindo apenas três premissas \cite{silva2010kanban}:
+Na indústria de software, o uso do método \textit{Kanban} tem ganhado significativo aumento desde 2007, quando ele foi publicado nas conferências "Lean New Product Development" e "Agile 2007", por Rick Garber e David J. Anderson \cite{silva2010kanban}. Ele é um método pouco prescritivo e bastante adaptativo e, devido a isto, acaba se tornando um método quase que exclusivamente empírico, seguindo apenas três premissas \cite{silva2010kanban}:
 
 \begin{itemize}
 \item Visualizar o fluxo de trabalho atual;
@@ -359,19 +359,19 @@ Na indústria de software, o uso do método \textit{Kanban} tem ganhado signific
 \item Acompanhar e gerênciar o fluxo de trabalho;
 \end{itemize}
 
-Para dar a noção visual de continuidade do fluxo de trabalho, o método \textit{Kanban} se utiliza do quadro \textit{kanban}. No desenvolvimento de software, o quadro \textit{kanban} é uma ferramenta que permite aos times visualizarem o seu fluxo de trabalho, e ele consiste de colunas desenhadas em um quadro branco com adesivos ou bilhetes colados em cada coluna. Tipicamente ele é composto por 3 colunas: \textit{To Do} (O que fazer), \textit{In Progress} (Em progresso) e \textit{Done} (Concluído) \cite{agile2014}. Cada uma dessas colunas são compostas por tarefas, que precisam ser concluídas para se atingir um determinado objetivo. No caso da metodologia \textit{Scrum}, estas tarefas são geralmente derivadas do \textit{backlog} do produto. Observa-se que pelo fato de o método \textit{Kanban} ser empírico, o quadro \textit{kanban} também acaba se tornando, podendo haver variações nas colunas que o compõe de acordo com as necessidades do time de desenvolvimento \cite{agile2014}. A figura 5 mostra um esquemático de um quadro \textit{kanban}.
+Para dar a noção visual de continuidade do fluxo de trabalho, o método \textit{Kanban} se utiliza do quadro \textit{kanban}. No desenvolvimento de software, o quadro \textit{kanban} é uma ferramenta que permite aos times visualizarem o seu fluxo de trabalho. O quadro consiste de colunas desenhadas em um quadro branco com adesivos ou bilhetes colados em cada coluna. Tipicamente ele é composto por 3 colunas: \textit{To Do} (O que fazer), \textit{In Progress} (Em progresso) e \textit{Done} (Concluído) \cite{agile2014}. Cada uma dessas colunas são compostas por tarefas, que precisam ser concluídas para se atingir um determinado objetivo. No caso da metodologia \textit{Scrum}, estas tarefas são geralmente derivadas do \textit{backlog} do produto. Observa-se que pelo fato de o método \textit{Kanban} ser empírico, o quadro \textit{kanban} também acaba se tornando, podendo haver variações nas colunas que o compõe de acordo com as necessidades do time de desenvolvimento \cite{agile2014}. A figura 5 mostra um esquema de um quadro \textit{kanban}.
 
 \begin{figure}[!htb]
 	\centering
 		\includegraphics{figuras/Kanban}
-	\caption{Esquemático de um quadro \textit{kanban} \cite{kanbanImage}.}
+	\caption{Esquema de um quadro \textit{kanban} \cite{kanbanImage}.}
 \end{figure}
 
 \chapter[Capítulo 4 – Proposta do Trabalho]{Capítulo 4 – Proposta do Trabalho}
 
 \section{\textit{Considerações Iniciais do Capítulo}}
 
---falar sobre considerações iniciais--
+Este capítulo trata da definição da proposta deste trabalho, dos procedimentos executados na entrevista para diagnosticar a situação do desenvolvimento descentralizado no Órgão X, e das descrições das fontes complementares para a elaboração da solução: o Processo de Desenvolvimento Descentralizado existente e a \textit{Wiki} da unidade coordenadora do desenvolvimento descentralizado.
 
 \section{\textit{Definição da Proposta}}
 
@@ -469,7 +469,7 @@ Os códigos foram derivados dos objetivos de cada categoria de perguntas do cicl
 \begin{table}[!htb]
 	\centering
 	\caption{Códigos elaborados para a análise dos resultados}
-	\begin{tabular}{|M{4.8cm} | M{4.8cm} | M{4.8cm}|}
+	\begin{tabular}{|m{4.8cm} | m{4.8cm} | m{4.8cm}|}
 		\hline
 		\textbf{Categoria} & \textbf{Objetivo} & 
 		\textbf{Código Derivado} \\ \hline
@@ -496,9 +496,8 @@ Os códigos foram derivados dos objetivos de cada categoria de perguntas do cicl
 	\label{tab01}
 \end{table}
 
-As chaves foram derivadas dos significados das respostas das entrevistas, de forma que se duas ou mais respostas geraram uma mesma chave, devido aos seus significados semelhantes, somente uma única chave foi considerada. A figura 2 mostra um esquemático que exemplifica a execução dos passos definidos para a análise.
+As chaves foram derivadas dos significados das respostas das entrevistas, de forma que se duas ou mais respostas geraram uma mesma chave, devido aos seus significados semelhantes, somente uma única chave foi considerada. A figura 9 mostra um esquema que exemplifica a execução dos passos definidos para a análise.
 
-%TODO: Inserir a figura aqui talvez.
 \begin{figure}[h]
 	\centering
 	\label{fig02}
@@ -511,9 +510,9 @@ A atribuição de um código e de uma chave foram necessários, pois dentro de u
 
 \section{Processo de Desenvolvimento Descentralizado}
 
-A necessidade de um processo ou guia para o desenvolvimento descentralizado é algo já foi percebido pelo Órgão X, pois uma tentativa de implantação de um processo já havia sido realizada. O processo, chamado de Processo de Desenvolvimento Descentralizado do Órgão X, teve a sua finalização concluída no ano de 2012, e foi elaborado pela Secretaria de Tecnologia da Informação do órgão. Apesar de o processo ter sido desenvolvido, segundo o chefe da unidade coordenadora do desenvolvimento descentralizado, ele nunca chegou ao conhecimento dos desenvolvedores devido a questões normativas do próprio órgão, que inviabilizaram a sua implantação (CITAR O DEPOIMENTO???).
+Uma tentativa de implantação de um processo para o desenvolvimento descentralizado já foi realizada pelo Órgão X, evidenciando a necessidade de um processo ou guia para o desenvolvimento descentralizado. O processo, chamado de Processo de Desenvolvimento Descentralizado do Órgão X, teve a sua finalização concluída no ano de 2012, e foi elaborado pela Secretaria de Tecnologia da Informação do órgão. Apesar de o processo ter sido desenvolvido, segundo o chefe da unidade coordenadora do desenvolvimento descentralizado, ele nunca chegou ao conhecimento dos desenvolvedores devido a questões normativas do próprio órgão, que inviabilizaram a sua implantação (CITAR O DEPOIMENTO???).
 
-O processo, elaborado na ferramenta \textit{Eclipse Process Framework}, que é voltada à construção de processos, consiste de 6 fases bem definidas: Estudo Preliminar de Projeto, Elicitação de Requisitos, Projeto de Banco de Dados, Construção, Homologação e Implantação. Cada uma dessas fases são divididas em atividades e tarefas, que por sua vez são apoiadas por um conjunto de guias e modelos.
+O processo, elaborado na ferramenta \textit{Eclipse Process Framework}, que é voltada à construção de processos, consiste de 6 fases bem definidas: Estudo Preliminar de Projeto, Elicitação de Requisitos, Projeto de Banco de Dados, Construção, Homologação e Implantação. Cada uma dessas fases são divididas em atividades e tarefas, que por sua vez são apoiadas por um conjunto de guias e modelos. Os objetivos de cada fase estão listados abaixo, e o ciclo de vida do processo, em termos de fases, é exibido na figura 10.
 
 \begin{figure}[h]
 	\centering
@@ -531,13 +530,13 @@ O processo, elaborado na ferramenta \textit{Eclipse Process Framework}, que é v
 \end{enumerate}
 \clearpage
 
-Foram selecionados, para a construção da solução de apoio, os componentes de processo (atividades, tarefas, guias e modelos) que possuem uma relação com os problemas, as sugestões e as boas práticas, relatados no diagnóstico, e alguns que não estão relacionados diretamente com o diagnóstico mas que julgou-se interessante para complementar a solução.
+Foram selecionados para a construção da solução de apoio, os componentes de processo (atividades, tarefas, guias e modelos) que possuem uma relação com os problemas, as sugestões e as boas práticas relatados no diagnóstico, e alguns que não estão relacionados diretamente com o diagnóstico mas que julgou-se interessante para complementar a solução.
 
 \section{\textit{Wiki} do Desenvolvimento Descentralizado}
 
-O Órgão X utiliza um sistema de \textit{Wiki} como uma das formas de compartilhamento de informação entre o público interno do órgão, de forma que esse público possa usufruir e contribuir com as informações publicadas. A unidade coordenadora do desenvolvimento descentralizado também possui a sua página dentro da \textit{Wiki}, onde são definidos os guias e as boas práticas, que contribuam para uma melhoria na qualidade das aplicações e que também possam ajudar os desenvolvedores em eventuais dúvidas. A \textit{Wiki} do desenvolvimento descentralizado contém um conjunto de tutoriais, boas práticas e padrões, que variam em nível de complexidade e em nível de necessidade, cabendo ao desenvolvedor acessa-la e usufruir da parte do conteúdo que se encaixa nas suas necessidades.
+O Órgão X utiliza um sistema de \textit{Wiki} como uma das formas de compartilhamento de informação entre o público interno do órgão, de forma que esse público possa usufruir e contribuir com as informações publicadas. A unidade coordenadora do desenvolvimento descentralizado também possui a sua página dentro da \textit{Wiki}, onde são definidos os guias e as boas práticas, que contribuem para uma melhoria na qualidade das aplicações e que também possam ajudar os desenvolvedores em eventuais dúvidas. A \textit{Wiki} do desenvolvimento descentralizado contém um conjunto de tutoriais, boas práticas e padrões, que variam em nível de complexidade e em nível de necessidade, cabendo ao desenvolvedor acessa-la e usufruir do conteúdo que se encaixa nas suas necessidades.
 
-Procurou-se selecionar algumas boas práticas e padrões que não inserissem uma complexidade técnica muito grande à solução, mas que ao mesmo tempo estivesse relacionado ao diagnóstico obtido.
+As boas práticas e padrões definidos na \textit{Wiki} serão um apoio à construção da solução (funcionalidades, guias e tutoriais). Para a concepção da solução, foram selecionados somente os guias e tutoriais que tivessem alguma relação direta com alguma atividade selecionada/proposta.
 
 
 %TODO: Explicar os insumos que servirão para a elaboração da solução: WIKI, Entrevistas, experiência, PDESC e etc.
@@ -850,14 +849,14 @@ A unidade-caso refere-se a um indivíduo num contexto definido. Possui três
 
 \section{Atividades e guias complementares}
 
-Apesar de algumas as atividades e guias, tanto do processo de desenvolvimento descentralizado quanto da \textit{Wiki} terem sido selecionadas para comporem as soluções propostas do diagnóstico, houve a necessidade de se selecionar outras atividades e guias que não foram previstas nas soluções elaboradas. As justificativas para esse complemento foram duas:\clearpage
+Apesar de algumas atividades e guias do processo de desenvolvimento descentralizado e da \textit{Wiki} terem sido selecionadas para comporem as soluções propostas a partir do diagnóstico, houve a necessidade de se selecionar outras atividades e guias que não foram previstas nas soluções elaboradas. As justificativas para esse complemento foram duas:\clearpage
 
 \begin{enumerate}
 \item Alguns guias ficaram sem atividades para serem associados.
 \item Algumas atividades que julgaram-se importantes não foram previstas nas soluções do diagnóstico.
 \end{enumerate}
 
-Em relação ao processo de desenvolvimento descentralizado, foram selecionados ao todo 10 atividades e nenhum guia, de forma a complementar a solução. Já em relação a \textit{Wiki}, nenhuma atividade e guia foram selecionados para o complemento. A tabela 9 ilustra a relação de atividades selecionadas do processo de desenvolvimento descentralizado, e a sua associação com as fases do ciclo de vida da solução proposta.
+Em relação ao processo de desenvolvimento descentralizado, foram selecionados ao todo 10 atividades e nenhum guia, de forma a complementar a solução. Já em relação a \textit{Wiki}, nenhuma atividade e guia foi selecionados para o complemento. A tabela 9 ilustra a relação de atividades selecionadas do processo de desenvolvimento descentralizado, e a sua associação com as fases do ciclo de vida da solução proposta.
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{table}[!htb]
@@ -1009,6 +1008,7 @@ De forma a auxiliar o desenvolvedor na gerência do desenvolvimento, uma adapta�
 
 Este \textit{Kanban} foi dividido pelas fases do ciclo de vida da solução, de forma que o desenvolvedor vai posicionando os itens do \textit{backlog} definido, de acordo com a etapa em que se encontram dentro do ciclo de vida. A ideia é que o \textit{backlog} da iteração gerado seja em pequenas unidades de funcionalidades, de forma a facilitar o gerenciamento e acompanhamento pelo desenvolvedor. Ao terminar um conjunto destas unidades de funcionalidade, o desenvolvedor consegue gerar um entregável ao cliente. Observa-se que a divisão \textit{Backlog} Produto é opcional, já que pode ser da preferência do cliente e do desenvolvedor levantar o \textit{backlog} do produto. Porém, neste caso, o fluxo de execução do \textit{Kanban} obriga a seleção e priorização de um \textit{backlog} da iteração, conforme a divisão de Requisitos.
 
+\begin{comment}
 \chapter[Capítulo 6 – Cronograma de Execução]{Capítulo 6 – Cronograma de Execução}
 
 \section{\textit{Considerações Iniciais do Capítulo}}
@@ -1018,3 +1018,4 @@ Este \textit{Kanban} foi dividido pelas fases do ciclo de vida da solução, de 
 \section{\textit{Cronograma Elaborado}}
 
 \section{\textit{Considerações Finais}}
+\end{comment}
