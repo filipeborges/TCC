@@ -8,7 +8,7 @@ metodologia de pesquisa adotada e a organização do trabalho nos capítulos seg
 
 \section{\textit{Contexto}}
 
-É inconcebível imaginar o mundo moderno sem software. Ele está tão acoplado nas mais diversas áreas que seria difícil prever como o mundo seria sem o suporte e as facilidades que ele traz ao nosso dia a dia. Diante deste acoplamento tão grande e do seu enorme crescimento nos últimos anos, consequência do avanço tecnológico, se torna cada vez mais importante desenvolver software. O desenvolvimento de software pode possuir diferentes contextos de negócio, e com isso diferentes habilidades são exigidas dos desenvolvedores, já que cada contexto possui suas particularidades. Além disso, o ritmo acelerado do mundo moderno faz com que os contextos evoluam, e com isso as suas atividades e necessidades (requisitos) também evoluem. A mudança nos requisitos, a sua diversidade, e em alguns casos a dificuldade em definí-los, leva o desenvolvimento tradicional de software a ser lento e caro em contextos que estão sempre evoluindo \cite{lieberman2006}. Além disso, a limitação na capacidade de produção de software de uma organização pode levar à priorização das demandas, e como consequência algumas áreas de negócio podem ficar sem atendimento. Neste contexto, se torna cada vez mais comum, aplicações de software serem desenvolvidas por desenvolvedores não profissionais, pessoas que possuem conhecimento básico em programação, mas que possuem expertise no domínio de negócio em que estão inseridas. O desejo de suportar seus objetivos neste domínio através de uma solução computacional, os leva a serem tanto desenvolvedores quanto usuários finais do software \cite{lieberman2006}. 
+É inconcebível imaginar o mundo moderno sem software. Ele está tão acoplado nas mais diversas áreas que seria difícil prever como o mundo seria sem o suporte e as facilidades que ele traz ao nosso dia a dia. Diante deste acoplamento tão grande e do seu enorme crescimento nos últimos anos, consequência do avanço tecnológico, se torna cada vez mais importante desenvolver software. O desenvolvimento de software pode possuir diferentes contextos de negócio, e com isso diferentes habilidades são exigidas dos desenvolvedores, já que cada contexto possui suas particularidades. Além disso, o ritmo acelerado do mundo moderno faz com que os contextos evoluam, e com isso as suas atividades e necessidades (requisitos) também evoluam. A mudança nos requisitos, a sua diversidade, e em alguns casos a dificuldade em definí-los, leva o desenvolvimento tradicional de software a ser lento e caro em contextos que estão sempre evoluindo \cite{lieberman2006}. Além disso, a limitação na capacidade de produção de software de uma organização pode levar à priorização das demandas, e como consequência algumas áreas de negócio podem ficar sem atendimento. Neste contexto, se torna cada vez mais comum, aplicações de software serem desenvolvidas por desenvolvedores não profissionais, pessoas que não possuem conhecimento elevado em programação, mas que possuem expertise no domínio de negócio em que estão inseridas. O desejo de suportar seus objetivos neste domínio através de uma solução computacional, os leva a serem tanto desenvolvedores quanto usuários finais do software \cite{lieberman2006}. 
 
 O Escritório do Trabalho e Estatística dos Estados Unidos fez uma previsão de que por volta de 2012, nos Estados Unidos, haveriam pouco mais de 3 milhões de programadores profissionais e mais de 55 milhões de pessoas escrevendo fórmulas e \textit{queries} em planilhas e banco de dados, para suportar seus objetivos de trabalho \cite{scaffidi2005}. Um relatório divulgado pelo \textit{Gartner} em Julho de 2011, indicou que desenvolvedores não profissionais iriam construir ao menos 25 \% das novas aplicações de negócio em 2014 \cite{paterno2013}. Diante deste cenário, um modelo de desenvolvimento de software centrado nesses usuários finais, que desenvolvem cada vez mais sistemas e aplicações, vem ganhando força. O \textit{End User Development} - EUD tem como objetivo oferecer meios para que os usuários finais, que não são especialistas em programação, possam desenvolver aplicações de software. O EUD pode ajudar a aumentar a capacidade produtiva do departamento de TI de uma organização, bem como reduzir custos com o desenvolvimento de aplicações de negócio.
 
@@ -16,7 +16,9 @@ O serviço público brasileiro, por ter natureza administrativa, apresenta grand
 
 \section{\textit{Problema}}
 
-O problema identificado para este trabalho se refere a maneira de como é executado o desenvolvimento de sistemas descentralizados no Órgão X. Uma vez que os sistemas são desenvolvidos de forma descentralizada, ou seja, alguns departamentos realizam o desenvolvimento de seus sistemas conforme suas necessidades ou solicitam o desenvolvimento a algum departamento especializado em desenvolvimento e suporte de sistemas, eles geralmente acabam ficando sem um padrão comum de desenvolvimento e sem o uso de boas práticas. \textbf{\textit{-- TODO: Verificar aqui problema que algum autor retrata que ocorre no órgão--}}
+O principal problema identificado está relacionado à maneira em que o desenvolvimento de sistemas descentralizados é executado no Órgão X. Uma vez que os sistemas são desenvolvidos de forma descentralizada, ou seja, alguns departamentos realizam o desenvolvimento de seus sistemas conforme suas necessidades ou solicitam o desenvolvimento a algum departamento especializado em desenvolvimento e suporte de sistemas, o produto final é gerado e desenvolvido, na maioria das vezes, sem um padrão comum de desenvolvimento e sem o uso de boas práticas. 
+
+Outro problema que já é inrente ao desenvolvimento descentralizado é que as entregas que contenham erros podem trazer prejuízos ao órgão. O desenvolvimento descentralizado tem particularidades que são diferentes do desenvolvimento de software tradicional, como o uso de soluções improvisadas, o usuário final não tem tempo nem conhecimento para construir soluções tão sólidas e duradouras como um desenvolvimento profissional.
 
 Assim a questão de pesquisa abordada nesse trabalho é: 
 \begin{itemize}
@@ -27,7 +29,9 @@ Assim a questão de pesquisa abordada nesse trabalho é:
 
 Dentro deste contexto, o objetivo geral deste trabalho é desenvolver uma solução de apoio ao desenvolvimento descentralizado no Órgão X, agregando recursos que promovam a qualidade dos sistemas desenvolvidos, a partir de princípios e conceitos de engenharia de software.
 
+\begin{comment}
 %TODO: Melhorar os objetivos específicos.
+\end{comment}
 Considerando o objetivo geral, foram definidos os seguintes objetivos específicos:
 
 \begin{enumerate}
@@ -38,7 +42,7 @@ Considerando o objetivo geral, foram definidos os seguintes objetivos específic
 	\item Construir a solução de apoio.
 	\item Selecionar um projeto para a aplicação da solução.
 	\item Aplicar a solução de apoio no projeto selecionado.
-	\item Relatar os resultados obtidos.
+	\item Relatar os resultados obtidos através de um modelo.
 \end{enumerate}
 
 
@@ -50,76 +54,70 @@ Apesar disso, existem ainda algumas dificuldades no desenvolvimento por parte do
 
 \section{\textit{Justificativa}}
 
-É importante que o órgão se esforce para melhorar a maneira de como são desenvolvidos seus sistemas descentralizados, uma vez que isso pode acarretar em problemas relacionados a qualidade e a manutenibilidade desses sistemas. Segundo \textit{Blackwell}, no caso do uso de ferramentas de programação é muito fácil para os desenvolvedores de software profissionais assumir que todas as pessoas irão se aproximar ao seu nível profissional de programação. É necessário atenção e investigação especializada para os usuários finais, para evitar essa armadilha quando os profissionais de software criarem novas tecnologias voltadas ao EUD. Baseado nesses argumentos, é necessário que os desenvolvedores EUD tenham uma atenção especial para o desenvolvimento de seus sistemas, com um modelo que lhes dê suporte.
+O aperfeiçoamento do desenvolvimento de sistemas descentralizados é primordial para o órgão X e para a área de TI, uma vez que um produto de baixa qualidade pode acarretar em problemas relacionados a qualidade e a manutenibilidade desses sistemas. Segundo \textit{Blackwell}, no caso do uso de ferramentas de programação, é muito fácil para os desenvolvedores profissionais de software assumir que qualquer pessoa irá se aproximar ao seu nível profissional de programação. A fim de evitar esta armadilha, são necessários atenção e investigação especializada para os usuários finais por parte dos desenvolvedores profissionais, durante a criação de novas tecnologias voltadas ao EUD. Baseado nesses argumentos, é necessário que os desenvolvedores EUD tenham uma atenção especial para o desenvolvimento de seus sistemas, através de um modelo que lhes dê suporte.
 
 \section{\textit{Metodologia}}
 
-Para a escolha da estratégia de pesquisa, basicamente depende-se do atendimento de três condições: o tipo de questão de pesquisa, o controle que o pesquisador possui sobre os eventos comportamentais efetivos, e o foco em fenômenos históricos, em oposição a fenômenos contemporâneos \cite{yin2001estudo}. 
+A escolha da estratégia de pesquisa deve satisfazer três condições: o tipo de questão de pesquisa, o controle que o pesquisador possui sobre os eventos comportamentais efetivos e o foco em fenômenos históricos, em oposição a fenômenos contemporâneos \cite{yin2001estudo}. 
 
 Levando em consideração essas condições, a metodologia de pesquisa deste trabalho foi classificada quanto à abordagem, natureza, objetivos ou tipologia, procedimentos técnicos e as técnicas de coleta de dados.
 
-Quanto à abordagem, é classificada como qualitativa, uma vez, que as pesquisas
-classificadas como qualitativas não requerem o uso de métodos e técnicas estatísticas --citar gunter e citar moresi--, está mais relacionada no levantamento de dados sobre as motivações de um grupo, em compreender e interpretar determinados comportamentos, a opinião e as expectativas dos indivíduos de uma população, portanto sem o intuito de obter dados estatísticos como resultado. Os resultados neste trabalho serão analisados individualmente.
+Quanto à abordagem, é classificada como qualitativa, uma vez que as pesquisas
+classificadas como qualitativas não requerem o uso de métodos e técnicas estatísticas \cite{gunther2006pesquisa,moresi2003metodologia} estando relacionadas ao levantamento de dados sobre as motivações de um grupo em compreender e interpretar determinados comportamentos, e em obter as opiniões e expectativas dos indivíduos de uma população, sem o intuito de obter dados estatísticos como resultado.
 
-Quanto à natureza, a pesquisa é aplicada, pois objetiva gerar conhecimentos para aplicação prática, que sejam dirigidos a uma solução de problemas específicos \cite{gil2002} envolvendo verdades e interesses locais. Desse modo, esse trabalho tem por ação, avaliar e analisar os problemas que constam no desenvolvimento descentralizado de sistemas da instituição em foco, e a partir das análises propor uma solução que apoie esse desenvolvimento.
+Quanto à natureza, a pesquisa é classificada como aplicada, pois objetiva gerar conhecimentos para aplicação prática, que sejam dirigidos a uma solução de problemas específicos envolvendo verdades e interesses locais \cite{gil2002}. Desse modo, este trabalho se propõe a avaliar e analisar os problemas que constam no desenvolvimento descentralizado de sistemas da instituição e, a partir das análises, propor uma solução que apoie esse desenvolvimento.
 
-Para o objetivo, as pesquisas científicas, de acordo com \citeonline{gil2002}, são classificadas em três grandes grupos, segundo os seus objetivos gerais: exploratórias, descritivas e explicativas. Destes três grupos, a pesquisa exploratória será utilizada, pois em particular, tem como objetivo proporcionar o aprimoramento e/ou a descoberta de idéias, a respeito de um determinado problema. Proporcionando uma maior familiaridade com o problema, esse tipo de pesquisa o torna mais explícito e contribui para a construção de hipóteses em cima do mesmo. Por conta disso, a pesquisa exploratória possui um caráter flexível em seu planejamento, e geralmente assume as formas de pesquisa bibliográfica ou estudo de caso \cite{gil2002}.
+As pesquisas científicas, de acordo com \citeonline{gil2002}, ainda podem ser classificadas segundo seus objetivos gerais em três grandes grupos: exploratórias, descritivas e explicativas. Destes três grupos, a pesquisa exploratória será utilizada, pois em particular, tem como objetivo proporcionar o aprimoramento e/ou a descoberta de idéias a respeito de um determinado problema. Este tipo de pesquisa, além de possuir um caráter flexível em seu planejamento, proporciona maior familiaridade com o problema, tornando-o mais explícito e contribuindo para a construção de hipóteses em cima do mesmo. A pesquisa exploratória, que possui um caráter flexível em seu planejamento, pode assumir as formas de pesquisa bibliográfica ou estudo de caso \cite{gil2002}.
 
 Em relação aos procedimentos técnicos, os métodos de investigação adotados foram, pesquisa-ação, pesquisa bibliográfica e documental, pois este trabalho tem o objetivo de analisar o problema disponível, resolvendo-o e propondo uma solução prática.
 
 \begin{itemize}
-	\item \textbf{Pesquisa-ação}: É um tipo de pesquisa com base empírica que é concebida e realizada em curta relação com uma ação ou resolução de um problema coletivo no qual os pequisadores e participantes representativos da situação ou do problema estão envolvidos de forma cooperativa ou participativa --citar thiollent, 1986--. Assim, a pesquisa-ação é o procedimento mais adequado, pois pode ser realizada dentro de um contexto organizacional com o objetivo de resolver um problema prático onde o pesquisador e os participantes colaboram para o desenvolvimento de uma solução para o problema.
+	\item \textbf{Pesquisa-ação}: É um tipo de pesquisa com base empírica que é concebida e realizada em curta relação com uma ação ou resolução de um problema coletivo, no qual os pequisadores e participantes representativos da situação ou do problema estão envolvidos de forma cooperativa ou participativa \cite{thiollent2011metodologia}. Assim, a pesquisa-ação é o procedimento mais adequado, pois pode ser realizada dentro de um contexto organizacional com o objetivo de resolver um problema prático, onde o pesquisador e os participantes colaboram para o desenvolvimento de uma solução para o problema.
 	\item \textbf{Pesquisa Bibliográfica}: É a pesquisa desenvolvida com base em
-	material já elaborado, constituído principalmente de livros e artigos científicos \cite{gil2002}. Dessa forma, nesse trabalho, será realizada pesquisa na principal base de dados científica, a capes, bem como outras bases que se julgar necessário consultar, para apoiar a construção do referencial teórico, critérios de avaliação da ação a ser aplicada, escolha da seleção de amostra e elaboração das técnicas de coleta de dados.
-	\item \textbf{Pesquisa documental}: Se difere da pesquisa bibliográfica por vale-se de materiais que não receberam ainda um tratamento analítico, ou que ainda não podem ser reelaborados de acordo com os objetivos de pesquisa --citar gil 2008--. Será feito a análise de documentos da instituição inerentes ao desenvolvimento de sistemas descentralizados, ou seja, elaborados pelo órgão objeto de estudo para proposição de uma solução ao problema levantado.
+	material já elaborado, constituído principalmente de livros e artigos científicos \cite{gil2002}. Dessa forma, nesse trabalho, será realizada pesquisa na principal base de dados científica, a CAPES, bem como outras bases que se julgar necessário. Os temas pesquisados incluíram os critérios de avaliação da ação a ser aplicada, a escolha de seleção de amostra, a elaboração de técnicas de coleta de dados e assuntos relacionados ao tema de desenvolvimento de software descentralizado para servir de apoio para a construção do referencial teórico.
+	\item \textbf{Pesquisa documental}: Se difere da pesquisa bibliográfica por valer-se de materiais que não receberam, ainda, um tratamento analítico ou que ainda não podem ser reelaborados de acordo com os objetivos de pesquisa \cite{gil2002}. Foi realizada a análise de documentos elaborados pelo órgão objeto de estudo, inerentes ao processo de desenvolvimento de sistemas descentralizados, para preposição de uma solução ao problema levantado.
 \end{itemize}
 
-Quanto as técnicas utilizadas, as principais técnicas para coleta de dados quando se aborda o procedimento de pesquisa-ação são a entrevista coletiva nos locais de trabalho e a entrevista individual aplicada de modo aprofundado --citar thiollent 1986--.
-
-Ao lado dessas técnicas também são utilizados questionários e
-alguns pesquisadores recorrem também a técnicas antropológicas, como por exemplo,
-observação participante --citar thiollent 1986--. Desse modo, as técnicas selecionadas para este trabalho foram entrevistas semi-estruturadas, observação participante e análise documental.
+Quanto à classificação por técnicas utilizadas, as principais técnicas para coleta de dados quando, se aborda o procedimento de pesquisa-ação, são a entrevista coletiva nos locais de trabalho e a entrevista individual aplicada de modo aprofundado \cite{thiollent2011metodologia}. Ao lado dessas técnicas também podem ser utilizados questionários ou técnincas antropológicas como, por exemplo, observação participante \cite{thiollent2011metodologia}. Desse modo, as técnicas selecionadas para este trabalho foram entrevistas semi-estruturadas, observação participante e análise documental.
 
 \begin{itemize}
-	\item \textbf{Entrevistas semi-estruturadas}: Esse tipo de entrevista tem  como  característica questionamentos básicos que são apoiados em teorias e hipóteses que se relacionam ao tema da pesquisa.  Os  questionamentos  dariam  frutos  a  novas  hipóteses  surgidas  a  partir  das  respostas dos informantes. O foco principal seria colocado pelo investigador-entrevistador. Complementa o  autor,  afirmando  que  a  entrevista  semi-estruturada  “[...]  favorece  não  só  a  descrição  dos fenômenos sociais, mas também sua explicação e a compreensão de sua totalidade [...]” além de manter  a  presença consciente  e  atuante  do  pesquisador  no  processo  de  coleta  de  informações --TRIVIÑOS, 1987--.
-	\item \textbf{Observação participante}: Tem por definição a participação real do pesquisador com a comunidade ou grupo, ou seja, o pesquisador se incorpora ao grupo e participa das atividades com a finalidade de obter informações--citar MARCONI; LAKATOS, 2003--.
+	\item \textbf{Entrevistas semi-estruturadas}: Esse tipo de entrevista tem  como  característica questionamentos básicos que são apoiados em teorias e hipóteses que se relacionam ao tema da pesquisa, sendo o foco principal estabelecido pelo investigador/entrevistador, mantendo assim a presença consciente e atuante do mesmo no processo de coleta de informações. De acordo com \cite{trivinos2009introduccao}, os questionamentos dão frutos a novas hipóteses, surgidas a partir das respostas dos informantes. Ainda segundo o autor, a entrevista semiestruturada favorece não só a descrição dos fenômenos sociais, mas também sua aplicação e a compreensão de sua totalidade.
+	\item \textbf{Observação participante}: Tem por definição a participação real do pesquisador com a comunidade ou grupo, ou seja, o pesquisador se incorpora ao grupo e participa das atividades com a finalidade de obter informações \cite{marconi2010fundamentos}.
 	\item \textbf{Documentos}: Se refere ao estudo de documentos publicados pelo órgão público ou instituição, como por exemplo, normas, acórdão, processos, projetos diretor, etc.
 \end{itemize}
 
-A representação da seleção dos itens da metodologia a ser adotada é representado na figura 1, em que dada as opções, apresentam-se as seleções em cor de fundo preto total.
+A representação da seleção dos itens da metodologia a ser adotada é representado na figura 1, onde são exibidos todas as opções disponíveis dentro de cada classificação, sendo as opções destacadas em preto as selecionadas para a execução do trabalho.
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.5]{figuras/Metodologia}
-	\caption{Seleção da metodologia adotada da pesquisa. Fonte: Autores}
+	\caption{Seleção da metodologia adotada da pesquisa. Os quadros com fundo preto representam as opções adotadas no presente trabalho. Fonte: Autores}
 \end{figure}
 
-Nas Subseções seguintes, será dado maior aprofundamento no procedimento, Pesquisa-Ação e na técnica, Entrevista Semi-Estruturada, pois esses serão a base metodológica deste trabalho.
+Nas subseções seguintes serão detalhados a pesquisa-ação e a Entrevista semiestrutura, que constituem a base metodológica do presente trabalho.
 
 \subsection{Pesquisa-Ação}
 
-Com o grande uso e aumento da sua amplitude e aplicação, a pesquisa-ação tornou-se atualmente um termo aplicado de maneira vaga a qualquer tipo de tentativa de melhora ou de investigação da prática. Assim é necessário que se encare a pesquisa-ação como uma das muitas diferentes formas de investigação-ação a qual é definida como toda tentativa continuada, sistemática e empiricamente fundamentada de aprimorar a prática \cite{tripp2005pesquisa}.
+Com o grande uso e aumento da sua amplitude e aplicação, a pesquisa-ação tornou-se atualmente um termo aplicado de "forma vaga" a qualquer tipo de tentativa de melhora ou de investigação da prática. A investigação-ação ainda pode ser definida como um termo genérico para qualquer processo que siga um ciclo no qual se aprimora a prática pela oscilação sistemática entre agir no campo da prática e investigar a respeito dela \cite{tripp2005pesquisa}.
 
-Deve-se reconhecer a pesquisa-ação como um dos inúmeros tipos de investigação-ação, que é um termo genérico para qualquer processo que siga um ciclo no qual se aprimora a prática pela oscilação sistemática entre agir no campo da prática e investigar a respeito dela \cite{tripp2005pesquisa}.
+Para \cite{thiollent2009pesquisa} no decorrer da pesquisa-ação ocorre um efeito de aprendizagem, por vezes concebido como conscientização. A pesquisa alimenta a ação e vice-versa, sendo que a aprendizagem é difusa ao longo do processo.
 
-Para Thiollent (2009) no decorrer da pesquisa-ação ocorre um efeito de aprendizagem, por vezes concebido como conscientização. A pesquisa alimenta a ação e vice-versa, sendo que a aprendizagem é difusa ao longo do processo.
+Essa metodologia é caracterizada como um método flexível, qualificada pelo constante ciclo das fases. Assim, o processo de execução, geralmente, não é apresentado em ordem cronológica e sim na forma de um conjunto de ações que, embora não ordenadas no tempo, podem ser consideradas como etapas da pesquisa-ação \cite{gil2002,thiollent2011metodologia}.
 
-Essa metodologia é caracterizada como um método flexível, qualificada pelo constante ciclo das fases. Assim, o processo de execução, geralmente, não é apresentado em ordem cronológica e sim na forma de um conjunto de ações que, embora não ordenadas no tempo, podem ser consideradas como etapas da pesquisa-ação (GIL, 2008; THIOLLENT, 1986).
+É necessário planejar, implementar, descrever e avaliar uma mudança para melhoria de sua prática, aprendendo mais, no decorrer do processo, tanto a respeito da prática quanto da própria investigação \cite{tripp2005pesquisa}. Estas ações estão inseridas nas quatro grandes fases descritas por \cite{thiollent2009pesquisa} para a pesquisa-ação: Fase exploratória, na qual os atores da pesquisa começam a detectar problemas a serem combatidos; Fase de pesquisa, na qual coletam-se dados com diversos instrumentos e a pesquisa é discutida pelos membros; Fase de ação, na qual definem-se objetivos, apresentam-se propostas e resultados; e por fim, a Fase de avaliação, na qual se obtém conhecimento produzido pela pesquisa e analisa os resultados alcançados.
 
-É necessário que planeja-se, implementa-se, descreva-se e avalie-se uma mudança para a melhora de sua prática, aprendendo mais, no correr do processo, tanto a respeito da prática quanto da própria investigação \cite{tripp2005pesquisa}.
+Segundo \cite{thiollent2009pesquisa}, o processo de pesquisa-ação não existe de forma padronizada, pois, dependendo da situação social ou do quadro organizacional em que se aplica, os procedimentos e a ordenação das etapas podem variar. O autor também destaca que as três primeiras fases podem ocorrer simultaneamente.
 
-Assim, basicamente essas quatro ações, se constituem nas fases para o processo de pesquisa-ação, como Thiollent (2009) também afirma que a pesquisa-ação tem quatro grandes fases: Fase exploratória, na qual os atores da pesquisa começam a detectar problemas a serem combatidos; Fase de pesquisa, na qual coletam-se dados com diversos instrumentos e a pesquisa é discutida pelos membros; Fase de ação, na qual definem-se objetivos, apresentam-se propostas e resultados; e por fim, a Fase de avaliação, na qual se obtém conhecimento produzido pela pesquisa e analisa os resultados alcançados.
-
-O processo de pesquisa-ação não existe de forma padronizada, pois, dependendo da situação social ou do quadro organizacional em que se aplica, os procedimentos e a ordenação das etapas podem variar. O autor também destaca que as três primeiras fases podem ocorrer simultaneamente Thiollent (2009).
-
-Baseado nessas informações sobre o processo de pesquisa-ação, além das quatro fases básicas previstas, vamos adotar mais uma fase adicional, a fase de coleta de dados, onde é feito o levantamento e coleta dos dados originado das técnicas de coleta de dados e seguir uma adaptação das fases do processo conforme estabelecido por \cite{coughlan2002action}. Dessa forma iremos neste trabalho adotar o seguinte processo de pesquisa-ação para a condução do procedimento:
-
+Baseado nessas informações sobre o processo de pesquisa-ação, além das quatro fases básicas previstas, vamos adotar mais uma fase adicional, a fase de coleta de dados, e seguir uma adaptação das fases do processo conforme estabelecido por \cite{coughlan2002action}. Dessa forma iremos neste trabalho adotar o processo de pesquisa ação exibido na figura 2, para a condução do procedimento.
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.5]{figuras/estruturacao_pesquisa_acao}
+	\includegraphics[scale=0.6]{figuras/estruturacao_pesquisa_acao}
 	\caption{Estruturação para pesquisa-ação. Fonte: \cite{coughlan2002action}, adaptado}
 \end{figure}
+
+\newpage
+%\vspace{valor}
 
 \subsection{Entrevista Semi-Estruturada}
 
@@ -139,12 +137,12 @@ O estudo de caso consiste no estudo profundo e exaustivo de um ou mais objetos, 
 --------------
 \end{comment}
 
-Existem diversos métodos de coleta de dados para suportar os propósitos de um procedimento técnico, e um dos métodos comumente usados na engenharia de software é a entrevista \cite{caseStudySE}. Quase todos os estudos de caso envolvem algum tipo de entrevista, seja para a finalidade primária de coleta dados, seja para uma validação de outros tipos de dados \cite{caseStudySE}. A entrevista é caracterizada como um método de coleta de dados onde o pesquisador está em contato direto com os entrevistados e como um método de coleta de dados em tempo real \cite{caseStudySE}. O diálogo entre o entrevistador e o entrevistado é guiado por um conjunto de perguntas, que podem ser classificadas como abertas ou fechadas \cite{caseStudySE}. As perguntas abertas permitem uma maior gama de respostas e relatos de problemas, por parte do entrevistado. Já as perguntas fechadas oferecem alternativas mais limitadas, se comparadas as perguntas abertas. Ambos os tipos de perguntas são baseadas nos tópicos de interesse relacionados ao estudo de caso. 
+Existem diversos métodos de coleta de dados para suportar os propósitos de um procedimento técnico, e um dos métodos comumente usados na engenharia de software é a entrevista \cite{caseStudySE}. Quase todos os estudos de caso envolvem algum tipo de entrevista, seja para a finalidade primária de coleta dados, seja para uma validação de outros tipos de dados \cite{caseStudySE}. A entrevista é caracterizada como um método de coleta de dados onde o pesquisador está em contato direto com os entrevistados e como um método de coleta de dados em tempo real \cite{caseStudySE}. O diálogo entre o entrevistador e o entrevistado é guiado por um conjunto de perguntas, que podem ser classificadas como abertas ou fechadas \cite{caseStudySE}. As perguntas abertas permitem uma maior gama de respostas e relatos de problemas por parte do entrevistado. Já as perguntas fechadas oferecem alternativas mais limitadas, se comparadas as perguntas abertas. Ambos os tipos de perguntas são baseadas nos tópicos de interesse relacionados ao estudo de caso. 
 
 Segundo \cite{caseStudySE}, a entrevista pode ser classificada em três categorias diferentes:
 \begin{enumerate}
 	\item \textbf{Não-estruturada}: As perguntas são formuladas de forma aberta e de acordo com os interesses do pesquisador. A conversa durante a entrevista irá se desenvolver de acordo com os interesses do entrevistado e do entrevistador.
-	\item \textbf{Semiestruturada}: As questões planejadas não são necessariamente perguntadas na ordem em que estão listadas, tendo o desenvolvimento da conversa influência direta na ordem em que as perguntas são feitas ao entrevistado. Além disso, esse tipo de pesquisa permite o improvisamento e a exploração de problemas levantados durante a conversa. É comum em estudos de caso em engenharia de software.
+	\item \textbf{Semi-estruturada}: As questões planejadas não são necessariamente perguntadas na ordem em que estão listadas, tendo o desenvolvimento da conversa influência direta na ordem em que as perguntas são feitas ao entrevistado. Além disso, esse tipo de pesquisa permite o improvisamento e a exploração de problemas levantados durante a conversa. É comum em estudos de caso em engenharia de software.
 	\item \textbf{Completamente estruturada}: Todas as perguntas são detalhadamente planejadas de antemão e são feitas exatamente na ordem em que estão listadas. Esse tipo de entrevista se assemelha a \textit{surveys} baseados em questionários, pois se trata de perguntas fechadas.
 \end{enumerate}
 
@@ -192,38 +190,53 @@ uma descrição de cada uma das fases.
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.4]{figuras/Plano_metodologico}
+	\includegraphics[scale=0.6]{figuras/Plano_metodologico}
 	\caption{Plano metodológico adotado. Fonte: autores}
 \end{figure}
 
+\newpage
+
 \textit{Definição do Trabalho}
 
-Esta etapa compreende o estabelecimento, com base no problema
-organizacional levantado em alto nível: sendo o objetivo a ser atingido, a pergunta de pesquisa, a seleção metodológica e as fases da pesquisa.
+Esta etapa compreende o estabelecimento do trabalho, com base no problema
+organizacional levantado em alto nível. Nesta etapa foram definidos o objetivo a ser atingido, a pergunta de pesquisa, a seleção metodológica e as fases da pesquisa.
 
 \textit{Pesquisa Bibliográfica}
 
-As pesquisas bibliográficas serão realizadas ao longo de toda a pesquisa-ação. Esta fase oferece apoio principalmente para o planejamento da ação, sendo que é nela onde ocorre o mapeamento da literatura para a construção do referencial teórico e definição da ação a ser aplicada.
+As pesquisas bibliográficas foram realizadas ao longo de toda a pesquisa-ação. Esta fase oferece apoio, principalmente, para o planejamento da ação, sendo que é nela onde ocorre o mapeamento da literatura para a construção do referencial teórico e definição da ação a ser aplicada.
 
 \textit{Pesquisa-Ação e Documental}
 
-Esta fase é a base do trabalho, onde será realizada as etapas definidas do processo de pesquisa-ação dentro do órgão x, na busca de tentar entender os problemas que ocorrem na prática durante o desenvolvimento de sistemas descentralizados, por meio da experiência de vivência no órgão e pelos documentos inerentes ao mesmo, para enfim surgir com uma solução que apoie esse desenvolvimento.
+Esta fase é a base do trabalho, onde será realizada as etapas definidas do processo de pesquisa-ação dentro do órgão x. A fase busca entender os problemas ocorridos durante a aplicação do desenvolvimento de sistemas descentralizados, através da experiência de vivência no órgão e pelos documentos inerentes ao processo, afim de encontrar uma solução de apoio.
 
 \textit{Coletas de dados}
 
-Esta fase registra-se os resultados das entrevistas, documentos do órgão e a experiência obtida com o desenvolvimento descentralizado no órgão
+Esta fase inclui a realização de entrevistas e análise dos documentos e experiências do órgão X referentes ao desenvolvimento descentralizado.
 
 \textit{Análise e Interpretação}
 
-Nesta fase os resultados observados nas fases anteriores serão analisados e verificado quanto à solução apoia de forma necessária o desenvolvimento descentralizado do órgão.
+Nesta fase os resultados obtidos nas fases anteriores foram analisados e verificou-se também a eficácia da solução proposta para o desenvolvimento descentralizado.
 
 \section{\textit{Organização do Trabalho}}
 
+\begin{comment}
 \textbf{-- TODO: registrar como está organizado--
 --Falar que a partir do capítulo 2 ao 3 (vai entrar mais) trata-se do referencial teórico--}
+\end{comment}
 
-Nos capítulos 2,3 e ... apresenta o referencial que embasa este trabalho. O referencial teórico é o meio em que o autor do trabalho demonstra o seu conhecimento sobre uma determinada área de estudo (teorias, vocabulários, variáveis chave, fenômenos, métodos e história) \cite{randolph2009}.
+Este trabalho está organizado em seis capítulos. No capítulo 1, introdução, são
+apresentados: o contexto do trabalho, o problema com a questão da pesquisa, os
+objetivos, a justificativa e a metodologia de pesquisa adotada.
 
+Os capítulos 2 e 3 apresentam o referencial que embasa este trabalho. O referencial teórico é o meio em que o autor do trabalho demonstra o seu conhecimento sobre uma determinada área de estudo (teorias, vocabulários, variáveis chave, fenômenos, métodos e história) \cite{randolph2009}.
+
+O capítulo 4 traz a proposta de trabalho incluíndo métodos e ações que foram executados, como os documentos analisados servindo como apoio à solução desenvolvida e as entrevistas realizadas para obtenção de respostas que guiam para a solução proposta no trabalho.
+
+No capítulo 5 é mostrado os resultados obtidos no trabalho, onde apresentam-se as atividades e guias resultantes e complementares do diagnóstico obtido.
+
+No capítulo 6 é apresentado o cronograma para execução da segunda etapa do trabalho.
+
+Encontra-se ainda o apêndice do trabalho, onde são apresentadas as perguntas das entrevistas que foram elaboradas no apêndice A e a respostas das entrevistas que foram aplicadas no apêndice B.
 
 \chapter[Capítulo 2 - Desenvolvimento descentralizado]{Capítulo 2 - Desenvolvimento descentralizado}
 
