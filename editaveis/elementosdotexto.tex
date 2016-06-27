@@ -562,12 +562,11 @@ As boas práticas e padrões definidos na \textit{Wiki} serão um apoio à const
 
 \section{\textit{Considerações Iniciais do Capítulo}}
 
-Neste capítulo são apresentados as atividades e os guias, resultantes do diagnóstico obtido com a aplicação da entrevista, e as atividades e guias, tanto do processo de desenvolvimento descentralizado quanto
-da \textit{Wiki}, que julgaram-se interessantes para serem selecionadas e complementarem a solução. Ao final, a solução gerada é apresentada.
+Neste capítulos são apresentados as atividades e guias selecionados, resultantes tanto do diagnóstico obtido com as entrevistas, quanto do processo de desenvolvimento descentralizado e da \textit{Wiki}. Ao final, a solução gerada é apresentada.
 
 \section{Atividades e guias resultantes do diagnóstico obtido}
 
-O diagnóstico obtido, conforme a entrevista aplicada aos desenvolvedores que participam do desenvolvimento descentralizado e, conforme a análise descrita na seção 4.3, consiste de um conjunto de problemas, sugestões e boas práticas, relatados pelos desenvolvedores. A primeira parte da análise, que consistiu em aplicar os códigos às respostas obtidas, pode ser visualizada na tabela 4. Esta é uma tabela de rastreabilidade dos códigos em relação as respostas das perguntas, informadas por cada desenvolvedor. Algumas respostas das perguntas ficaram sem códigos, pois foram respostas que não se associaram a nenhum dos códigos e portanto foram descartadas. Os códigos nesta matriz são representados pelos símbolos a seguir:
+O diagnóstico obtido, conforme a entrevista aplicada aos desenvolvedores que participam do desenvolvimento descentralizado e a análise descrita na seção 4.3, consiste de um conjunto de problemas, sugestões e boas práticas relatados pelos desenvolvedores. A primeira parte da análise, que consistiu em aplicar os códigos às respostas obtidas, pode ser visualizada na tabela 4. A tabela 4 apresenta a rastreabilidade dos códigos em relação as respostas de cada desenvolvedor para cada pergunta. Algumas respostas que não puderam ser associadas a nenhum dos códigos foram descartadas. Os códigos nesta matriz são representados pelos símbolos a seguir:
 
 \begin{itemize}
 \item Co1 - Papel do Desenvolvedor;
@@ -585,6 +584,7 @@ O diagnóstico obtido, conforme a entrevista aplicada aos desenvolvedores que pa
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{table}[!htb]
+\caption{Matriz de rastreabilidade dos códigos}
 \centering
 \begin{tabular}{|M{1.0cm}|M{1.6cm}|M{1.6cm}|M{1.6cm}|M{1.6cm}|M{1.6cm}|M{1.6cm}|M{1.6cm}|M{1.6cm}|}
 
@@ -653,17 +653,18 @@ O diagnóstico obtido, conforme a entrevista aplicada aos desenvolvedores que pa
 \textbf{OBS}                   & Co3,Co5,\newline Co10        & Co9,Co10       & Co9            & Co4,Co9        &   -             &        -        &      -          &      -          \\ \hline
 
 \end{tabular}
-\caption{Matriz de rastreabilidade dos códigos}
 \end{table}
 
-Uma vez que a primeira parte da análise foi aplicada, deu-se prosseguimento a análise iniciando-se a segunda parte da mesma. A segunda parte consistiu em rotular as respostas, que foram agrupadas pelos códigos, com as chaves. A tabela 4 ilustra as chaves atribuídas às repostas das entrevistas e os seus significados. Estas chaves representam todos os diferentes significados de todas as respostas.\newline
+Uma vez que a primeira parte da análise foi aplicada, deu-se prosseguimento a análise iniciando-se a segunda parte da mesma. A segunda parte consistiu em rotular as respostas, que foram agrupadas pelos códigos, com as chaves. A tabela 4 ilustra as chaves atribuídas às repostas das entrevistas e os seus significados. Estas chaves representam todos os diferentes significados de todas as respostas.\clearpage
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{longtable}{|M{1.3cm} | m{14.0cm}|} %[!htb]
-%\centering
-%\begin{tabular}{|M{1.0cm}|M{1.0cm}|}
+\caption{Chaves representando os diferentes significados das respostas das entrevistas}\\\hline
+\textbf{Chave} & \textbf{Descrição}                                                                                                                                                                                                                                                \\ \hline
+\endfirsthead
 \hline
 \textbf{Chave} & \textbf{Descrição}                                                                                                                                                                                                                                                \\ \hline
+\endhead
 C1             & Papel claro dentro da instituição                                                                                                                                                                                                                                 \\ \hline
 C2             & Papel que exige grande responsabilidade dentro da instituição                                                                                                                                                                                                     \\ \hline
 C3             & Papel definido com falta de metas                                                                                                                                                                                                                                 \\ \hline
@@ -716,15 +717,19 @@ C49            & Faz a migração da definição dos objetos de dados           
 C50            & Faz a homologação das aplicações antes de disponibilizar definitivamente na produção                                                                                                                                                                              \\ \hline
 C51            & Seria interessante o uso de uma ferramenta que mostrasse as diferenças dos objetos no desenvolvimento a na produção                                                                                                                                            \\ \hline
 %\end{tabular}
-\caption{Chaves representando os diferentes significados das respostas das entrevistas}
 \end{longtable}
 
-Ao total foram obtidos um conjunto com 51 chaves diferentes, e elas representam o diagnóstico do desenvolvimento descentralizado do Órgão X. Com esse diagnóstico, procurou-se propor as soluções que atendessem ao mesmo. Para facilitar este procedimento, agrupou-se as chaves que tinham alguma relação direta entre si, e então as soluções foram sendo proposta em cima de cada grupo obtido. A tabela 6 ilustra as soluções propostas para cada grupo de chaves. Observa-se que algumas chaves não obtiveram uma solução relacionada, ou porque eram meramente uma descrição ou porque uma solução era inviável de ser proposta.\newline
+Ao total foi obtido um conjunto com 51 chaves diferentes, sendo que as chaves representam o diagnóstico do desenvolvimento descentralizado do Órgão X. O diagnóstico foi utilizado para a proposição de soluções que aperfeiçoassem o mesmo. Para facilitar este procedimento, as chaves que tinham alguma relação direta foram agrupadas e este grupo serviu de base para as soluções propostas. A tabela 6 ilustra as soluções propostas para cada grupo de chaves. Algumas chaves não obtiveram uma solução relacionada por serem meramente uma descrição ou pela inviabilidade da solução necessária. \clearpage
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{longtable}{|M{2.0cm}|m{13.0cm}|}
+\caption{Soluções associadas as chaves}\\\hline
+\textbf{Chave}                                                          
+& \textbf{Solução}\\\hline
+\endfirsthead
 \hline
 \textbf{Chave}                                                          & \textbf{Solução}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \\ \hline
+\endhead
 C1                                                & Não se aplica, pois é uma descrição.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
 C2                                                & Não se aplica, pois é uma descrição.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
 C3                                                & Inviável, pois não há permissão de atuação na política interna do órgão.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       \\ \hline
@@ -740,17 +745,14 @@ C28, C29, C30, C31, C32, C33, C34, C35, C36 e C37 & 1- Desenvolver um guia de bo
 C38, C39, C40, C41, C42 e C43                   & 1- Criar uma funcionalidade de geração de casos de teste simples.\newline  2- Guia de como testar o comportamento dos códigos PL/SQL.\newline  3- Guia de como testar uma página APEX.\newline  4- Guia de utilização de ferramenta de automação de teste.                                                                                                                                                                                                                                                                               \\ \hline
 C44, C45, C46, C47, C48, C49 e C50                & 1- Guia de migração de aplicações.\newline  2- Guia de homologação de aplicações.\newline  3- Propor uma atividade de homologação da aplicação.                                                                                                                                                                                                                                                                                                                                                                                   \\ \hline
 C51                                              & Inviável.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      \\ \hline
-\caption{Soluções associadas as chaves}
 \end{longtable}
 
-Uma matriz de rastreabilidade das chaves foi elaborada, de forma a garantir a associação entre as chaves e as respostas das perguntas, relacionadas a cada desenvolvedor entrevistado. O conjunto de respostas das perguntas de 1 a 5, por se tratar meramente de uma contextualização do perfil dos entrevistados, não fez parte do escopo da análise e portanto foi ignorado. A tabela 7 ilustra a rastreabilidade de chaves com as respostas das perguntas.\newline
+Uma matriz de rastreabilidade das chaves foi elaborada, de forma a garantir a associação entre as chaves e as respostas, dadas pelos desenvolvedores, para cada pergunta. O conjunto de respostas das perguntas de 1 a 5, por se tratar meramente de uma contextualização do perfil dos entrevistados, não fez parte do escopo da análise. A tabela 7 ilustra a rastreabilidade de chaves com as respostas das perguntas.\clearpage
 
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{longtable}{|M{1.0cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|}
-%\begin{table}[!htb]
-%\centering
-%\begin{tabular}{|M{1.0cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|M{1.5cm}|}
+\caption{Matriz de rastreabilidade das chaves}\\
 \hline
              & \textbf{Des.1} & \textbf{Des.2} & \textbf{Des.3} & \textbf{Des.4}  & \textbf{Des.5} & \textbf{Des.6} & \textbf{Des.7} & \textbf{Des.8} \\ \hline
 \textbf{P6}  & C1             & C3             & C1             & C1              & C2             & C2             & C1             & C2             \\ \hline
@@ -784,15 +786,24 @@ Uma matriz de rastreabilidade das chaves foi elaborada, de forma a garantir a as
 \textbf{P34} & C48            & C48            & C48            & C48             & C48            & C48            & C48            & C48            \\ \hline
 \textbf{OBS} & C12,C20, C51    & C40,C50        & C40            & C16,C38, C39,C40 & -              & -              & -              & -              \\ \hline
 %\end{tabular}
-\caption{Matriz de rastreabilidade das chaves}
 \end{longtable}
 
-Uma vez que as soluções para o diagnóstico foram propostas, elas foram convertidas em atividades e em guias que irão compor a solução de apoio. Estas atividades e guias são divididas em três tipos, conforme a sua origem: atividades e guias que foram propostas, que foram retiradas do processo de desenvolvimento descentralizado, e que foram retiradas da \textit{Wiki}.  A tabela 8 representa as atividades e os guias gerados por todas as soluções propostas e a fonte de origem das mesmas, divididos pelas fases do ciclo de vida da solução.\clearpage
+Uma vez que as soluções para o diagnóstico foram propostas, elas foram convertidas em atividades e em guias que irão compor a solução de apoio. Estas atividades e guias são divididas em três tipos conforme a sua origem: 
+\begin{enumerate}
+\item Propostas;
+\item Retiradas do processo de desenvolvimento descentralizado;
+\item Retiradas da \textit{Wiki}
+\end{enumerate}
+
+A tabela 8 representa as atividades e os guias gerados por todas as soluções propostas e a fonte de origem das mesmas, divididos pelas fases do ciclo de vida da solução.\newline
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{longtable}{|m{6.0cm}|M{3.0cm}|M{2.0cm}|M{3.0cm}|}
-\hline
+\caption{Atividades e guias resultantes de cada solução}\\\hline
 \textbf{Solução}                                                                                                                                    & \textbf{Atividade, Guia, Funcionalidade}       & \textbf{Fonte}   & \textbf{Fase do ciclo de vida da solução} \\ \hline
+\endfirsthead
+\hline
+\textbf{Solução}                                                                                                                                    & \textbf{Atividade, Guia, Funcionalidade}       & \textbf{Fonte}   & \textbf{Fase do ciclo de vida da solução} \\ \hline\endhead
 Adaptar a atividade de priorização do escopo da \textit{release} no processo de desenvolvimento descentralizado já existente. & Priorizar funcionalidades a serem desenvolvidas & Solução Proposta & \\ \cline{1-3}
 Adaptar a atividade de levantamento de requisitos no processo de desenvolvimento descentralizado já existente.                                      & Elicitar requisitos junto ao cliente             & PDESC            & \multirow{5}{*}{Requisitos}                                    \\ \cline{1-3}
 Usar o guia de entrevistas definidos no processo de desenvolvimento descentralizado já existente.                                                   & Guia de entrevistas                              & PDESC            &                                                                \\ \cline{1-3}
@@ -823,7 +834,6 @@ Guia de homologação de aplicações.                                          
 Propor uma atividade de homologação da aplicação.                                                                                                   & Homologar aplicação                              & Solução Proposta &                                                                \\ \hline
 Guia de migração de aplicações.                                                                                                                     & Guia de migração de aplicações                   & Solução Proposta & \multirow{2}{*}{Implantação}                                   \\ \cline{1-3}
 Definir procedimentos de implantação.                                                                                                               & Definir procedimentos de implantação             & Solução Proposta &                                                                \\ \hline
-\caption{Atividades e guias resultantes de cada solução}
 \end{longtable}
 
 
@@ -862,19 +872,21 @@ A unidade-caso refere-se a um indivíduo num contexto definido. Possui três
 
 \section{Atividades e guias complementares}
 
-Apesar de algumas atividades e guias do processo de desenvolvimento descentralizado e da \textit{Wiki} terem sido selecionadas para comporem as soluções propostas a partir do diagnóstico, houve a necessidade de se selecionar outras atividades e guias que não foram previstas nas soluções elaboradas. As justificativas para esse complemento foram duas:\clearpage
+Apesar de algumas atividades e guias do processo de desenvolvimento descentralizado e da \textit{Wiki}, terem sido selecionadas para compor as soluções propostas a partir do diagnóstico, houve a necessidade de se selecionar outras atividades e guias que não foram previstas nas soluções elaboradas. As justificativas para esse complemento foram:
 
 \begin{enumerate}
-\item Alguns guias ficaram sem atividades para serem associados.
-\item Algumas atividades que julgaram-se importantes não foram previstas nas soluções do diagnóstico.
+\item Alguns guias ficaram sem atividades para serem associadas;
+\item Algumas atividades, julgadas importantes, não foram previstas nas soluções do diagnóstico;
 \end{enumerate}
 
-Em relação ao processo de desenvolvimento descentralizado, foram selecionados ao todo 10 atividades e nenhum guia, de forma a complementar a solução. Já em relação a \textit{Wiki}, nenhuma atividade e guia foi selecionados para o complemento. A tabela 9 ilustra a relação de atividades selecionadas do processo de desenvolvimento descentralizado, e a sua associação com as fases do ciclo de vida da solução proposta.
+Em relação ao processo de desenvolvimento descentralizado, foram selecionadas, ao todo, 10 atividades e nenhum guia, de forma a complementar a solução. Já em relação a \textit{Wiki}, nenhuma atividade e guia foi selecionados para o complemento. A tabela 9 ilustra a relação de atividades selecionadas do processo de desenvolvimento descentralizado, e a sua associação com as fases do ciclo de vida da solução proposta.\clearpage
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{C}[1]{>{\raggedright}m{#1}}
 \begin{table}[!htb]
+\caption{Atividades complementares selecionadas}
 \centering
-\begin{tabular}{|M{8.0cm}|M{2.0cm}|M{3.0cm}|}
+\begin{tabular}{|C{8.0cm}|M{2.0cm}|M{3.0cm}|}
 \hline
 \textbf{Atividade}          & \textbf{Fonte} & \textbf{Fase do ciclo de vida da solução} \\ \hline
 Construir modelo físico de dados -> Construir modelo de dados   & PDESC          & Banco de dados                            \\ \hline
@@ -888,35 +900,33 @@ Preparar ambiente de teste         & PDESC          &                           
 Criar material de apoio ao usuário & PDESC          & Homologação                               \\ \hline
 Migrar aplicação                   & PDESC          & Implantação                               \\ \hline
 \end{tabular}
-\caption{Atividades complementares selecionadas}
 \end{table}
 
 \section{Solução gerada}
 
-A solução gerada consiste da junção de todas as atividades, guias e funcionalidades, que foram originados tanto do diagnóstico quanto do complemento. Essas atividades, guias e funcionalidades, estão organizadas em 5 fases diferentes do ciclo de vida. Estas fases são: Requisitos, Desenvolvimento, Teste, Homologação e Implantação. A fase de Desenvolvimento, é dividida em duas sub-fases: Banco de dados e Implementação. A organização do ciclo de vida da solução é representada pela figura 4. \clearpage
+A solução gerada consiste da junção de todas as atividades, guias e funcionalidades geradas, tanto do diagnóstico, quanto do complemento. Essas atividades, guias e funcionalidades, estão organizadas em 5 fases diferentes do ciclo de vida. Estas fases são: Requisitos, Desenvolvimento, Teste, Homologação e Implantação. A fase de Desenvolvimento, é dividida em duas sub-fases: Banco de dados e Implementação. A organização do ciclo de vida da solução é representada pela figura 4. \clearpage
 
-%\begin{figure}[!htb]
-%	\centering
-%		\includegraphics[scale=0.8]{figuras/ciclo_vida_solucao}
-%	\caption{Ciclo de vida da solução.}
-%\end{figure}
+\begin{figure}[!htb]
+	\centering
+		\includegraphics[scale=0.8]{figuras/ciclo_vida_solucao}
+	\caption{Ciclo de vida da solução.}
+\end{figure}
 
 A organização do ciclo de vida foi baseada na metodologia ágil \textit{Scrum}. A idéia básica desta organização é: definir o \textit{backlog} de um ciclo (\textit{backlog} da iteração) junto com o cliente, e então ir "consumindo" esse \textit{backlog} ao longo de todo o ciclo da solução, onde cada item do \textit{backlog} definido deverá caminhar sequencialmente pelas fases do ciclo de vida. Uma vez que todo o \textit{backlog} foi "consumido" pelo ciclo de vida, temos o fim de um ciclo ou iteração. Ao completar uma iteração, um novo \textit{backlog} é definido com o cliente, e então um novo ciclo se inicia. Esse fluxo se repete até que o sistema chegue ao nível desejado pelo o cliente. As fases do ciclo de vida são descritas da seguinte forma:
 
 \begin{itemize}
-\item \textbf{Requisitos}: Priorizar as funcionalidades a serem desenvolvidas em um ciclo (\textit{backlog} da iteração), de acordo com os requisitos levantados junto com o cliente.
-\item \textbf{Desenvolvimento}: Dividida pelas sub-fases de Banco de dados e de Implementação, esta fase tem o objetivo de realizar a construção do sistema. A sub-fase de Banco de dados tem o objetivo de construir o modelo de dados, tanto lógico quanto físico. Já a sub-fase de Implementação objetiva implementar de fato o sistema, baseado no modelo de dados construído.
+\item \textbf{Requisitos}: Priorizar as funcionalidades a serem desenvolvidas em um ciclo (\textit{backlog} da iteração) de acordo com os requisitos levantados junto com o cliente.
+\item \textbf{Desenvolvimento}: Dividida pelas sub-fases Banco de dados e Implementação, esta fase tem o objetivo de realizar a construção do sistema. A sub-fase Banco de dados tem o objetivo de construir o modelo de dados, tanto lógico quanto físico. Já a sub-fase Implementação objetiva implementar de fato o sistema, baseado no modelo de dados construído.
 \item \textbf{Teste}: Realizar os testes, tanto a nível de páginas da aplicação, quanto a nível de código, objetivando corrigir erros encontrados.
-\item \textbf{Homologação}: Homologar a aplicação junto ao cliente, e realizar a construção de materiais de apoio ao usuário, como guias, manuais e etc. Caso não seja homologada pelo cliente, volta-se a fase do ciclo de vida necessária para realizar as correções, e a partir dali continua seguindo o ciclo sequencialmente, passando por todas as etapas sub-sequentes novamente.
+\item \textbf{Homologação}: Homologar a aplicação junto ao cliente e realizar a construção de materiais de apoio ao usuário, como guias, manuais, etc. Caso não seja homologada pelo cliente, o fluxo do ciclo volta para a fase que necessita de correções e passa por todas as etapas subsequentes, repetindo o ciclo.
 \item \textbf{Implantação}: Planejar e realizar a migração do sistema para a produção.
 \end{itemize}
 
 
-Ao todo 18 atividades, 14 guias e 5 funcionalidades compõem a solução, onde os guias e as funcionalidades são suportes a execução de uma determinada atividade. A figura 5 ilustra a solução elaborada, agrupando todas as atividades, as funcionalidades e os guias, pelas fases do ciclo de vida. A cor azul representa as atividades, e a cor amarela representa os guias e as funcionalidades. Um guia ou uma funcionalidade identado dentro de uma atividade significa que ele é um suporte a atividade em questão.
+Ao todo 18 atividades, 14 guias e 5 funcionalidades compõem a solução, onde os guias e as funcionalidades são suportes à execução de uma determinada atividade. A figura 11 ilustra a solução elaborada, agrupando todas as atividades, as funcionalidades e os guias, pelas fases do ciclo de vida. Os retângulos azuis representam as atividades e os retângulos roxos com laterais curvas representam os guias e as funcionalidades. Um guia ou uma funcionalidade representado após uma atividade significa que ele é um suporte a atividade em questão.
 \clearpage
 
 \begin{landscape}
-\vspace*{\fill}
 \begin{figure}[!htb]
 	\centering
 		\includegraphics[scale=0.4]{figuras/fluxograma_solucao}
@@ -931,95 +941,100 @@ As atividades, guias e funcionalidades são descritas brevemente da seguinte for
 \begin{itemize}
 \item \textbf{Requisitos}
 \begin{enumerate}
-\item \textit{Elicitar Requisitos Junto ao Cliente:} Identificar os requisitos funcionais e não funcionais da aplicação, junto com o cliente.
-\item \textit{Funcionalidade - Escolher técnica de elicitação:} Funcionalidade para ajudar o desenvolvedor a escolher uma técnica de elicitação para o levantamento de requisitos junto com o cliente. Algumas técnicas já estarão pré-cadastradas, e uma delas será sugerida ao usuário com base nas respostas de algumas perguntas.
+\item \textit{Elicitar Requisitos Junto ao Cliente (Atividade):} Identificar os requisitos funcionais e não funcionais da aplicação junto ao cliente.
 \begin{enumerate}
-\item \textit{Guia de entrevistas:} Guia de como elaborar perguntas para uma entrevista com o cliente. Este guia será útil somente para quem for utilizar a entrevista como técnica de elicitação.
+\item \textit{Escolher técnica de elicitação (Funcionalidade):} Funcionalidade para ajudar o desenvolvedor a escolher uma técnica de elicitação para o levantamento de requisitos junto ao cliente. Uma técnica existente pré-cadastrada será sugerida ao usuário com base nas respostas de algumas perguntas.
+\item \textit{Guia de entrevistas (Guia):} Guia de como elaborar perguntas para uma entrevista com o cliente. Este guia será útil somente para quem for utilizar a entrevista como técnica de elicitação.
 \end{enumerate}
-\item \textit{Estruturar informações obtidas:} Transformar as informações obtidas na entrevista em requisitos, e armazená-los em documento.
-\item \textit{Priorizar funcionalidades a serem desenvolvidas:} Priorizar as funcionalidades a serem desenvolvidas dentro de um ciclo da solução.
+\item \textit{Estruturar informações obtidas (Atividade):} Transformar as informações obtidas na entrevista em requisitos, e armazená-los em documento.
+\item \textit{Priorizar funcionalidades a serem desenvolvidas (Atividade):} Priorizar as funcionalidades a serem desenvolvidas dentro de um ciclo da solução.
 \begin{enumerate}
-\item \textit{Guia de prototipagem rápido:} Guia de como realizar uma prototipagem rápida das telas de uma aplicação.
+\item \textit{Guia de prototipagem rápido (Guia):} Guia de como realizar uma prototipagem rápida das telas de uma aplicação.
 \end{enumerate}
 \end{enumerate}
 \item \textbf{Desenvolvimento}
 \begin{itemize}
 \item \textbf{Banco de Dados}
 \begin{enumerate}
-\item \textit{Construir modelo de dados:} Realizar a construção do modelo de dados lógico e físico.
+\item \textit{Construir modelo de dados (Atividade):} Realizar a construção do modelo de dados lógico e físico.
 \begin{enumerate}
-\item \textit{Guia de criação e padrões de BD:} Guia com dicas de como realizar a modelagem conceitual (MER) e lógica (ML) do banco de dados da aplicação, utilizando a ferramenta Oracle Data Modeler. Utiliza o guia de padrão de nomenclatura de objetos de dados, no auxílio da construção dos modelos.
-\begin{enumerate}
-\item \textit{Guia de padrão de nomenclatura de objetos de dados:} Guia contendo os padrões de nomenclatura usados no órgão para diversos objetos do banco de dados, como tabelas, sequências, gatilhos e \textit{views}.
+\item \textit{Guia de criação e padrões de BD (Guia):} Guia com dicas de como realizar a modelagem conceitual (MER) e lógica (ML) do banco de dados da aplicação, utilizando a ferramenta Oracle Data Modeler. Utiliza o guia de padrão de nomenclatura de objetos de dados no auxílio da construção dos modelos.
+%\begin{enumerate}
+\item \textit{Guia de padrão de nomenclatura de objetos de dados (Guia):} Guia contendo os padrões de nomenclatura usados no órgão para diversos objetos do banco de dados, como tabelas, sequências, gatilhos e \textit{views}.
+%\end{enumerate}
+\item \textit{Guia de geração de scripts SQL (Guia):} Guia de como gerar os \textit{scripts} para a construção do modelo físico a partir do modelo lógico, elaborado na ferramenta Oracle Data Modeler.
 \end{enumerate}
-\item \textit{Guia de geração de scripts sql:} Guia de como gerar os \textit{scripts} para a construção do modelo físico, a partir do modelo lógico, elaborado na ferramenta Oracle Data Modeler.
-\end{enumerate}
-\item \textit{Validar modelo de dados:} Realizar a validação do modelo de dados lógico e/ou físico, conforme a necessidade, com a área técnica responsável.
-\item \textit{Atualizar modelo de dados:} Atualizar o modelo de dados, conforme as validações realizadas com a área técnica.
+\item \textit{Validar modelo de dados (Atividade):} Realizar a validação do modelo de dados lógico e/ou físico, conforme a necessidade, com a área técnica responsável.
+\item \textit{Atualizar modelo de dados (Atividade):} Atualizar o modelo de dados conforme as validações realizadas com a área técnica.
 \end{enumerate}
 \item \textbf{Implementação}
 \begin{enumerate}
-\item \textit{Gerar esqueleto da aplicação:} Gerar o esqueleto da aplicação usando a funcionalidade \textit{defaults} de interface de usuário do APEX.
-\item \textit{Ajustar interface do sistema:} Refinar a interface da aplicação conforme as necessidades de usabilidade da mesma.
-\item \textit{Guia de boas práticas APEX:} Guia para auxiliar a criação da aplicação, usando boas práticas em APEX.
-\item \textit{Aplicar regras de negócio:} Implementar as regras de negócio da aplicação.
+\item \textit{Gerar esqueleto da aplicação (Atividade):} Gerar o esqueleto da aplicação usando a funcionalidade \textit{defaults} de interface de usuário do APEX.
 \begin{enumerate}
-\item \textit{Guia de boas práticas plsql:} Guia para auxiliar a construção de código em PL/SQL.
-\item \textit{Guia sobre editor de código sql e plsql:} Guia para auxiliar o uso do editor de código para a escrita de códigos SQL e PL/SQL.
-\item \textit{Funcionalidade - Cadastro de código reutilizável:} Funcionalidade para permitir que o desenvolvedor possa cadastrar códigos que ele julgue que possam ser reutilizáveis.
+\item \textit{Guia de boas práticas APEX (Guia):} Guia para auxiliar a criação da aplicação usando boas práticas em APEX.
 \end{enumerate}
-\item \textit{Funcionalidade - Consulta de informações na solução:} Consulta conveniente das informações da solução, de forma a permitir um acesso mais rápido a um determinado guia ou funcionalidade. O usuário também pode cadastrar suas anotações. A idéia é semelhante a de uma \textit{Wiki}.
+\item \textit{Ajustar interface do sistema (Atividade):} Refinar a interface da aplicação conforme as necessidades de usabilidade da mesma.
+\begin{enumerate}
+\item \textit{Guia de boas práticas APEX (Guia):} Guia para auxiliar a criação da aplicação, usando boas práticas em APEX.
+\end{enumerate}
+\item \textit{Aplicar regras de negócio (Atividade):} Implementar as regras de negócio da aplicação.
+\begin{enumerate}
+\item \textit{Guia de boas práticas PL/SQL (Guia):} Guia para auxiliar a construção de código em PL/SQL.
+\item \textit{Guia sobre editor de código SQL e PL/SQL (Guia):} Guia para auxiliar o uso do editor de código para a escrita de códigos SQL e PL/SQL.
+\item \textit{Cadastro de código reutilizável (Funcionalidade):} Funcionalidade para permitir que o desenvolvedor possa cadastrar códigos que ele julgue ser reutilizáveis.
+\end{enumerate}
+\item \textit{Consulta de informações na solução (Funcionalidade):} Consulta conveniente das informações da solução, de forma a permitir um acesso mais rápido a um determinado guia ou funcionalidade. O usuário também pode cadastrar suas anotações. A idéia é semelhante a de uma \textit{Wiki}.
 \end{enumerate}
 \end{itemize}
 \item \textbf{Teste}
 \begin{enumerate}
-\item \textit{Preparar ambiente de testes:} Realizar os preparativos necessários ao ambiente para a realização dos testes da aplicação. Ex: Criar massa de dados, limpar dados existentes, criar um novo espaço de trabalho APEX, e etc.
-\item \textit{Definir procedimentos de teste:} Definir um conjunto de etapas a serem realizadas nos testes.
+\item \textit{Preparar ambiente de testes (Atividade):} Realizar os preparativos necessários ao ambiente para a realização dos testes da aplicação. Ex: Criar massa de dados, limpar dados existentes, criar um novo espaço de trabalho APEX, etc.
+\item \textit{Definir procedimentos de teste (Atividade):} Definir um conjunto de etapas a serem realizadas nos testes.
 \begin{enumerate}
-\item \textit{Funcionalidade - Geração de casos de teste:} Funcionalidade que auxilie os testes do desenvolvedor, oferecendo diferentes valores que o usuário pode inserir nos diferentes componentes da interface, de forma a testar várias possibilidades diferentes.
+\item \textit{Geração de casos de teste (Funcionalidade):} Funcionalidade que auxilie os testes do desenvolvedor, oferecendo diferentes valores que o usuário pode inserir nos diferentes componentes da interface, de forma a testar várias possibilidades diferentes.
 \end{enumerate}
-\item \textit{Executar testes de desenvolvedor:} Executar os testes planejados.
+\item \textit{Executar testes de desenvolvedor (Atividade):} Executar os testes planejados.
 \begin{enumerate}
-\item \textit{Guia de uso de depuração de páginas APEX:} Guia explicando como usar a funcionalidade de depurar existente no APEX, para encontrar erros na aplicação.
-\item \textit{Funcionalidade - Cadastro de erros conhecidos:} Funcionalidade que permita que o desenvolvedor possa cadastrar os erros que for encontrando, de forma a montar uma espécie de base de conhecimento de erros.
-\item \textit{Guia de ferramenta de automação de teste:} Guia que auxilie o desenvolvedor a criar \textit{scripts} simples de automação de ações no navegador, de forma a criar testes automatizados.
-\item \textit{Guia de teste de comportamento de código:} Guia que auxilie o desenvolvedor a testar, dentro do possível, e realizar a depuração de códigos em PL/SQL.
+\item \textit{Guia de uso de depuração de páginas APEX (Guia):} Guia explicando como usar a funcionalidade de depurar existente no APEX, para encontrar erros na aplicação.
+\item \textit{Cadastro de erros conhecidos (Funcionalidade):} Funcionalidade que permita que o desenvolvedor possa cadastrar os erros que for encontrando, de forma a montar uma espécie de base de conhecimento de erros.
+\item \textit{Guia de ferramenta de automação de teste (Guia):} Guia que auxilie o desenvolvedor a criar \textit{scripts} simples de automação de ações no navegador, de forma a criar testes automatizados.
+\item \textit{Guia de teste de comportamento de código (Guia):} Guia que auxilie o desenvolvedor a testar, dentro do possível, o código PL/SQL e a realizar a depuração de códigos em PL/SQL.
 \end{enumerate}
-\item \textit{Executar testes exploratórios:} Navegar na aplicação, sem um prévio planejamento, em busca de erros.
+\item \textit{Executar testes exploratórios (Atividade):} Navegar na aplicação, sem um prévio planejamento, em busca de erros.
 \begin{enumerate}
-\item \textit{Guia de teste de página APEX:} Guia com dicas de como realizar os testes exploratórios.
+\item \textit{Guia de teste de página APEX (Guia):} Guia com dicas de como realizar os testes exploratórios.
 \end{enumerate}
-\item \textit{Realizar correções no sistema:} Realizar as correções e ajustes necessários ao sistema.
+\item \textit{Realizar correções no sistema (Atividade):} Realizar as correções e ajustes necessários ao sistema.
 \end{enumerate}
 \item \textbf{Homologação}
 \begin{enumerate}
-\item \textit{Criar material de apoio ao usuário:} Criar um guia que auxilie o usuário a usar a aplicação.
-\item \textit{Homologar aplicação:} Realizar a homologação da aplicação, junto ao cliente.
+\item \textit{Criar material de apoio ao usuário (Atividade):} Criar um guia que auxilie o usuário a usar a aplicação.
+\item \textit{Homologar aplicação (Atividade):} Realizar a homologação da aplicação junto ao cliente.
 \begin{enumerate}
-\item \textit{Guia de homologação de aplicações:} Guia com dicas de como realizar a homologação junto ao cliente.
+\item \textit{Guia de homologação de aplicações (Guia):} Guia com dicas de como realizar a homologação junto ao cliente.
 \end{enumerate}
 \end{enumerate}
 \item \textbf{Implantação}
 \begin{enumerate}
-\item \textit{Definir procedimentos de implantação:} Definir as etapas necessárias para colocar a aplicação em produção.
+\item \textit{Definir procedimentos de implantação (Atividade):} Definir as etapas necessárias para colocar a aplicação em produção.
 \begin{enumerate}
-\item \textit{Guia de migração de aplicações:} Guia com dicas do que se preocupar ao realizar a migração de uma aplicação APEX.
+\item \textit{Guia de migração de aplicações (Guia):} Guia com dicas do que se preocupar ao realizar a migração de uma aplicação APEX.
 \end{enumerate}
-\item \textit{Migrar aplicação:} Executar os procedimentos de migração definidos.
+\item \textit{Migrar aplicação (Atividade):} Executar os procedimentos de migração definidos.
 \end{enumerate}
 \end{itemize}
-De forma a auxiliar o desenvolvedor na gerência do desenvolvimento, uma adaptação do \textit{Kanban} foi feita, e ela pode ser visualizada na figura 6. \clearpage
+De forma a auxiliar o desenvolvedor na gerência do desenvolvimento, uma adaptação do quadro \textit{Kanban} foi feita, e ela pode ser visualizada na figura 12. \clearpage
 
 \begin{landscape}
 \vspace*{3cm}
 \begin{figure}[!htb]
 	\centering
 		\includegraphics[scale=0.35]{figuras/kanban}
-	\caption{Conjunto de atividades, guias e funcionalidades, por fase do ciclo de vida}
+	\caption{Adaptação do quadro \textit{kanban}}
 \end{figure}
 \end{landscape}
 
-Este \textit{Kanban} foi dividido pelas fases do ciclo de vida da solução, de forma que o desenvolvedor vai posicionando os itens do \textit{backlog} definido, de acordo com a etapa em que se encontram dentro do ciclo de vida. A ideia é que o \textit{backlog} da iteração gerado seja em pequenas unidades de funcionalidades, de forma a facilitar o gerenciamento e acompanhamento pelo desenvolvedor. Ao terminar um conjunto destas unidades de funcionalidade, o desenvolvedor consegue gerar um entregável ao cliente. Observa-se que a divisão \textit{Backlog} Produto é opcional, já que pode ser da preferência do cliente e do desenvolvedor levantar o \textit{backlog} do produto. Porém, neste caso, o fluxo de execução do \textit{Kanban} obriga a seleção e priorização de um \textit{backlog} da iteração, conforme a divisão de Requisitos.
+Este quadro \textit{kanban} foi dividido pelas fases do ciclo de vida da solução, de forma que o desenvolvedor vai posicionando os itens do \textit{backlog} definido de acordo com a etapa em que se encontram dentro do ciclo de vida. A ideia é que o \textit{backlog} da iteração gerado seja em pequenas unidades de funcionalidades, de forma a facilitar o gerenciamento e acompanhamento pelo desenvolvedor. Ao terminar um conjunto destas unidades de funcionalidade, o desenvolvedor consegue gerar um software executável para o cliente. Observa-se que a divisão \textit{Backlog} Produto é opcional, já que pode ser da preferência do cliente e do desenvolvedor levantar o \textit{backlog} do produto. Porém, neste caso, o fluxo de execução do quadro \textit{kanban} obriga a seleção e priorização de um \textit{backlog} da iteração, conforme a divisão da etapa de Requisitos.
 
 \begin{comment}
 \chapter[Capítulo 6 – Cronograma de Execução]{Capítulo 6 – Cronograma de Execução}
