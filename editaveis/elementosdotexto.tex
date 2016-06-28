@@ -8,19 +8,20 @@ metodologia de pesquisa adotada e a organização do trabalho nos capítulos seg
 
 \section{\textit{Contexto}}
 
-É inconcebível imaginar o mundo moderno sem software. Ele está tão acoplado nas mais diversas áreas que seria difícil prever como o mundo seria sem o suporte e as facilidades que ele traz ao nosso dia a dia. Diante deste acoplamento tão grande e do seu enorme crescimento nos últimos anos, consequência do avanço tecnológico, se torna cada vez mais importante desenvolver software. O desenvolvimento de software pode possuir diferentes contextos de negócio, e com isso diferentes habilidades são exigidas dos desenvolvedores, já que cada contexto possui suas particularidades. Além disso, o ritmo acelerado do mundo moderno faz com que os contextos evoluam, e com isso as suas atividades e necessidades (requisitos) também evoluam. A mudança nos requisitos, a sua diversidade, e em alguns casos a dificuldade em definí-los, leva o desenvolvimento tradicional de software a ser lento e caro em contextos que estão sempre evoluindo \cite{lieberman2006}. Além disso, a limitação na capacidade de produção de software de uma organização pode levar à priorização das demandas, e como consequência algumas áreas de negócio podem ficar sem atendimento. Neste contexto, se torna cada vez mais comum, aplicações de software serem desenvolvidas por desenvolvedores não profissionais, pessoas que não possuem conhecimento elevado em programação, mas que possuem expertise no domínio de negócio em que estão inseridas. O desejo de suportar seus objetivos neste domínio através de uma solução computacional, os leva a serem tanto desenvolvedores quanto usuários finais do software \cite{lieberman2006}. 
+É inconcebível imaginar o mundo moderno sem software. Ele está tão acoplado nas mais diversas áreas que seria difícil prever como o mundo seria sem o suporte e as facilidades que ele traz ao nosso dia a dia. Diante deste acoplamento tão grande e do seu enorme crescimento nos últimos anos, consequência do avanço tecnológico, se torna cada vez mais importante desenvolver software. O desenvolvimento de software pode possuir diferentes contextos de negócio, e com isso diferentes habilidades são exigidas dos desenvolvedores, já que cada contexto possui suas particularidades. Além disso, o ritmo acelerado do mundo moderno faz com que os contextos evoluam, e com isso as suas atividades e necessidades (requisitos) também evoluam. A mudança nos requisitos, a sua diversidade, e em alguns casos a dificuldade em definí-los, leva o desenvolvimento tradicional de software a ser lento e caro em contextos que estão sempre evoluindo \cite{lieberman2006}. Além disso, a limitação na capacidade de produção de software de uma organização pode levar à priorização das demandas, e como consequência algumas áreas de negócio podem ficar sem atendimento. Neste contexto, se torna cada vez mais comum, aplicações de software serem desenvolvidas por desenvolvedores não profissionais, pessoas que não possuem conhecimento elevado em programação, mas que possuem expertise no domínio de negócio em que estão inseridas. O desejo de suportar seus objetivos neste domínio através de uma solução computacional, os leva a serem tanto desenvolvedores quanto usuários finais do software \cite{lieberman2006}.
 
 O Escritório do Trabalho e Estatística dos Estados Unidos fez uma previsão de que por volta de 2012, nos Estados Unidos, haveriam pouco mais de 3 milhões de programadores profissionais e mais de 55 milhões de pessoas escrevendo fórmulas e \textit{queries} em planilhas e banco de dados, para suportar seus objetivos de trabalho \cite{scaffidi2005}. Um relatório divulgado pelo \textit{Gartner} em Julho de 2011, indicou que desenvolvedores não profissionais iriam construir ao menos 25 \% das novas aplicações de negócio em 2014 \cite{paterno2013}. Diante deste cenário, um modelo de desenvolvimento de software centrado nesses usuários finais, que desenvolvem cada vez mais sistemas e aplicações, vem ganhando força. O \textit{End User Development} - EUD tem como objetivo oferecer meios para que os usuários finais, que não são especialistas em programação, possam desenvolver aplicações de software. O EUD pode ajudar a aumentar a capacidade produtiva do departamento de TI de uma organização, bem como reduzir custos com o desenvolvimento de aplicações de negócio.
 
-O serviço público brasileiro, por ter natureza administrativa, apresenta grande demanda por desenvolvimento de software. Porém, a limitada capacidade produtiva da área de TI e o excesso de burocracia para o aumento da mesma, que é feita através de concursos ou de contratos terceirizados, acaba contribuindo para que as demandas das áreas de negócio consideradas menos prioritárias sejam deixadas de lado \cite{artigoTcuGovTI}. O uso de planilhas e o desenvolvimento de aplicações clandestinas sem nenhuma documentação e padrão, por essas unidades de negócio, promove o desconhecimento de soluções informatizadas por parte da alta cúpula, bem como a duplicidade de esforços pelas unidades \cite{slideTCU}. Nesse sentido, alguns órgãos da administração pública federal vêm reconhecendo esses esforços feitos informalmente pelas áreas de negócio, e começaram a adotar o modelo EUD, com algumas adaptações, para tentar contornar os problemas relatados. Um dos órgãos pioneiros nessa adaptação, denominado de Órgão X para fins de privacidade, passou a chama-la de modelo de desenvolvimento descentralizado, uma espécie de EUD onde o usuário final não é necessariamente quem desenvolve as aplicações. No Órgão X geralmente estagiários da área de TI são contratados, para que eles possam ser alocados nas unidades de negócio do órgão, de forma que eles desenvolvam as aplicações junto à área de negócio, com a consultoria técnica da área de TI \cite{slideTCU}. Essa iniciativa foi bem sucedida dentro do órgão, com um relato de alta satisfação dos usuários. Apesar disso, ainda existem algumas dificuldades no desenvolvimento por parte dos estagiários e servidores, que não possuem acesso a um guia/processo que os orientem durante o ciclo de desenvolvimento, e por isso muitos acabam seguindo a forma de desenvolvimento e os padrões que acreditam serem os melhores para o seu ambiente de trabalho, o que acaba colocando em dúvida a qualidade das aplicações desenvolvidas. 
+O serviço público brasileiro, por ter natureza administrativa, apresenta grande demanda por desenvolvimento de software. Porém, a limitada capacidade produtiva da área de TI e o excesso de burocracia para o aumento da mesma, que é feita através de concursos ou de contratos terceirizados, acaba contribuindo para que as demandas das áreas de negócio consideradas menos prioritárias sejam deixadas de lado \cite{artigoTcuGovTI}. O uso de planilhas e o desenvolvimento de aplicações clandestinas sem nenhuma documentação e padrão, por essas unidades de negócio, promove o desconhecimento de soluções informatizadas por parte da alta cúpula, bem como a duplicidade de esforços pelas unidades \cite{slideTCU}. Nesse sentido, alguns órgãos da administração pública federal vêm reconhecendo esses esforços feitos informalmente pelas áreas de negócio, e começaram a adotar o modelo EUD, com algumas adaptações, para tentar contornar os problemas relatados. Um dos órgãos pioneiros nessa adaptação, denominado de Órgão X para fins de privacidade, passou a chama-la de modelo de desenvolvimento descentralizado, uma espécie de EUD onde o usuário final não é necessariamente quem desenvolve as aplicações. No Órgão X geralmente estagiários da área de TI são contratados, para que eles possam ser alocados nas unidades de negócio do órgão, de forma que eles desenvolvam as aplicações junto à área de negócio, com a consultoria técnica da área de TI \cite{slideTCU}. Essa iniciativa foi bem sucedida dentro do órgão, com um relato de alta satisfação dos usuários. Apesar disso, ainda existem algumas dificuldades no desenvolvimento por parte dos estagiários e servidores, que não possuem acesso a um guia/processo que os orientem durante o ciclo de desenvolvimento, e por isso muitos acabam seguindo a forma de desenvolvimento e os padrões que acreditam serem os melhores para o seu ambiente de trabalho, o que acaba colocando em dúvida a qualidade das aplicações desenvolvidas.
 
 \section{\textit{Problema}}
 
-O principal problema identificado está relacionado à maneira em que o desenvolvimento de sistemas descentralizados é executado no Órgão X. Uma vez que os sistemas são desenvolvidos de forma descentralizada, ou seja, alguns departamentos realizam o desenvolvimento de seus sistemas conforme suas necessidades ou solicitam o desenvolvimento a algum departamento especializado em desenvolvimento e suporte de sistemas, o produto final é gerado e desenvolvido, na maioria das vezes, sem um padrão comum de desenvolvimento e sem o uso de boas práticas. 
+O principal problema identificado está relacionado à maneira em que o desenvolvimento de sistemas descentralizados é executado no Órgão X. Uma vez que os sistemas são desenvolvidos de forma descentralizada, ou seja, alguns departamentos realizam o desenvolvimento de seus sistemas conforme suas necessidades ou solicitam o desenvolvimento a algum departamento especializado em desenvolvimento e suporte de sistemas, o produto final é gerado e desenvolvido, na maioria das vezes, sem um padrão comum de desenvolvimento e sem o uso de boas práticas.
 
-Outro problema que já é inerente ao desenvolvimento descentralizado, é que as entregas que contenham erros podem trazer prejuízos ao órgão. O desenvolvimento descentralizado tem particularidades que são diferentes do desenvolvimento de software tradicional, como o uso de soluções improvisadas, o usuário final não tem tempo nem conhecimento para construir soluções tão sólidas e duradouras como um desenvolvimento profissional.
 
-Assim a questão de pesquisa abordada nesse trabalho é: 
+Outro problema que é inerente ao desenvolvimento descentralizado é que as entregas que contenham erros podem trazer prejuízos ao órgão. O desenvolvimento descentralizado tem particularidades que são diferentes do desenvolvimento de software tradicional, como o uso de soluções improvisadas, o usuário final não tem tempo nem conhecimento para construir soluções tão sólidas e duradouras como um desenvolvimento profissional.
+
+Assim a questão de pesquisa abordada nesse trabalho é:
 \begin{itemize}
 \item Como apoiar o desenvolvedor na construção de sistemas descentralizados para garantir a qualidade e manutenibilidade destes sistemas?
 \end{itemize}
@@ -35,8 +36,11 @@ Dentro deste contexto, o objetivo geral deste trabalho é desenvolver uma soluç
 Considerando o objetivo geral, foram definidos os seguintes objetivos específicos:
 
 \begin{enumerate}
-	\item Entender o contexto do EUD no orgão público alvo.
-	\item Diagnosticar os problemas no desenvolvimento de aplicações baseado em EUD.
+	\item Entender o contexto do desenvolvimento EUD no órgão público alvo;
+	\item Diagnosticar os problemas no desenvolvimento EUD de aplicações;
+	\item Constituir o plano de ação da solução;
+
+
 	\item Selecionar as práticas da engenharia de software que sejam adequadas à solução dos problemas encontrados e ao contexto.
 	\item Elaborar o modelo conceitual da solução de apoio.
 	\item Construir a solução de apoio.
@@ -47,18 +51,19 @@ Considerando o objetivo geral, foram definidos os seguintes objetivos específic
 
 
 \begin{comment}
-Apesar disso, existem ainda algumas dificuldades no desenvolvimento por parte dos estagiários desenvolvedores, como a falta de padronização e o que demonstra a necessidade de a elaboração de um processo embasado por princípios em conceitos da engenharia de software, ao mesmo tempo que não seja custoso aos desenvolvedores, já que iria contra a flexibilidade que preconiza o modelo EUD. 
+Apesar disso, existem ainda algumas dificuldades no desenvolvimento por parte dos estagiários desenvolvedores, como a falta de padronização e o que demonstra a necessidade de a elaboração de um processo embasado por princípios em conceitos da engenharia de software, ao mesmo tempo que não seja custoso aos desenvolvedores, já que iria contra a flexibilidade que preconiza o modelo EUD.
 
 \citeonline{lieberman2006} relatou que um dos objetivos da interação humano-computador, além de desenvolver sistemas que são fáceis de usar, seria desenvolver sistemas que são fáceis de desenvolver.
 \end{comment}
 
 \section{\textit{Justificativa}}
 
-O aperfeiçoamento do desenvolvimento de sistemas descentralizados é primordial para o órgão X e para a área de TI, uma vez que um produto de baixa qualidade pode acarretar em problemas relacionados a qualidade e a manutenibilidade desses sistemas. Segundo \citeonline{blackwell2003notational}, no caso do uso de ferramentas de programação, é muito fácil para os desenvolvedores profissionais de software assumir que qualquer pessoa irá se aproximar ao seu nível profissional de programação. A fim de evitar esta armadilha, são necessários atenção e investigação especializada para os usuários finais por parte dos desenvolvedores profissionais, durante a criação de novas tecnologias voltadas ao EUD. Baseado nesses argumentos, é necessário que os desenvolvedores EUD tenham uma atenção especial para o desenvolvimento de seus sistemas, através de um modelo que lhes dê suporte.
+
+O aperfeiçoamento do desenvolvimento de sistemas descentralizados é primordial para o órgão X e para a área de TI, uma vez que a falta de padrões e aplicação de boas práticas podem acarretar em problemas relacionados a qualidade e a manutenibilidade desses sistemas. Segundo \textit{Blackwell}, no caso do uso de ferramentas de programação, é muito fácil para os desenvolvedores profissionais de software assumir que qualquer pessoa irá se aproximar ao seu nível profissional de programação. A fim de evitar esta armadilha, são necessários atenção e investigação especializada para os usuários finais por parte dos desenvolvedores profissionais, durante a criação de novas tecnologias voltadas ao EUD. Baseado nesses argumentos, é necessário que os desenvolvedores EUD tenham uma atenção especial para o desenvolvimento de seus sistemas, através de um modelo que lhes dê suporte.
 
 \section{\textit{Metodologia}}
 
-A escolha da estratégia de pesquisa deve satisfazer três condições: o tipo de questão de pesquisa, o controle que o pesquisador possui sobre os eventos comportamentais efetivos e o foco em fenômenos históricos, em oposição a fenômenos contemporâneos \cite{yin2001estudo}. 
+A escolha da estratégia de pesquisa deve satisfazer três condições: o tipo de questão de pesquisa, o controle que o pesquisador possui sobre os eventos comportamentais efetivos e o foco em fenômenos históricos, em oposição a fenômenos contemporâneos \cite{yin2001estudo}.
 
 Levando em consideração essas condições, a metodologia de pesquisa deste trabalho foi classificada quanto à abordagem, natureza, objetivos ou tipologia, procedimentos técnicos e as técnicas de coleta de dados.
 
@@ -137,7 +142,7 @@ O estudo de caso consiste no estudo profundo e exaustivo de um ou mais objetos, 
 --------------
 \end{comment}
 
-Existem diversos métodos de coleta de dados para suportar os propósitos de um procedimento técnico, e um dos métodos comumente usados na engenharia de software é a entrevista \cite{caseStudySE}. Quase todos os estudos de caso envolvem algum tipo de entrevista, seja para a finalidade primária de coleta dados, seja para uma validação de outros tipos de dados \cite{caseStudySE}. A entrevista é caracterizada como um método de coleta de dados onde o pesquisador está em contato direto com os entrevistados e como um método de coleta de dados em tempo real \cite{caseStudySE}. O diálogo entre o entrevistador e o entrevistado é guiado por um conjunto de perguntas, que podem ser classificadas como abertas ou fechadas \cite{caseStudySE}. As perguntas abertas permitem uma maior gama de respostas e relatos de problemas por parte do entrevistado. Já as perguntas fechadas oferecem alternativas mais limitadas, se comparadas as perguntas abertas. Ambos os tipos de perguntas são baseadas nos tópicos de interesse relacionados ao estudo de caso. 
+Existem diversos métodos de coleta de dados para suportar os propósitos de um procedimento técnico, e um dos métodos comumente usados na engenharia de software é a entrevista \cite{caseStudySE}. Quase todos os estudos de caso envolvem algum tipo de entrevista, seja para a finalidade primária de coleta dados, seja para uma validação de outros tipos de dados \cite{caseStudySE}. A entrevista é caracterizada como um método de coleta de dados onde o pesquisador está em contato direto com os entrevistados e como um método de coleta de dados em tempo real \cite{caseStudySE}. O diálogo entre o entrevistador e o entrevistado é guiado por um conjunto de perguntas, que podem ser classificadas como abertas ou fechadas \cite{caseStudySE}. As perguntas abertas permitem uma maior gama de respostas e relatos de problemas por parte do entrevistado. Já as perguntas fechadas oferecem alternativas mais limitadas, se comparadas as perguntas abertas. Ambos os tipos de perguntas são baseadas nos tópicos de interesse relacionados ao estudo de caso.
 
 Segundo \citeonline{caseStudySE}, a entrevista pode ser classificada em três categorias diferentes:
 \begin{enumerate}
@@ -159,7 +164,7 @@ Uma vez que os dados são coletados, o foco se volta para a análise e interpret
 \subsection{Metodologia Adotada}
 --essa subseção irá sumir, pois não tem mais sentido falar da metodologia adotada, sendo que na parte da metodologia já está se explicando e informando a metodologia que se irá adotar no trabalho--
 
-A metodologia adotada para este trabalho foi o estudo de caso, devido a necessidade de realizar um diagnóstico da situação atual para a construção da solução de apoio, e o método utilizado no estudo de caso foi a entrevista, por ser um método bastante comum neste tipo de metodologia e permitir um contato direto com os entrevistados. 
+A metodologia adotada para este trabalho foi o estudo de caso, devido a necessidade de realizar um diagnóstico da situação atual para a construção da solução de apoio, e o método utilizado no estudo de caso foi a entrevista, por ser um método bastante comum neste tipo de metodologia e permitir um contato direto com os entrevistados.
 
 A entrevista elaborada pode ser classificada como semiestruturada. No planejamento da entrevista, algumas categorias de perguntas relacionadas ao ciclo de vida do software e ao contexto do desenvolvedor foram elaboradas, de forma a auxiliar na formulação das perguntas.
 \end{comment}
@@ -179,7 +184,7 @@ A partir da metodologia, foram definidas as fases e etapas do trabalho, sendo qu
 
 \begin{itemize}
 	\item Definição do trabalho,
-	\item Pesquisa bibliográfica, 
+	\item Pesquisa bibliográfica,
 	\item Pesquisa-ação e documental
 	\item Coleta de dados e,
 	\item Análise e interpretação
@@ -326,9 +331,15 @@ O fluxo de dados na arquitetura do APEX, é composto dos seguintes passos \cite{
 \item O servidor de aplicação organiza os pedidos (filtros, \textit{cache}, \textit{timeouts}, filas, etc) e transfere para o APEX \textit{listener}.
 \item O APEX \textit{listener} recebe o pedido e executa os comandos Java que irão ler os dados do banco e/ou executar códigos PL/SQL. O APEX \textit{listener} interage com sessões de banco, onde os dados são buscados.
 \item Faz-se o caminho inverso com os dados coletados, os PL/SQLs executados e os códigos HTML, \textit{Javascript}, CSS, \textit{Ajax} e \textit{jQuery} gerados, que são devolvidos ao navegador que então mostra a tela da aplicação ao usuário.
-\end{enumerate} 
+\end{enumerate}
 
 \chapter[Capítulo 3 - Metodologia ágil]{Metodologia ágil}
+
+\section{\textit{Considerações Iniciais do Capítulo}}
+
+Este capítulo trata do referencial teórico sobre metodologia ágil, dando uma visão geral sobre a metodologia, e aprofundando no método \textit{Scrum} e na ferramenta quadro \textit{kanban}. A metodologia ágil se encaixa ao contexto do EUD deste trabalho por ser uma metodologia mais flexível e de menor custo aos praticantes, se comparado com metodologias mais tradicionais. Portanto ela será uma das bases para a construção da solução de apoio, fornecendo tanto insumos relacionados a organização e a estruturação da solução, quanto insumos relacionados a gerência dos projetos de EUD.
+
+\section{Metodologia ágil}
 
 A metodologia ágil é uma abordagem de desenvolvimento de software que tem ganhado visibilidade ao longo dos últimos anos, e que surgiu através do estabelecimento, entre vários desenvolvedores experientes, de um senso comum de valores no desenvolvimento de software. Um grupo de 17 desenvolvedores, com grande experiência nos mais variados ramos da indústria de software, se reuniu em \textit{Utah} nos Estados Unidos por volta de 2001 para racionalizar uma filosofia comum sobre o que consideravam que tinha valor no desenvolvimento de software. A essa filosofia comum, entre os participantes, deram o nome de \textit{agile} (ágil) \cite{metodoAgil}. Com base nas experiências de sucesso e fracasso em projetos de software por parte desse grupo, foi elaborado o Manifesto Ágil para o Desenvolvimento de Software, que norteia os valores e princípios da metodologia ágil \cite{metodoAgil}. O Manifesto Ágil tem como valores \cite{metodoAgil}:
 
@@ -343,7 +354,7 @@ Existem vários métodos dentro da metodologia ágil, entre eles: \textit{Extrem
 
 \section{\textit{Scrum}}
 
-O \textit{Scrum} é um método de gerência de projetos de software que faz parte da metodologia ágil de desenvolvimento de software e que tem atraído cada vez mais atenção ao longo dos últimos anos. O \textit{Scrum} parte da premissa de que o desenvolvimento de software é muito complexo e imprevisível para ser precisamente planejado de início, e por isso um processo de controle mais empírico deve ser aplicado, objetivando garantir visibilidade, inspeção e adaptação \cite{scrum2005}. Visibilidade significa dar a noção de progresso do projeto com a entrega frequente de incrementos de software executável. Inspeção significa que todos do time devem inspecionar os produtos de trabalho gerados por todos, visando a detecção de erros e o estabelecimento de um senso comum sobre o progresso do projeto. Adaptação significa aceitar as mudanças, já que o desenvolvimento de software é uma atividade complexa e imprevisível \cite{agile2014}. As diferentes variáveis técnicas envolvidas em um projeto de software, como prazo, qualidade, requisitos, recursos, tecnologias de implementação e ferramentas,  devem ser controladas constantemente através de um processo iterativo e incremental \cite{scrum2005}.
+O \textit{Scrum} é um método ágil de gerência de projetos de software que faz parte da metodologia ágil de desenvolvimento de software e que tem atraído cada vez mais atenção ao longo dos últimos anos. O \textit{Scrum} parte da premissa de que o desenvolvimento de software é muito complexo e imprevisível para ser precisamente planejado de início, e por isso um processo de controle mais empírico deve ser aplicado, objetivando garantir visibilidade, inspeção e adaptação \cite{scrum2005}. Visibilidade significa dar a noção de progresso do projeto com a entrega frequente de incrementos de software executável. Inspeção significa que todos do time devem inspecionar os produtos de trabalho gerados por todos, visando a detecção de erros e o estabelecimento de um senso comum sobre o progresso do projeto. Adaptação significa aceitar as mudanças, já que o desenvolvimento de software é uma atividade complexa e imprevisível \cite{agile2014}. As diferentes variáveis técnicas envolvidas em um projeto de software, como prazo, qualidade, requisitos, recursos, tecnologias de implementação e ferramentas,  devem ser controladas constantemente através de um processo iterativo e incremental \cite{scrum2005}.
 
 Existem 3 papéis envolvidos no \textit{Scrum}, o \textit{Product Owner}, o Time, e o \textit{Scrum Master}, e eles são descritos da seguinte forma \cite{scrum2005}:
 
@@ -365,7 +376,7 @@ As figuras 6 e 7 mostram, respectivamente, uma visão geral e detalhada do \text
 
 \begin{figure}[!htb]
 	\centering
-		\includegraphics[scale=0.8]{figuras/scrum_detalhado}
+		\includegraphics[scale=0.7]{figuras/scrum_detalhado}
 	\caption{Visão detalhada do \textit{Scrum}. Adaptado de: \cite{scrum2005}.}
 \end{figure}
 \clearpage
@@ -447,7 +458,7 @@ Uma vez que a entrevista foi elaborada, o próximo passo consistiu em aplicá-la
 	\caption{Perfil dos desenvolvedores entrevistados}
 	\begin{tabular}{|M{2.88cm} | M{2.8cm} | M{2.2cm}| M{2.8cm} | M{2.2cm}|}
 		\hline
-		\textbf{Desenvolvedor} & \textbf{Unidade} & \textbf{Tempo de estágio} & 
+		\textbf{Desenvolvedor} & \textbf{Unidade} & \textbf{Tempo de estágio} &
 		\textbf{Curso} & \textbf{Tempo de Curso} \\ \hline
 		Desenvolvedor 1 & SECOM & 1 ano & Análise e Desenvolvimento de Sistemas & 2 semestres \\
 		\hline
@@ -469,26 +480,30 @@ Uma vez que a entrevista foi elaborada, o próximo passo consistiu em aplicá-la
 	\label{tab02}
 \end{table}
 
-Após a aplicação da entrevista, o foco voltou-se a análise dos dados da mesma. A análise feita consistiu dos seguintes passos:
-
-\begin{comment}
-\begin{enumerate}
-	\item Atribuir um código, previamente estabelecido, a uma unidade de resposta, que pode ser uma frase ou um conjunto de frases que tratem de um mesmo assunto.
-	\item Agrupar as unidades de resposta de acordo com as categorias de código que receberam.
-	\item Dentro de uma categoria de código, agrupar as unidades de respostas semelhantes.
-	\item Elaborar ações para as unidades de respostas agrupadas dentro das categorias de códigos.
-\end{enumerate}
-\end{comment}
+Após a aplicação da entrevista, o foco voltou-se a análise dos dados da mesma. A análise feita consistiu dos seguintes passos (P1, P2, P3, P4 e P5):
 
 \begin{enumerate}
-	\item Atribui-se um código, previamente estabelecido, a uma unidade de resposta, que pode ser uma frase ou um conjunto de frases que tratem de um mesmo assunto.
-	\item Agrupou-se as unidades de resposta de acordo com as categorias de código que receberam.
-	\item Dentro de uma categoria de código, rotulou-se as respostas com o uso de chaves, que representam o sentido específico de uma resposta.
-	\item Agrupou-se todas as chaves únicas obtidas, de forma a construir um conjunto de chaves únicas.
-	\item Elaborou-se ações para as chaves dentro do conjunto.
+	\item[\textbf{\llap{P}1}] Atribuiu-se um código, derivado dos objetivos de cada categoria de questões, a cada unidade de resposta, que pode ser uma frase ou um conjunto de frases que tratem de um mesmo assunto;
+	%\item Atribui-se um código, previamente estabelecido, a uma unidade de resposta, que pode ser uma frase ou um conjunto de frases que tratem de um mesmo assunto.
+	\item[\textbf{\llap{P}2}] Agrupou-se as unidades de resposta de acordo com os códigos derivados que receberam;
+	%\item Agrupou-se as unidades de resposta de acordo com as categorias de código que receberam.
+	\item[\textbf{\llap{P}3}] Com a finalidade de identificar as respostas semelhantes dentro dos grupos de códigos derivados, evitando redundância, rotulou-se as unidades de respostas com o uso de chaves, que representam o sentido específico de uma resposta;
+	%\item Dentro de uma categoria de código, rotulou-se as respostas com o uso de chaves, que representam o sentido específico de uma resposta.
+	\item[\textbf{\llap{P}4}] Agrupou-se todas as chaves únicas obtidas, de forma a construir um conjunto de elementos que representam as oportunidades de melhoria na visão dos desenvolvedores;
+	%\item Agrupou-se todas as chaves únicas obtidas, de forma a construir um conjunto de chaves únicas.
+	\item[\textbf{\llap{P}5}] Elaborou-se ações para esses elementos;
 \end{enumerate}
 
-Os códigos foram derivados dos objetivos de cada categoria de perguntas do ciclo de vida. A tabela 3 ilustra os códigos derivados de cada objetivo definido.
+A figura 9 mostra um esquema que exemplifica a execução dos passos definidos para a análise. No passo 1 (P1), observa-se o agrupamento das unidades de resposta pelos códigos derivados. Já no passo 2 (P2), observa-se o agrupamento das respostas por códigos derivados. No passo 3 (P3), observa-se as unidades de respostas, dentro dos grupos de códigos derivados, rotuladas com as chaves. Por fim no passo 4 observa-se os elementos obtidos que representam as oportunidades de melhoria. O passo 5 (P5) será detalhado mais adiante, já que faz parte dos resultados.
+
+\begin{figure}[h]
+	\centering
+	\label{fig02}
+		\includegraphics[scale=0.7]{figuras/Esquematico_Analise_2}
+	\caption{Etapas realizadas na análise das respostas.}
+\end{figure}
+
+Os códigos foram derivados dos objetivos de cada categoria de perguntas do ciclo de vida. A tabela 3 ilustra os códigos derivados de cada objetivo de categoria definido.
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{table}[!htb]
@@ -496,14 +511,14 @@ Os códigos foram derivados dos objetivos de cada categoria de perguntas do cicl
 	\caption{Códigos elaborados para a análise dos resultados}
 	\begin{tabular}{|m{4.8cm} | m{4.8cm} | m{4.8cm}|}
 		\hline
-		\textbf{Categoria} & \textbf{Objetivo} & 
+		\textbf{Categoria} & \textbf{Objetivo} &
 		\textbf{Código Derivado} \\ \hline
-		Descrição do desenvolvedor & Obter informações sobre o perfil dos desenvolvedores & 
+		Descrição do desenvolvedor & Obter informações sobre o perfil dos desenvolvedores &
 		Perfil do Desenvolvedor \\ \hline
-		Papel do desenvolvedor & Obter informações sobre o papel do desenvolvedor no órgão & 
-		Papel do Desenvolvedor \\ \hline 
-		Efetividade do curso & Obter informações sobre a preparação dos novos desenvolvedores & 
-		Preparação \\ \hline 
+		Papel do desenvolvedor & Obter informações sobre o papel do desenvolvedor no órgão &
+		Papel do Desenvolvedor \\ \hline
+		Efetividade do curso & Obter informações sobre a preparação dos novos desenvolvedores &
+		Preparação \\ \hline
 		Requisitos & Obter informações sobre como se dá o levantamento de requisitos nos departamentos da instituição & Elicitação de Requisitos \\ \cline{2-3}
 		& Obter informações de como é armazenado e gerenciado os requisitos do sistema a ser desenvolvido &
 		Gerenciamento de Requisitos \\ \cline{2-2}
@@ -521,21 +536,14 @@ Os códigos foram derivados dos objetivos de cada categoria de perguntas do cicl
 	\label{tab01}
 \end{table}
 
-As chaves foram derivadas dos significados das respostas das entrevistas, de forma que se duas ou mais respostas geraram uma mesma chave, devido aos seus significados semelhantes, somente uma única chave foi considerada. A figura 9 mostra um esquema que exemplifica a execução dos passos definidos para a análise.
-
-\begin{figure}[h]
-	\centering
-	\label{fig02}
-		\includegraphics[scale=0.7]{figuras/Esquematico_Analise_2}
-	\caption{Etapas realizadas na análise das respostas.}
-\end{figure}
+As chaves foram derivadas dos significados das respostas das entrevistas, de forma que se duas ou mais respostas geraram uma mesma chave, devido aos seus significados semelhantes, somente uma única chave foi considerada.
 
 A atribuição de um código e de uma chave foram necessários, pois dentro de um determinado assunto, representado pelo código, ainda poderiam haver respostas semelhantes. Desta forma, garante-se que o conjunto final de chaves conterá somente chaves únicas, ou seja, respostas únicas, eliminando a redundância no diagnóstico.
 \clearpage
 
 \section{Processo de Desenvolvimento Descentralizado}
 
-Uma tentativa de implantação de um processo para o desenvolvimento descentralizado já foi realizada pelo Órgão X, evidenciando a necessidade de um processo ou guia para o desenvolvimento descentralizado. O processo, chamado de Processo de Desenvolvimento Descentralizado do Órgão X, teve a sua finalização concluída no ano de 2012, e foi elaborado pela Secretaria de Tecnologia da Informação do órgão. Apesar de o processo ter sido desenvolvido, segundo o chefe da unidade coordenadora do desenvolvimento descentralizado, ele nunca chegou ao conhecimento dos desenvolvedores devido a questões normativas do próprio órgão, que inviabilizaram a sua implantação (CITAR O DEPOIMENTO???).
+Uma tentativa de implantação de um processo para o desenvolvimento descentralizado já foi realizada pelo Órgão X, evidenciando a necessidade de um processo ou guia para o desenvolvimento descentralizado. O processo, chamado de Processo de Desenvolvimento Descentralizado do Órgão X, teve a sua finalização concluída no ano de 2012, e foi elaborado pela Secretaria de Tecnologia da Informação do órgão. Apesar de o processo ter sido desenvolvido, segundo o chefe da unidade coordenadora do desenvolvimento descentralizado, ele nunca chegou ao conhecimento dos desenvolvedores devido a questões normativas do próprio órgão, que inviabilizaram a sua implantação.
 
 O processo, elaborado na ferramenta \textit{Eclipse Process Framework}, que é voltada à construção de processos, consiste de 6 fases bem definidas: Estudo Preliminar de Projeto, Elicitação de Requisitos, Projeto de Banco de Dados, Construção, Homologação e Implantação. Cada uma dessas fases são divididas em atividades e tarefas, que por sua vez são apoiadas por um conjunto de guias e modelos. Os objetivos de cada fase estão listados abaixo, e o ciclo de vida do processo, em termos de fases, é exibido na figura 10.
 
@@ -736,7 +744,7 @@ Ao total foi obtido um conjunto com 51 chaves diferentes, sendo que as chaves re
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{longtable}{|M{2.0cm}|m{13.0cm}|}
 \caption{Soluções associadas as chaves}\\\hline
-\textbf{Chave}                                                          
+\textbf{Chave}
 & \textbf{Solução}\\\hline
 \endfirsthead
 \hline
@@ -800,7 +808,7 @@ Uma matriz de rastreabilidade das chaves foi elaborada, de forma a garantir a as
 %\end{tabular}
 \end{longtable}
 
-Uma vez que as soluções para o diagnóstico foram propostas, elas foram convertidas em atividades e em guias que irão compor a solução de apoio. Estas atividades e guias são divididas em três tipos conforme a sua origem: 
+Uma vez que as soluções para o diagnóstico foram propostas, elas foram convertidas em atividades e em guias que irão compor a solução de apoio. Estas atividades e guias são divididas em três tipos conforme a sua origem:
 \begin{enumerate}
 \item Propostas;
 \item Retiradas do processo de desenvolvimento descentralizado;
