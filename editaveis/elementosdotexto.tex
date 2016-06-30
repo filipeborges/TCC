@@ -37,10 +37,9 @@ Considerando o objetivo geral, foram definidos os seguintes objetivos específic
 \begin{enumerate}
 	\item Entender o contexto do desenvolvimento EUD no órgão público alvo;
 	\item Diagnosticar os problemas no desenvolvimento EUD de aplicações;
-	\item Constituir o plano de ação da solução;
-    \item Obter um modelo de solução
-    \item Realizar a execução da implementação do modelo gerado
-    \item Avaliar os resultados gerados pela aplicação da solução
+    \item Obter um modelo de solução;
+    \item Realizar a execução da implementação do modelo gerado;
+    \item Avaliar os resultados gerados pela aplicação da solução;
 
 \begin{comment}
 	\item Selecionar as práticas da engenharia de software que sejam adequadas à solução dos problemas encontrados e ao contexto.
@@ -622,12 +621,12 @@ A seguir podemos verificar os códigos que representam uma determinada categoria
 \item Co9 - Teste;
 \item Co10 - Implantação;
 \end{itemize}
-\clearpage
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{table}[!htb]
 \caption{Matriz de rastreabilidade dos códigos}
 \centering
+%\hspace*{-0.2cm}\makebox[\linewidth][c]{%
 \begin{tabular}{|M{1.0cm}|M{1.6cm}|M{1.6cm}|M{1.6cm}|M{1.6cm}|M{1.6cm}|M{1.6cm}|M{1.6cm}|M{1.6cm}|}
 
 \hline
@@ -695,6 +694,7 @@ A seguir podemos verificar os códigos que representam uma determinada categoria
 \textbf{OBS}                   & Co3,Co5,\newline Co10        & Co9,Co10       & Co9            & Co4,Co9        &   -             &        -        &      -          &      -          \\ \hline
 
 \end{tabular}
+%}
 \end{table}
 
 Uma vez que a primeira parte da análise foi aplicada, deu-se prosseguimento à próxima fase da análise. A segunda parte consistiu em rotular as respostas, que foram agrupadas pelos códigos, com as chaves. A tabela 5 ilustra as chaves atribuídas às repostas das entrevistas e os seus significados. Estas chaves representam todos os diferentes significados de todas as respostas.\clearpage
@@ -752,7 +752,7 @@ Co9 - Teste                          & C38            & Uso de testes funcionais
                                                       & C41            & Sem armazenamento dos resultados de teste                                                                                                                                                                                                                        \\ \cline{2-3}
                                                       & C42            & Não há elaboração de casos de teste                                                                                                                                                                                                                              \\ \cline{2-3}
                                                       & C43            & Favorável à proposta de automação de testes funcionais                                                                                                                                                                                                           \\ \hline
-Co10 - Implantação                   & C44            & Costuma verificar se os apelidos não estão duplicados                                                                                                                                                                                                            \\ \cline{2-3} 
+Co10 - Implantação                   & C44            & Costuma verificar se os apelidos não estão duplicados                                                                                                                                                                                                            \\ \cline{2-3}
                                                       & C45            & Não migra as definições de objetos                                                                                                                                                                                                                               \\ \cline{2-3}
                                                       & C46            & Navegação feita, antes de migrar, somente nas páginas que alterou                                                                                                                                                                                                \\ \cline{2-3}
                                                       & C47            & Navegação feita, antes de migrar, em todas as páginas da aplicação                                                                                                                                                                                               \\ \cline{2-3}
@@ -832,6 +832,7 @@ Uma matriz de rastreabilidade das chaves foi elaborada, de forma a garantir a as
 \textbf{OBS} & C12,C20, C51    & C40,C50        & C40            & C16,C38, C39,C40 & -              & -              & -              & -              \\ \hline
 %\end{tabular}
 \end{longtable}
+\clearpage
 
 Uma vez que as soluções para o diagnóstico foram propostas, elas foram convertidas em atividades, funcionalidades e em guias que irão compor a solução de apoio. Estas atividades, funcionalidades e guias são divididas em três tipos conforme a sua origem:
 \begin{enumerate}
@@ -924,7 +925,7 @@ Apesar de algumas atividades e guias do processo de desenvolvimento descentraliz
 \item Algumas atividades, julgadas importantes, não foram previstas nas soluções do diagnóstico;
 \end{enumerate}
 
-Em relação ao processo de desenvolvimento existente, foram selecionadas, ao todo, 10 atividades e nenhum guia, de forma a complementar a solução. Já em relação a \textit{Wiki}, nenhuma atividade e guia foi selecionados para o complemento. A tabela 9 ilustra a relação de atividades selecionadas do processo de desenvolvimento descentralizado, e a sua associação com as fases do ciclo de vida da solução proposta.\clearpage
+Em relação ao processo de desenvolvimento existente, foram selecionadas, ao todo, 10 atividades e nenhum guia, de forma a complementar a solução. Já em relação a \textit{Wiki}, nenhuma atividade e guia foi selecionados para o complemento. A tabela 9 ilustra a relação de atividades selecionadas do processo de desenvolvimento descentralizado, e a sua associação com as fases do ciclo de vida da solução proposta.
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \newcolumntype{C}[1]{>{\raggedright}m{#1}}
