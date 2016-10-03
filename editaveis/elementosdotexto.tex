@@ -1138,7 +1138,7 @@ A construção da solução de apoio foi planejada levando-se em conta duas etap
 \item Definir o período de tempo de cada \textit{Sprint}.
 \end{enumerate}
 
-As estórias elaboradas seguem a hierarquia \textit{Feature}/Estória, de forma que algumas funcionalidades e atividades viraram uma \textit{Feature} devido à sua abrangência de conteúdo. Além disso, certos guias e atividades relacionados foram agrupados em \textit{Features} criadas. Algumas estórias foram quebradas de forma a diminuir sua granularidade. A tabela 10 ilustra o conjunto de \textit{Features}/Estórias elaborado.
+As estórias elaboradas seguem a hierarquia \textit{Feature}/Estória, de forma que algumas funcionalidades e atividades viraram uma \textit{Feature} devido à sua abrangência de conteúdo. Além disso, certos guias e atividades relacionados foram agrupados em \textit{Features} criadas, e algumas estórias foram quebradas de forma a diminuir sua granularidade. Por fim cada estória recebeu uma classificação em relação a sua dificuldade (Fácil, Médio, Difícil) de forma a ajudar na priorização. A tabela 10 ilustra o conjunto de \textit{Features}/Estórias elaborado.
 
 \begin{longtable}{|M{6.0cm}|M{3.0cm}|M{3.0cm}|M{2.7cm}|}
 \caption{\textit{Features}/Estórias elaboradas}\\\hline
@@ -1147,38 +1147,134 @@ As estórias elaboradas seguem a hierarquia \textit{Feature}/Estória, de forma 
 \hline
 \textbf{Feature}                                                    & \textbf{Foi criado?} & \textbf{Estória}                                           & \textbf{Foi criado?} \\ \hline
 \endhead
-F01 - Escolher Técnica de elicitação de requisitos & \multirow{2}{*}{Não} & H01 - Indicar técnica de elicitação                        & Sim                  \\ \cline{3-4} 
-                                                                    &                      & H02 - Visualizar guia de técnica de elicitação             & Sim                  \\ \hline
-F02 - Elicitar Requisitos Junto Ao Cliente         & \multirow{4}{*}{Não} & H01 - Estruturar informações obtidas                       & Não                  \\ \cline{3-4}
-                                                                    &                      & H02 - Priorizar funcionalidades a serem desenvolvidas      & Não                  \\ \cline{3-4} 
-                                                                    &                      & H03 - Guia de prototipagem rápido                          & Não                  \\ \cline{3-4} 
-                                                                    &                      & H04 - Elicitar Requisitos Junto Ao Cliente                 & Não                  \\ \hline
-F03 - Construir modelo de dados                    & \multirow{7}{*}{Não} & H01 - Guia de criação e padrões de BD                      & Não                  \\ \cline{3-4} 
-                                                                    &                      & H02 - Guia de padrão de nomenclatura de objetos de dados   & Não                  \\ \cline{3-4} 
-                                                                    &                      & H03 - Guia de geração de scripts sql                       & Não                  \\ \cline{3-4} 
-                                                                    &                      & H04 - Construir modelo de dados                            & Não                  \\ \cline{3-4} 
-                                                                    &                      & H05 - Validar modelo de dados                              & Não                  \\ \cline{3-4} 
-                                                                    &                      & H06 - Atualizar modelo de dados                            & Não                  \\ \cline{3-4} 
-                                                                    &                      & H07 - Validação de modelo de dados por responsável técnico & Sim                  \\ \hline
-F04 - Implementação da aplicação                   & \multirow{3}{*}{Sim} & H01 - Guia de padrões e boas práticas Apex                 & Não                  \\ \cline{3-4} 
-                                                                    &                      & H02 - Ajustar interface                                    & Não                  \\ \cline{3-4} 
-                                                                    &                      & H03 - Aplicar regras de negócio                            & Não                  \\ \hline
-F05 - Elaboração de código                         & \multirow{5}{*}{Sim} & H01 - Guia de boas práticas plsql                          & Não                  \\ \cline{3-4} 
-                                                                    &                      & H02 - Guia sobre editor de código sql e plsql              & Não                  \\ \cline{3-4} 
-                                                                    &                      & H03 - Cadastro de código reutilizável                      & Não                  \\ \cline{3-4} 
-                                                                    &                      & H04 - Listar código reutilizável                           & Sim                  \\ \cline{3-4} 
-                                                                    &                      & H05 - Editar código reutilizável                           & Sim                  \\ \hline
-F06 - Procedimentos de teste                       & \multirow{6}{*}{Sim} & H01 - Preparar embiente de testes                          & Não                  \\ \cline{3-4} 
-                                                                    &                      & H02 - Definir procedimento de testes                       & Não                  \\ \cline{3-4} 
-                                                                    &                      & H03 - Geração de casos de testes                           & Não                  \\ \cline{3-4} 
-                                                                    &                      & H04 - Guia de ferramenta de automação de teste             & Não                  \\ \cline{3-4} 
-                                                                    &                      & H05 - Guia de teste de comportamento de código             & Não                  \\ \cline{3-4} 
-                                                                    &                      & H06 - Guia de teste de página apex                         & Não                  \\ \hline
-F07 - Tratamento de erros                          & \multirow{2}{*}{Sim} & H01 - Guia de uso de depuração de páginas apex             & Não                  \\ \cline{3-4} 
-                                                                    &                      & H02 - Cadastro de erros conhecidos                         & Não                  \\ \hline
+F01 - Escolher Técnica de elicitação de requisitos & \multirow{2}{*}{Não} & H01 - Indicar técnica de elicitação (Médio)                       & Sim                  \\ \cline{3-4} 
+                                                                    &                      & H02 - Visualizar guia de técnica de elicitação (Fácil)             & Sim                  \\ \hline
+F02 - Elicitar Requisitos Junto Ao Cliente         & \multirow{4}{*}{Não} & H01 - Estruturar informações obtidas (Médio)                       & Não                  \\ \cline{3-4}
+                                                                    &                      & H02 - Priorizar funcionalidades a serem desenvolvidas (Fácil)     & Não                  \\ \cline{3-4} 
+                                                                    &                      & H03 - Guia de prototipagem rápido (Fácil)                          & Não                  \\ \cline{3-4} 
+                                                                    &                      & H04 - Elicitar Requisitos Junto Ao Cliente (Fácil)                 & Não                  \\ \hline
+F03 - Construir modelo de dados                    & \multirow{7}{*}{Não} & H01 - Guia de criação e padrões de BD (Médio)                     & Não                  \\ \cline{3-4} 
+                                                                    &                      & H02 - Guia de padrão de nomenclatura de objetos de dados (Fácil)  & Não                  \\ \cline{3-4} 
+                                                                    &                      & H03 - Guia de geração de scripts sql (Fácil)                      & Não                  \\ \cline{3-4} 
+                                                                    &                      & H04 - Construir modelo de dados (Fácil)                          & Não                  \\ \cline{3-4} 
+                                                                    &                      & H05 - Validar modelo de dados (Médio)                            & Não                  \\ \cline{3-4} 
+                                                                    &                      & H06 - Atualizar modelo de dados (Fácil)                           & Não                  \\ \cline{3-4} 
+                                                                    &                      & H07 - Validação de modelo de dados por responsável técnico (Médio) & Sim                  \\ \hline
+F04 - Implementação da aplicação                   & \multirow{3}{*}{Sim} & H01 - Guia de padrões e boas práticas Apex (Médio)                 & Não                  \\ \cline{3-4} 
+                                                                    &                      & H02 - Ajustar interface (Fácil)                                   & Não                  \\ \cline{3-4} 
+                                                                    &                      & H03 - Aplicar regras de negócio (Fácil)                           & Não                  \\ \hline
+F05 - Elaboração de código                         & \multirow{5}{*}{Sim} & H01 - Guia de boas práticas plsql (Fácil)                         & Não                  \\ \cline{3-4} 
+                                                                    &                      & H02 - Guia sobre editor de código sql e plsql (Fácil)              & Não                  \\ \cline{3-4} 
+                                                                    &                      & H03 - Cadastro de código reutilizável (Fácil)                      & Não                  \\ \cline{3-4} 
+                                                                    &                      & H04 - Listar código reutilizável (Fácil)                          & Sim                  \\ \cline{3-4} 
+                                                                    &                      & H05 - Editar código reutilizável (Fácil)                          & Sim                  \\ \hline
+F06 - Procedimentos de teste                       & Sim & H01 - Preparar ambiente de testes (Fácil)                         & Não                  \\ \cline{3-4} 
+                                                                    &                      & H02 - Definir procedimento de testes (Fácil)                       & Não                  \\ \cline{3-4} 
+                                                                    &                      & H03 - Geração de casos de testes (Difícil)                          & Não                  \\ \cline{3-4} 
+                                                                    &                      & H04 - Guia de ferramenta de automação de teste (Fácil)            & Não                  \\ \cline{3-4} 
+                                                                    &                      & H05 - Guia de teste de comportamento de código (Fácil)            & Não                  \\ \cline{3-4} 
+                                                                    &                      & H06 - Guia de teste de página apex (Fácil)                        & Não                  \\ \hline
+F07 - Tratamento de erros                          & \multirow{2}{*}{Sim} & H01 - Guia de uso de depuração de páginas apex (Fácil)            & Não                  \\ \cline{3-4} 
+                                                                    &                      & H02 - Cadastro de erros conhecidos (Médio)                        & Não                  \\ \hline
 \end{longtable}
 
-Em relação ao período de cada \textit{Sprint}, definiu-se que a primeira \textit{Sprint} seria maior do que as outras por conta de ajustar a medida de produtividade, e as \textit{Sprints} seguintes seriam fixadas em períodos de 1 semana. A primeira \textit{Sprint} teve duração de 1 semana e 4 dias.
+Em relação ao período de cada \textit{Sprint}, definiu-se que a primeira \textit{Sprint} seria maior do que as outras por conta de ajustar a medida de produtividade, e as \textit{Sprints} seguintes seriam fixadas em períodos de 1 semana.
+
+\subsection{Execução das Sprints}
+
+Uma vez que as \textit{Features}/Estórias foram elaboradas e o período padrão de cada \textit{Sprint} definido, deu-se início a execução das \textit{Sprints}. Cada estória planejada na \textit{Sprint} está associada com a sua dificuldade e com o respectivo membro responsável pela sua conclusão.
+
+As tabelas 11, 12, 13 e 14 ilustram respectivamente o planejamento das \textit{Sprints} 1, 2, 3 e 4.
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\begin{table}[!htb]
+\centering
+\caption{Planejamento da \textit{Sprint} 1}
+\begin{tabular}{|M{1.8cm}|M{3.0cm}|M{5.2cm}|M{5.2cm}|}
+\hline
+\multirow{6}{1.8cm}{\textbf{Sprint 1}} & \textbf{\textit{Features} Envolvidas} &\textbf{Planejado} & \textbf{Concluído} 
+\\ \cline{2-4} 
+ & \multirow{2}{3.0cm}{F01 - Escolher Técnica de elicitação de requisitos} & F01/H01 - Indicar técnica de elicitação (Médio, Fagner) & \multirow{5}{5.2cm}{F03/H01 - Guia de criação e padrões de BD (Médio, Filipe)} 
+\\ \cline{3-3}
+ &  & F01/H02 - Visualizar guia de técnica de elicitação (Fácil, Fagner) & 
+\\ \cline{2-3}
+ & F02 - Elicitar Requisitos Junto Ao Cliente & F02/H03 - Guia de prototipagem rápido (Fácil) & 
+\\ \cline{2-3}
+ & \multirow{2}{3.0cm}{F03 - Construir modelo de dados} & F03/H01 - Guia de criação e padrões de BD (Médio, Filipe) & 
+\\ \cline{3-3}
+ &  & F03/H03 - Guia de geração de scripts sql (Fácil, Filipe) & 
+\\ \hline
+\end{tabular}
+\end{table}
+
+A \textit{Sprint 1} teve duração de 1 semana e 4 dias, pois se tratava de uma \textit{Sprint} de ajuste da produtividade. Foi concluída somente uma única estória de dificuldade média, e a estória F02/H03 não possuiu nenhum membro responsável associado pois estava em aberto para o membro que conseguisse finalizar as suas estórias primeiro.
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\begin{table}[!htb]
+\centering
+\caption{Planejamento da \textit{Sprint} 2}
+\begin{tabular}{|M{1.8cm}|M{3.0cm}|M{5.2cm}|M{5.2cm}|}
+\hline
+\multirow{6}{1.8cm}{\textbf{Sprint 2}} & \textbf{\textit{Features} Envolvidas} &\textbf{Planejado} & \textbf{Concluído} 
+\\ \cline{2-4} 
+ & \multirow{3}{3.0cm}{F03 - Construir modelo de dados} & F03/H02 - Guia de padrão de nomenclatura de objetos de dados (Fácil, Fagner) & \multirow{2}{5.2cm}{F03/H03 - Guia de geração de scripts sql (Fácil, Filipe)}
+\\ \cline{3-3}
+ &  & F03/H03 - Guia de geração de scripts sql (Fácil, Filipe) & 
+\\ \cline{3-3}
+ &  & F03/H05 - Validar modelo de dados (Médio, Fagner) & \multirow{2}{5.2cm}{F05/H03 - Cadastro de código reutilizável (Fácil, Filipe)}
+\\ \cline{2-3}
+ & \multirow{2}{3.2cm}{F05 - Elaboração de código} & F05/H03 - Cadastro de código reutilizável (Fácil, Filipe) & 
+\\ \cline{3-3}
+ &  & F05/H04 - Listar código reutilizável (Fácil, Filipe) & F05/H04 - Listar código reutilizável (Fácil, Filipe)
+\\ \hline
+\end{tabular}
+\end{table}
+
+Na \textit{Sprint} 2 as \textit{Features} 01 e 02 foram retiradas para a inclusão das \textit{Features} 03 e 05, consideradas de maior prioridade. Portanto as estórias F01/H01, F01/H02 e F02/H03 foram excluídas em favor da inclusão das estórias F03/H02, F03/H05, F05/H03 e F05/H04. A estória F03/H03 veio da \textit{Sprint} anterior.
+
+\begin{table}[!htb]
+\centering
+\caption{Planejamento da \textit{Sprint} 3}
+\begin{tabular}{|M{1.8cm}|M{3.0cm}|M{5.2cm}|M{5.2cm}|}
+\hline
+\multirow{6}{1.8cm}{\textbf{Sprint 3}} & \textbf{\textit{Features} Envolvidas} &\textbf{Planejado} & \textbf{Concluído} 
+\\ \cline{2-4} 
+ & \multirow{2}{3.0cm}{F03 - Construir modelo de dados} & F03/H02 - Guia de padrão de nomenclatura de objetos de dados (Fácil, Fagner) & F05/H05 - Editar código reutilizável (Fácil, Filipe)
+\\ \cline{3-3}
+ &  & F03/H05 - Validar modelo de dados (Médio, Fagner) & 
+\\ \cline{2-3}
+ & F04 - Implementação da aplicação & F04/H01 - Guia de padrões e boas práticas Apex (Médio, Filipe) & 
+\\ \cline{2-3}
+ & F05 - Elaboração de código & F05/H05 - Editar código reutilizável (Fácil, Filipe) & 
+\\ \hline
+\end{tabular}
+\end{table}
+
+A \textit{Sprint} 3 contemplou estórias da \textit{Sprint} anterior (F03/H02, F03/H05), além da inclusão da \textit{Feature} 04 com a estória F04/H01, considerada uma das mais importantes da solução, e da inclusão da estória F05/H05, relacionada com o conjunto de estórias F05/H03 e F05/H04 da \textit{Sprint} passada. 
+
+\begin{table}[!htb]
+\centering
+\caption{Planejamento da \textit{Sprint} 4}
+\begin{tabular}{|M{1.8cm}|M{3.0cm}|M{5.2cm}|M{5.2cm}|}
+\hline
+\multirow{6}{1.8cm}{\textbf{Sprint 4}} & \textbf{\textit{Features} Envolvidas} &\textbf{Planejado} & \textbf{Concluído} 
+\\ \cline{2-4} 
+ & F01 - Escolher Técnica de elicitação de requisitos & F01/H01 - Indicar técnica de elicitação (Médio, Fagner) &  \multirow{3}{5.2cm}{F03/H02 - Guia de padrão de nomenclatura de objetos de dados (Fácil, Fagner)}
+\\ \cline{3-3}
+ &  & F01/H02 - Visualizar guia de técnica de elicitação (Fácil, Fagner) & 
+\\ \cline{2-3}
+ & F03 - Construir modelo de dados & F03/H02 - Guia de padrão de nomenclatura de objetos de dados (Fácil, Fagner) & 
+\\ \cline{3-3}
+ &  & F03/H05 - Validar modelo de dados (Médio, Fagner) & \multirow{3}{5.2cm}{F04/H01 - Guia de padrões e boas práticas Apex (Médio, Filipe)}
+\\ \cline{2-3}
+ & F04 - Implementação da aplicação & F04/H01 - Guia de padrões e boas práticas Apex (Médio, Filipe) & 
+\\ \cline{2-3}
+ & F07 - Tratamento de erros & F07/H01 - Guia de uso de depuração de páginas apex (Fácil, Filipe) & 
+\\ \hline
+\end{tabular}
+\end{table}
+
+Para a \textit{Sprint} 4 foram incluídas de volta as duas estórias da \textit{Feature} 01 não concluídas na \textit{Sprint} 1, F01/H01 e F01/H02, além da inclusão de uma estória da \textit{Feature} 07 (F01/H01), de forma a contemplar outras etapas do ciclo de vida da solução. As estórias F03/H02, F03/H05 e F04/H01 vieram da \textit{Sprint} passada. 
 
 \chapter[Cronograma de Execução]{Cronograma de Execução}
 
