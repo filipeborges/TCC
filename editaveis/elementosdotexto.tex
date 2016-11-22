@@ -621,7 +621,7 @@ O Órgão X utiliza um sistema de \textit{Wiki} como uma das formas de compartil
 
 As boas práticas e padrões definidos na \textit{Wiki} serão um apoio à construção da solução (funcionalidades, guias e tutoriais). Para a concepção da solução, foram selecionados somente os guias e tutoriais que tivessem alguma relação direta com alguma atividade selecionada/proposta.
 
-\section{Processo de Construção da Solução (PENDENTE)}
+\section{Processo de Construção da Solução}
 
 O processo usado para a construção da solução foi a metodologia ágil, mais especificamente o método \textit{Scrum}. Decidiu-se pelo \textit{Scrum} devido a sua flexibilidade e por consequência o seu menor encargo sobre a construção da solução. Duas etapas foram realizadas para o planejamento da construção:
 
@@ -693,7 +693,7 @@ Uma vez que as \textit{Features} e estórias foram definidas, o início da const
 \end{tabular}
 \end{table}
 
-A \textit{Sprint 1} teve duração de 1 semana e 2 dias, pois se tratava de uma \textit{Sprint} de ajuste. Foi concluída somente uma única estória de dificuldade média, e a estória F02/H03 não possuiu nenhum membro responsável pois estava como um adicional caso algum membro finalizasse suas estórias muito rapidamente. \pagebreak
+A \textit{Sprint 1} teve duração de 1 semana e 2 dias, pois se tratava de uma \textit{Sprint} de ajuste. Foi concluída somente uma única estória de dificuldade média, e a estória F02/H03 não possuiu nenhum membro responsável pois estava como um adicional caso algum membro finalizasse suas estórias muito rapidamente. \clearpage
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{table}[!htb]
@@ -736,7 +736,7 @@ Na \textit{Sprint} 2 as \textit{Features} 01 e 02 foram retiradas para a inclus�
 \end{tabular}
 \end{table}
 
-Na \textit{Sprint} 3 houve a inclusão da \textit{Feature} 04 com a estória F04/H01, considerada uma das mais importantes da solução, e a inclusão da estória F05/H05, relacionada com o conjunto de estórias F05/H03 e F05/H04 concluídas na \textit{Sprint} passada. \pagebreak
+Na \textit{Sprint} 3 houve a inclusão da \textit{Feature} 04 com a estória F04/H01, considerada uma das mais importantes da solução, e a inclusão da estória F05/H05, relacionada com o conjunto de estórias F05/H03 e F05/H04 concluídas na \textit{Sprint} passada. \clearpage
 
 \begin{table}[!htb]
 \centering
@@ -780,7 +780,7 @@ Para a \textit{Sprint} 4 foram incluídas de volta as duas estórias da \textit{
 \end{tabular}
 \end{table}
 
-Na \textit{Sprint} 5 mantiveram-se o conjunto de estórias não concluídas na \textit{Sprint} passada. \pagebreak
+Na \textit{Sprint} 5 mantiveram-se o conjunto de estórias não concluídas na \textit{Sprint} passada. \clearpage
 
 \begin{table}[!htb]
 \centering
@@ -817,7 +817,7 @@ Na \textit{Sprint} 6 houve a remoção da \textit{Feature} 3 em favor do maior e
 \end{tabular}
 \end{table}
 
-Na \textit{Sprint} 7 se manteve o mesmo conjunto de estórias da \textit{Sprint} passada. \pagebreak
+Na \textit{Sprint} 7 se manteve o mesmo conjunto de estórias da \textit{Sprint} passada. \clearpage
 
 \begin{table}[!htb]
 \centering
@@ -855,7 +855,7 @@ Na \textit{Sprint} 8 houve a conclusão da estória F01/H02 e a inclusão da \te
 \end{tabular}
 \end{table}
 
-Para a \textit{Sprint} 9 foram incluídas as \textit{Features} 3 e 7 com as estórias F03/H05 e F07/H02 respectivamente. \pagebreak
+Para a \textit{Sprint} 9 foram incluídas as \textit{Features} 3 e 7 com as estórias F03/H05 e F07/H02 respectivamente. \clearpage
 
 \begin{table}[!htb]
 \centering
@@ -1368,13 +1368,123 @@ O esboço do quadro \textit{kanban} a ser elaborado na funcionalidade gerencial 
 
 Este quadro \textit{kanban} foi dividido pelas fases do ciclo de vida da solução, de forma que o desenvolvedor vai posicionando os itens do \textit{backlog} definido de acordo com a etapa em que se encontram dentro do ciclo de vida. A ideia é que o \textit{backlog} da iteração gerado seja em pequenas unidades de funcionalidades, de forma a facilitar o gerenciamento e acompanhamento pelo desenvolvedor. Ao terminar um conjunto destas unidades de funcionalidade, o desenvolvedor consegue gerar um software executável para o cliente. Observa-se que a divisão \textit{Backlog} Produto é opcional, já que pode ser da preferência do cliente e do desenvolvedor levantar o \textit{backlog} do produto. Porém, neste caso, o fluxo de execução do quadro \textit{kanban} obriga a seleção e priorização de um \textit{backlog} da iteração, conforme a divisão da etapa de Requisitos.
 
-\section{SISAEUD - Sistema de Apoio ao Desenvolvimento Descentralizado (PENDENTE)}
+\section{SISAEUD - Sistema de Apoio ao Desenvolvimento Descentralizado}
 
-\textit{Descrever a solução, usando prints das telas mais representativas.}
+O SISAEUD, Sistema de Apoio ao Desenvolvimento Descentralizado, é a implementação da solução gerada, onde espera-se que contribua com o desenvolvimento descentralizado dentro do Órgão X. Este sistema foi desenvolvido na plataforma Oracle Application Express. As figuras de 14 a 19 mostram as capturas das telas mais representativas do SISAEUD.
 
-\section{Problemas resolvidos com o SISAUED (PENDENTE)}
+\begin{figure}[!h]
+	\hspace*{-1.5cm} 
+		\includegraphics[scale=0.40]{figuras/home_p1}
+	\caption{Tela inicial do SISAEUD}
+\end{figure}
 
-\textit{Fazer uma relação do que foi implementado com a solução proposta e quais os problemas estão resolvendo, com base no diagnóstico.}
+Na tela inicial do SISAEUD é apresentado o diagrama do ciclo iterativo proposto para o desenvolvimento descentralizado, onde cada etapa deste ciclo é um botão clicável que o desenvolvedor pode usar para acessar o conjunto de atividades, guias e funcionalidades da respectiva etapa. Além disso, o menu superior oferece uma navegação mais rápida e direta para as funcionalidades da aplicação. Observa-se que este menu superior é apresentado em todas as telas do sistema.
+
+\begin{figure}[!htb]
+	\hspace*{-1.0cm} 
+		\includegraphics[scale=0.40]{figuras/fluxo_req_p2}
+	\caption{Atividades, guias e funcionalidades da etapa de requisitos}
+\end{figure}
+
+A tela mostrada é um exemplo do detalhamento da etapa de requisitos, ou seja, é a tela apresentada caso o usuário clique na etapa de requisitos da tela da figura 14 (tela com o ciclo de desenvolvimento). Dentro de cada etapa do ciclo temos um fluxo sequencial de atividades que são suportadas por um conjunto de guias e funcionalidades. Atividades são representadas por retângulos, guias são representados por elipses e funcionalidades são representadas por elipses com o texto sublinhado. Ainda nesta tela, a parte superior apresenta uma espécie de \textit{wizard}, onde cada etapa anterior a etapa na qual o desenvolvedor se encontra é marcada com um ícone de verificação, dando a entender que para estar nesta etapa o desenvolvedor teria que ter passado pelas etapas anteriores. \clearpage
+
+\begin{figure}[!htb]
+	\hspace*{-1.5cm} 
+		\includegraphics[scale=0.40]{figuras/cadastro_projeto_p14}
+	\caption{Cadastro de informações de um projeto}
+\end{figure}
+
+A tela de cadastro de informações de um projeto é uma das mais importantes do sistema, pois permite ao desenvolvedor cadastrar e editar informações a cerca do projeto no qual está trabalhando. A parte superior exibe várias abas onde o desenvolvedor pode alternar entre várias telas de cadastro/edição de informações sobre o projeto, como: Informações do Sistema, Atores do Sistema, \textit{Features}, Funcionalidades, Requisitos Não Funcionais, Regras de Negócio e Visualizar a Rastreabilidade dos Requisitos.
+
+\begin{figure}[!htb]
+	\hspace*{-1.5cm} 
+		\includegraphics[scale=0.40]{figuras/gerador_teste_p57}
+	\caption{Geração de valores para teste caixa preta}
+\end{figure}
+
+A tela de geração de valores para teste do tipo caixa preta gera um conjunto de valores para teste, seguindo o método BVA (\textit{Boundary Value Analysis}), de acordo com o componente selecionado. Os componentes apresentados para escolha são componentes de entrada de dados disponíveis na versão 5 do APEX (versão mais atual). Desta forma, permite-se que o processo de teste do tipo caixa preta das páginas desenvolvidas seja mais sistemático.
+
+\begin{figure}[!htb]
+	\hspace*{-1.0cm} 
+		\includegraphics[scale=0.40]{figuras/guia_nomenclatura_bd_p54}
+	\caption{Guia de padrão de nomenclatura de objetos de dados}
+\end{figure}
+
+A tela de guia de padrão de nomenclatura de objetos de dados apresenta informações ao desenvolvedor de como nomear os objetos do banco de dados, de acordo com os padrões definidos pelo Órgão X. Em todas as telas de guias são apresentados o índice, de forma a facilitar a navegação, seguido do conteúdo das seções. \clearpage
+
+\begin{figure}[!htb]
+	\hspace*{-1.5cm} 
+		\includegraphics[scale=0.40]{figuras/video_p51}
+	\caption{Vídeo tutorial de geração de modelo lógico de banco de dados}
+\end{figure}
+
+Existem alguns guias que possuem um vídeo tutorial que foi gravado de forma a auxiliar o desenvolvedor. Para isso existe uma tela de reprodução de vídeo no formato WEBM (formato apropriado para vídeos em páginas web). O desenvolvedor pode executar todas as funções básicas de um \textit{player} de vídeo, como avançar, aumentar a tela e silenciar o vídeo.
+
+\section{Problemas resolvidos com o SISAUED}
+
+Para se ter uma noção do grau de conformidade que a solução implementada possui com o diagnóstico realizado, foi elaborada uma associação entre ambos. A tabela 21 apresenta a relação do diagnóstico obtido com o que foi implementado no SISAEUD. Observa-se que o diagnóstico obtido contém tanto problemas quanto algumas boas práticas e pontos positivos relatados pelos desenvolvedores entrevistados. As soluções pertencentes a coluna Implementação que contém um asterisco são soluções que até o momento não foram finalizadas ou que estão para ser iniciadas.
+
+\begin{longtable}{|m{8.0cm}|m{8.0cm}|}
+\caption{Diagnóstico Obtido x Solução Implementada}\\
+\hline
+\textbf{Diagnóstico} & \textbf{Implementação} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Diagnóstico} & \textbf{Implementação} \\
+\hline
+\endhead
+Curso da somente uma introdução                                                                                                   & \multirow{4}{*}{Consulta de Informações na Solução *}                                                                                                                                                      \\ \cline{1-1}
+O curso poderia ser melhorado                                                                                                     &                                                                                                                                                                                                            \\ \cline{1-1}
+Treinamento em boas práticas APEX                                                                                                 &                                                                                                                                                                                                            \\ \cline{1-1}
+Construção de um catálogo de informações APEX                                                                                     &                                                                                                                                                                                                            \\ \hline
+\multirow{3}{*}{Algumas aplicações com baixa qualidade}                                                                           & Guia de Padrões e Boas Práticas APEX                                                                                                                                                                       \\ \cline{2-2} 
+                                                                                                                                  & Definir Procedimentos de Teste *                                                                                                                                                                           \\ \cline{2-2} 
+                                                                                                                                  & Definir Procedimentos de Implantação *                                                                                                                                                                     \\ \hline
+Os requisitos são levantados através de reuniões.                                                                & \begin{tabular}{m{7.6cm}}- Priorizar Funcionalidades a Serem Desenvolvidas *\\- Elicitar Requisitos Junto ao Cliente\\- Guia de Entrevistas *\\- Escolher Técnica de Elicitação\end{tabular} \\
+                                                                                                                                  &                                                                                                                                                                                                            \\ \cline{1-1}
+\multirow{2}{*}{Reuniões constantes.}                                                                                             &                                                                                                                                                                                                            \\
+                                                                                                                                  &                                                                                                                                                                                                            \\ \hline
+Requisitos óbvios não anotados durante as reuniões são esquecidos                                                                 & \multirow{4}{*}{Estruturar Informações Obtidas}                                                                                                                                                            \\ \cline{1-1}
+Registro de requisitos em papel                                                                                                   &                                                                                                                                                                                                            \\ \cline{1-1}
+Registro de requisitos em sistemas distintos em rede                                                                              &                                                                                                                                                                                                            \\ \cline{1-1}
+Registro de requisitos inexistente                                                                                                &                                                                                                                                                                                                            \\ \hline
+Uso de prototipagem para levantar/validar requisitos                                                                              & Guia de Prototipagem Rápida *                                                                                                                                                                              \\ \hline
+Não atualiza o modelo de dados                                                                                                    & Atualizar Modelo de Dados *                                                                                                                                                                                \\ \hline
+\begin{tabular}{m{7.6cm}}- Não valida o modelo de dados com área técnica\\- Valida o modelo de dados com área técnica\end{tabular} & Validar Modelo de Dados *                                                                                                                                                                                  \\ \hline
+Possibilidade de gerar o modelo de dados a partir das tabelas                                                                     & Guia de Geração de Scripts SQL                                                                                                                                                                             \\ \hline
+Negligência ao modelo de dados                                                                                                    & \begin{tabular}{m{7.6cm}}- Guia de Criação e Padrões, de BD\\- Guia de Padrão de Nomenclatura de Objetos de Dados\end{tabular}                                                                              \\ \hline
+Elabora o modelo de dados utilizando ferramentas CASE                                                                             & Guia de Criação e Padrões, de BD                                                                                                                                                                           \\ \hline
+\begin{tabular}{m{7.6cm}}- Realiza depurações no sistema com o APEX\\- Não realiza depurações\end{tabular}                         & \begin{tabular}{m{7.6cm}}- Guia de Uso de Depuração de Páginas APEX\\- Guia de Teste de Comportamento de Código *\end{tabular}                                                                              \\ \hline
+Realiza depurações no console de comandos SQL                                                                                     & Guia de Teste de Comportamento de Código *                                                                                                                                                                 \\ \hline
+Não há classificação de erros                                                                                                     & Cadastro de Erros Conhecidos                                                                                                                                                                               \\ \hline
+Falta do uso de um padrão de boas práticas comprometeu a qualidade da aplicação        & \begin{tabular}{m{7.6cm}}- Guia de Padrões e Boas Práticas APEX\\- Guia de Boas Práticas PL/SQL *\\- Guia de Padrão de Nomenclatura de Objetos de Dados\end{tabular}                        \\ \cline{1-1}
+Boas práticas realizada                                                                                                           &                                                                                                                                                                                                            \\ \hline
+Escrita legível de código                                                                                                         & \begin{tabular}{m{7.6cm}}- Guia de Boas Práticas PL/SQL *\\- Guia de Padrão de Nomenclatura de Objetos de Dados\end{tabular}                                                                                \\ \hline
+Mais da metade da aplicação é composta de algum código                                                                            & Guia de Boas Práticas PL/SQL *                                                                                                                                                                             \\ \hline
+Preferência pelo uso de componentes padrões do APEX                                                                               & \multirow{2}{*}{Guia de Padrões e Boas Práticas APEX}                                                                                                                                                      \\ \cline{1-1}
+Aplicação bem desenvolvida                                                                                                        &                                                                                                                                                                                                            \\ \hline
+Falta de um padrão de boas práticas                                                                                               & \begin{tabular}{@{}l@{}}- Guia de Padrões e Boas Práticas APEX\\- Guia de Boas Práticas PL/SQL *\end{tabular}                                                                                              \\ \hline
+Reutilização de código                                                                                                            & Cadastro de Código Reutilizável                                                                                                                                                                            \\ \hline
+Uso de editores externos                                                                                                          & Guia Sobre Editor de Código SQL e PL/SQL *                                                                                                                                                \\ \cline{1-1}
+Uso do editor do APEX                                                                                                             &                                                                                                                                                                                                            \\ \hline
+Uso de testes funcionais                                                                                                          & \begin{tabular}{m{7.6cm}}- Geração de Casos de Teste\\- Guia de Ferramenta de Automação de Teste *\end{tabular}                                                                                             \\ \hline
+Uso de teste de comandos SQL                                                                                                      & Guia de Teste de Comportamento de Código *                                                                                                                                                                 \\ \hline
+Teste de execução de páginas                                                                                                      & Guia de Teste de Página APEX *                                                                                                                                                                             \\ \hline
+Não há elaboração de casos de teste                                                                                               & Geração de Casos de Teste                                                                                                                                                                                  \\ \hline
+Favorável à proposta de automação de testes funcionais                                                                            & Guia de Ferramenta de Automação de Teste *                                                                                                                                                                 \\ \hline
+Costuma verificar se os apelidos não estão duplicados                                                                             & \multirow{3}{*}{Guia de Migração de Aplicações *}                                                                                                                                                          \\ \cline{1-1}
+Não migra as definições de objetos                                                                                                &                                                                                                                                                                                                            \\ \cline{1-1}
+Verifica a criação das tabelas no espaço de produção                                                                              &                                                                                                                                                                                                            \\ \hline
+Navegação feita, antes de migrar, somente nas páginas que alterou                                                                 & \multirow{3}{*}{Definir Procedimentos de Implantação *}                                                                                                                                                    \\ \cline{1-1}
+Navegação feita, antes de migrar, em todas as páginas da aplicação                                                                &                                                                                                                                                                                                            \\ \cline{1-1}
+Faz a migração da definição dos objetos de dados                                                                                  &                                                                                                                                                                                                            \\ \hline
+Faz a homologação das aplicações antes de disponibilizar definitivamente na produção  & \begin{tabular}{m{7.6cm}}- Homologar Aplicação *\\- Guia de Homologação de Aplicações *\end{tabular}                                                                                                        \\ \hline
+\end{longtable}
+
+
+
+
 
 \chapter[Cronograma de Execução]{Cronograma de Execução}
 
