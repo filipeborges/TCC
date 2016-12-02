@@ -58,7 +58,7 @@ Apesar disso, existem ainda algumas dificuldades no desenvolvimento por parte do
 
 A falta de padrões e adesão a boas práticas no desenvolvimento de aplicações pode levar à problemas relacionados a qualidade e manutenibilidade destas aplicações. Segundo \textit{Blackwell}, no caso do uso de ferramentas de programação, é muito fácil para os desenvolvedores profissionais de software assumir que qualquer pessoa irá se aproximar ao seu nível profissional de programação. A fim de evitar esta armadilha, são necessários atenção e investigação especializada para os usuários finais por parte dos desenvolvedores profissionais, durante a criação de novas tecnologias voltadas ao EUD. Baseado nesses argumentos, é necessário que os desenvolvedores EUD tenham uma atenção especial para o desenvolvimento de seus sistemas, através de um modelo que lhes dê suporte.
 
-\section{\textit{Metodologia} (REFATORAR: PESQUISA PARTICIPANTE)}
+\section{\textit{Metodologia}}
 
 A escolha da estratégia de pesquisa deve satisfazer três condições: o tipo de questão de pesquisa, o controle que o pesquisador possui sobre os eventos comportamentais efetivos e o foco em fenômenos históricos, em oposição a fenômenos contemporâneos \cite{yin2001estudo}.
 
@@ -480,11 +480,32 @@ Para dar a noção visual de continuidade do fluxo de trabalho, o método \texti
 	\caption{Esquema de um quadro \textit{kanban}. Fonte: \cite{kanbanImage}.}
 \end{figure}
 
-\chapter[Proposta do Trabalho]{Proposta do Trabalho}
+\chapter[Materiais e Métodos]{Materiais e Métodos}
 
 \section{\textit{Considerações Iniciais}}
 
+\begin{comment}
 Este capítulo trata da definição da proposta deste trabalho, dos procedimentos executados na entrevista para diagnosticar a situação do desenvolvimento descentralizado no Órgão X, das descrições das fontes complementares para a elaboração da solução: o Processo de Desenvolvimento Descentralizado existente e a \textit{Wiki} da unidade coordenadora do desenvolvimento descentralizado, e da metodologia de construção da solução de apoio.
+\end{comment}
+
+\begin{comment}
+Este trabalho se propõe a elaborar uma solução informatizada que possa apoiar o desenvolvimento descentralizado no Órgão X. Esta solução irá conter um conjunto de atividades, de boas práticas e de funcionalidades que possam contribuir para uma melhoria na qualidade e manutenibilidade das aplicações desenvolvidas. Na primeira etapa do trabalho foi identificado o conjunto de atividades e boas práticas da solução, de forma que estas atividades estivessem relacionadas entre si através de um fluxograma, e que as boas práticas estivessem contidas dentro das atividades, auxiliando a execução das mesmas. Na segunda etapa realizou-se a implementação do modelo da solução gerada.
+\end{comment}
+
+Para o planejamento e execução do trabalho realizou-se, inicialmente, um levantamento bibliográfico sobre os tópicos relacionados ao trabalho: \textit{End User Development}, desenvolvimento descentralizado, \textit{SCRUM} e \textit{Kanban}. Em seguida foram realizadas entrevistas com o propósito de diagnosticar a situação do desenvolvimento descentralizado no Órgão X, coletando os problemas, as boas práticas e as sugestões de melhorias, relatados pelos próprios desenvolvedores. Foi realizada uma análise no processo de desenvolvimento descentralizado não implementado, existente no Órgão X, com o intuito de verificar quais atividades e guias existentes poderiam dar um suporte à elaboração das soluções relacionadas ao diagnóstico obtido. Uma análise sobre os conteúdos da \textit{Wiki} da unidade coordenadora do desenvolvimento descentralizado também foi feita, de forma a agregar algumas boas práticas, definidas pela unidade, à solução. A partir do diagnóstico, da análise do processo e da análise da \textit{Wiki} foram definidas as atividades e os guias da solução de apoio. Estas atividades foram então relacionadas através de um fluxograma, representando o sequenciamento das mesmas e concluindo a construção do modelo. Por fim realizou-se a implementação do modelo da solução, através de ciclos de \textit{Sprints}.
+
+\begin{comment}
+A construção deste trabalho foi guiada pelas as etapas de pesquisa previamente definidas. Dentre estas etapas, temos:
+
+\begin{itemize}
+\item Definir o problema objeto de estudo, os objetivos a serem alcançados e a escolha da metodologia;
+\item Estudos bibliográficos de forma a embasar o trabalho;
+\item Planejar e executar a entrevista semi-estruturada com os indivíduos alvos, previamente selecionados;
+\item Análise dos documentos do órgão e das entrevistas;
+\item Construção do modelo da solução de apoio;
+\item Implementação do modelo da solução de apoio;
+\end{itemize}
+\end{comment}
 
 \section{Caracterização do Órgão}
 
@@ -501,6 +522,7 @@ A \textit{Wiki} é uma fonte importante de conhecimento ao desenvolvimento desce
 
 O desenvolvimento descentralizado apresenta um bom relato de satisfação no Órgão X, porém considerando a importância da aplicação de boas práticas e padrões neste contexto, existem oportunidades de melhoria.
 
+\begin{comment}
 \section{Definição da Proposta}
 
 Tendo em vista o contexto caracterizado, este trabalho se propõe a elaborar uma solução informatizada que possa apoiar o desenvolvimento descentralizado no Órgão X. Esta solução irá conter um conjunto de atividades, de boas práticas e de funcionalidades que possam contribuir para uma melhoria na qualidade e manutenibilidade das aplicações desenvolvidas. Na primeira etapa do trabalho (TCC 1) será identificado o conjunto de atividades e boas práticas da solução, de forma que estas atividades estejam relacionadas entre si através de um fluxograma, e que as boas práticas estejam contidas dentro das atividades, auxiliando a execução das mesmas. Na segunda etapa (TCC 2), espera-se detalhar as atividades e as boas práticas definidas, informatizar o fluxo de atividades e implementar as funcionalidades que possam auxiliar na execução de algumas das atividades da solução.
@@ -508,7 +530,7 @@ Tendo em vista o contexto caracterizado, este trabalho se propõe a elaborar uma
 Para se atingir o objetivo deste trabalho, realizou-se, inicialmente, um levantamento bibliográfico sobre os tópicos relacionados ao trabalho: \textit{End User Development}, desenvolvimento descentralizado, \textit{SCRUM} e \textit{Kanban}. Em seguida foram realizadas entrevistas com o propósito de diagnosticar a situação do desenvolvimento descentralizado no Órgão X, coletando os problemas, as boas práticas e as sugestões de melhorias, relatados pelos próprios desenvolvedores. Foi realizada uma análise no processo de desenvolvimento descentralizado não implementado, existente no Órgão X, com o intuito de verificar quais atividades e guias existentes poderiam dar um suporte à elaboração das soluções relacionadas ao diagnóstico obtido. Uma análise sobre os conteúdos da \textit{Wiki} da unidade coordenadora do desenvolvimento descentralizado também foi feita, de forma a agregar algumas boas práticas, definidas pela unidade, à solução. A partir do diagnóstico, da análise do processo e da análise da \textit{Wiki} foram definidas as atividades e os guias da solução de apoio. Estas atividades foram então relacionadas através de um fluxograma, representando o sequenciamento das mesmas.
 
 %TODO: Explicar aqui a elaboração da entrevista, já que a entrevista é um "método" da pesquisa participante.
-\begin{comment}
+
 \section{\textit{Pesquisa Participante}}
 --Falar como a gente abordou a pesquisa participante--
 \end{comment}
@@ -670,14 +692,14 @@ O processo usado para a construção da solução foi a metodologia ágil, mais 
 \item Definir o período de tempo de cada \textit{Sprint}.
 \end{enumerate}
 
-As estórias elaboradas seguem a hierarquia \textit{Feature}/Estória, de forma que algumas funcionalidades e atividades viraram uma \textit{Feature} devido à sua abrangência de conteúdo. Além disso, certos guias e atividades relacionados foram agrupados em \textit{Features} criadas, e algumas estórias foram quebradas de forma a diminuir sua granularidade. Por fim cada estória recebeu uma classificação em relação a sua dificuldade (Fácil, Médio, Difícil) de forma a ajudar no planejamento da \textit{Sprint}. A tabela 4 ilustra o conjunto de \textit{Features}/Estórias elaborado.
+As estórias elaboradas seguem a hierarquia \textit{Feature}/Estória, de forma que algumas funcionalidades e atividades viraram uma \textit{Feature} ao invés de estória, devido à sua abrangência de conteúdo. Algumas estórias tiveram de ser criadas pois não foram previstas no diagnóstico e os autores sentiram esta necessidade, com base nas suas experiências. Além disso, certas estórias que tiveram origem no diagnóstico tiveram que ser associadas a \textit{Features} criadas, pois o diagnóstico não permitiu derivar conjunto de \textit{Features} que representassem estas estórias. Por fim algumas estórias foram quebradas de forma a originar novas estórias de menor granularidade, e cada estória recebeu uma classificação em relação a sua dificuldade de implementação (Fácil, Médio, Difícil) de forma a ajudar no planejamento da \textit{Sprint}. A tabela 4 ilustra o conjunto de \textit{Features}/Estórias elaborado.
 
-\begin{longtable}{|M{6.0cm}|M{3.0cm}|M{3.0cm}|M{2.7cm}|}
+\begin{longtable}{|M{3.9cm}|M{2.6cm}|M{5.6cm}|M{2.6cm}|}
 \caption{\textit{Features}/Estórias elaboradas}\\\hline
-\textbf{Feature}                                                    & \textbf{Foi criado?} & \textbf{Estória}                                           & \textbf{Foi criado?} \\ \hline
+\textbf{Feature}                                                    & \textbf{Origem no Diagnóstico} & \textbf{Estória}                                           & \textbf{Origem no Diagnóstico} \\ \hline
 \endfirsthead
 \hline
-\textbf{Feature}                                                    & \textbf{Foi criado?} & \textbf{Estória}                                           & \textbf{Foi criado?} \\ \hline
+\textbf{Feature}                                                    & \textbf{Origem no Diagnóstico} & \textbf{Estória}                                           & \textbf{Origem no Diagnóstico} \\ \hline
 \endhead
 F01 - Escolher Técnica de elicitação de requisitos & \multirow{2}{*}{Não} & H01 - Indicar técnica de elicitação (Médio)                       & Sim                  \\ \cline{3-4} 
                                                                     &                      & H02 - Visualizar guia de técnica de elicitação (Fácil)             & Sim                  \\ \hline
