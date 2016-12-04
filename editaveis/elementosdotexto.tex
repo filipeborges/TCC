@@ -720,7 +720,7 @@ O processo usado para a construção da solução foi a metodologia ágil, mais 
 \item Definir o período de tempo de cada \textit{Sprint}.
 \end{enumerate}
 
-As estórias elaboradas seguem a hierarquia \textit{Feature}/Estória, de forma que algumas funcionalidades e atividades viraram uma \textit{Feature} ao invés de estória, devido à sua abrangência de conteúdo. Algumas estórias tiveram de ser criadas pois não foram previstas no diagnóstico e os autores sentiram esta necessidade, com base nas suas experiências. Além disso, certas estórias que tiveram origem no diagnóstico tiveram que ser associadas a \textit{Features} criadas, pois o diagnóstico não permitiu derivar conjunto de \textit{Features} que representassem estas estórias. Por fim algumas estórias foram quebradas de forma a originar novas estórias de menor granularidade, e cada estória recebeu uma classificação em relação a sua dificuldade de implementação (Fácil, Médio, Difícil) de forma a ajudar no planejamento da \textit{Sprint}. A tabela 4 ilustra o conjunto de \textit{Features}/Estórias elaborado.
+As estórias elaboradas seguem a hierarquia \textit{Feature}/Estória, de forma que algumas funcionalidades e atividades viraram uma \textit{Feature} ao invés de estória, devido à sua abrangência de conteúdo. Algumas estórias tiveram de ser criadas pois não foram previstas no diagnóstico e os autores sentiram esta necessidade, com base nas suas experiências. Além disso, certas estórias que tiveram origem no diagnóstico tiveram que ser associadas a \textit{Features} criadas, pois o diagnóstico não permitiu derivar um conjunto de \textit{Features} que representassem estas estórias. Por fim algumas estórias foram quebradas de forma a originar novas estórias de menor granularidade, e cada estória recebeu uma classificação em relação a sua dificuldade de implementação (Fácil, Médio, Difícil) de forma a ajudar no planejamento da \textit{Sprint}. A tabela 4 ilustra o conjunto de \textit{Features}/Estórias elaborado. \clearpage
 
 \begin{longtable}{|M{3.9cm}|M{2.6cm}|M{5.6cm}|M{2.6cm}|}
 \caption{\textit{Features}/Estórias elaboradas}\\\hline
@@ -729,19 +729,59 @@ As estórias elaboradas seguem a hierarquia \textit{Feature}/Estória, de forma 
 \hline
 \textbf{Feature}                                                    & \textbf{Origem no Diagnóstico} & \textbf{Estória}                                           & \textbf{Origem no Diagnóstico} \\ \hline
 \endhead
-F01 - Escolher Técnica de elicitação de requisitos & \multirow{2}{*}{Não} & H01 - Indicar técnica de elicitação (Médio)                       & Sim                  \\ \cline{3-4} 
-                                                                    &                      & H02 - Visualizar guia de técnica de elicitação (Fácil)             & Sim                  \\ \hline
-F02 - Elicitar Requisitos Junto Ao Cliente         & \multirow{4}{*}{Não} & H01 - Estruturar informações obtidas (Médio)                       & Não                  \\ \cline{3-4}
+F01 - Escolher Técnica de elicitação de requisitos & \multirow{2}{*}{Não} & H01 - Indicar técnica
+de elicitação com base em
+perguntas sobre os
+parâmetros do projeto                       & Não                  \\ \cline{3-4} 
+                                                                    &                      & H02 - Visualizar guia de técnica de elicitação (Fácil)             & Sim                  \\ \cline{3-4}
+ &  &  H03 - Cadastrar técnicas de elicitação & Não \\ \cline{3-4}
+ &  & H04 - Editar técnicas de elicitação & Não \\ \cline{3-4}
+ &  & H05 - Listar técnicas de elicitação & Não \\ \cline{3-4}
+ &  & H06 - Cadastrar parâmetros do projeto referente as técnicas & Não \\ \cline{3-4}                                                       
+ &  & H07 - Editar parâmetros do projeto referente as técnicas & Não \\ \cline{3-4}
+ &  & H08 - Listar parâmetros do projeto referente as técnicas & Não \\ \cline{3-4}
+ &  & H09 - Cadastrar pesos dos parâmetros referente as técnicas & Não \\ \cline{3-4}
+ &  & H10 - Editar pesos dos parâmetros referente as técnicas & Não \\ \cline{3-4}
+ &  & H11 - Listar pesos dos parâmetros referente as técnicas & Não \\ \hline
+F02 - Elicitar Requisitos Junto Ao Cliente         & \multirow{4}{*}{Não} & H01 - Estruturação dos requisitos (rastreabilidade) (Médio)                       & Não                  \\ \cline{3-4}
                                                                     &                      & H02 - Priorizar funcionalidades a serem desenvolvidas (Fácil)     & Não                  \\ \cline{3-4} 
                                                                     &                      & H03 - Guia de prototipagem rápido (Fácil)                          & Não                  \\ \cline{3-4} 
-                                                                    &                      & H04 - Elicitar Requisitos Junto Ao Cliente (Fácil)                 & Não                  \\ \hline
+                                                                    &                      & H04 - Elicitar Requisitos Junto Ao Cliente (Fácil)                 & Não                  \\ \cline{3-4}
+&  & H05 - Cadastrar informações levantadas na elicitação de requisitos & Não \\ \cline{3-4}                                
+&  & H06 - Editar informações levantadas na elicitação de requisitos & Não \\ \cline{3-4}
+&  & H07 - Listar informações levantadas na elicitação de requisitos & Não \\ \cline{3-4}
+&  & H08 - Excluir informações levantadas na elicitação de requisitos & Não \\ \cline{3-4}
+&  & H09 - Cadastrar atores no sistema a ser desenvolvido & Não \\ \cline{3-4}
+&  & H10 - Editar atores no sistema a ser desenvolvido & Não \\ \cline{3-4}
+&  & H11 - Listar atores no sistema a ser desenvolvido & Não \\ \cline{3-4}
+&  & H12 - Excluir atores no sistema a ser desenvolvido & Não \\ \cline{3-4}
+&  & H13 - Cadastrar \textit{features} do projeto & Não \\ \cline{3-4}
+&  & H14 - Editar \textit{features} do projeto & Não \\ \cline{3-4}
+&  & H15 - Listar \textit{features} do projeto & Não \\ \cline{3-4}
+&  & H16 - Excluir \textit{features} do projeto & Não \\ \cline{3-4}
+&  & H17 - Cadastrar funcionalidades do projeto relacionado a \textit{feature} & Não \\ \cline{3-4}
+&  & H18 - Editar funcionalidades do projeto relacionado a \textit{feature} & Não \\ \cline{3-4}
+&  & H19 - Listar funcionalidades do projeto relacionado a \textit{feature} & Não \\ \cline{3-4}
+&  & H20 - Excluir funcionalidades do projeto relacionado a uma \textit{feature} & Não \\ \cline{3-4}
+&  & H21 - Cadastrar requisitos não-funcionais do projeto & Não \\ \cline{3-4}
+&  & H22 - Editar requisitos não-funcionais do projeto & Não \\ \cline{3-4}
+&  & H23 - Listar requisitos não-funcionais do projeto & Não \\ \cline{3-4}
+&  & H24 - Excluir requisitos não-funcionais do projeto & Não \\ \cline{3-4}
+&  & H25 - Cadastrar regras de negócio do projeto & Não \\ \cline{3-4}
+&  & H26 - Editar regras de negócio do projeto & Não \\ \cline{3-4}
+&  & H27 - Listar regras de negócio do projeto & Não \\ \cline{3-4}
+&  & H28 - Excluir regras de negócio do projeto & Não \\ \cline{3-4}
+&  & H29 - Apresentar rastreabilidade entre projeto, \textit{features} e funcionalidades & Não \\ \hline
 F03 - Construir modelo de dados                    & \multirow{7}{*}{Não} & H01 - Guia de criação e padrões de BD (Médio)                     & Não                  \\ \cline{3-4} 
                                                                     &                      & H02 - Guia de padrão de nomenclatura de objetos de dados (Fácil)  & Não                  \\ \cline{3-4} 
                                                                     &                      & H03 - Guia de geração de scripts sql (Fácil)                      & Não                  \\ \cline{3-4} 
                                                                     &                      & H04 - Construir modelo de dados (Fácil)                          & Não                  \\ \cline{3-4} 
                                                                     &                      & H05 - Validar modelo de dados (Médio)                            & Não                  \\ \cline{3-4} 
                                                                     &                      & H06 - Atualizar modelo de dados (Fácil)                           & Não                  \\ \cline{3-4} 
-                                                                    &                      & H07 - Validação de modelo de dados por responsável técnico (Médio) & Sim                  \\ \hline
+                                                                    &                      & H07 - Cadastrar modelo de dados e informações referentes & Não                  \\ \cline{3-4}
+ &  & H08 - Excluir modelo de dados & Não \\ \cline{3-4}
+ &  & H09 - Visualizar figura do modelo em \textit{fullscreen} & Não \\ \cline{3-4}                                                                    
+ &  & H10 - Validação de modelo de dados por responsável técnico (Médio) & Sim \\ \hline
 F04 - Implementação da aplicação                   & \multirow{3}{*}{Sim} & H01 - Guia de padrões e boas práticas Apex (Médio)                 & Não                  \\ \cline{3-4} 
                                                                     &                      & H02 - Ajustar interface (Fácil)                                   & Não                  \\ \cline{3-4} 
                                                                     &                      & H03 - Aplicar regras de negócio (Fácil)                           & Não                  \\ \hline
@@ -758,6 +798,12 @@ F06 - Procedimentos de teste                       & Sim & H01 - Preparar ambien
                                                                     &                      & H06 - Guia de teste de página apex (Fácil)                        & Não                  \\ \hline
 F07 - Tratamento de erros                          & \multirow{2}{*}{Sim} & H01 - Guia de uso de depuração de páginas apex (Fácil)            & Não                  \\ \cline{3-4} 
                                                                     &                      & H02 - Cadastro de erros conhecidos (Médio)                        & Não                  \\ \hline
+F08 - Implantação	& \multirow{2}{*}{Sim} & F08/H01 - Guia de Migração de Aplicações & Sim \\ \cline{3-4}
+  &  & F08/H02 - Migrar Aplicação & Sim \\ \cline{3-4}
+  &  & F08/H03 - Definir Procedimentos de Implantação & Sim \\ \hline
+F09 Projeto Kanban (Gerência de projetos) & \multirow{2}{*}{Não} & F09/H01 - Cadastrar projeto & Não \\ \cline{3-4}
+ &  & F09/H02 - Editar projeto & Não \\ \cline{3-4}
+ &  & F09/H03 - Exibir/listar projetos & Não \\ \hline
 \end{longtable}	
 	
 Uma vez que as \textit{Features} e estórias foram definidas, o início da construção da solução se inicia com a definição da primeira \textit{Sprint}, que teve duração maior do que as outras por conta de adaptação ao processo de construção. As \textit{Sprints} seguintes foram fixadas em períodos de 1 semana. Ao início de cada \textit{Sprint} um conjunto de estórias foram escolhidas para serem concluídas até o final da mesma, onde cada estória está associada com a sua dificuldade e com o respectivo membro responsável pela sua conclusão. As tabelas de 5 a 14 mostram o que foi definido e concluído em cada \textit{Sprint}.
@@ -891,13 +937,11 @@ Para a \textit{Sprint} 4 foram incluídas de volta as duas estórias da \textit{
 \hline
 \multirow{6}{1.8cm}{\textbf{Sprint 5}} & \textbf{\textit{Features} Envolvidas} &\textbf{Planejado} & \textbf{Concluído} 
 \\ \cline{2-4} 
- & F01 - Escolher Técnica de elicitação de requisitos & F01/H01 - Indicar técnica de elicitação (Difícil, Fagner) &  \multirow{4}{5.2cm}{F07/H01 - Guia de uso de depuração de páginas apex (Fácil, Filipe)}
-\\ \cline{3-3}
- &  & F01/H02 - Visualizar guia de técnica de elicitação (Fácil, Fagner) & 
+ & F01 - Escolher Técnica de elicitação de requisitos & F01/H02 - Visualizar guia de técnica de elicitação (Fácil, Fagner) &  \multirow{2}{5.2cm}{F07/H01 - Guia de uso de depuração de páginas apex (Fácil, Filipe)}
 \\ \cline{2-3}
  & F03 - Construir modelo de dados & F03/H05 - Validar modelo de dados (Médio, Fagner) & 
 \\ \cline{2-3}
- & F07 - Tratamento de erros & F07/H01 - Guia de uso de depuração de páginas apex (Fácil, Filipe) & 
+ & F07 - Tratamento de erros & F07/H01 - Guia de uso de depuração de páginas apex (Fácil, Filipe) & F01/H02 - Visualizar guia de técnica de elicitação (Fácil, Fagner)
 \\ \hline
 \end{tabular}
 \end{table}
@@ -915,9 +959,7 @@ Na \textit{Sprint} 5 mantiveram-se o conjunto de estórias não concluídas na \
 \hline
 \multirow{4}{1.8cm}{\textbf{Sprint 6}} & \textbf{\textit{Features} Envolvidas} &\textbf{Planejado} & \textbf{Concluído} 
 \\ \cline{2-4} 
- & F01 - Escolher Técnica de elicitação de requisitos & F01/H01 - Indicar técnica de elicitação (Difícil, Fagner) &  
-\\ \cline{3-3}
- &  & F01/H02 - Visualizar guia de técnica de elicitação (Fácil, Fagner) & 
+ & F02 - Elicitar requisitos junto ao cliente & F02/03 - Guia de prototipagem rápido (Fácil, Fagner) &  \multirow{2}{5.2cm}{F02/03 - Guia de prototipagem rápido (Fácil, Fagner)}
 \\ \cline{2-3}
  & F06 - Procedimentos de teste & F06/H03 - Geração de casos de testes (Difícil, Filipe) & 
 \\ \hline
@@ -928,21 +970,49 @@ Na \textit{Sprint} 6 houve a remoção da \textit{Feature} 3 em favor do maior e
 
 **Aqui sai F01/H01 e F02/H02 e a feature F01
 **Entra a feature F02 Elicitar requisitos junto ao cliente, as histórias F02/H05 - Cadastrar informações levantadas na elicitação de requisitos, F02/H06 - Editar informações levantadas na elicitação de requisitos, F02/H07 - Listar informações levantadas na elicitação de requisitos, F02/H08 - Excluir informações levantadas na elicitação de requisitos, F02/H09 - Cadastrar atores no sistema a ser desenvolvido, F02/H10 - Editar atores no sistema a ser desenvolvido, F02/H11 - Listar atores no sistema a ser desenvolvido, F02/H12 - Excluir atores no sistema a ser desenvolvido, F02/H13 - Cadastrar features do projeto, F02/H14 - Editar features do projeto, F02/H15 - Listar features do projeto, F02/H16 - Excluir features do projeto, F02/H17 - Cadastrar funcionalidades do projeto relacionado a feature, F02/H18 - Editar funcionalidades do projeto relacionado a feature, F02/H19 - Listar funcionalidades do projeto relacionado a feature, F02/H20 - Excluir funcionalidades do projeto relacionado a feature, como planejadas e concluídas
-**Entra feature F08 Projeto kanban (Gerência de projetos) e história F08/H01 - Cadastrar projeto, F08/H02 - Editar projeto, F08/H03 - Exibir/listar projetos, como planejadas e concluídas
 
 \begin{table}[!htb]
-\centering
+%\centering
 \caption{Planejamento da \textit{Sprint} 7}
-\begin{tabular}{|M{1.8cm}|M{3.0cm}|M{5.2cm}|M{5.2cm}|}
+\hspace{-1.5cm}
+\begin{tabular}{|M{1.8cm}|M{2.7cm}|M{5.8cm}|M{5.8cm}|}
 \hline
 \multirow{4}{1.8cm}{\textbf{Sprint 7}} & \textbf{\textit{Features} Envolvidas} &\textbf{Planejado} & \textbf{Concluído} 
 \\ \cline{2-4} 
- & F01 - Escolher Técnica de elicitação de requisitos & F01/H01 - Indicar técnica de elicitação (Difícil, Fagner) &  
-\multirow{3}{5.2cm}{F06/H03 - Geração de casos de testes (Difícil, Filipe)} 
-\\ \cline{3-3}
- &  & F01/H02 - Visualizar guia de técnica de elicitação (Fácil, Fagner) & 
-\\ \cline{2-3}
- & F06 - Procedimentos de teste & F06/H03 - Geração de casos de testes (Difícil, Filipe) & 
+ & \multirow{16}{3.0cm}{F02 - Elicitar requisitos junto ao cliente} & F02/H05 - Cadastrar informações levantadas na elicitação de requisitos &  
+F02/H05 - Cadastrar informações levantadas na elicitação de requisitos
+\\ \cline{3-4}
+ &  & F02/H06 - Editar informações levantadas na elicitação de requisitos & F02/H06 - Editar informações levantadas na elicitação de requisitos
+\\ \cline{3-4}
+ &  & F02/H07 - Listar informações levantadas na elicitação de requisitos & F02/H07 - Listar informações levantadas na elicitação de requisitos
+\\ \cline{3-4}
+ &  & F02/H08 - Excluir informações levantadas na elicitação de requisitos & F02/H08 - Excluir informações levantadas na elicitação de requisitos
+\\ \cline{3-4}
+ &  & F02/H09 - Cadastrar atores no sistema a ser desenvolvido & F02/H09 - Cadastrar atores no sistema a ser desenvolvido
+\\ \cline{3-4}
+ &  & F02/H10 - Editar atores no sistema a ser desenvolvido & F02/H10 - Editar atores no sistema a ser desenvolvido
+\\ \cline{3-4}
+ &  & F02/H11 - Listar atores no sistema a ser desenvolvido & F02/H11 - Listar atores no sistema a ser desenvolvido
+\\ \cline{3-4}
+ &  & F02/H12 - Excluir atores no sistema a ser desenvolvido & F02/H12 - Excluir atores no sistema a ser desenvolvido
+\\ \cline{3-4}
+ &  & F02/H13 - Cadastrar features do projeto & F02/H13 - Cadastrar features do projeto
+\\ \cline{3-4}
+ &  & F02/H14 - Editar features do projeto & F02/H14 - Editar features do projeto
+\\ \cline{3-4}
+ &  & F02/H15 - Listar features do projeto & F02/H15 - Listar features do projeto
+\\ \cline{3-4}
+ &  & F02/H16 - Excluir features do projeto & F02/H16 - Excluir features do projeto
+\\ \cline{3-4}
+ &  & F02/H17 - Cadastrar funcionalidades do projeto relacionado a \textit{feature} & F02/H17 - Cadastrar funcionalidades do projeto relacionado a feature
+\\ \cline{3-4}
+ &  & F02/H18 - Editar funcionalidades do projeto relacionado a \textit{feature} & F02/H18 - Editar funcionalidades do projeto relacionado a \textit{feature}
+\\ \cline{3-4}
+ &  & F02/H19 - Listar funcionalidades do projeto relacionado a \textit{feature} & F02/H19 - Listar funcionalidades do projeto relacionado a \textit{feature}
+\\ \cline{3-4}
+ &  & F02/H20 - Excluir funcionalidades do projeto relacionado a uma \textit{feature} & F02/H20 - Excluir funcionalidades do projeto relacionado a uma \textit{feature}
+\\ \cline{2-4}
+ & F06 - Procedimentos de teste & F06/H03 - Geração de casos de testes (Difícil, Filipe) & F06/H03 - Geração de casos de testes (Difícil, Filipe)
 \\ \hline
 \end{tabular}
 \end{table}
@@ -952,6 +1022,7 @@ Na \textit{Sprint} 7 se manteve o mesmo conjunto de estórias da \textit{Sprint}
 **Aqui sai F01/H01 e F02/H02
 **Entra a feature F02 Elicitar requisitos junto ao cliente, as histórias F02/H21 - Cadastrar requisitos não-funcionais do projeto, F02/H22 - Editar requisitos não-funcionais do projeto, F02/H23 - Listar requisitos não-funcionais do projeto, F02/H24 - Excluir requisitos não-funcionais do projeto, F02/H25 - Cadastrar regras de negócio do projeto, F02/H26 - Editar regras de negócio do projeto, F02/H27 - Listar regras de negócio do projeto, F02/H28 - Excluir regras de negócio do projeto, F02/H29 - Apresentar rastreabilidade entre projeto, features e funcionalidades como planejado e F02/H01 - Estruturação dos requisitos (rastreabilidade) como planejados e concluídos
 **Entra F01/H01 - Indicar técnica de elicitação com base em perguntas sobre os parâmetros do projeto. como planejada
+**Entra feature F09 Projeto Kanban (Gerência de projetos) e história F09/H01 - Cadastrar projeto, F09/H02 - Editar projeto, F09/H03 - Exibir/listar projetos, como planejadas e concluídas
 
 \begin{table}[!htb]
 \centering
@@ -960,11 +1031,31 @@ Na \textit{Sprint} 7 se manteve o mesmo conjunto de estórias da \textit{Sprint}
 \hline
 \multirow{4}{1.8cm}{\textbf{Sprint 8}} & \textbf{\textit{Features} Envolvidas} &\textbf{Planejado} & \textbf{Concluído} 
 \\ \cline{2-4} 
- & F01 - Escolher técnica de elicitação de requisitos & F01/H01 - Indicar técnica de elicitação (Difícil, Fagner) &  F01/H02 - Visualizar guia de técnica de elicitação (Fácil, Fagner)
-\\ \cline{3-3}
- & & F01/H02 - Visualizar guia de técnica de elicitação (Fácil, Fagner) &
-\\ \cline{2-3}
- & F02 - Elicitar requisitos junto ao cliente & F02/H01 - Estruturar informações obtidas (Médio, Fagner) & 
+ & F02 - Elicitar requisitos junto ao cliente & F02/H01 - Estruturação dos requisitos (rastreabilidade) & F02/H01 - Estruturação dos requisitos (rastreabilidade)
+\\ \cline{3-4}
+ &  & F02/H21 - Cadastrar requisitos não-funcionais do projeto & F02/H21 - Cadastrar requisitos não-funcionais do projeto
+\\ \cline{3-4}
+ &  & F02/H22 - Editar requisitos não-funcionais do projeto & F02/H22 - Editar requisitos não-funcionais do projeto
+\\ \cline{3-4}
+ &  & F02/H23 - Listar requisitos não-funcionais do projeto & F02/H23 - Listar requisitos não-funcionais do projeto
+\\ \cline{3-4}
+ &  & F02/H24 - Excluir requisitos não-funcionais do projeto & F02/H24 - Excluir requisitos não-funcionais do projeto
+\\ \cline{3-4}
+ &  & F02/H25 - Cadastrar regras de negócio do projeto & F02/H25 - Cadastrar regras de negócio do projeto
+\\ \cline{3-4}
+ &  & F02/H26 - Editar regras de negócio do projeto & F02/H26 - Editar regras de negócio do projeto
+\\ \cline{3-4}
+ &  & F02/H27 - Listar regras de negócio do projeto & F02/H27 - Listar regras de negócio do projeto
+\\ \cline{3-4}
+ &  & F02/H28 - Excluir regras de negócio do projeto & F02/H28 - Excluir regras de negócio do projeto
+\\ \cline{3-4}
+ &  & F02/H29 - Apresentar rastreabilidade entre projeto, \textit{features} e funcionalidades & F02/H29 - Apresentar rastreabilidade entre projeto, \textit{features} e funcionalidades
+\\ \cline{2-4}
+ & F09 Projeto Kanban (Gerência de projetos) & F09/H01 - Cadastrar projeto & F09/H01 - Cadastrar projeto
+\\ \cline{3-4}
+ &  & F09/H02 - Editar projeto & F09/H02 - Editar projeto
+\\ \cline{3-4}
+ &  & F09/H03 - Exibir/listar projetos & F09/H03 - Exibir/listar projetos
 \\ \hline
 \end{tabular}
 \end{table}
@@ -982,9 +1073,7 @@ Na \textit{Sprint} 8 houve a conclusão da estória F01/H02 e a inclusão da \te
 \hline
 \multirow{4}{1.8cm}{\textbf{Sprint 9}} & \textbf{\textit{Features} Envolvidas} &\textbf{Planejado} & \textbf{Concluído} 
 \\ \cline{2-4} 
- & F01 - Escolher técnica de elicitação de requisitos & F01/H01 - Indicar técnica de elicitação (Difícil, Fagner) &  F02/H01 - Estruturar informações obtidas (Médio, Fagner)
-\\ \cline{2-3}
- & F02 - Elicitacitar requisitos junto ao cliente & F02/H01 - Estruturar informações obtidas (Médio, Fagner) &
+ & F01 - Escolher técnica de elicitação de requisitos & F01/H01 - Indicar técnica de elicitação com base em perguntas sobre os parâmetros do projeto &  F01/H01 - Indicar técnica de elicitação com base em perguntas sobre os parâmetros do projeto
 \\ \cline{2-3}
  & F03 - Construir modelo de dados & F03/H05 - Validar modelo de dados (Médio, Fagner) & 
 \\ \cline{2-3}
@@ -1000,11 +1089,9 @@ Para a \textit{Sprint} 9 foram incluídas as \textit{Features} 3 e 7 com as est�
 \caption{Planejamento da \textit{Sprint} 10}
 \begin{tabular}{|M{1.8cm}|M{3.0cm}|M{5.2cm}|M{5.2cm}|}
 \hline
-\multirow{4}{1.8cm}{\textbf{Sprint 10}} & \textbf{\textit{Features} Envolvidas} &\textbf{Planejado} & \textbf{Concluído} 
+\multirow{3}{1.8cm}{\textbf{Sprint 10}} & \textbf{\textit{Features} Envolvidas} &\textbf{Planejado} & \textbf{Concluído} 
 \\ \cline{2-4} 
- & F01 - Escolher técnica de elicitação de requisitos & F01/H01 - Indicar técnica de elicitação (Difícil, Fagner) &  F07/H02 - Cadastro de erros conhecidos (Médio, Filipe)
-\\ \cline{2-3}
- & F03 - Construir modelo de dados & F03/H05 - Validar modelo de dados (Médio, Fagner) & 
+ & F03 - Construir modelo de dados & F03/H05 - Validar modelo de dados (Médio, Fagner) & F07/H02 - Cadastro de erros conhecidos (Médio, Filipe)
 \\ \cline{2-3}
  & F07 - Tratamento de erros & F07/H02 - Cadastro de erros conhecidos (Médio, Filipe) &
 \\ \hline
@@ -1017,7 +1104,7 @@ A \textit{Sprint} 10 se manteve da mesma forma que a \textit{Sprint} passada, ha
 
 \section{\textit{Considerações Iniciais}}
 
-Neste capítulos são apresentados as atividades e guias selecionados, resultantes tanto do diagnóstico obtido com as entrevistas, quanto do processo de desenvolvimento descentralizado e da \textit{Wiki}. Em seguida a solução gerada é apresentada. Por fim é apresentado o relato da construção da solução de apoio.
+Neste capítulos são apresentados as atividades e guias selecionados, resultantes tanto do diagnóstico obtido com as entrevistas, quanto do processo de desenvolvimento descentralizado e da \textit{Wiki}. Em seguida a solução gerada é apresentada. Por fim é apresentada a solução de apoio implementada.
 
 \section{Resultado do Diagnóstico}
 
@@ -1113,7 +1200,7 @@ A seguir podemos verificar os códigos que representam uma determinada categoria
 %}
 \end{table}
 
-Uma vez que a primeira parte da análise foi aplicada, deu-se prosseguimento à próxima fase da análise. A segunda parte consistiu em rotular as respostas, que foram agrupadas pelos códigos, com as chaves. A tabela 5 ilustra as chaves atribuídas às repostas das entrevistas e os seus significados. Estas chaves representam todos os diferentes significados de todas as respostas.\clearpage
+Uma vez que a primeira parte da análise foi aplicada, deu-se prosseguimento à próxima fase da análise. A segunda parte consistiu em rotular as respostas, que foram agrupadas pelos códigos, com as chaves. A tabela 5 ilustra as chaves atribuídas às repostas das entrevistas e os seus significados. Estas chaves representam todos os diferentes significados de todas as respostas.
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{longtable}{|M{4.0cm} | M{1.3cm}| m{9.5cm}|}
@@ -1641,8 +1728,10 @@ Em relação ao diagnóstico temos um total de 44 itens distintos que contemplam
 
 Espera-se que o SISADD promova uma melhoria na qualidade e manutenibilidade das aplicações descentralizadas desenvolvidas, utilizando o Oracle APEX, no Órgão X. Além disso espera-se que o SISADD seja utilizado em conjunto com outras formas de conhecimento já existente dentro do órgão, como a \textit{Wiki} do Desenvolvimento Descentralizado por exemplo. Nesse sentido ele passa a ser um complemento ao que já existe no órgão, o que permite que o conhecimento existente também possa ser utilizado.
 
-\section{\textit{Conclusão}}
+\chapter{\textit{Conclusão e Trabalhos Futuros}}
 
-Levando-se em conta o que foi observado e os aspectos analisados neste trabalho, percebemos a necessidade de um reforço ao desenvolvimento EUD do órgão x que sirva de apoio ao desenvolvimento de seus sistemas, proporcionando uma qualidade melhor aos mesmos e como consequência uma maior manutenibilidade.
+Levando-se em conta o que foi observado e os aspectos analisados neste trabalho, 
+
+percebemos a necessidade de um reforço ao desenvolvimento EUD do órgão x que sirva de apoio ao desenvolvimento de seus sistemas, proporcionando uma qualidade melhor aos mesmos e como consequência uma maior manutenibilidade.
 
 Afim de aspectos de aplicação e análise desse modelo proposto de solução, a próxima etapa deste trabalho será a implementação utilizando a ferramenta de desenvolvimento comum no Órgão X, onde serão realizados em cada fase descrita, uma decomposição das atividades, guias e funcionalidades visando uma maior granularidade no que diz respeito aos requisitos necessários para respectivas implementações. De acordo com o cronograma, após a construção da solução em cada ciclo, será feito o teste em um projeto piloto e os resultados colhidos para a análise de atendimento ou não da solução ao que foi proposto.
