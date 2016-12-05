@@ -89,12 +89,13 @@ Quanto à classificação por técnicas utilizadas, as principais técnicas para
 	\item \textbf{Documentos}: Se refere ao estudo de documentos publicados pelo órgão público ou instituição, como por exemplo, normas, acórdão, processos, projetos diretor, etc.
 \end{itemize}
 
-A representação da seleção dos itens da metodologia a ser adotada é representado na figura 1, onde são exibidos todas as opções disponíveis dentro de cada classificação, sendo as opções destacadas em preto as selecionadas para a execução do trabalho.
+A representação da seleção dos itens da metodologia a ser adotada é representado na figura \ref{metodologia_adotada}, onde são exibidos todas as opções disponíveis dentro de cada classificação, sendo as opções destacadas em preto as selecionadas para a execução do trabalho.
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.5]{figuras/Metodologia}
 	\caption{Seleção da metodologia adotada da pesquisa. Os quadros com fundo preto representam as opções adotadas no presente trabalho.}
+	\label{metodologia_adotada}
 \end{figure}
 
 Nas subseções seguintes serão detalhados a pesquisa-ação e a Entrevista semiestrutura, que constituem a base metodológica do presente trabalho.
@@ -320,13 +321,13 @@ Neste capítulo será apresentado um referencial teórico sobre o \textit{End Us
 
 Para que o desenvolvimento seguindo este modelo possa ocorrer é necessário que existam meios para que o usuário final possa desenvolver e adaptar o software, e para tanto a tecnologia envolvida deve diminuir o esforço cognitivo necessário para a construção do software, através da aproximação conceitual entre as ações do mundo real e as do mundo da programação \cite{fischer2004}. Os usuários finais geralmente não possuem habilidades de um profissional da área de software, e também não estão interessados em construir sistemas no mesmo nível que esses profissionais, por isso é necessário que a tecnologia usada no desenvolvimento alinhe a complexidade relacionada a esta atividade com as habilidades do usuário final. A motivação dos usuários finais é algo essencial para o favorecimento deste modelo, e fatores como o empoderamento, a velocidade de desenvolvimento, a flexibilidade e o controle influenciam diretamente na motivação desses usuários.
 
-O principal objetivo do EUD é oferecer meios para que os usuários finais consigam desenvolver e adaptar software \cite{lieberman2006}. Desta maneira, as aplicações preparadas para o EUD devem ser, principalmente, flexíveis, fáceis de se entender, de se usar, e de se ensinar \cite{lieberman2006}. A preocupação com a tecnologia usada neste modelo de desenvolvimento, mais especificamente na parte das linguagens de programação e aplicações de desenvolvimento, é a relação escopo de aplicação versus esforço de aprendizagem. A figura 4 ilustra a relação do escopo de aplicação e do custo de aprendizagem, para diferentes linguagens de programação e aplicações. Linguagens de programação mais tradicionais como C++ e JAVA oferecem a possibilidade de construção de software de uma grande variedade de domínios, porém a um alto custo associado ao esforço de aprendizagem. Outras linguagens possuem um menor esforço de aprendizagem, ao custo de uma limitação no escopo de aplicação. As linguagens ou aplicações de desenvolvimento ideais para o EUD são as que possuem um alto escopo de aplicação e um baixo esforço de aprendizagem \cite{fischer2004}. As que existem atualmente só utilizam uma pequena parte do potencial do EUD, com algumas falhas \cite{paterno2013}.
+O principal objetivo do EUD é oferecer meios para que os usuários finais consigam desenvolver e adaptar software \cite{lieberman2006}. Desta maneira, as aplicações preparadas para o EUD devem ser, principalmente, flexíveis, fáceis de se entender, de se usar, e de se ensinar \cite{lieberman2006}. A preocupação com a tecnologia usada neste modelo de desenvolvimento, mais especificamente na parte das linguagens de programação e aplicações de desenvolvimento, é a relação escopo de aplicação versus esforço de aprendizagem. A figura \ref{aplicacao_custo_aprendizagem} ilustra a relação do escopo de aplicação e do custo de aprendizagem, para diferentes linguagens de programação e aplicações. Linguagens de programação mais tradicionais como C++ e JAVA oferecem a possibilidade de construção de software de uma grande variedade de domínios, porém a um alto custo associado ao esforço de aprendizagem. Outras linguagens possuem um menor esforço de aprendizagem, ao custo de uma limitação no escopo de aplicação. As linguagens ou aplicações de desenvolvimento ideais para o EUD são as que possuem um alto escopo de aplicação e um baixo esforço de aprendizagem \cite{fischer2004}. As que existem atualmente só utilizam uma pequena parte do potencial do EUD, com algumas falhas \cite{paterno2013}.
 
 \begin{figure}[h]
 	\centering
-	\label{fig01}
 		\includegraphics[scale=0.8]{figuras/trade_off_eud_editado}
 	\caption{Relação escopo de aplicação e custo de aprendizagem. Adaptado de: \cite{fischer2004}}
+	\label{aplicacao_custo_aprendizagem}
 \end{figure}
 \pagebreak
 
@@ -401,13 +402,14 @@ O Oracle Application Express (APEX) é uma ferramenta que permite criar, persona
 Além disso, o ambiente de desenvolvimento integrado é muito intuitivo, o que torna a introdução e a adoção do APEX uma transição fácil para desenvolvedores experientes ou usuários finais.
 
 O APEX usa uma arquitetura simples, onde as páginas são geradas dinamicamente usando metadados armazenados no banco de dados Oracle. Não há geração de código ou compilação de arquivos. Uma vez que ele foi instalado e configurado, a URL será a via de acesso ao ambiente de desenvolvimento e às aplicações, tanto para os desenvolvedores quanto para os usuários finais. As alterações feitas durante o desenvolvimento são salvas diretamente nas tabelas de metadados, que contém as definições das aplicações. Após isso o desenvolvedor pode executar a aplicação e revisar as melhorias imediatamente.
-Para a implantação e execução do APEX é necessário um servidor web, um servidor de aplicação, um servidor APEX \textit{listener} e um servidor de banco de dados Oracle, conforme a figura 5.
+Para a implantação e execução do APEX é necessário um servidor web, um servidor de aplicação, um servidor APEX \textit{listener} e um servidor de banco de dados Oracle, conforme a figura \ref{arquitetura_apex}.
 \clearpage
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.6]{figuras/arquitetura_apex}
 	\caption{Arquitetura do APEX. Fonte: \cite{ferreira2015}.}
+	\label{arquitetura_apex}
 \end{figure}
 
 O fluxo de dados na arquitetura do APEX, é composto dos seguintes passos \cite{ferreira2015}:
@@ -471,18 +473,20 @@ Existem 3 papéis envolvidos no \textit{Scrum}, o \textit{Product Owner}, o Time
 \item \textbf{\textit{Scrum Master}}: Responsável por gerenciar o processo \textit{Scrum}, garantindo que a implementação do \textit{Scrum} se adeque à cultura da organização e que, ao mesmo tempo, traga os benefícios esperados. Além disso, o \textit{Scrum Master} também deve garantir o esclarecimento e a aplicabilidade das regras e práticas do \textit{Scrum} à todos do time.
 \end{itemize}
 
-As figuras 6 e 7 mostram, respectivamente, uma visão geral e detalhada do \textit{Scrum} que serão explicadas posteriormente.
+As figuras \ref{visao_geral_scrum} e \ref{visao_detalhada_scrum} mostram, respectivamente, uma visão geral e detalhada do \textit{Scrum} que serão explicadas posteriormente.
 
 \begin{figure}[!htb]
 	\centering
 		\includegraphics[scale=0.7]{figuras/scrum}
 	\caption{Visão geral do \textit{Scrum}. Adaptado de: \cite{scrum2005}.}
+	\label{visao_geral_scrum}
 \end{figure}
 
 \begin{figure}[!htb]
 	\centering
 		\includegraphics[scale=0.7]{figuras/scrum_detalhado}
 	\caption{Visão detalhada do \textit{Scrum}. Adaptado de: \cite{scrum2005}.}
+	\label{visao_detalhada_scrum}
 \end{figure}
 \clearpage
 
@@ -500,12 +504,13 @@ Na indústria de software, o uso do método \textit{Kanban} tem ganhado signific
 \item Acompanhar e gerênciar o fluxo de trabalho;
 \end{itemize}
 
-Para dar a noção visual de continuidade do fluxo de trabalho, o método \textit{Kanban} se utiliza do quadro \textit{kanban}. No desenvolvimento de software, o quadro \textit{kanban} é uma ferramenta que permite aos times visualizarem o seu fluxo de trabalho. O quadro consiste de colunas desenhadas em um quadro branco com adesivos ou bilhetes colados em cada coluna. Tipicamente ele é composto por 3 colunas: \textit{To Do} (O que fazer), \textit{In Progress} (Em progresso) e \textit{Done} (Concluído) \cite{agile2014}. Cada uma dessas colunas são compostas por tarefas, que precisam ser concluídas para se atingir um determinado objetivo. No caso da metodologia \textit{Scrum}, estas tarefas são geralmente derivadas do \textit{backlog} do produto. Observa-se que pelo fato de o método \textit{Kanban} ser empírico, o quadro \textit{kanban} também acaba se tornando, podendo haver variações nas colunas que o compõe de acordo com as necessidades do time de desenvolvimento \cite{agile2014}. A figura 8 mostra um esquema de um quadro \textit{kanban}.
+Para dar a noção visual de continuidade do fluxo de trabalho, o método \textit{Kanban} se utiliza do quadro \textit{kanban}. No desenvolvimento de software, o quadro \textit{kanban} é uma ferramenta que permite aos times visualizarem o seu fluxo de trabalho. O quadro consiste de colunas desenhadas em um quadro branco com adesivos ou bilhetes colados em cada coluna. Tipicamente ele é composto por 3 colunas: \textit{To Do} (O que fazer), \textit{In Progress} (Em progresso) e \textit{Done} (Concluído) \cite{agile2014}. Cada uma dessas colunas são compostas por tarefas, que precisam ser concluídas para se atingir um determinado objetivo. No caso da metodologia \textit{Scrum}, estas tarefas são geralmente derivadas do \textit{backlog} do produto. Observa-se que pelo fato de o método \textit{Kanban} ser empírico, o quadro \textit{kanban} também acaba se tornando, podendo haver variações nas colunas que o compõe de acordo com as necessidades do time de desenvolvimento \cite{agile2014}. A figura \ref{quadro_kanban} mostra um esquema de um quadro \textit{kanban}.
 
 \begin{figure}[!htb]
 	\centering
 		\includegraphics{figuras/Kanban}
 	\caption{Esquema de um quadro \textit{kanban}. Fonte: \cite{kanbanImage}.}
+	\label{quadro_kanban}
 \end{figure}
 
 \chapter[Materiais e Métodos]{Materiais e Métodos}
@@ -539,7 +544,7 @@ A construção deste trabalho foi guiada pelas as etapas de pesquisa previamente
 
 O presente trabalho está inserido no contexto do Órgão X, o qual possui duas formas distintas de desenvolvimento de software: uma forma corporativa, que é uma forma tradicional de desenvolvimento de software (desenvolvimento realizado na área da TI e por profissionais de TI), e uma forma descentralizada, que é uma forma menos tradicional de desenvolvimento (desenvolvimento realizado nas áreas de negócio e por pessoas com menos qualificação técnica e experiência, geralmente estagiários).
 
-O desenvolvimento descentralizado no Órgão X segue a linha do EUD e, devido a isso, a forma de desenvolvimento é bastante flexível, variando conforme o contexto da unidade de negócio e a experiência do desenvolvedor. A ferramenta adotada pelo órgão para viabilizar o desenvolvimento descentralizado foi o Oracle APEX, que é bastante amigável e permite que pessoas com muito pouca experiência em programação possam desenvolver aplicações. Percebendo a variação na forma de desenvolvimento dos sistemas, a unidade coordenadora do desenvolvimento descentralizado propôs:
+O desenvolvimento descentralizado no Órgão X segue a linha do EUD e, devido a isso, a forma de desenvolvimento é bastante flexível, variando conforme o contexto da unidade de negócio e a experiência do desenvolvedor. A ferramenta adotada pelo órgão para viabilizar o desenvolvimento descentralizado foi o Oracle APEX, que é bastante amigável e permite que pessoas com muito pouca experiência em programação possam desenvolver aplicações. Percebendo a variação na forma de desenvolvimento dos sistemas, a unidade coordenadora do desenvolvimento descentralizado propôs:\clearpage
 
 \begin{itemize}
 \item Uma \textit{Wiki} com guias e tutoriais relacionados ao desenvolvimento descentralizado de aplicações, voltados à ferramenta APEX;
@@ -564,7 +569,7 @@ Para se atingir o objetivo deste trabalho, realizou-se, inicialmente, um levanta
 \end{comment}
 
 \section{Entrevistas Realizadas}
-As entrevistas tiveram como objetivo realizar um diagnóstico da situação do desenvolvimento descentralizado no Órgão X, sob o ponto de vista do desenvolvedor que está inserido neste contexto. Esse diagnóstico procurou abordar os aspectos de dificuldades enfrentadas pelos desenvolvedores, de boas práticas realizadas e de sugestões de melhorias. Para que esses aspectos pudessem ser abordados na entrevista, as questões foram agrupadas por categorias, sendo estas, em sua maioria, relacionadas as fases de um ciclo de desenvolvimento de software. Cada categoria possui um objetivo, que representa qual o tipo de informação que se pretende obter. Na tabela 1 estão expostas as informações desejadas, através dos objetivos, e suas respectivas categorias.
+As entrevistas tiveram como objetivo realizar um diagnóstico da situação do desenvolvimento descentralizado no Órgão X, sob o ponto de vista do desenvolvedor que está inserido neste contexto. Esse diagnóstico procurou abordar os aspectos de dificuldades enfrentadas pelos desenvolvedores, de boas práticas realizadas e de sugestões de melhorias. Para que esses aspectos pudessem ser abordados na entrevista, as questões foram agrupadas por categorias, sendo estas, em sua maioria, relacionadas as fases de um ciclo de desenvolvimento de software. Cada categoria possui um objetivo, que representa qual o tipo de informação que se pretende obter. Na tabela \ref{tabela_01} estão expostas as informações desejadas, através dos objetivos, e suas respectivas categorias.
 
 \begin{comment}
 O objetivo da entrevista consistiu em obter um diagnóstico da situação atual do desenvolvimento descentralizado no Órgão X, para que servisse de insumo para a elaboração da solução de apoio. Como diagnóstico entendeu-se as boas práticas realizadas, as sugestões de melhoria e os problemas. Portanto, a entrevista elaborada tentou abordar esses pontos, consistindo de 34 perguntas divididas em 9 categorias. A entrevista pode ser visualizada no "Anexo A".
@@ -585,11 +590,12 @@ Codificação                                                          & \begin{
 Teste                                                                & \begin{tabular}[c]{@{}l@{}}1- Obter informações sobre a elaboração dos testes, bem como a forma \\ de realizá-los.\end{tabular}                                                                                                                                                                                                              \\ \hline
 Implantação                                                          & 1- Obter informações sobre a migração do sistema para a produção.                                                                                                                                                                                                                                                                        \\ \hline
 \end{tabular}
+\label{tabela_01}
 \end{table}
 
 A categoria "Descrição do Desenvolvedor" serviu unicamente para descrever o perfil dos desenvolvedores entrevistados, portanto ela não foi considerada na análise dos resultados obtidos. A partir dessas categorias, foram elaboradas as perguntas, de forma que elas atendessem os objetivos definidos. O \textit{template} da entrevista pode ser visualizo no "Apêndice A".
 
-Uma vez que a entrevista foi elaborada, o próximo passo consistiu em aplicá-la. A escolha dos desenvolvedores foi feita de forma aleatória, escolhendo-se 8 desenvolvedores diferentes que estão inseridos no contexto do desenvolvimento descentralizado do Órgão X. Os 8 desenvolvedores escolhidos estão divididos entre 7 estagiários e 1 servidor. A tabela 2 contextualiza o perfil dos desenvolvedores entrevistados. Observa-se que alguns desses dados não se aplicam ao desenvolvedor 6, por este ser um servidor. \clearpage
+Uma vez que a entrevista foi elaborada, o próximo passo consistiu em aplicá-la. A escolha dos desenvolvedores foi feita de forma aleatória, escolhendo-se 8 desenvolvedores diferentes que estão inseridos no contexto do desenvolvimento descentralizado do Órgão X. Os 8 desenvolvedores escolhidos estão divididos entre 7 estagiários e 1 servidor. A tabela \ref{tabela_02} contextualiza o perfil dos desenvolvedores entrevistados. Observa-se que alguns desses dados não se aplicam ao desenvolvedor 6, por este ser um servidor. \clearpage
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{table}[!htb]
@@ -616,7 +622,7 @@ Uma vez que a entrevista foi elaborada, o próximo passo consistiu em aplicá-la
 		Desenvolvedor 8 & SEPROD & 6 meses & Engenharia de Redes de Comunicação & 9 semestres \\
 		\hline
 	\end{tabular}
-	\label{tab02}
+	\label{tabela_02}
 \end{table}
 
 Após a aplicação da entrevista, o foco voltou-se a análise dos dados da mesma. A análise feita consistiu dos seguintes passos (P1, P2, P3, P4 e P5):
@@ -633,17 +639,17 @@ Após a aplicação da entrevista, o foco voltou-se a análise dos dados da mesm
 	\item[\textbf{\llap{P}5}] Elaborou-se ações para esses elementos;
 \end{enumerate}
 
-A figura 9 mostra um esquema que exemplifica a execução dos passos definidos para a análise. No passo 1 (P1), observa-se o agrupamento das unidades de resposta pelos códigos derivados. Já no passo 2 (P2), observa-se o agrupamento das respostas por códigos derivados. No passo 3 (P3), observa-se as unidades de respostas, dentro dos grupos de códigos derivados, rotuladas com as chaves. Por fim no passo 4 observa-se os elementos obtidos que representam as oportunidades de melhoria. O passo 5 (P5) será detalhado mais adiante, já que faz parte dos resultados.
+A figura \ref{etapas_analise_respostas} mostra um esquema que exemplifica a execução dos passos definidos para a análise. No passo 1 (P1), observa-se o agrupamento das unidades de resposta pelos códigos derivados. Já no passo 2 (P2), observa-se o agrupamento das respostas por códigos derivados. No passo 3 (P3), observa-se as unidades de respostas, dentro dos grupos de códigos derivados, rotuladas com as chaves. Por fim no passo 4 observa-se os elementos obtidos que representam as oportunidades de melhoria. O passo 5 (P5) será detalhado mais adiante, já que faz parte dos resultados.
 
 \begin{figure}[h]
 %	\centering
 \hspace*{-1.5cm}
-	\label{fig02}
 		\includegraphics[scale=0.7]{figuras/Esquematico_Analise_2}
 	\caption{Etapas realizadas na análise das respostas.}
+	\label{etapas_analise_respostas}
 \end{figure}
 
-Os códigos foram derivados dos objetivos de cada categoria de perguntas do ciclo de vida. A tabela 3 ilustra os códigos derivados de cada objetivo de categoria definido.
+Os códigos foram derivados dos objetivos de cada categoria de perguntas do ciclo de vida. A tabela \ref{tabela_03} ilustra os códigos derivados de cada objetivo de categoria definido.
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{table}[!htb]
@@ -673,7 +679,7 @@ Os códigos foram derivados dos objetivos de cada categoria de perguntas do cicl
 		Implantação & Obter informações sobre a migração, para a produção, do sistema & Implantação \\
 		\hline
 	\end{tabular}
-	\label{tab01}
+	\label{tabela_03}
 \end{table}
 
 As chaves foram derivadas dos significados das respostas das entrevistas, de forma que se duas ou mais respostas geraram uma mesma chave, devido aos seus significados semelhantes, somente uma única chave foi considerada.
@@ -685,12 +691,13 @@ A atribuição de um código e de uma chave foram necessários, pois dentro de u
 
 Uma tentativa de implantação de um processo para o desenvolvimento descentralizado já foi realizada pelo Órgão X, evidenciando a necessidade de um processo ou guia para o desenvolvimento descentralizado. O processo, chamado de Processo de Desenvolvimento Descentralizado do Órgão X, teve a sua finalização concluída no ano de 2012, e foi elaborado pela Secretaria de Tecnologia da Informação do órgão. Apesar de o processo ter sido desenvolvido, segundo o chefe da unidade coordenadora do desenvolvimento descentralizado, ele nunca chegou ao conhecimento dos desenvolvedores devido a questões normativas do próprio órgão, que inviabilizaram a sua implantação.
 
-O processo, elaborado na ferramenta \textit{Eclipse Process Framework}, que é voltada à construção de processos, consiste de 6 fases bem definidas: Estudo Preliminar de Projeto, Elicitação de Requisitos, Projeto de Banco de Dados, Construção, Homologação e Implantação. Cada uma dessas fases são divididas em atividades e tarefas, que por sua vez são apoiadas por um conjunto de guias e modelos. Os objetivos de cada fase estão listados abaixo, e o ciclo de vida do processo, em termos de fases, é exibido na figura 10.
+O processo, elaborado na ferramenta \textit{Eclipse Process Framework}, que é voltada à construção de processos, consiste de 6 fases bem definidas: Estudo Preliminar de Projeto, Elicitação de Requisitos, Projeto de Banco de Dados, Construção, Homologação e Implantação. Cada uma dessas fases são divididas em atividades e tarefas, que por sua vez são apoiadas por um conjunto de guias e modelos. Os objetivos de cada fase estão listados abaixo, e o ciclo de vida do processo, em termos de fases, é exibido na figura \ref{ciclo_vida_pdesc}.
 
 \begin{figure}[h]
 	\centering
 		\includegraphics[scale=0.8]{figuras/PDESC}
 	\caption{Ciclo de vida do processo de desenvolvimento descentralizado.}
+	\label{ciclo_vida_pdesc}
 \end{figure}
 
 \begin{enumerate}
@@ -808,7 +815,7 @@ F09 Projeto Kanban (Gerência de projetos) & \multirow{2}{*}{Sim} & F09/H01 - Ca
 	
 Tomando como base a figura \ref{figura_pesquisa_participante}, que contempla as fases da pesquisa participante adaptada ao contexto do trabalho, e conforme descrito anteriormente, as \textit{Sprints} serão realizadas dentro dos ciclos iterativos da pesquisa participante. Um ciclo contempla a fase de observação (Verificação de dados obtidos e as necessidades observadas para a aplicação), a fase de planejamento da \textit{Sprint} (Definição das estórias da \textit{Sprint} com base nas necessidades observadas), a fase de execução da \textit{Sprint} (Implementação das estórias definidas), e a fase de avaliação da \textit{Sprint} (Avaliação e discussão dos resultados da \textit{Sprint}).
 
-Uma vez que as \textit{Features} e estórias foram definidas, o início da construção da solução se inicia com a definição da primeira \textit{Sprint}, que teve duração maior do que as outras por conta de adaptação ao processo de construção. As \textit{Sprints} seguintes foram fixadas em períodos de 1 semana. Ao início de cada \textit{Sprint} um conjunto de estórias foram escolhidas para serem concluídas até o final da mesma. Cada estória está associada com a sua dificuldade e com o respectivo membro responsável pela sua conclusão. As tabelas de 5 a 14 mostram o que foi definido e concluído em cada \textit{Sprint}.
+Uma vez que as \textit{Features} e estórias foram definidas, o início da construção da solução se inicia com a definição da primeira \textit{Sprint}, que teve duração maior do que as outras por conta de adaptação ao processo de construção. As \textit{Sprints} seguintes foram fixadas em períodos de 1 semana. Ao início de cada \textit{Sprint} um conjunto de estórias foram escolhidas para serem concluídas até o final da mesma. Cada estória está associada com a sua dificuldade e com o respectivo membro responsável pela sua conclusão. As tabelas de \ref{tabela_04} a \ref{tabela_13} mostram o que foi definido e concluído em cada \textit{Sprint}.
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{table}[!htb]
@@ -829,6 +836,7 @@ Uma vez que as \textit{Features} e estórias foram definidas, o início da const
  &  & F03/H03 - Guia de geração de scripts sql (Fácil, Filipe) & 
 \\ \hline
 \end{tabular}
+\label{tabela_04}
 \end{table}
 
 \begin{itemize}
@@ -867,6 +875,7 @@ Uma vez que as \textit{Features} e estórias foram definidas, o início da const
  &  & F05/H04 - Listar código reutilizável (Fácil, Filipe) &
 \\ \hline
 \end{tabular}
+\label{tabela_05}
 \end{table}
 
 \begin{itemize}
@@ -875,8 +884,7 @@ Uma vez que as \textit{Features} e estórias foram definidas, o início da const
 \item Execução: Das estórias planejadas, foram concluídas apenas 3 estórias.
 \item Avaliação: Houve um aumento de complexidade durante a execução de certas estórias, pois não foi possível prever esse aumento de antemão, o que acarretou na não conclusão des mesmas.
 \end{itemize}
-
-Na \textit{Sprint} 2 as \textit{Features} 01 e 02 foram retiradas para a inclusão das \textit{Features} 03 e 05, consideradas de maior prioridade. Portanto as estórias F01/H01, F01/H02 e F02/H03 foram retiradas em favor da inclusão das estórias F03/H02, F03/H05, F05/H03 e F05/H04. 
+\clearpage
 
 %**Aqui entra a funcionalidade F03/H02 - Guia de padrão de nomenclatura de objetos de dados (Fácil, Fagner) como concluída
 
@@ -896,6 +904,7 @@ Na \textit{Sprint} 2 as \textit{Features} 01 e 02 foram retiradas para a inclus�
  & F05 - Elaboração de código & F05/H05 - Editar código reutilizável (Fácil, Filipe) & 
 \\ \hline
 \end{tabular}
+\label{tabela_06}
 \end{table}
 
 \begin{itemize}
@@ -904,13 +913,14 @@ Na \textit{Sprint} 2 as \textit{Features} 01 e 02 foram retiradas para a inclus�
 \item Execução: Das estórias planejadas, foram concluídas somente duas.
 \item Avaliação: A dependência da estória F03/H05 fez com que não fosse possível concluí-lá, e o esforço demandado pela estória F05/H05 não permitiu a conclusão da F04/H01 na \textit{Sprint}.
 \end{itemize}
-
-Na \textit{Sprint} 3 houve a inclusão da \textit{Feature} 04 com a estória F04/H01, considerada uma das mais importantes da solução, e a inclusão da estória F05/H05, relacionada com o conjunto de estórias F05/H03 e F05/H04 concluídas na \textit{Sprint} passada. \clearpage
+\clearpage
 
 % @@@ Incluir na tabela de Features/Estórias a nova estória F01/H01 - Indicar técnica de elicitação (Fácil) no lugar da antiga F01/H01 - Indicar técnica de elicitação (Difícil)
+\begin{comment}
 **Aqui sai a funcionalidade F03/H02 - Guia de padrão de nomenclatura de objetos de dados (Fácil, Fagner) como planejado e concluído.
 **Também é quebrado a história F01/H01 - Indicar técnica de elicitação (Difícil, Fagner) e vira F01/H01 - Indicar técnica de elicitação com base nas perguntas sobre parâmetros do projeto(Fácil, Fagner) mas não fica como planejado
 **Aqui entra as funcionalidades F01/H03 - Cadastrar de técnicas de elicitação, F01/H04 - Editar de técnicas de elicitação, F01/H05 - Listar de técnicas de elicitação, F01/H06 - Cadastrar de parâmetros do projeto referentes as técnicas, F01/H07 - Editar de parâmetros do projeto referentes as técnicas, F01/H08 - Listar de parâmetros do projeto referentes as técnicas, F01/H09 - Cadastrar de pesos dos parâmetros referentes as técnicas, F01/H10 - Editar de pesos dos parâmetros referentes as técnicas, F01/H11 - Listar de pesos dos parâmetros referentes as técnicas como planejadas e concluídas
+\end{comment}
 
 \begin{table}[!htb]
 \centering
@@ -946,6 +956,7 @@ Na \textit{Sprint} 3 houve a inclusão da \textit{Feature} 04 com a estória F04
  & F07 - Tratamento de erros & F07/H01 - Guia de uso de depuração de páginas apex (Fácil, Filipe) & 
 \\ \hline
 \end{tabular}
+\label{tabela_07}
 \end{table}
 
 \begin{itemize}
@@ -956,10 +967,10 @@ Na \textit{Sprint} 3 houve a inclusão da \textit{Feature} 04 com a estória F04
 \end{itemize}
 
 
+\begin{comment}
 **Aqui sai F1/H01 como planejado
 **F01/H02 - Entra Visualizar guia de técnica de elicitação como concluído
-
-Para a \textit{Sprint} 4 foram incluídas de volta as duas estórias da \textit{Feature} 01 não concluídas na \textit{Sprint} 1, F01/H01 e F01/H02, além da inclusão de uma estória da \textit{Feature} 07 (F01/H01), de forma a contemplar outra etapas do ciclo de vida da solução. 
+\end{comment}
 
 \begin{table}[!htb]
 \centering
@@ -975,6 +986,7 @@ Para a \textit{Sprint} 4 foram incluídas de volta as duas estórias da \textit{
  & F07 - Tratamento de erros & F07/H01 - Guia de uso de depuração de páginas apex (Fácil, Filipe) & F01/H02 - Visualizar guia de técnica de elicitação (Fácil, Fagner)
 \\ \hline
 \end{tabular}
+\label{tabela_08}
 \end{table}
 
 \begin{itemize}
@@ -983,12 +995,13 @@ Para a \textit{Sprint} 4 foram incluídas de volta as duas estórias da \textit{
 \item Execução: Das estórias planejadas, não foi concluída somente uma.
 \item Avaliação: O desempenho da \textit{Sprint} foi bom, apesar de ter tido poucas estórias planejadas devido a problemas externos ao trabalho.
 \end{itemize}
+\clearpage
 
-Na \textit{Sprint} 5 mantiveram-se o conjunto de estórias não concluídas na \textit{Sprint} passada. \clearpage
-
+\begin{comment}
 **Aqui sai F01/H01 e F02/H02 e a feature F01
 **Aqui entra a feature F02 Elicitar requisitos junto ao cliente, história F02/03 Guia de prototipagem rápido como planeja e concluído
 **A história F02/H01 - Estruturar informações obtidas foi quebrada mas não entra aqui ainda.
+\end{comment}
 
 \begin{table}[!htb]
 \centering
@@ -1002,6 +1015,7 @@ Na \textit{Sprint} 5 mantiveram-se o conjunto de estórias não concluídas na \
  & F06 - Procedimentos de teste & F06/H03 - Geração de casos de testes (Difícil, Filipe) & 
 \\ \hline
 \end{tabular}
+\label{tabela_09}
 \end{table}
 
 \begin{itemize}
@@ -1010,11 +1024,12 @@ Na \textit{Sprint} 5 mantiveram-se o conjunto de estórias não concluídas na \
 \item Execução: Das estórias planejadas, não foi concluída somente uma.
 \item Avaliação: A estória F06/H03 apresentou uma grande dificuldade de implementação, devido a necessidade de busca na literatura sobre um método adequado de teste. Apesar disso, ela foi parcialmente concluída.
 \end{itemize}
+\clearpage
 
-Na \textit{Sprint} 6 houve a remoção da \textit{Feature} 3 em favor do maior enfoque nas duas estórias da \textit{Feature} 1, e a estória F06/H03 da \textit{Feature} 6 foi incluída. Nessa \textit{Sprint} não houve nenhuma estória concluída.
-
+\begin{comment}
 **Aqui sai F01/H01 e F02/H02 e a feature F01
 **Entra a feature F02 Elicitar requisitos junto ao cliente, as histórias F02/H05 - Cadastrar informações levantadas na elicitação de requisitos, F02/H06 - Editar informações levantadas na elicitação de requisitos, F02/H07 - Listar informações levantadas na elicitação de requisitos, F02/H08 - Excluir informações levantadas na elicitação de requisitos, F02/H09 - Cadastrar atores no sistema a ser desenvolvido, F02/H10 - Editar atores no sistema a ser desenvolvido, F02/H11 - Listar atores no sistema a ser desenvolvido, F02/H12 - Excluir atores no sistema a ser desenvolvido, F02/H13 - Cadastrar features do projeto, F02/H14 - Editar features do projeto, F02/H15 - Listar features do projeto, F02/H16 - Excluir features do projeto, F02/H17 - Cadastrar funcionalidades do projeto relacionado a feature, F02/H18 - Editar funcionalidades do projeto relacionado a feature, F02/H19 - Listar funcionalidades do projeto relacionado a feature, F02/H20 - Excluir funcionalidades do projeto relacionado a feature, como planejadas e concluídas
+\end{comment}
 
 \begin{table}[!htb]
 %\centering
@@ -1060,6 +1075,7 @@ F02/H05 - Cadastrar informações levantadas na elicitação de requisitos
  & F06 - Procedimentos de teste & F06/H03 - Geração de casos de testes (Difícil, Filipe) & F06/H03 - Geração de casos de testes (Difícil, Filipe)
 \\ \hline
 \end{tabular}
+\label{tabela_10}
 \end{table}
 
 \begin{itemize}
@@ -1068,14 +1084,14 @@ F02/H05 - Cadastrar informações levantadas na elicitação de requisitos
 \item Execução: Todas as estórias planejadas foram concluídas.
 \item Avaliação: A \textit{Sprint} teve um aproveitamento de 100 \%, devido a quebra da antiga F02/H01 e também devido a boa maturidade no ritmo de desenvolvimento.
 \end{itemize}
+\clearpage
 
-
-Na \textit{Sprint} 7 se manteve o mesmo conjunto de estórias da \textit{Sprint} passada. \clearpage
-
+\begin{comment}
 **Aqui sai F01/H01 e F02/H02
 **Entra a feature F02 Elicitar requisitos junto ao cliente, as histórias F02/H21 - Cadastrar requisitos não-funcionais do projeto, F02/H22 - Editar requisitos não-funcionais do projeto, F02/H23 - Listar requisitos não-funcionais do projeto, F02/H24 - Excluir requisitos não-funcionais do projeto, F02/H25 - Cadastrar regras de negócio do projeto, F02/H26 - Editar regras de negócio do projeto, F02/H27 - Listar regras de negócio do projeto, F02/H28 - Excluir regras de negócio do projeto, F02/H29 - Apresentar rastreabilidade entre projeto, features e funcionalidades como planejado e F02/H01 - Estruturação dos requisitos (rastreabilidade) como planejados e concluídos
 **Entra F01/H01 - Indicar técnica de elicitação com base em perguntas sobre os parâmetros do projeto. como planejada
 **Entra feature F09 Projeto Kanban (Gerência de projetos) e história F09/H01 - Cadastrar projeto, F09/H02 - Editar projeto, F09/H03 - Exibir/listar projetos, como planejadas e concluídas
+\end{comment}
 
 \begin{table}[!htb]
 \centering
@@ -1111,6 +1127,7 @@ Na \textit{Sprint} 7 se manteve o mesmo conjunto de estórias da \textit{Sprint}
  &  & F09/H03 - Exibir/listar projetos & F09/H03 - Exibir/listar projetos
 \\ \hline
 \end{tabular}
+\label{tabela_11}
 \end{table}
 
 \begin{itemize}
@@ -1119,13 +1136,13 @@ Na \textit{Sprint} 7 se manteve o mesmo conjunto de estórias da \textit{Sprint}
 \item Execução: Todas as estórias planejadas foram concluídas.
 \item Avaliação: A \textit{Sprint} teve um aproveitamento de 100 \% devido a um melhor esclarecimento da solução e a boa maturidade no ritmo de desenvolvimento.
 \end{itemize}
+\clearpage
 
-
-Na \textit{Sprint} 8 houve a conclusão da estória F01/H02 e a inclusão da \textit{Feature} 2 com a estória F02/H01.
-
+\begin{comment}
 **Aqui sai a história F02/H01 e a feature F02 e a história F01/H01
 **Entra F01/H01 - Indicar técnica de elicitação com base em perguntas sobre os parâmetros do projeto como planejada e concluída
 **Entra F03/
+\end{comment}
 
 \begin{table}[!htb]
 \centering
@@ -1145,6 +1162,7 @@ Na \textit{Sprint} 8 houve a conclusão da estória F01/H02 e a inclusão da \te
  & F07 - Tratamento de erros & F07/H02 - Cadastro de erros conhecidos (Médio, Filipe) &
 \\ \hline
 \end{tabular}
+\label{tabela_12}
 \end{table}
 
 \begin{itemize}
@@ -1153,8 +1171,7 @@ Na \textit{Sprint} 8 houve a conclusão da estória F01/H02 e a inclusão da \te
 \item Execução: Das estórias planejadas, somente uma não foi concluída.
 \item Avaliação: A \textit{Sprint} teve um bom desempenho, tendo sido apenas uma estória não concluída, devido ao seu maior grau de complexidade em comparação com as outras concluídas.
 \end{itemize}
-
-Para a \textit{Sprint} 9 foram incluídas as \textit{Features} 3 e 7 com as estórias F03/H05 e F07/H02 respectivamente. \clearpage
+\clearpage
 
 \begin{table}[!htb]
 \centering
@@ -1168,6 +1185,7 @@ Para a \textit{Sprint} 9 foram incluídas as \textit{Features} 3 e 7 com as est�
  & F07 - Tratamento de erros & F07/H02 - Cadastro de erros conhecidos (Médio, Filipe) &
 \\ \hline
 \end{tabular}
+\label{tabela_13}
 \end{table}
 
 \begin{itemize}
@@ -1177,7 +1195,6 @@ Para a \textit{Sprint} 9 foram incluídas as \textit{Features} 3 e 7 com as est�
 \item Avaliação: A estória F03/H05 apresentou uma dificuldade maior do que a prevista, o que não permitiu que ela fosse concluída.
 \end{itemize}
 
-A \textit{Sprint} 10 se manteve da mesma forma que a \textit{Sprint} passada, havendo somente a conclusão da estória F07/H02.
 
 \chapter[Resultados]{Resultados}
 
@@ -1187,7 +1204,7 @@ Neste capítulos são apresentados as atividades e guias selecionados, resultant
 
 \section{Resultado do Diagnóstico}
 
-O diagnóstico obtido, conforme a entrevista aplicada aos desenvolvedores que participam do desenvolvimento descentralizado e a análise descrita na seção 4.3, consiste de um conjunto de problemas, sugestões e boas práticas relatados pelos desenvolvedores. A primeira parte da análise, que consistiu em aplicar os códigos às respostas obtidas, pode ser visualizada na tabela 4. A tabela 4 apresenta a rastreabilidade dos códigos em relação as respostas de cada desenvolvedor para cada pergunta. As respostas que faziam parte do código Perfil do Desenvolvedor, não puderam ser associadas a nenhum dos outros códigos e foram descartadas bem como o próprio código, que é o caso das perguntas P1, P2, P3, P4 e P5 que faziam parte do código perfil do desenvolvedor, posteriormente analisou-se esse código com o conjunto de perguntas e verificou-se não fazer parte da itenção da abordagem para a solução, pois trata-se apenas da contextualização do do perfil dos entrevistados. Assim, os códigos nesta matriz são representados pelos símbolos Cox em que x é a numeração para contagem, e cada código ou mais é referenciado na resposta do desenvolvedor entrevistado em uma determinada pergunta.
+O diagnóstico obtido, conforme a entrevista aplicada aos desenvolvedores que participam do desenvolvimento descentralizado e a análise descrita na seção 4.3, consiste de um conjunto de problemas, sugestões e boas práticas relatados pelos desenvolvedores. A primeira parte da análise, que consistiu em aplicar os códigos às respostas obtidas, pode ser visualizada na tabela \ref{tabela_14}. A tabela \ref{tabela_14} apresenta a rastreabilidade dos códigos em relação as respostas de cada desenvolvedor para cada pergunta. As respostas que faziam parte do código Perfil do Desenvolvedor, não puderam ser associadas a nenhum dos outros códigos e foram descartadas bem como o próprio código, que é o caso das perguntas P1, P2, P3, P4 e P5 que faziam parte do código perfil do desenvolvedor, posteriormente analisou-se esse código com o conjunto de perguntas e verificou-se não fazer parte da itenção da abordagem para a solução, pois trata-se apenas da contextualização do do perfil dos entrevistados. Assim, os códigos nesta matriz são representados pelos símbolos Cox em que x é a numeração para contagem, e cada código ou mais é referenciado na resposta do desenvolvedor entrevistado em uma determinada pergunta.
 
 A seguir podemos verificar os códigos que representam uma determinada categoria ou fase de desenvolvimento e a tabela de rastrebilidade dos códigos:
 
@@ -1276,10 +1293,10 @@ A seguir podemos verificar os códigos que representam uma determinada categoria
 \textbf{OBS}                   & Co3,Co5,\newline Co10        & Co9,Co10       & Co9            & Co4,Co9        &   -             &        -        &      -          &      -          \\ \hline
 
 \end{tabular}
-%}
+\label{tabela_14}
 \end{table}
 
-Uma vez que a primeira parte da análise foi aplicada, deu-se prosseguimento à próxima fase da análise. A segunda parte consistiu em rotular as respostas, que foram agrupadas pelos códigos, com as chaves. A tabela 5 ilustra as chaves atribuídas às repostas das entrevistas e os seus significados. Estas chaves representam todos os diferentes significados de todas as respostas.
+Uma vez que a primeira parte da análise foi aplicada, deu-se prosseguimento à próxima fase da análise. A segunda parte consistiu em rotular as respostas, que foram agrupadas pelos códigos, com as chaves. A tabela 16 ilustra as chaves atribuídas às repostas das entrevistas e os seus significados. Estas chaves representam todos os diferentes significados de todas as respostas.
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{longtable}{|M{4.0cm} | M{1.3cm}| m{9.5cm}|}
@@ -1374,7 +1391,7 @@ C44, C45, C46, C47, C48, C49 e C50                & 1- Guia de migração de apl
 C51                                              & Inviável.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      \\ \hline
 \end{longtable}
 
-Uma matriz de rastreabilidade das chaves foi elaborada, de forma a garantir a associação entre as chaves e as respostas, dadas pelos desenvolvedores, para cada pergunta. O conjunto de respostas das perguntas de 1 a 5, por se tratar meramente de uma contextualização do perfil dos entrevistados, não fez parte do escopo da análise. A tabela 7 ilustra a rastreabilidade de chaves com as respostas das perguntas.\clearpage
+Uma matriz de rastreabilidade das chaves foi elaborada, de forma a garantir a associação entre as chaves e as respostas, dadas pelos desenvolvedores, para cada pergunta. O conjunto de respostas das perguntas de 1 a 5, por se tratar meramente de uma contextualização do perfil dos entrevistados, não fez parte do escopo da análise. A tabela 18 ilustra a rastreabilidade de chaves com as respostas das perguntas.\clearpage
 
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
@@ -1507,7 +1524,7 @@ Apesar de algumas atividades e guias do processo de desenvolvimento descentraliz
 \item Algumas atividades, julgadas importantes, não foram previstas nas soluções do diagnóstico;
 \end{enumerate}
 
-Em relação ao processo de desenvolvimento existente, foram selecionadas, ao todo, 10 atividades e nenhum guia, de forma a complementar a solução. Já em relação a \textit{Wiki}, nenhuma atividade e guia foi selecionados para o complemento. A tabela 9 ilustra a relação de atividades selecionadas do processo de desenvolvimento descentralizado, e a sua associação com as fases do ciclo de vida da solução proposta.
+Em relação ao processo de desenvolvimento existente, foram selecionadas, ao todo, 10 atividades e nenhum guia, de forma a complementar a solução. Já em relação a \textit{Wiki}, nenhuma atividade e guia foi selecionados para o complemento. A tabela \ref{tabela_15} ilustra a relação de atividades selecionadas do processo de desenvolvimento descentralizado, e a sua associação com as fases do ciclo de vida da solução proposta.
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \newcolumntype{C}[1]{>{\raggedright}m{#1}}
@@ -1528,16 +1545,18 @@ Preparar ambiente de teste         & PDESC          &                           
 Criar material de apoio ao usuário & PDESC          & Homologação                               \\ \hline
 Migrar aplicação                   & PDESC          & Implantação                               \\ \hline
 \end{tabular}
+\label{tabela_15}
 \end{table}
 
 \subsection{Modelo da Solução Gerada}
 
-A solução gerada consiste da junção de todas as atividades, guias e funcionalidades geradas, tanto do diagnóstico, quanto do complemento. Essas atividades, guias e funcionalidades, estão organizadas em 5 fases diferentes do ciclo de vida. Estas fases são: Requisitos, Desenvolvimento, Teste, Homologação e Implantação. A fase de Desenvolvimento, é dividida em duas sub-fases: Banco de dados e Implementação. A organização do ciclo de vida da solução é representada pela figura 11. \clearpage
+A solução gerada consiste da junção de todas as atividades, guias e funcionalidades geradas, tanto do diagnóstico, quanto do complemento. Essas atividades, guias e funcionalidades, estão organizadas em 5 fases diferentes do ciclo de vida. Estas fases são: Requisitos, Desenvolvimento, Teste, Homologação e Implantação. A fase de Desenvolvimento, é dividida em duas sub-fases: Banco de dados e Implementação. A organização do ciclo de vida da solução é representada pela figura \ref{ciclo_vida_solucao}. \clearpage
 
 \begin{figure}[!htb]
 	\centering
 		\includegraphics[scale=0.8]{figuras/ciclo_vida_solucao}
 	\caption{Ciclo de vida da solução.}
+	\label{ciclo_vida_solucao}
 \end{figure}
 
 A organização do ciclo de vida foi baseada na metodologia ágil \textit{Scrum}. A idéia básica desta organização é: definir o \textit{backlog} de um ciclo (\textit{backlog} da iteração) junto com o cliente, e então ir "consumindo" esse \textit{backlog} ao longo de todo o ciclo da solução, onde cada item do \textit{backlog} definido deverá caminhar sequencialmente pelas fases do ciclo de vida. Uma vez que todo o \textit{backlog} foi "consumido" pelo ciclo de vida, temos o fim de um ciclo ou iteração. Ao completar uma iteração, um novo \textit{backlog} é definido com o cliente, e então um novo ciclo se inicia. Esse fluxo se repete até que o sistema chegue ao nível desejado pelo o cliente. As fases do ciclo de vida são descritas da seguinte forma:
@@ -1551,7 +1570,7 @@ A organização do ciclo de vida foi baseada na metodologia ágil \textit{Scrum}
 \end{itemize}
 
 
-Ao todo 18 atividades, 14 guias e 5 funcionalidades compõem a solução, onde os guias e as funcionalidades são suportes à execução de uma determinada atividade. A figura 12 ilustra a solução elaborada, agrupando todas as atividades, as funcionalidades e os guias, pelas fases do ciclo de vida. Os retângulos azuis representam as atividades e os retângulos roxos com laterais curvas representam os guias e as funcionalidades. Um guia ou uma funcionalidade representado após uma atividade significa que ele é um suporte a atividade em questão.
+Ao todo 18 atividades, 14 guias e 5 funcionalidades compõem a solução, onde os guias e as funcionalidades são suportes à execução de uma determinada atividade. A figura \ref{atividades_solucao} ilustra a solução elaborada, agrupando todas as atividades, as funcionalidades e os guias, pelas fases do ciclo de vida. Os retângulos azuis representam as atividades e os retângulos roxos com laterais curvas representam os guias e as funcionalidades. Um guia ou uma funcionalidade representado após uma atividade significa que ele é um suporte a atividade em questão.
 \clearpage
 
 \begin{landscape}
@@ -1559,6 +1578,7 @@ Ao todo 18 atividades, 14 guias e 5 funcionalidades compõem a solução, onde o
 	\centering
 		\includegraphics[scale=0.4]{figuras/fluxograma_solucao}
 	\caption{Conjunto de atividades, guias e funcionalidades, por fase do ciclo de vida}
+	\label{atividades_solucao}
 \end{figure}
 \end{landscape}
 
@@ -1658,7 +1678,7 @@ As atividades, guias e funcionalidades são descritas brevemente da seguinte for
 \end{enumerate}
 \end{itemize}
 
-O esboço do quadro \textit{kanban} a ser elaborado na funcionalidade gerencial "Atualizar progresso do projeto", de forma a auxiliar o desenvolvedor na gerência do desenvolvimento, é apresentado na figura 13. \clearpage
+O esboço do quadro \textit{kanban} a ser elaborado na funcionalidade gerencial "Atualizar progresso do projeto", de forma a auxiliar o desenvolvedor na gerência do desenvolvimento, é apresentado na figura \ref{kanban_criado}. \clearpage
 
 
 \begin{landscape}
@@ -1667,6 +1687,7 @@ O esboço do quadro \textit{kanban} a ser elaborado na funcionalidade gerencial 
 	\centering
 		\includegraphics[scale=0.35]{figuras/kanban}
 	\caption{Adaptação do quadro \textit{kanban}}
+	\label{kanban_criado}
 \end{figure}
 \end{landscape}
 
@@ -1674,62 +1695,68 @@ Este quadro \textit{kanban} foi dividido pelas fases do ciclo de vida da soluç�
 
 \section{SISADD - Sistema de Apoio ao Desenvolvimento Descentralizado}
 
-O SISADD, Sistema de Apoio ao Desenvolvimento Descentralizado, é a implementação da solução gerada, desenvolvido na plataforma Oracle Application Express. As figuras de 14 a 19 mostram as capturas das telas mais representativas do SISADD.
+O SISADD, Sistema de Apoio ao Desenvolvimento Descentralizado, é a implementação da solução gerada, desenvolvido na plataforma Oracle Application Express. As figuras de \ref{tela_inicial_sisadd} a \ref{video_tutorial_sisadd} mostram as capturas das telas mais representativas do SISADD.
 
 \begin{figure}[!h]
 	\hspace*{-1.5cm} 
 		\includegraphics[scale=0.40]{figuras/home_p1}
 	\caption{Tela inicial do SISADD}
+	\label{tela_inicial_sisadd}
 \end{figure}
 
 Na tela inicial do SISADD é apresentado o diagrama do ciclo iterativo proposto para o desenvolvimento descentralizado, onde cada etapa deste ciclo é um botão clicável que o desenvolvedor pode usar para acessar o conjunto de atividades, guias e funcionalidades da respectiva etapa. Além disso, o menu superior oferece uma navegação mais rápida e direta para as funcionalidades da aplicação. Observa-se que este menu superior é apresentado em todas as telas do sistema.
 
-A figura 15 ilustra um exemplo do detalhamento da etapa de requisitos, ou seja, é a tela apresentada caso o usuário clique na etapa de requisitos da tela da figura 14 (tela com o ciclo de desenvolvimento).
+A figura \ref{ativ_guias_func_sisadd} ilustra um exemplo do detalhamento da etapa de requisitos, ou seja, é a tela apresentada caso o usuário clique na etapa de requisitos da tela da figura \ref{tela_inicial_sisadd} (tela com o ciclo de desenvolvimento).
 
 \begin{figure}[!htb]
 	\hspace*{-1.0cm} 
 		\includegraphics[scale=0.40]{figuras/fluxo_req_p2}
 	\caption{Atividades, guias e funcionalidades da etapa de requisitos}
+	\label{ativ_guias_func_sisadd}
 \end{figure}
 
 Dentro de cada etapa do ciclo temos um fluxo sequencial de atividades que são suportadas por um conjunto de guias e funcionalidades. Atividades são representadas por retângulos, guias são representados por elipses e funcionalidades são representadas por elipses com o texto sublinhado. Ainda nesta tela, a parte superior apresenta uma espécie de \textit{wizard}, onde cada etapa anterior a etapa na qual o desenvolvedor se encontra é marcada com um ícone de verificação, dando a entender que para estar nesta etapa o desenvolvedor teria que ter passado pelas etapas anteriores. %\clearpage
 
-A figura 16 representa o cadastro de informações de um projeto, uma das mais importantes do sistema pois permite ao desenvolvedor cadastrar e editar informações a cerca do projeto no qual está trabalhando. \clearpage
+A figura \ref{cadastro_projeto_sisadd} representa o cadastro de informações de um projeto, uma das mais importantes do sistema pois permite ao desenvolvedor cadastrar e editar informações a cerca do projeto no qual está trabalhando. \clearpage
 
 \begin{figure}[!htb]
 	\hspace*{-1.5cm} 
 		\includegraphics[scale=0.40]{figuras/cadastro_projeto_p14}
 	\caption{Cadastro de informações de um projeto}
+	\label{cadastro_projeto_sisadd}
 \end{figure}
 
 A parte superior exibe várias abas onde o desenvolvedor pode alternar entre várias telas de cadastro/edição de informações sobre o projeto, como: Informações do Sistema, Atores do Sistema, \textit{Features}, Funcionalidades, Requisitos Não Funcionais, Regras de Negócio e Visualizar a Rastreabilidade dos Requisitos.
 
-A tela de geração de valores para teste do tipo caixa preta é representada pela figura 17 e esta funcionalidade gera um conjunto de valores para teste, seguindo o método BVA (\textit{Boundary Value Analysis}), de acordo com o componente selecionado.\clearpage
+A tela de geração de valores para teste do tipo caixa preta é representada pela figura \ref{gerar_teste_sisadd} e esta funcionalidade gera um conjunto de valores para teste, seguindo o método BVA (\textit{Boundary Value Analysis}), de acordo com o componente selecionado.\clearpage
 
 \begin{figure}[!htb]
 	\hspace*{-1.5cm} 
 		\includegraphics[scale=0.40]{figuras/gerador_teste_p57}
 	\caption{Geração de valores para teste caixa preta}
+	\label{gerar_teste_sisadd}
 \end{figure}
 
 Os componentes apresentados para escolha são componentes de entrada de dados disponíveis na versão 5 do APEX (versão mais atual). Desta forma, permite-se que o processo de teste do tipo caixa preta das páginas desenvolvidas seja mais sistemático.
 
-A figura 18 exibe o guia de padrão de nomenclatura de objetos de dados.
+A figura \ref{guia_padrao_bd_sisadd} exibe o guia de padrão de nomenclatura de objetos de dados.
 
 \begin{figure}[!htb]
-	\hspace*{-1.0cm} 
+	\hspace*{-1.5cm} 
 		\includegraphics[scale=0.40]{figuras/guia_nomenclatura_bd_p54}
 	\caption{Guia de padrão de nomenclatura de objetos de dados}
+	\label{guia_padrao_bd_sisadd}
 \end{figure}
 
 O guia de padrão de nomenclatura de objetos de dados apresenta informações ao desenvolvedor de como nomear os objetos do banco de dados, de acordo com os padrões definidos pelo Órgão X. Em todas as telas de guias são apresentados o índice, de forma a facilitar a navegação, seguido do conteúdo das seções.
 
-Na figura 19 está ilustrado o \textit{player} de vídeo usado para a reprodução de vídeos tutoriais.
+Na figura \ref{video_tutorial_sisadd} está ilustrado o \textit{player} de vídeo usado para a reprodução de vídeos tutoriais.
 
 \begin{figure}[!htb]
 	\hspace*{-1.5cm} 
 		\includegraphics[scale=0.40]{figuras/video_p51}
 	\caption{Vídeo tutorial de geração de modelo lógico de banco de dados}
+	\label{video_tutorial_sisadd}
 \end{figure}
 
 Existem alguns guias que possuem um vídeo tutorial que foi gravado de forma a auxiliar o desenvolvedor. Para isso existe uma tela de reprodução de vídeo no formato WEBM (formato apropriado para vídeos em páginas web). O desenvolvedor pode executar todas as funções básicas de um \textit{player} de vídeo, como avançar, aumentar a tela e silenciar o vídeo.
