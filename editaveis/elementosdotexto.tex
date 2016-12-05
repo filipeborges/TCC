@@ -720,7 +720,7 @@ O processo usado para a construção da solução foi a metodologia ágil, mais 
 \item Definir o período de tempo de cada \textit{Sprint}.
 \end{enumerate}
 
-As estórias elaboradas seguem a hierarquia \textit{Feature}/Estória, de forma que algumas funcionalidades e atividades viraram uma \textit{Feature} ao invés de estória, devido à sua abrangência de conteúdo. Algumas estórias tiveram de ser criadas pois não foram previstas no diagnóstico e os autores sentiram esta necessidade, com base nas suas experiências. Além disso, certas estórias que tiveram origem no diagnóstico tiveram que ser associadas a \textit{Features} criadas, pois o diagnóstico não permitiu derivar um conjunto de \textit{Features} que representassem estas estórias. Por fim algumas estórias foram quebradas de forma a originar novas estórias de menor granularidade, e cada estória recebeu uma classificação em relação a sua dificuldade de implementação (Fácil, Médio, Difícil) de forma a ajudar no planejamento da \textit{Sprint}. A tabela 4 ilustra o conjunto de \textit{Features}/Estórias elaborado. \clearpage
+As estórias elaboradas seguem a hierarquia \textit{Feature}/Estória, de forma que algumas funcionalidades e atividades viraram uma \textit{Feature} ao invés de estória, devido à sua abrangência de conteúdo. Algumas estórias tiveram de ser criadas pois não foram previstas no diagnóstico e os autores sentiram esta necessidade, com base nas suas experiências. Além disso, certas estórias que tiveram origem no diagnóstico tiveram que ser associadas a \textit{Features} criadas, pois o diagnóstico não permitiu derivar um conjunto de \textit{Features} que representassem estas estórias. Por fim algumas estórias foram quebradas de forma a originar novas estórias de menor granularidade, e cada estória recebeu uma classificação em relação a sua dificuldade de implementação (Fácil, Médio, Difícil) de forma a ajudar no planejamento da \textit{Sprint}. A tabela 4 ilustra o conjunto de \textit{Features}/Estórias elaborado.
 
 \begin{longtable}{|M{3.9cm}|M{2.6cm}|M{5.6cm}|M{2.6cm}|}
 \caption{\textit{Features}/Estórias elaboradas}\\\hline
@@ -729,7 +729,7 @@ As estórias elaboradas seguem a hierarquia \textit{Feature}/Estória, de forma 
 \hline
 \textbf{Feature}                                                    & \textbf{Origem no Diagnóstico} & \textbf{Estória}                                           & \textbf{Origem no Diagnóstico} \\ \hline
 \endhead
-F01 - Escolher Técnica de elicitação de requisitos & \multirow{2}{*}{Não} & H01 - Indicar técnica
+F01 - Escolher Técnica de elicitação de requisitos & \multirow{2}{*}{Sim} & H01 - Indicar técnica
 de elicitação com base em
 perguntas sobre os
 parâmetros do projeto                       & Não                  \\ \cline{3-4} 
@@ -743,10 +743,10 @@ parâmetros do projeto                       & Não                  \\ \cline{3
  &  & H09 - Cadastrar pesos dos parâmetros referente as técnicas & Não \\ \cline{3-4}
  &  & H10 - Editar pesos dos parâmetros referente as técnicas & Não \\ \cline{3-4}
  &  & H11 - Listar pesos dos parâmetros referente as técnicas & Não \\ \hline
-F02 - Elicitar Requisitos Junto Ao Cliente         & \multirow{4}{*}{Não} & H01 - Estruturação dos requisitos (rastreabilidade) (Médio)                       & Não                  \\ \cline{3-4}
+F02 - Elicitar Requisitos Junto Ao Cliente         & \multirow{4}{*}{Sim} & H01 - Estruturação dos requisitos (rastreabilidade) (Médio)                       & Não                  \\ \cline{3-4}
                                                                     &                      & H02 - Priorizar funcionalidades a serem desenvolvidas (Fácil)     & Não                  \\ \cline{3-4} 
-                                                                    &                      & H03 - Guia de prototipagem rápido (Fácil)                          & Não                  \\ \cline{3-4} 
-                                                                    &                      & H04 - Elicitar Requisitos Junto Ao Cliente (Fácil)                 & Não                  \\ \cline{3-4}
+                                                                    &                      & H03 - Guia de prototipagem rápido (Fácil)                          & Sim                  \\ \cline{3-4} 
+                                                                    &                      & H04 - Elicitar Requisitos Junto Ao Cliente (Fácil)                 & Sim                  \\ \cline{3-4}
 &  & H05 - Cadastrar informações levantadas na elicitação de requisitos & Não \\ \cline{3-4}                                
 &  & H06 - Editar informações levantadas na elicitação de requisitos & Não \\ \cline{3-4}
 &  & H07 - Listar informações levantadas na elicitação de requisitos & Não \\ \cline{3-4}
@@ -772,41 +772,43 @@ F02 - Elicitar Requisitos Junto Ao Cliente         & \multirow{4}{*}{Não} & H01
 &  & H27 - Listar regras de negócio do projeto & Não \\ \cline{3-4}
 &  & H28 - Excluir regras de negócio do projeto & Não \\ \cline{3-4}
 &  & H29 - Apresentar rastreabilidade entre projeto, \textit{features} e funcionalidades & Não \\ \hline
-F03 - Construir modelo de dados                    & \multirow{7}{*}{Não} & H01 - Guia de criação e padrões de BD (Médio)                     & Não                  \\ \cline{3-4} 
-                                                                    &                      & H02 - Guia de padrão de nomenclatura de objetos de dados (Fácil)  & Não                  \\ \cline{3-4} 
-                                                                    &                      & H03 - Guia de geração de scripts sql (Fácil)                      & Não                  \\ \cline{3-4} 
-                                                                    &                      & H04 - Construir modelo de dados (Fácil)                          & Não                  \\ \cline{3-4} 
-                                                                    &                      & H05 - Validar modelo de dados (Médio)                            & Não                  \\ \cline{3-4} 
-                                                                    &                      & H06 - Atualizar modelo de dados (Fácil)                           & Não                  \\ \cline{3-4} 
+F03 - Construir modelo de dados                    & \multirow{7}{*}{Sim} & H01 - Guia de criação e padrões de BD (Médio)                     & Sim                  \\ \cline{3-4} 
+                                                                    &                      & H02 - Guia de padrão de nomenclatura de objetos de dados (Fácil)  & Sim                  \\ \cline{3-4} 
+                                                                    &                      & H03 - Guia de geração de scripts sql (Fácil)                      & Sim                  \\ \cline{3-4} 
+                                                                    &                      & H04 - Construir modelo de dados (Fácil)                          & Sim                  \\ \cline{3-4} 
+                                                                    &                      & H05 - Validar modelo de dados (Médio)                            & Sim                  \\ \cline{3-4} 
+                                                                    &                      & H06 - Atualizar modelo de dados (Fácil)                           & Sim                  \\ \cline{3-4} 
                                                                     &                      & H07 - Cadastrar modelo de dados e informações referentes & Não                  \\ \cline{3-4}
  &  & H08 - Excluir modelo de dados & Não \\ \cline{3-4}
  &  & H09 - Visualizar figura do modelo em \textit{fullscreen} & Não \\ \cline{3-4}                                                                    
  &  & H10 - Validação de modelo de dados por responsável técnico (Médio) & Sim \\ \hline
-F04 - Implementação da aplicação                   & \multirow{3}{*}{Sim} & H01 - Guia de padrões e boas práticas Apex (Médio)                 & Não                  \\ \cline{3-4} 
-                                                                    &                      & H02 - Ajustar interface (Fácil)                                   & Não                  \\ \cline{3-4} 
-                                                                    &                      & H03 - Aplicar regras de negócio (Fácil)                           & Não                  \\ \hline
-F05 - Elaboração de código                         & \multirow{5}{*}{Sim} & H01 - Guia de boas práticas plsql (Fácil)                         & Não                  \\ \cline{3-4} 
-                                                                    &                      & H02 - Guia sobre editor de código sql e plsql (Fácil)              & Não                  \\ \cline{3-4} 
-                                                                    &                      & H03 - Cadastro de código reutilizável (Fácil)                      & Não                  \\ \cline{3-4} 
-                                                                    &                      & H04 - Listar código reutilizável (Fácil)                          & Sim                  \\ \cline{3-4} 
-                                                                    &                      & H05 - Editar código reutilizável (Fácil)                          & Sim                  \\ \hline
-F06 - Procedimentos de teste                       & Sim & H01 - Preparar ambiente de testes (Fácil)                         & Não                  \\ \cline{3-4} 
-                                                                    &                      & H02 - Definir procedimento de testes (Fácil)                       & Não                  \\ \cline{3-4} 
-                                                                    &                      & H03 - Geração de casos de testes (Difícil)                          & Não                  \\ \cline{3-4} 
-                                                                    &                      & H04 - Guia de ferramenta de automação de teste (Fácil)            & Não                  \\ \cline{3-4} 
-                                                                    &                      & H05 - Guia de teste de comportamento de código (Fácil)            & Não                  \\ \cline{3-4} 
-                                                                    &                      & H06 - Guia de teste de página apex (Fácil)                        & Não                  \\ \hline
-F07 - Tratamento de erros                          & \multirow{2}{*}{Sim} & H01 - Guia de uso de depuração de páginas apex (Fácil)            & Não                  \\ \cline{3-4} 
-                                                                    &                      & H02 - Cadastro de erros conhecidos (Médio)                        & Não                  \\ \hline
+F04 - Implementação da aplicação                   & \multirow{3}{*}{Sim} & H01 - Guia de padrões e boas práticas Apex (Médio)                 & Sim                  \\ \cline{3-4} 
+                                                                    &                      & H02 - Ajustar interface (Fácil)                                   & Sim                  \\ \cline{3-4} 
+                                                                    &                      & H03 - Aplicar regras de negócio (Fácil)                           & Sim                  \\ \hline
+F05 - Elaboração de código                         & \multirow{5}{*}{Sim} & H01 - Guia de boas práticas plsql (Fácil)                         & Sim                  \\ \cline{3-4} 
+                                                                    &                      & H02 - Guia sobre editor de código sql e plsql (Fácil)              & Sim                  \\ \cline{3-4} 
+                                                                    &                      & H03 - Cadastro de código reutilizável (Fácil)                      & Não                 \\ \cline{3-4} 
+                                                                    &                      & H04 - Listar código reutilizável (Fácil)                          & Não                  \\ \cline{3-4} 
+                                                                    &                      & H05 - Editar código reutilizável (Fácil)                          & Não                  \\ \hline
+F06 - Procedimentos de teste                       & Sim & H01 - Preparar ambiente de testes (Fácil)                         & Sim                  \\ \cline{3-4} 
+                                                                    &                      & H02 - Definir procedimento de testes (Fácil)                       & Sim                  \\ \cline{3-4} 
+                                                                    &                      & H03 - Geração de casos de testes (Difícil)                          & Sim                  \\ \cline{3-4} 
+                                                                    &                      & H04 - Guia de ferramenta de automação de teste (Fácil)            & Sim                 \\ \cline{3-4} 
+                                                                    &                      & H05 - Guia de teste de comportamento de código (Fácil)            & Sim                  \\ \cline{3-4} 
+                                                                    &                      & H06 - Guia de teste de página apex (Fácil)                        & Sim                  \\ \hline
+F07 - Tratamento de erros                          & \multirow{2}{*}{Sim} & H01 - Guia de uso de depuração de páginas apex (Fácil)            & Sim                  \\ \cline{3-4} 
+                                                                    &                      & H02 - Cadastro de erros conhecidos (Médio)                        & Sim                  \\ \hline
 F08 - Implantação	& \multirow{2}{*}{Sim} & F08/H01 - Guia de Migração de Aplicações & Sim \\ \cline{3-4}
   &  & F08/H02 - Migrar Aplicação & Sim \\ \cline{3-4}
   &  & F08/H03 - Definir Procedimentos de Implantação & Sim \\ \hline
-F09 Projeto Kanban (Gerência de projetos) & \multirow{2}{*}{Não} & F09/H01 - Cadastrar projeto & Não \\ \cline{3-4}
+F09 Projeto Kanban (Gerência de projetos) & \multirow{2}{*}{Sim} & F09/H01 - Cadastrar projeto & Não \\ \cline{3-4}
  &  & F09/H02 - Editar projeto & Não \\ \cline{3-4}
  &  & F09/H03 - Exibir/listar projetos & Não \\ \hline
 \end{longtable}	
 	
-Uma vez que as \textit{Features} e estórias foram definidas, o início da construção da solução se inicia com a definição da primeira \textit{Sprint}, que teve duração maior do que as outras por conta de adaptação ao processo de construção. As \textit{Sprints} seguintes foram fixadas em períodos de 1 semana. Ao início de cada \textit{Sprint} um conjunto de estórias foram escolhidas para serem concluídas até o final da mesma, onde cada estória está associada com a sua dificuldade e com o respectivo membro responsável pela sua conclusão. As tabelas de 5 a 14 mostram o que foi definido e concluído em cada \textit{Sprint}.
+Tomando como base a figura \ref{figura_pesquisa_participante}, que contempla as fases da pesquisa participante adaptada ao contexto do trabalho, e conforme descrito anteriormente, as \textit{Sprints} serão realizadas dentro dos ciclos iterativos da pesquisa participante. Um ciclo contempla a fase de observação (Verificação de dados obtidos e as necessidades observadas para a aplicação), a fase de planejamento da \textit{Sprint} (Definição das estórias da \textit{Sprint} com base nas necessidades observadas), a fase de execução da \textit{Sprint} (Implementação das estórias definidas), e a fase de avaliação da \textit{Sprint} (Avaliação e discussão dos resultados da \textit{Sprint}).
+
+Uma vez que as \textit{Features} e estórias foram definidas, o início da construção da solução se inicia com a definição da primeira \textit{Sprint}, que teve duração maior do que as outras por conta de adaptação ao processo de construção. As \textit{Sprints} seguintes foram fixadas em períodos de 1 semana. Ao início de cada \textit{Sprint} um conjunto de estórias foram escolhidas para serem concluídas até o final da mesma. Cada estória está associada com a sua dificuldade e com o respectivo membro responsável pela sua conclusão. As tabelas de 5 a 14 mostram o que foi definido e concluído em cada \textit{Sprint}.
 
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 \begin{table}[!htb]
@@ -829,7 +831,14 @@ Uma vez que as \textit{Features} e estórias foram definidas, o início da const
 \end{tabular}
 \end{table}
 
-A \textit{Sprint 1} teve duração de 1 semana e 2 dias, pois se tratava de uma \textit{Sprint} de ajuste. Foi concluída somente uma única estória de dificuldade média, e a estória F02/H03 não possuiu nenhum membro responsável pois estava como um adicional caso algum membro finalizasse suas estórias muito rapidamente. \clearpage
+\begin{itemize}
+\item Observação: Não foi observado nada de novo a acrescentar ao diagnóstico previsto.
+\item Planejamento: Priorizou-se que as estórias contempladas na \textit{Sprint} 1 deveriam ser das duas etapas iniciais do fluxo da Solução (Requisitos e Banco de Dados). Dentro das estórias disponíveis nas etapas do fluxo previamente priorizadas, optou-se pela implementação das estórias descritas na tabela. Observa-se que uma das estórias foi deixada em aberto (sem nenhum membro associado), de forma que se algum dos membros terminassem suas estórias antes do término da \textit{Sprint}, ficaria responsável pela mesma.
+\item Execução: Das estórias planejadas, foi concluída apenas uma única estória.
+\item Avaliação: O fato de ser a primeira \textit{Sprint} (Começando a implementação do zero), acabou fazendo com que uma única estória fosse concluída, pelo fato de adequação do tempo de desenvolvimento do escopo do projeto e ambientação das informações obtidas.
+\end{itemize}
+
+ \clearpage
 
 \begin{comment}
 **Aqui entra a feature F01 - Escolher Técnica de elicitação de requisitos e a funcionalidade F01/H01 - Indicar técnica de elicitação (Difícil, Fagner) F01/H02 - Visualizar guia de técnica de elicitação (Fácil, Fagner) mas não concluída.
@@ -860,6 +869,13 @@ A \textit{Sprint 1} teve duração de 1 semana e 2 dias, pois se tratava de uma 
 \end{tabular}
 \end{table}
 
+\begin{itemize}
+\item Observação: O diagnóstico previsto ainda continuou atendendo as necessidades da solução. Portanto nenhum acréscimo de estória precisou ser feito. Porém notou-se, de forma superficial, que a estória F01/H01 dependia de outras estórias que ainda não tinham sido previstas.
+\item Planejamento: Optou-se pela retirada da estória F02/H03 pois na Sprint passada nenhum dos membros conseguiu assumi-la. Optou-se também por incluir mais estórias relacionadas a \textit{feature} F03, pois foi uma das \textit{features} que tiveram estórias concluídas na \textit{Sprint} passada. Além disso, resolveu-se incluir a \textit{feature} F05 pois ela contemplava a etapa de Implementação do fluxo da solução.
+\item Execução: Das estórias planejadas, foram concluídas apenas 3 estórias.
+\item Avaliação: Houve um aumento de complexidade durante a execução de certas estórias, pois não foi possível prever esse aumento de antemão, o que acarretou na não conclusão des mesmas.
+\end{itemize}
+
 Na \textit{Sprint} 2 as \textit{Features} 01 e 02 foram retiradas para a inclusão das \textit{Features} 03 e 05, consideradas de maior prioridade. Portanto as estórias F01/H01, F01/H02 e F02/H03 foram retiradas em favor da inclusão das estórias F03/H02, F03/H05, F05/H03 e F05/H04. 
 
 %**Aqui entra a funcionalidade F03/H02 - Guia de padrão de nomenclatura de objetos de dados (Fácil, Fagner) como concluída
@@ -882,6 +898,13 @@ Na \textit{Sprint} 2 as \textit{Features} 01 e 02 foram retiradas para a inclus�
 \end{tabular}
 \end{table}
 
+\begin{itemize}
+\item Observação: Nenhum acréscimo de estória foi feito. Porém notou-se uma dependência da estória F03/H05 com uma estória ainda não prevista.
+\item Planejamento: A exclusão da estória F01/H01 foi devido a uma dependência observada na \textit{Sprint} anterior. A estória F01/H02 também dependia da estória F01/H01, portanto foi retirada. Além disso, houveram a inclusão da estória F05/H05, relacionada com estórias concluídas na \textit{Sprint} passada, e da estória F04/H01, considerada uma das mais importantes.
+\item Execução: Das estórias planejadas, foram concluídas somente duas.
+\item Avaliação: A dependência da estória F03/H05 fez com que não fosse possível concluí-lá, e o esforço demandado pela estória F05/H05 não permitiu a conclusão da F04/H01 na \textit{Sprint}.
+\end{itemize}
+
 Na \textit{Sprint} 3 houve a inclusão da \textit{Feature} 04 com a estória F04/H01, considerada uma das mais importantes da solução, e a inclusão da estória F05/H05, relacionada com o conjunto de estórias F05/H03 e F05/H04 concluídas na \textit{Sprint} passada. \clearpage
 
 % @@@ Incluir na tabela de Features/Estórias a nova estória F01/H01 - Indicar técnica de elicitação (Fácil) no lugar da antiga F01/H01 - Indicar técnica de elicitação (Difícil)
@@ -896,26 +919,26 @@ Na \textit{Sprint} 3 houve a inclusão da \textit{Feature} 04 com a estória F04
 \hline
 \multirow{6}{1.8cm}{\textbf{Sprint 4}} & \textbf{\textit{Features} Envolvidas} &\textbf{Planejado} & \textbf{Concluído} 
 \\ \cline{2-4} 
- & \multirow{9}{3.0cm}{F01 - Escolher Técnica de elicitação de requisitos} & F01/H03 - Cadastrar técnicas de elicitação &  \multirow{2}{5.2cm}{F03/H02 - Guia de padrão de nomenclatura de objetos de dados (Fácil, Fagner)}
-\\ \cline{3-3}
- &  & F01/H04 - Editar técnicas de elicitação &
-\\ \cline{3-3}
- &  & F01/H05 - Listar técnicas de elicitação &
-\\ \cline{3-3}
- &  & F01/H06 - Cadastrar parâmetros do projeto referente as técnicas &
-\\ \cline{3-3}
- &  & F01/H07 - Editar parâmetros do projeto referente as técnicas &
-\\ \cline{3-3}
- &  & F01/H08 - Listar parâmetros do projeto referente as técnicas &
-\\ \cline{3-3}
- &  & F01/H09 - Cadastrar pesos dos parâmetros referente as técnicas &
-\\ \cline{3-3}
- &  & F01/H10 - Editar pesos dos parâmetros referente as técnicas &
-\\ \cline{3-3}
- &  & F01/H11 - Listar pesos dos parâmetros referente as técnicas &
-\\ \cline{2-3}
- & F03 - Construir modelo de dados & F03/H02 - Guia de padrão de nomenclatura de objetos de dados (Fácil, Fagner) & 
-\\ \cline{3-3}
+ & \multirow{9}{3.0cm}{F01 - Escolher Técnica de elicitação de requisitos} & F01/H03 - Cadastrar técnicas de elicitação & F01/H03 - Cadastrar técnicas de elicitação
+\\ \cline{3-4}
+ &  & F01/H04 - Editar técnicas de elicitação & F01/H04 - Editar técnicas de elicitação
+\\ \cline{3-4}
+ &  & F01/H05 - Listar técnicas de elicitação & F01/H05 - Listar técnicas de elicitação
+\\ \cline{3-4}
+ &  & F01/H06 - Cadastrar parâmetros do projeto referente as técnicas & F01/H06 - Cadastrar parâmetros do projeto referente as técnicas
+\\ \cline{3-4}
+ &  & F01/H07 - Editar parâmetros do projeto referente as técnicas & F01/H07 - Editar parâmetros do projeto referente as técnicas
+\\ \cline{3-4}
+ &  & F01/H08 - Listar parâmetros do projeto referente as técnicas & F01/H08 - Listar parâmetros do projeto referente as técnicas
+\\ \cline{3-4}
+ &  & F01/H09 - Cadastrar pesos dos parâmetros referente as técnicas & F01/H09 - Cadastrar pesos dos parâmetros referente as técnicas
+\\ \cline{3-4}
+ &  & F01/H10 - Editar pesos dos parâmetros referente as técnicas & F01/H10 - Editar pesos dos parâmetros referente as técnicas
+\\ \cline{3-4}
+ &  & F01/H11 - Listar pesos dos parâmetros referente as técnicas & F01/H11 - Listar pesos dos parâmetros referente as técnicas
+\\ \cline{2-4}
+ & F03 - Construir modelo de dados & F03/H02 - Guia de padrão de nomenclatura de objetos de dados (Fácil, Fagner) & F03/H02 - Guia de padrão de nomenclatura de objetos de dados (Fácil, Fagner)
+\\ \cline{3-4}
  &  & F03/H05 - Validar modelo de dados (Médio, Fagner) & \multirow{3}{5.2cm}{F04/H01 - Guia de padrões e boas práticas Apex (Médio, Filipe)}
 \\ \cline{2-3}
  & F04 - Implementação da aplicação & F04/H01 - Guia de padrões e boas práticas Apex (Médio, Filipe) & 
@@ -924,6 +947,14 @@ Na \textit{Sprint} 3 houve a inclusão da \textit{Feature} 04 com a estória F04
 \\ \hline
 \end{tabular}
 \end{table}
+
+\begin{itemize}
+\item Observação: Baseado na observação do contexto e na indicação de dependência, houve a necessidade de quebra da estória F01/H01 em outras estórias menores. Portanto a F01/H01 passou a ter outro nome, pois é uma estória de menor granularidade, acompanhada das estórias F01/H02 até a F01/H11.
+\item Planejamento: Foram incluídas na \textit{Sprint} as estórias de menor granularidade derivadas da antiga F01/H01, e mantiveram-se as estórias pendentes da \textit{Sprint} anterior.
+\item Execução: Das estórias planejadas, não foram concluídas somente duas.
+\item Avaliação: A \textit{Sprint} teve um bom resultado, onde a quebra da antiga F01/H01 em estórias de menor granularidade contribuiu para a diminuição da complexidade de desenvolvimento.
+\end{itemize}
+
 
 **Aqui sai F1/H01 como planejado
 **F01/H02 - Entra Visualizar guia de técnica de elicitação como concluído
@@ -946,6 +977,13 @@ Para a \textit{Sprint} 4 foram incluídas de volta as duas estórias da \textit{
 \end{tabular}
 \end{table}
 
+\begin{itemize}
+\item Observação: Não foi observado nada de novo a acrescentar ao diagnóstico previsto.
+\item Planejamento: Foi incluído na \textit{Sprint} somente a estória F01/H02. As estórias F07/H01 e F03/H05 já haviam sido parcialmente implementadas na \textit{Sprint} anterior, portanto foram mantidas.
+\item Execução: Das estórias planejadas, não foi concluída somente uma.
+\item Avaliação: O desempenho da \textit{Sprint} foi bom, apesar de ter tido poucas estórias planejadas devido a problemas externos ao trabalho.
+\end{itemize}
+
 Na \textit{Sprint} 5 mantiveram-se o conjunto de estórias não concluídas na \textit{Sprint} passada. \clearpage
 
 **Aqui sai F01/H01 e F02/H02 e a feature F01
@@ -959,12 +997,19 @@ Na \textit{Sprint} 5 mantiveram-se o conjunto de estórias não concluídas na \
 \hline
 \multirow{4}{1.8cm}{\textbf{Sprint 6}} & \textbf{\textit{Features} Envolvidas} &\textbf{Planejado} & \textbf{Concluído} 
 \\ \cline{2-4} 
- & F02 - Elicitar requisitos junto ao cliente & F02/03 - Guia de prototipagem rápido (Fácil, Fagner) &  \multirow{2}{5.2cm}{F02/03 - Guia de prototipagem rápido (Fácil, Fagner)}
+ & F02 - Elicitar requisitos junto ao cliente & F02/H03 - Guia de prototipagem rápido (Fácil, Fagner) &  \multirow{2}{5.2cm}{F02/03 - Guia de prototipagem rápido (Fácil, Fagner)}
 \\ \cline{2-3}
  & F06 - Procedimentos de teste & F06/H03 - Geração de casos de testes (Difícil, Filipe) & 
 \\ \hline
 \end{tabular}
 \end{table}
+
+\begin{itemize}
+\item Observação: Não foi observado nada de novo a acrescentar ao diagnóstico previsto.
+\item Planejamento: A estória F03/H05 foi retirada da \textit{Sprint} devido a constante dificuldade em sua conclusão por conta de dependência, e foram incluídas as estórias F02/H03 e F06/H03.
+\item Execução: Das estórias planejadas, não foi concluída somente uma.
+\item Avaliação: A estória F06/H03 apresentou uma grande dificuldade de implementação, devido a necessidade de busca na literatura sobre um método adequado de teste. Apesar disso, ela foi parcialmente concluída.
+\end{itemize}
 
 Na \textit{Sprint} 6 houve a remoção da \textit{Feature} 3 em favor do maior enfoque nas duas estórias da \textit{Feature} 1, e a estória F06/H03 da \textit{Feature} 6 foi incluída. Nessa \textit{Sprint} não houve nenhuma estória concluída.
 
@@ -1017,6 +1062,14 @@ F02/H05 - Cadastrar informações levantadas na elicitação de requisitos
 \end{tabular}
 \end{table}
 
+\begin{itemize}
+\item Observação: Percebeu-se, através da avaliação de documentos do órgão, que as informações que deveriam ser estruturadas na estória F02/H01 - Estruturar informações obtidas estavam maiores do que o previsto. Portanto esta estória foi quebrada em estórias menores (F02/H05 até F02/H29), e a F02/H01 passou a se chamar Estruturação dos Requisitos (Rastreabilidade).
+\item Planejamento: Manteve-se a parcialmente concluída na \textit{Sprint} passada, com a inclusão da maioria das estórias geradas pela quebra da antiga F02/H01.
+\item Execução: Todas as estórias planejadas foram concluídas.
+\item Avaliação: A \textit{Sprint} teve um aproveitamento de 100 \%, devido a quebra da antiga F02/H01 e também devido a boa maturidade no ritmo de desenvolvimento.
+\end{itemize}
+
+
 Na \textit{Sprint} 7 se manteve o mesmo conjunto de estórias da \textit{Sprint} passada. \clearpage
 
 **Aqui sai F01/H01 e F02/H02
@@ -1060,6 +1113,14 @@ Na \textit{Sprint} 7 se manteve o mesmo conjunto de estórias da \textit{Sprint}
 \end{tabular}
 \end{table}
 
+\begin{itemize}
+\item Observação: Observou-se pela forma de desenvolvimento do órgão (por projeto) que não faria sentido existir requisitos sem estarem associados a um projeto. Portanto foram incluídas novas estórias (F09/H01, F09/H02 e F09/H03) relacionadas ao cadastro de um projeto.
+\item Planejamento: Foram incluídas o restante das estórias geradas pela quebra da antiga F02/H01 na \textit{Sprint} passada, além da inclusão das novas estórias observadas.
+\item Execução: Todas as estórias planejadas foram concluídas.
+\item Avaliação: A \textit{Sprint} teve um aproveitamento de 100 \% devido a um melhor esclarecimento da solução e a boa maturidade no ritmo de desenvolvimento.
+\end{itemize}
+
+
 Na \textit{Sprint} 8 houve a conclusão da estória F01/H02 e a inclusão da \textit{Feature} 2 com a estória F02/H01.
 
 **Aqui sai a história F02/H01 e a feature F02 e a história F01/H01
@@ -1074,13 +1135,24 @@ Na \textit{Sprint} 8 houve a conclusão da estória F01/H02 e a inclusão da \te
 \multirow{4}{1.8cm}{\textbf{Sprint 9}} & \textbf{\textit{Features} Envolvidas} &\textbf{Planejado} & \textbf{Concluído} 
 \\ \cline{2-4} 
  & F01 - Escolher técnica de elicitação de requisitos & F01/H01 - Indicar técnica de elicitação com base em perguntas sobre os parâmetros do projeto &  F01/H01 - Indicar técnica de elicitação com base em perguntas sobre os parâmetros do projeto
-\\ \cline{2-3}
- & F03 - Construir modelo de dados & F03/H05 - Validar modelo de dados (Médio, Fagner) & 
+\\ \cline{2-4}
+ & F03 - Construir modelo de dados & F03/H06 - Atualizar modelo de dados (Fácil) & F03/H06 - Atualizar modelo de dados (Fácil)
+\\ \cline{2-4}
+ & F03 - Construir modelo de dados & F03/H07 - Cadastrar modelo de dados e informações referentes & F03/H07 - Cadastrar modelo de dados e informações referentes
+\\ \cline{2-4}
+ & F03 - Construir modelo de dados & F03/H08 - Excluir modelo de dados & F03/H08 - Excluir modelo de dados
 \\ \cline{2-3}
  & F07 - Tratamento de erros & F07/H02 - Cadastro de erros conhecidos (Médio, Filipe) &
 \\ \hline
 \end{tabular}
 \end{table}
+
+\begin{itemize}
+\item Observação: Foi observado que a estória F03/H05 - Validar modelo de dados dependia de um prévio cadastro do modelo. Portanto foram criadas as estórias F03/H06 até F03/H08, de forma a contemplar este cadastro.
+\item Planejamento: Houve a inclusão das estórias previamente criadas (F03/H06 até a F03/H08), além da estória F07/H02, que estava relacionada com uma possível base de conhecimento de erros.
+\item Execução: Das estórias planejadas, somente uma não foi concluída.
+\item Avaliação: A \textit{Sprint} teve um bom desempenho, tendo sido apenas uma estória não concluída, devido ao seu maior grau de complexidade em comparação com as outras concluídas.
+\end{itemize}
 
 Para a \textit{Sprint} 9 foram incluídas as \textit{Features} 3 e 7 com as estórias F03/H05 e F07/H02 respectivamente. \clearpage
 
@@ -1097,6 +1169,13 @@ Para a \textit{Sprint} 9 foram incluídas as \textit{Features} 3 e 7 com as est�
 \\ \hline
 \end{tabular}
 \end{table}
+
+\begin{itemize}
+\item Observação: Observou-se, após discussões entre os membros, de que a estória F03/H05 - Validar modelo de dados possuía mais dependências do que o previsto na \textit{Sprint} passada, como por exemplo a diferenciação entre os perfis de usuário, que solicita uma avaliação, e responsável, que realiza uma avaliação solicitada.
+\item Planejamento: Foi incluído a estória F03/H05 devido as estórias das quais dependiam e que foram previstas na \textit{Sprint} passada terem sido previamente concluídas.
+\item Execução: Das estórias planejadas, somente uma não foi concluída.
+\item Avaliação: A estória F03/H05 apresentou uma dificuldade maior do que a prevista, o que não permitiu que ela fosse concluída.
+\end{itemize}
 
 A \textit{Sprint} 10 se manteve da mesma forma que a \textit{Sprint} passada, havendo somente a conclusão da estória F07/H02.
 
@@ -1726,12 +1805,18 @@ Em relação ao diagnóstico temos um total de 44 itens distintos que contemplam
 \item Conformidade geral (Total e Parcial): Aproximadamente 64 \%;
 \end{itemize}
 
+Apesar da conformidade geral ser de 64 \%, houveram implementações finalizadas que não estavam relacionadas ao diagnóstico obtido, ou seja, essas implementações foram levantadas com base na observação de pesquisa durante a construção da solução (descritas na tabela 4).
+
 Espera-se que o SISADD promova uma melhoria na qualidade e manutenibilidade das aplicações descentralizadas desenvolvidas, utilizando o Oracle APEX, no Órgão X. Além disso espera-se que o SISADD seja utilizado em conjunto com outras formas de conhecimento já existente dentro do órgão, como a \textit{Wiki} do Desenvolvimento Descentralizado por exemplo. Nesse sentido ele passa a ser um complemento ao que já existe no órgão, o que permite que o conhecimento existente também possa ser utilizado.
 
 \chapter{\textit{Conclusão e Trabalhos Futuros}}
 
-Levando-se em conta o que foi observado e os aspectos analisados neste trabalho, 
+A falta de de padrões e adesão a boas práticas no desenvolvimento de aplicações pode levar à problemas relacionados a qualidade e manutenibilidade das mesmas. Usuários finais não tem as mesmas habilidades e experiências de um desenvolvedor profissional. Portanto é necessário que esses desenvolvedores EUD tenham uma atenção especial para o desenvolvimento de suas aplicações, através de um modelo que lhes dê suporte. No Órgão X o principal problema identificado está relacionado ao modo em que o desenvolvimento de sistemas descentralizados é executado, onde os departamentos desenvolvem os sistemas conforme suas necessidades e por isso geralmente acabam negligênciando o uso de boas práticas e padrões de desenvolvimento.
 
-percebemos a necessidade de um reforço ao desenvolvimento EUD do órgão x que sirva de apoio ao desenvolvimento de seus sistemas, proporcionando uma qualidade melhor aos mesmos e como consequência uma maior manutenibilidade.
+Tendo em vista o problema encontrado, este trabalho se propôs a desenvolver uma solução (sistema) de apoio ao desenvolvimento descentralizado no Órgão X, agregando recursos que contribuam para a melhoria na qualidade e manutenibilidade dos sistemas desenvolvidos. A questão de pesquisa abordada é como apoiar o desenvolvedor na construção de sistemas descentralizados para promover a qualidade e manutenibilidade destes sistemas. Para responder a esta questão, foi realizada uma pesquisa explicativa com o uso do procedimento técnico bibliográfico, documental, pesquisa-ação e participante. Desta forma o diagnóstico que identificou problemas, boas práticas e sugestões, do ponto de vista do desenvolvedor, foi realizado.
 
-Afim de aspectos de aplicação e análise desse modelo proposto de solução, a próxima etapa deste trabalho será a implementação utilizando a ferramenta de desenvolvimento comum no Órgão X, onde serão realizados em cada fase descrita, uma decomposição das atividades, guias e funcionalidades visando uma maior granularidade no que diz respeito aos requisitos necessários para respectivas implementações. De acordo com o cronograma, após a construção da solução em cada ciclo, será feito o teste em um projeto piloto e os resultados colhidos para a análise de atendimento ou não da solução ao que foi proposto.
+A partir do diagnóstico obtido, e da análise de documentos do órgão, foi proposta um modelo de solução que contém um conjunto de atividades, guias de apoio e funcionalidades de forma a apoiar o desenvolvimento de sistemas. Este modelo então constituiu a base de requisitos para a implementação do sistema de apoio ao desenvolvimento descentralizado (SISADD) na ferramenta \textit{Oracle} APEX. Além da base de requisitos usada como insumo, houve o uso de observação por parte dos pesquisadores no contexto de atuação, o que permitiu uma abrangência maior na implementação do sistema.
+
+Houveram dificuldades durante a implementação do sistema, tanto por conta de problemas com estimativas de esforço quanto por dependências de implementação que não puderam ser previstas de antemão. Além disso, o tamanho do escopo do trabalho foi um fator que contribuiu para que algumas implementações não pudessem ser realizadas ou ficarem pendentes. Um outro fator decisivo foi a questão da participação dos agentes envolvidos no contexto de atuação durante a implementação, o que fez com que a metologia abrangesse mais um procedimento técnico, a fim de dar maior autonomia de decisão aos membros do trabalho.
+
+Como trabalho futuro, propõe-se a finalização da implementação da solução e a continuação do ciclo da pesquisa-ação, através da execução da avaliação da efetividade do sistema implementado. Esta avaliação deverá ser realizada com a escolha de um projeto piloto, a realização dos testes no mesmo e a coleta de resultados que indicam se o sistema atente ou não ao que foi proposto.
