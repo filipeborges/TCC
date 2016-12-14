@@ -1133,7 +1133,7 @@ F02/H05 - Cadastrar informações levantadas na elicitação de requisitos (Fác
 
 \section{\textit{Considerações Iniciais}}
 
-Neste capítulo são apresentadas as atividades e os guias selecionados, resultantes tanto do diagnóstico obtido com as entrevistas quanto do processo de desenvolvimento descentralizado e da \textit{Wiki}. Em seguida a solução gerada é apresentada. Por fim é apresentada a solução de apoio implementada.
+Neste capítulo são apresentadas as atividades e os guias selecionados, resultantes tanto do diagnóstico obtido com as entrevistas quanto do processo de desenvolvimento descentralizado e da \textit{Wiki}. Em seguida o modelo de solução gerado é apresentado. Por fim o sistema resultante é relatado através de uma breve descrição das telas mais representativas do sistema, de uma comparação da implementação realizada com o diagnóstico obtido, e de uma descrição do estado da implementação, com detalhes do que foi implementado e do que falta ser implementado para a finalização do sistema.
 
 \section{Resultado do Diagnóstico}
 
@@ -1775,6 +1775,25 @@ Apesar da conformidade geral ser de 64 \%, houveram implementações finalizadas
 
 Espera-se que o SISADD promova uma melhoria na qualidade e manutenibilidade das aplicações descentralizadas desenvolvidas, utilizando o Oracle APEX, no órgão público de estudo. Além disso espera-se que o SISADD seja utilizado em conjunto com outras formas de conhecimento já existente dentro do órgão, como a \textit{Wiki} do Desenvolvimento Descentralizado por exemplo. Nesse sentido ele passa a ser um complemento ao que já existe no órgão, o que permite que o conhecimento existente também possa ser utilizado.
 \end{comment}
+
+\section{Estado da Implementação}
+
+Durante a implementação do SISADD houveram algumas dificuldades que impediram que ele fosse totalmente finalizado. Dentre as dificuldades que impediram a sua finalização estão:
+\begin{itemize}
+\item Esforço estimado inferior ao esforço real necessário, por conta de dependências que não puderam ser previstas de antemão;
+\item Escopo muito grande para o tempo disponível;
+\end{itemize}
+
+A figura \ref{implementacao_conc_penden} ilustra um mapeamento das implementações que foram concluídas e das que estão pendentes.
+
+\begin{figure}[!htb]
+	\hspace*{-3.8cm}
+	\includegraphics[scale=0.68]{figuras/mapa_pendencias}
+	\caption{Mapeamento das Implementações Concluídas e Pendentes}
+	\label{implementacao_conc_penden}
+\end{figure}
+
+Os itens apresentados no mapeamento são as atividades, guias e funcionalidades que compõem o fluxo das etapas do ciclo de vida da solução (Requisitos, Banco de Dados, Implementação, Teste, Homologação e Implantação). Portanto para a finalização do SISADD é necessário realizar a implementação dos itens de cada etapa que estão localizados na coluna Pendente.
 
 \chapter{Conclusão e Trabalhos Futuros}
 
